@@ -1,0 +1,1724 @@
+{
+  "checked": "2026-09-13",
+  "dishCount": 99,
+  "imageCount": 102,
+  "note": "菜名、主料与做法逐道核对。网图仅供示意；组合菜各部分分别标示。unknown 表示未核实独立再使用许可，不表示开放许可。未复制菜谱正文。",
+  "images": [
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/101790134/",
+      "sourceImage": "https://i2.chuimg.com/09d0d9cc8ac111e6a9a10242ac110002_1400w_1000h.jpg",
+      "sourceTitle": "豆豉蒸排骨",
+      "author": "闸坡阿静",
+      "license": "unknown",
+      "matchReason": "菜谱标题与食材为豆豉、猪排骨，做法为蒸；主图可见带骨排骨、黑豆豉和蒸汁。",
+      "src": "assets/food-7d5f828cb94c405f.webp",
+      "verified": true,
+      "sha256": "7d5f828cb94c405fb127a69e9615a9b5a1308a81e6a7c55482355e2521b47cab",
+      "dimensions": [
+        960,
+        685
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "豆豉蒸排骨"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/104386617/",
+      "sourceImage": "https://i2.chuimg.com/2a66b6ff573e488b8c8c301fc2153cdf_912w_684h.jpg",
+      "sourceTitle": "广式酸甜排骨",
+      "author": "爱吃饺子的兔兔",
+      "license": "unknown",
+      "matchReason": "菜谱为广式酸甜排骨；图示炸排骨裹酸甜酱汁，配菠萝和彩椒。",
+      "src": "assets/food-a48d22856b071a95.webp",
+      "verified": true,
+      "sha256": "a48d22856b071a95327fdc6f0195679a979207c1059fc82220c7cb904927f62d",
+      "dimensions": [
+        912,
+        684
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "酸甜排骨"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106696764/",
+      "sourceImage": "https://i2.chuimg.com/60d0762c0b1c4e48bf7f41a2ef09335f_1280w_1707h.jpg",
+      "sourceTitle": "芋头烧排骨",
+      "author": "寶寶Princess601",
+      "license": "unknown",
+      "matchReason": "原菜谱芋头烧排骨，排骨与芋头焖煮后转砂锅；主图为砂锅中的排骨和芋头成菜。",
+      "src": "assets/food-965ff15763104d79.webp",
+      "verified": true,
+      "sha256": "965ff15763104d79ab0135013235128dc55aec6b46a32ccda4a08c2479295824",
+      "dimensions": [
+        720,
+        960
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "排骨芋头煲"
+    },
+    {
+      "sourcePage": "https://www.gzstv.com/a/a3fa3fc197c14f6a855d0150505cbed0",
+      "sourceImage": "https://gcmstatic.gzstv.com/2021-01-11/81fd7cee24a14bf39ab5527208768b27/032edd31-5bda-45ab-8c45-3e250402b28a.jpg",
+      "sourceTitle": "粉肠炖排骨",
+      "author": "贵州卫视《詹姆士的厨房》",
+      "license": "unknown",
+      "matchReason": "贵州卫视詹姆士的厨房原菜谱明确粉肠与仔排同炖；成菜主图可见粉肠、排骨与砂锅。",
+      "src": "assets/food-82cabe6fd8cf1779.webp",
+      "verified": true,
+      "sha256": "82cabe6fd8cf17798c02f1149450903e810c967bda0f2a698eef3a09c1e766be",
+      "dimensions": [
+        640,
+        426
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "粉肠排骨煲"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106705024/",
+      "sourceImage": "https://i2.chuimg.com/d3fe295485a248739fa2d2bdf09143c8_912w_684h.jpg",
+      "sourceTitle": "香煎猪颈肉",
+      "author": "Joy的懒懒小厨房",
+      "license": "unknown",
+      "matchReason": "原菜谱明确猪颈肉腌制后香煎；主图为切片煎猪颈肉，肉面焦香、肉纹与部位相符。",
+      "src": "assets/food-063af65e705c1728.webp",
+      "verified": true,
+      "sha256": "063af65e705c1728555684fce239c46a445198c65535ba1256a3761aeb66cc6b",
+      "dimensions": [
+        912,
+        684
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "香煎猪颈肉"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106748939/",
+      "sourceImage": "https://i2.chuimg.com/6f7c2d9ebeab458bb2b08431cff82aa6_1024w_766h.jpg",
+      "sourceTitle": "香煎五花肉",
+      "author": "艾家",
+      "license": "unknown",
+      "matchReason": "原菜谱为香煎五花肉，图中可见肥瘦相间的五花肉薄片及煎焦表面。",
+      "src": "assets/food-bc48afe302716b9a.webp",
+      "verified": true,
+      "sha256": "bc48afe302716b9a8625d1ba0b3f3cdad30d71d93934535e2571f126b2af304a",
+      "dimensions": [
+        960,
+        718
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "香煎五花肉"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/104057710/",
+      "sourceImage": "https://i2.chuimg.com/633ff1a6198e4a4fb327e147c66b2db6_1280w_1023h.jpg",
+      "sourceTitle": "酸菜炒生肠",
+      "author": "认真做晚餐",
+      "license": "unknown",
+      "matchReason": "菜谱标题和主料明确生肠与酸菜并采用炒制；图示生肠段与酸菜，区别于大肠圈。",
+      "src": "assets/food-983f02a3e061bed3.webp",
+      "verified": true,
+      "sha256": "983f02a3e061bed37d61915235fc6f113c54136f6a964e6ad50e90728bf1087c",
+      "dimensions": [
+        960,
+        767
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "酸菜炒生肠"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106485567/",
+      "sourceImage": "https://i2.chuimg.com/8c95b3d8755b442c94757a1b39a4290c_1322w_991h.jpg",
+      "sourceTitle": "酸菜炒大肠",
+      "author": "木瓜小厨房",
+      "license": "unknown",
+      "matchReason": "菜谱明确猪大肠配酸菜炒制；主图可见大肠圈与酸菜，与生肠另用不同照片。",
+      "src": "assets/food-6d89dd454d5e24b1.webp",
+      "verified": true,
+      "sha256": "6d89dd454d5e24b146101920606c79187980e4231f1ce133cf9e23fceb61e4d6",
+      "dimensions": [
+        960,
+        720
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "酸菜炒大肠"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/100133266/",
+      "sourceImage": "https://i2.chuimg.com/c126c1f8882e11e6a9a10242ac110002_650w_650h.jpg",
+      "sourceTitle": "家传卤猪肠",
+      "author": "papayafish",
+      "license": "unknown",
+      "matchReason": "原菜谱家传卤猪肠，主料与卤制做法相符；图示卤猪肠成菜。这里作为卤肠类示例，不声称照片内同时有多种肠。",
+      "src": "assets/food-0e0d652a5c417e09.webp",
+      "verified": true,
+      "sha256": "0e0d652a5c417e093a69273888bcd95217b6485cad57d012e1dd8c2e88193d2a",
+      "dimensions": [
+        650,
+        650
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "卤各种肠"
+    },
+    {
+      "sourcePage": "https://cookpad.com/jp/recipes/17360874",
+      "sourceImage": "https://img-global-jp.cpcdn.com/recipes/100125/600x852cq80/%E7%8C%AA%E8%82%89%E7%82%92%E9%9D%92%E8%8F%9C%E8%B1%9A%E8%82%89%E3%81%A8%E5%B0%8F%E6%9D%BE%E8%8F%9C%E3%81%AE%E7%82%92%E3%82%81%E7%89%A9-%E3%83%AC%E3%82%B7%E3%83%94-%E3%83%A1%E3%82%A4%E3%83%B3-%E5%86%99%E7%9C%9F.jpg",
+      "sourceTitle": "猪肉炒青菜「豚肉と小松菜の炒め物」",
+      "author": "銀姐",
+      "license": "unknown",
+      "matchReason": "Cookpad原菜名即猪肉炒青菜，配方为猪肉和小松菜炒制；图示猪肉片与深绿叶菜。",
+      "src": "assets/food-cc6d4ac269cd92ed.webp",
+      "verified": true,
+      "sha256": "cc6d4ac269cd92ed9a968fdf860962424e26fe8926350d52867623fab59dbc66",
+      "dimensions": [
+        600,
+        852
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "猪肉炒青菜"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106449585/",
+      "sourceImage": "https://i2.chuimg.com/3fe083d8690040038c192fd3d10f182e_1280w_959h.jpg",
+      "sourceTitle": "煎酿三宝",
+      "author": "廚娘_Mary姐",
+      "license": "unknown",
+      "matchReason": "煎酿三宝菜谱与主图同时包含肉馅酿苦瓜、酿青辣椒、酿豆腐三种，煎熟成菜，同一真实照片呈现全部三种。",
+      "src": "assets/food-d1a15fd9ed11ba5a.webp",
+      "verified": true,
+      "sha256": "d1a15fd9ed11ba5a03721341a5ae571152e200e700390158c599c24093486261",
+      "dimensions": [
+        960,
+        719
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "酿苦瓜、辣椒、豆腐"
+    },
+    {
+      "sourcePage": "https://icook.tw/recipes/419456",
+      "sourceImage": "https://tokyo-kitchen.icook.network/uploads/recipe/cover/419456/9544a98e72028655.jpg",
+      "sourceTitle": "梅干菜蒸肉饼",
+      "author": "彩勤廚房",
+      "license": "unknown",
+      "matchReason": "原菜谱为梅干菜蒸肉饼；照片可见梅干菜碎与猪肉末组成的蒸肉饼及蒸汁。",
+      "src": "assets/food-deee24b555899985.webp",
+      "verified": true,
+      "sha256": "deee24b555899985cbd430b619031118351ef67e161b66cbe5f8584ca622e38a",
+      "dimensions": [
+        960,
+        720
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "梅菜肉饼"
+    },
+    {
+      "sourcePage": "https://www.lanyaa.com/zuofa/103000",
+      "sourceImage": "https://imgc.lanyaa.com/364/05Mar201904172754.jpg",
+      "sourceTitle": "香辣猪肚",
+      "author": "unknown",
+      "license": "unknown",
+      "matchReason": "原菜谱虽题为香辣猪肚，分类为凉菜，步骤明确猪肚煮熟晾凉切条后拌红油、蒜末与香菜；图为凉拌成菜。",
+      "src": "assets/food-68fe948a6c0792da.webp",
+      "verified": true,
+      "sha256": "68fe948a6c0792daec49758aa551e18dd3ad32ae2c86e2f8cdd3c4c133272997",
+      "dimensions": [
+        450,
+        677
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "凉拌猪肚"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106690851/",
+      "sourceImage": "https://i2.chuimg.com/408188f0e30543429daf7d7b98b90e82_864w_1152h.jpg",
+      "sourceTitle": "腊肉青菜",
+      "author": "班班By",
+      "license": "unknown",
+      "matchReason": "下厨房原菜谱腊肉青菜；照片可见腊肉薄片与炒熟叶菜，非普通鲜肉替代。",
+      "src": "assets/food-7902d407d36125d7.webp",
+      "verified": true,
+      "sha256": "7902d407d36125d70a5d4222258ee01ef62311264dd0085ebfabaa53fc98f7e6",
+      "dimensions": [
+        720,
+        960
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "腊肉炒青菜"
+    },
+    {
+      "sourcePage": "https://www.lohaspottery.com/index.php/index/tech/techa/id/173.html",
+      "sourceImage": "https://www.lohaspottery.com/public/static/uploads/20190806/458135c002371d2af43f1cfdfcb7ce0f.jpg",
+      "sourceTitle": "黃豆燉豬腳",
+      "author": "陸寶 LOHAS Pottery",
+      "license": "unknown",
+      "matchReason": "陸寶陶锅菜谱黄豆炖猪脚，以猪脚为主料小火炖煮；照片为陶锅猪脚成菜，具体采用清炖黄豆版本。",
+      "src": "assets/food-4214b7886693259c.webp",
+      "verified": true,
+      "sha256": "4214b7886693259cb7cc73373fe2acdf7b4df1f40d1c9242bc2a5cc8c4583d7f",
+      "dimensions": [
+        706,
+        469
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "猪脚煲"
+    },
+    {
+      "sourcePage": "https://cookidoo.thermomix.com/recipes/recipe/en-US/r597522",
+      "sourceImage": "https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/a01c73bf-58ab-44c7-8698-c5601096eea1/Derivates/74083e3c-4851-4581-a511-e0891cfd7648.jpg",
+      "sourceTitle": "猪脚醋",
+      "author": "Cookidoo",
+      "license": "unknown",
+      "matchReason": "Cookidoo猪脚醋菜谱，公开配料列猪脚、老姜、蛋、黑醋、甜醋，属于慢炖菜谱；主图为醋炖猪脚与鸡蛋。",
+      "src": "assets/food-09a7690c3c8256dd.webp",
+      "verified": true,
+      "sha256": "09a7690c3c8256dd9afa77c5f8d57a6740fab2b38472879bfc08c4a2369561d8",
+      "dimensions": [
+        876,
+        720
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "猪脚醋煲"
+    },
+    {
+      "sourcePage": "https://rasamalaysia.com/three-cups-chicken-recipe/",
+      "sourceImage": "https://rasamalaysia.com/wp-content/uploads/2025/11/three-cup-chicken-1-3.jpg",
+      "sourceTitle": "Three Cup Chicken",
+      "author": "Bee Yinn Low",
+      "license": "unknown",
+      "matchReason": "原菜谱Three Cup Chicken明确San Bei Ji，鸡肉配麻油、酱油、绍兴酒和罗勒炖收汁；主图为砂锅三杯鸡。",
+      "src": "assets/food-c3bfe0b54ad203df.webp",
+      "verified": true,
+      "sha256": "c3bfe0b54ad203dfd4182a0447d538b8b56e74848116b35fd77227fcdd3eb97a",
+      "dimensions": [
+        640,
+        960
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "三杯鸡"
+    },
+    {
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:BeiQieJi-WhiteCutChicken.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/a/ae/BeiQieJi-WhiteCutChicken.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "sourceTitle": "BeiQieJi-WhiteCutChicken.jpg",
+      "author": "Sjschen",
+      "license": "CC BY-SA 3.0",
+      "matchReason": "Commons原描述明确白切鸡，作者实拍；主图为切块白切鸡伴青菜，未用盐焗或卤鸡代替。",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "src": "assets/food-0c6be53ab841813b.webp",
+      "verified": true,
+      "sha256": "0c6be53ab841813b6e23de692207689e4985f768b5d6e708895681254a406878",
+      "dimensions": [
+        960,
+        720
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "白切鸡"
+    },
+    {
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Salt_baked_chicken_-_San_Francisco%2C_CA.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/3/33/Salt_baked_chicken_-_San_Francisco%2C_CA.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "sourceTitle": "Salt_baked_chicken_-_San_Francisco,_CA.jpg",
+      "author": "Daderot",
+      "license": "CC0 1.0",
+      "matchReason": "Commons文件标题及描述明确Salt baked chicken；主图为盐焗鸡切块配蘸汁。",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "src": "assets/food-c86b7753b7f57bb7.webp",
+      "verified": true,
+      "sha256": "c86b7753b7f57bb7dd45e81f37ef013f54fadc4cfc6356277f03e3d341c8c970",
+      "dimensions": [
+        960,
+        714
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "盐焗鸡"
+    },
+    {
+      "sourcePage": "https://www.douguo.com/cookbook/3302923.html",
+      "sourceImage": "https://cp1.douguo.com/upload/caiku/4/7/8/960_4763a013d98f744e42bca13f11232428.jpg",
+      "sourceTitle": "广东丨沙姜鸡煲",
+      "author": "陈家快乐厨娘",
+      "license": "unknown",
+      "matchReason": "豆果原菜谱广东沙姜鸡煲，配料明确沙姜与鸡肉；主图为沙姜鸡煲成菜，保留原照片文字。",
+      "src": "assets/food-3c5296ae208c2f78.webp",
+      "verified": true,
+      "sha256": "3c5296ae208c2f78b7a2aefd9d7490abd02984272f88a6310fbac3b5886bc7d8",
+      "dimensions": [
+        820,
+        960
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "沙姜鸡"
+    },
+    {
+      "sourcePage": "https://www.douguo.com/cookbook/1129592.html",
+      "sourceImage": "https://cp1.douguo.com/upload/caiku/2/5/8/960_25c58769770015a06652bb99ee8ff268.jpg",
+      "sourceTitle": "Kari Ayam--正宗新加坡咖喱鸡",
+      "author": "jessie吧啦吧啦",
+      "license": "unknown",
+      "matchReason": "豆果原菜谱新加坡咖喱鸡，鸡肉以咖喱和椰奶炖煮；主图可见鸡块、咖喱汁和配菜。",
+      "src": "assets/food-c1b96b1480c70083.webp",
+      "verified": true,
+      "sha256": "c1b96b1480c7008340c0967abe451ab6d1fd7d763faf41ab8966ba0f86f89de4",
+      "dimensions": [
+        640,
+        853
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "咖喱鸡"
+    },
+    {
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Spicy_chicken_(La-zi-ji).jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Spicy_chicken_%28La-zi-ji%29.jpg",
+      "sourceTitle": "Spicy chicken (La-zi-ji).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0 1.0",
+      "matchReason": "Commons中英描述明确辣子鸡/La-zi-ji；实拍可见鸡块、干辣椒、芝麻，与其他鸡菜不同图。",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "src": "assets/food-4ba6bcc2f45bb1be.webp",
+      "verified": true,
+      "sha256": "4ba6bcc2f45bb1bedc660037361c9c7c7a3a58bff9149571a43b8b76de940717",
+      "dimensions": [
+        800,
+        600
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "辣子鸡"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/104770824/",
+      "sourceImage": "https://i2.chuimg.com/7322a1d307114f2ebe2c099de360ec3f_703w_563h.jpg",
+      "sourceTitle": "茶树菇蒸鸡",
+      "author": "西门子家电",
+      "license": "unknown",
+      "matchReason": "原菜谱标题明确茶树菇蒸鸡，做法为蒸制；图示长柄茶树菇与鸡块及蒸汁。",
+      "src": "assets/food-1dfbb9cf19f4a173.webp",
+      "verified": true,
+      "sha256": "1dfbb9cf19f4a173644450b45bc24fe35e36ead5c4535278ecf3268efa07d6c0",
+      "dimensions": [
+        703,
+        563
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "茶树菇蒸鸡"
+    },
+    {
+      "sourcePage": "https://rasamalaysia.com/chicken-mushroom-stew/",
+      "sourceImage": "https://rasamalaysia.com/wp-content/uploads/2011/12/chicken-mushroom-stew1.jpg",
+      "sourceTitle": "Claypot Chicken",
+      "author": "Bee Yinn Low",
+      "license": "unknown",
+      "matchReason": "Rasa Malaysia Claypot Chicken菜谱主料为鸡肉、干香菇，在陶锅炖煮；主图可见香菇与鸡肉，非茶树菇替代。",
+      "src": "assets/food-6fbe5858b5f4c17f.webp",
+      "verified": true,
+      "sha256": "6fbe5858b5f4c17f4e10f4c17e2c258044363ca64026458a8abb0ea12b3c9d36",
+      "dimensions": [
+        602,
+        960
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "香菇鸡煲"
+    },
+    {
+      "sourcePage": "https://k.sina.cn/article_7032343632_1a3290c5000100rlt6.html",
+      "sourceImage": "https://k.sinaimg.cn/n/sinacn10116/286/w640h446/20191020/c940-ihfpfvz7874726.jpg/w700d1q75cms.jpg",
+      "sourceTitle": "德州大厨教你做美食——白萝卜炖鸡腿",
+      "author": "历史洞察家（文章注明来源美食天下）",
+      "license": "unknown",
+      "matchReason": "原菜谱白萝卜炖鸡腿，主料为白萝卜与鸡腿块，中小火炖煮；成菜图中可见白萝卜块和鸡块。",
+      "src": "assets/food-3e304d218750e24f.webp",
+      "verified": true,
+      "sha256": "3e304d218750e24f89a8da2a0b1500931623f8449a95f3880a64acc56666bfbd",
+      "dimensions": [
+        640,
+        446
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "萝卜鸡煲"
+    },
+    {
+      "sourcePage": "https://k.sina.cn/article_1913000720_7206131000100gegn.html?from=food",
+      "sourceImage": "https://k.sinaimg.cn/n/sinacn20109/267/w640h427/20190627/11fc-hyzpvir2972668.jpg/w700d1q75cms.jpg",
+      "sourceTitle": "米其林这份广州推介够真！最低人均15元，10家餐厅新上榜（同记鸡粥：鸡杂炒青菜）",
+      "author": "羊城视觉",
+      "license": "unknown",
+      "matchReason": "2019年羊城视觉餐厅实拍报道，图紧随同记鸡粥鸡杂炒青菜说明；可见深绿叶菜及鸡杂块，非单独青菜或肉片图。",
+      "src": "assets/food-6f0a934d1995d09e.webp",
+      "verified": true,
+      "sha256": "6f0a934d1995d09ef85ae7cff015b1844d8f4cf7464b3cac131d76f14ff27b98",
+      "dimensions": [
+        640,
+        427
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "鸡杂炒青菜"
+    },
+    {
+      "sourcePage": "https://m.douguo.com/recipe/mip/1673470",
+      "sourceImage": "https://cp1.douguo.com/upload/caiku/2/4/0/750_248be98ba1788eacfc24acc718518c70.jpeg",
+      "sourceTitle": "奥尔良烤鸡翅",
+      "author": "烧烤豌豆",
+      "license": "unknown",
+      "matchReason": "豆果原菜谱明确奥尔良腌料腌鸡翅并烤制；主图为烤盘中烤熟鸡翅，调味由来源配方核实。",
+      "src": "assets/food-97dcd78f9084fd0f.webp",
+      "verified": true,
+      "sha256": "97dcd78f9084fd0f9125947e308cf8867e154d15048096c0693460f5a257a712",
+      "dimensions": [
+        750,
+        562
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "奥尔良烤鸡翅"
+    },
+    {
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:蒸水蛋_-_基隆茶餐廳.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/a/ae/%E8%92%B8%E6%B0%B4%E8%9B%8B_-_%E5%9F%BA%E9%9A%86%E8%8C%B6%E9%A4%90%E5%BB%B3.jpg",
+      "sourceTitle": "蒸水蛋 - 基隆茶餐廳.jpg",
+      "author": "Andy Li",
+      "license": "CC0 1.0",
+      "matchReason": "Commons描述明确店家特制普通蒸水蛋；实拍为整盘水蛋配葱花酱汁，无其他蛋菜替代。",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "src": "assets/food-ff3a9c342c458c46.webp",
+      "verified": true,
+      "sha256": "ff3a9c342c458c46aa31d31a00735871971c8207cd054084cdb58239f7d1e8c4",
+      "dimensions": [
+        800,
+        800
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "蒸水蛋"
+    },
+    {
+      "sourcePage": "https://www.sohu.com/a/366549549_582111",
+      "sourceImage": "https://5b0988e595225.cdn.sohucs.com/q_70%2Cc_zoom%2Cw_640/images/20200113/64e414b6a22440df9b34c9f6617d2a5a.jpeg",
+      "sourceTitle": "鸡蛋又有新做法！大冷天就想吃它，随手一煮好吃哭",
+      "author": "菜菜美食日记",
+      "license": "unknown",
+      "matchReason": "菜菜美食日记原文明确客家蛋饺，以蛋皮包猪肉馅后煮熟；成菜近照切口能看到蛋皮与肉馅，属于客家酿蛋的蛋饺版本。",
+      "src": "assets/food-582743cce9045398.webp",
+      "verified": true,
+      "sha256": "582743cce90453982840f39a2c7e597a751d2e3b5d86109de6e4efe65b9a78b6",
+      "dimensions": [
+        640,
+        426
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "酿蛋"
+    },
+    {
+      "sourcePage": "https://www.douguo.com/cookbook/1148753.html",
+      "sourceImage": "https://cp1.douguo.com/upload/caiku/5/3/b/960_532b9ef938444698e61002e42ef7d1cb.jpg",
+      "sourceTitle": "韭菜炒鸡蛋",
+      "author": "追梦美食佳",
+      "license": "unknown",
+      "matchReason": "豆果菜名韭菜炒鸡蛋、配料与炒法一致；主图清楚显示韭菜段与炒鸡蛋。",
+      "src": "assets/food-53f55dcfb9483b34.webp",
+      "verified": true,
+      "sha256": "53f55dcfb9483b343ae580658feb48497a9da85fd24f807436288adfe6deacd3",
+      "dimensions": [
+        960,
+        960
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "韭菜炒蛋"
+    },
+    {
+      "sourcePage": "https://www.douguo.com/cookbook/3217339.html",
+      "sourceImage": "https://cp1.douguo.com/upload/caiku/d/9/4/690x390_1664611868664.jpg",
+      "sourceTitle": "姜葱炒牛肉｜牛肉吃起来又香又嫩滑的做法",
+      "author": "静香爱下厨",
+      "license": "unknown",
+      "matchReason": "豆果成品封面；标题与做法明确姜葱炒牛肉",
+      "src": "assets/food-28e257f25012576b.webp",
+      "verified": true,
+      "sha256": "28e257f25012576b1d9e05f65bf4dcc0e02ec62b06a3422734c0bf8257ecbe91",
+      "dimensions": [
+        800,
+        452
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "姜葱炒牛肉"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106843285/",
+      "sourceImage": "https://i2.chuimg.com/1be6c72008f44643887f0707025f41c7_1920w_2560h.jpg",
+      "sourceTitle": "连吃三天都不厌的潮式牛腩萝卜煲",
+      "author": "Echo在伦敦",
+      "license": "unknown",
+      "matchReason": "标题潮式牛腩萝卜煲，主料牛腩和白萝卜；选用同菜谱完成烹饪后的单张照片",
+      "src": "assets/food-ce754ffdfd451204.webp",
+      "verified": true,
+      "sha256": "ce754ffdfd4512042bd99099e6131b737110f1e63ab126cb186f1319921fe7ed",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "牛腩萝卜煲"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/104257462/",
+      "sourceImage": "https://i2.chuimg.com/f53f57cf0df3449db0cc26cad8a83e54_1242w_1256h.jpg",
+      "sourceTitle": "家庭版黑椒牛仔骨",
+      "author": "yoyo俏厨娘",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-db7dab879f3d6da2.webp",
+      "verified": true,
+      "sha256": "db7dab879f3d6da2524df7a748fd6af6b1a5080ae443e34f0962d72185f14ff8",
+      "dimensions": [
+        989,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "黑椒牛仔骨"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/104479347/",
+      "sourceImage": "https://i2.chuimg.com/4250685fbc294de2bf0c66b7a6997691_1616w_1080h.jpg",
+      "sourceTitle": "孜然炒牛肉",
+      "author": "林夕花园",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-11009ebf47447a94.webp",
+      "verified": true,
+      "sha256": "11009ebf47447a94658737de261138ff1fa61ad04b0e6b9ecd39cc9f0d22414e",
+      "dimensions": [
+        1000,
+        669
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "孜然炒牛肉"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/102863982/",
+      "sourceImage": "https://i2.chuimg.com/55d326cbe0ab4213a6c0df37425a57f7_3024w_3024h.jpg",
+      "sourceTitle": "潮汕牛肉丸",
+      "author": "童童小公举",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-ca59539f072ba84e.webp",
+      "verified": true,
+      "sha256": "ca59539f072ba84e3262084194988e74236783f47a7f5e3a9229c33183b55140",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "牛肉丸"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/104530502/",
+      "sourceImage": "https://i2.chuimg.com/ab328208cd45490b951fe6ef94af140b_1152w_864h.jpg",
+      "sourceTitle": "简单美味三杯鸭",
+      "author": "AFU0160",
+      "license": "unknown",
+      "matchReason": "真实三杯鸭菜谱主图，实际展示三杯鸭选项",
+      "src": "assets/food-cc400ecd820d6bac.webp",
+      "verified": true,
+      "sha256": "cc400ecd820d6bacee42b05b1f33e255f53c9d00ac32313f72f384aabd7f440c",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "caption": "三杯鸭示意",
+      "dish": "三杯鸭鹅"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106922784/",
+      "sourceImage": "https://i2.chuimg.com/02b4410f944b4577943a45d44573e7e7_912w_684h.jpg",
+      "sourceTitle": "顺德焖鸭",
+      "author": "广佛企鹅妈妈",
+      "license": "unknown",
+      "matchReason": "实际照片为顺德焖鸭，鸭肉煎后加酱汁焖熟",
+      "src": "assets/food-df8e470eeeccd166.webp",
+      "verified": true,
+      "sha256": "df8e470eeeccd1669b7266c322361833d67acdc70efca9b19ac77e4913bbdd0a",
+      "dimensions": [
+        912,
+        684
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "caption": "焖鸭示意",
+      "dish": "焖鸭鹅羊肉"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/101885558/",
+      "sourceImage": "https://i2.chuimg.com/fe9aae068b9811e6a9a10242ac110002_853w_640h.jpg",
+      "sourceTitle": "潮州卤鹅",
+      "author": "铧发妈",
+      "license": "unknown",
+      "matchReason": "实际照片为潮州卤鹅，与焖鸭及三杯鸭使用不同原菜谱和照片",
+      "src": "assets/food-34201316fa7d17d1.webp",
+      "verified": true,
+      "sha256": "34201316fa7d17d17b2d6ee5b68d63600fb9c8769cb4cf1fffc5115f9e796e5b",
+      "dimensions": [
+        853,
+        640
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "caption": "卤鹅示意",
+      "dish": "卤鸭鹅羊肉"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106969776/",
+      "sourceImage": "https://i2.chuimg.com/728e7368c6f646f1b5738a6efbc4435c_1984w_1116h.jpg",
+      "sourceTitle": "广式羊肉煲",
+      "author": "ChefVic",
+      "license": "unknown",
+      "matchReason": "实际照片为广式羊肉煲",
+      "src": "assets/food-da8fc3039fea9a50.webp",
+      "verified": true,
+      "sha256": "da8fc3039fea9a50b8cb8dacdb12343236ee10c6269e22c2677bf58ade227eec",
+      "dimensions": [
+        1000,
+        563
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "羊肉煲"
+    },
+    {
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E6%B8%85%E8%92%B8%E9%B2%88%E9%B1%BC.jpg",
+      "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/c/c6/%E6%B8%85%E8%92%B8%E9%B2%88%E9%B1%BC.jpg",
+      "sourceTitle": "File:清蒸鲈鱼.jpg",
+      "author": "Walter Grassroot",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "matchReason": "原图库描述为清蒸鲈鱼，已重新浏览核验作者和许可，目视整鱼、葱姜及清蒸汁；用于清蒸鱼选项。",
+      "src": "assets/food-412cf9a44015a2fa.webp",
+      "verified": true,
+      "sha256": "412cf9a44015a2fa059407e860302cc10bd508902960f58ea6fa18289e905853",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "清蒸鱼"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106158944/",
+      "sourceImage": "https://i2.chuimg.com/48f089f5b2a4430fb672eea67a85a887_3898w_2923h.jpg",
+      "sourceTitle": "煎海鱼的万能公式做法——香煎平鱼",
+      "author": "杨扬拥有超能力",
+      "license": "unknown",
+      "matchReason": "实际照片为香煎银鲳鱼，海鱼煎制；选用同菜谱完成烹饪后的单张照片",
+      "src": "assets/food-e3e40489faa23386.webp",
+      "verified": true,
+      "sha256": "e3e40489faa233861bebbadd795e0062189635fbded21a230985b4947d5362ef",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "煎海鱼"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106101593/",
+      "sourceImage": "https://i2.chuimg.com/e02e83b673044bb89d07698173bc1fa1_4032w_2688h.jpg",
+      "sourceTitle": "白灼虾",
+      "author": "茹絮的美食生活",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配；选用同菜谱完成烹饪后的单张照片",
+      "src": "assets/food-df9774ad576951bc.webp",
+      "verified": true,
+      "sha256": "df9774ad576951bc1e8dae2b3460187799a00a7e28ee651cea75dd969d33b7b2",
+      "dimensions": [
+        1000,
+        667
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "白灼虾"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/102163930/",
+      "sourceImage": "https://i2.chuimg.com/95491b04beab11e6947d0242ac110002_3402w_2921h.jpg",
+      "sourceTitle": "黄金虾",
+      "author": "sheryl_king",
+      "license": "unknown",
+      "matchReason": "黄金虾菜谱，虾裹粉油炸后挂咸蛋黄",
+      "src": "assets/food-0edc10fefc870f60.webp",
+      "verified": true,
+      "sha256": "0edc10fefc870f60fc9612dc0b404ce85fb0e598a70e8c72740326a28cfecafe",
+      "dimensions": [
+        1000,
+        858
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "黄金虾（炸）"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/101826722/",
+      "sourceImage": "https://i2.chuimg.com/b8ec78108b1d11e6b87c0242ac110003_960w_716h.jpg",
+      "sourceTitle": "蒜蓉开边虾",
+      "author": "萌萌姥爷",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-4e46bea246290b90.webp",
+      "verified": true,
+      "sha256": "4e46bea246290b90bbe66671acfaa8565c6da48febd7b8a85f7348d3f40cd425",
+      "dimensions": [
+        960,
+        716
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "蒜蓉开边虾"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/107083543/",
+      "sourceImage": "https://i2.chuimg.com/88971e79c4734153ba69e5f413e15124_1280w_1280h.jpg",
+      "sourceTitle": "蒜蓉粉丝扇贝",
+      "author": "人间烟火wei",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-acacc061027ec232.webp",
+      "verified": true,
+      "sha256": "acacc061027ec232f4f057cc14615a1e0297272d77f0f57f4303cbd4a7a8c96f",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "蒜蓉扇贝"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/107151376/",
+      "sourceImage": "https://i2.chuimg.com/e1467f79d2d049a080993cb6b58240c5_1280w_960h.jpg",
+      "sourceTitle": "最简单的海鲜菜-蒜蓉蒸鲍鱼",
+      "author": "奎因与福恩的奎因",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-a054842592e5b42d.webp",
+      "verified": true,
+      "sha256": "a054842592e5b42dead24527f762967802b14e996d6b359b0e5d9ced9d2d4015",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "蒜蓉蒸鲍鱼"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106177920/",
+      "sourceImage": "https://i2.chuimg.com/f74fb280a1fc4955bfbdb2b6f642837a_4032w_3019h.jpg",
+      "sourceTitle": "蒜蓉烤生蚝",
+      "author": "西门子美食顾问",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-d188b046dd0b4e25.webp",
+      "verified": true,
+      "sha256": "d188b046dd0b4e256e0be1edd3ad73fd3351c47c879f721a3c7aacb4af685e4a",
+      "dimensions": [
+        1000,
+        749
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "蒜蓉烤生蚝"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/107691507/",
+      "sourceImage": "https://i2.chuimg.com/b2c8c9dd0b3a4dc8910bf1211926205a_3414w_2560h.jpg",
+      "sourceTitle": "高压锅生蚝",
+      "author": "华少私厨",
+      "license": "unknown",
+      "matchReason": "真实高压锅生蚝菜谱：用料为生蚝、姜、葱，步骤1至3明确高压锅加热后出锅；采用步骤4蘸酱油芥末的成菜照片，目视为已开壳取出的熟蚝肉，排除了旧图仅闭壳及新鲜配料入锅的歧义。",
+      "src": "assets/food-e0561b9868ac1c6b.webp",
+      "verified": true,
+      "sha256": "e0561b9868ac1c6b7d6406280ae7c902082423eee0abe5df7b1756455af49612",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "高压锅生蚝"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/104587916/",
+      "sourceImage": "https://i2.chuimg.com/b40d99fcf74b411cad191027232bcab3_744w_992h.jpg",
+      "sourceTitle": "清蒸生蚝",
+      "author": "每天都在向美食告白",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-05d0bf87cb1ba94f.webp",
+      "verified": true,
+      "sha256": "05d0bf87cb1ba94f44cf2c76e2863f5a0c57e59bb4e0f3c1595c883b9f6912be",
+      "dimensions": [
+        744,
+        992
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "清蒸生蚝"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106824859/",
+      "sourceImage": "https://i2.chuimg.com/401bebc1f643431da064cba3b0ea4965_1920w_2560h.jpg",
+      "sourceTitle": "盐焗花螺",
+      "author": "奥云仔",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-1105a678410a58b3.webp",
+      "verified": true,
+      "sha256": "1105a678410a58b3a2987b8530a7456b340d56b6193fc4c3930e9bebc4952c48",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "盐焗花螺"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/103968083/",
+      "sourceImage": "https://i2.chuimg.com/53da9354d7814352ad81e114bd9ca343_1000w_765h.jpg",
+      "sourceTitle": "白灼花螺",
+      "author": "芒果布甸",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-319a327f0196b9c5.webp",
+      "verified": true,
+      "sha256": "319a327f0196b9c5757ab42e7dd14864ec095e701770fb03f135d03e6c12145f",
+      "dimensions": [
+        1000,
+        765
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "白灼花螺"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/107687621/",
+      "sourceImage": "https://i2.chuimg.com/991fff9ecf594875a9c9526f326c69e3_1920w_2560h.jpg",
+      "sourceTitle": "巨巨巨简单，年夜饭必备～白灼鱿鱼",
+      "author": "厨房笔记-fang",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-e2d634ed556c8529.webp",
+      "verified": true,
+      "sha256": "e2d634ed556c85290ca79fb21b08735376c803060786ebe18b0805535d985540",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "白灼鱿鱼"
+    },
+    {
+      "sourcePage": "https://www.orientalcuisine.my/recipe/姜葱炒鱿鱼/",
+      "sourceImage": "https://www.orientalcuisine.my/wp-content/uploads/2020/10/20201010_170630_0000.png",
+      "sourceTitle": "姜葱炒鱿鱼",
+      "author": "美味风采 Oriental Cuisine",
+      "license": "unknown",
+      "matchReason": "菜谱标题明确姜葱炒鱿鱼，鱿鱼花刀、姜葱同炒；采用正文独立成菜照片，保留来源水印。",
+      "src": "assets/food-3d283f66169330aa.webp",
+      "verified": true,
+      "sha256": "3d283f66169330aa094eb087cc37b845ccd9740d4d56fafa21cad7bc1c8c4ce5",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "姜葱炒鱿鱼"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/107360281/",
+      "sourceImage": "https://i2.chuimg.com/c311fec0face43118f3b9694a48f9743_1920w_2560h.jpg",
+      "sourceTitle": "姜葱炒花甲，简单复刻大排档招牌菜！",
+      "author": "Rola的厨房日记",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-0a1e9a8c9710f3bf.webp",
+      "verified": true,
+      "sha256": "0a1e9a8c9710f3bfa74ab3f6c221eb8de75d87845c97038b83dc4097c837d4b7",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "姜葱炒花甲"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/100160878/",
+      "sourceImage": "https://i2.chuimg.com/302f6c28883711e6b87c0242ac110003_640w_640h.jpg",
+      "sourceTitle": "炒田螺",
+      "author": "清风徐来-8",
+      "license": "unknown",
+      "matchReason": "菜谱为炒田螺；主料田螺，做法含姜、红葱头、葱花及辣椒紫苏，照片见田螺而非花螺；属于姜葱香料炒田螺呈现。",
+      "src": "assets/food-aad0324b241ce271.webp",
+      "verified": true,
+      "sha256": "aad0324b241ce271bf5b3dc9de973d890a4a0a0715385c2b02dae1b9d7b54606",
+      "dimensions": [
+        800,
+        800
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "姜葱炒田螺"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/104505132/",
+      "sourceImage": "https://i2.chuimg.com/247ad0db2aff4b44aa3fb24e22605d3e_3024w_4032h.jpg",
+      "sourceTitle": "姜葱爆炒圣子/大排档做法/快手菜/姜葱爆炒蛏子王",
+      "author": "一只叫法克的鱿鱼",
+      "license": "unknown",
+      "matchReason": "标题姜葱爆炒蛏子王，竹蛏主料，非花甲",
+      "src": "assets/food-23b5b9bc860bff30.webp",
+      "verified": true,
+      "sha256": "23b5b9bc860bff3065fba6f6c7c66185272d5e38212a56b3d7dee84cba183aee",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "姜葱炒圣子皇"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/104647868/",
+      "sourceImage": "https://i2.chuimg.com/b466fb6fd93045c187c05f61facda114_871w_697h.jpg",
+      "sourceTitle": "姜葱炒蟹",
+      "author": "北漂竹的居家料理",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-cfa77b5ecc7ceee1.webp",
+      "verified": true,
+      "sha256": "cfa77b5ecc7ceee1ddd3808d260a2add6e54c70eca827692ab3e9180d7fa9320",
+      "dimensions": [
+        871,
+        697
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "姜葱炒蟹"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106006280/",
+      "sourceImage": "https://i2.chuimg.com/7047292e5f894c278e1c6309541205b7_684w_912h.jpg",
+      "sourceTitle": "生蚝煎蛋",
+      "author": "台北凤梨鱼",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-2c34f9e2032a21ed.webp",
+      "verified": true,
+      "sha256": "2c34f9e2032a21edc0e5184b6a08eb28034131fd01ac4246cc2988e174e35a08",
+      "dimensions": [
+        684,
+        912
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "生蚝煎蛋"
+    },
+    {
+      "sourcePage": "https://k.sina.cn/article_6433466104_17f76e6f800100eaaj.html",
+      "sourceImage": "https://k.sinaimg.cn/n/sinacn10122/207/w640h367/20181228/ad02-hqwsysy7932008.bmp/w700d1q75cms.jpg",
+      "sourceTitle": "风味独特的番茄焖鲍鱼做法 风味独特无腥味 这个做法简直绝了！",
+      "author": "金牛座吃货这行",
+      "license": "unknown",
+      "matchReason": "真实番茄块与整鲍鱼焖制，主料及做法匹配番茄鲍鱼煲；原照片碟装，器皿不同。",
+      "src": "assets/food-3b68dead23a33436.webp",
+      "verified": true,
+      "sha256": "3b68dead23a334360d46c2e9cedf721fe0c850c55613b8a500e2e9ff94d7670a",
+      "dimensions": [
+        800,
+        459
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "番茄鲍鱼煲"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106524908/",
+      "sourceImage": "https://i2.chuimg.com/55bf4ed348aa493c82a7db372e72e5d5_1280w_1280h.jpg",
+      "sourceTitle": "蒜蓉粉丝蒸鱿鱼",
+      "author": "五行缺肉肉",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-ee3586356f08447e.webp",
+      "verified": true,
+      "sha256": "ee3586356f08447e39defb9782593a1c5821bf3fb4ff75f5c1ca2e70dc477fcd",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "鱿鱼蒸粉丝"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/107364897/",
+      "sourceImage": "https://i2.chuimg.com/f61bf850de624705a90d28eb798f8ae7_1280w_1706h.jpg",
+      "sourceTitle": "苦瓜炒蛋",
+      "author": "月月妈妈的菜",
+      "license": "unknown",
+      "matchReason": "来源标题为苦瓜炒蛋，配料仅苦瓜、鸡蛋；照片可见绿色带棱苦瓜片和黄色炒蛋。",
+      "src": "assets/food-4e97184b900d0b2c.webp",
+      "verified": true,
+      "sha256": "4e97184b900d0b2cc7cb7e67b73b372e42cd12bb54be569b356eb56859bce009",
+      "dimensions": [
+        751,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "苦瓜炒蛋"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/104225044/",
+      "sourceImage": "https://i2.chuimg.com/634da216c71948d184534a718d285c78_1080w_1440h.jpg",
+      "sourceTitle": "玉米炒腰果",
+      "author": "我家我厨",
+      "license": "unknown",
+      "matchReason": "来源玉米炒腰果；照片中腰果和黄色玉米粒均清晰，还有配方中的胡萝卜、青椒和火腿丁。",
+      "src": "assets/food-16aec34ac3949d8b.webp",
+      "verified": true,
+      "sha256": "16aec34ac3949d8b2b6e03462d662e100a8e0f3e253647b63cc584c0ff7f333a",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "炒腰果玉米"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/106424781/",
+      "sourceImage": "https://i2.chuimg.com/88aff9a688ad45fb93fa058c0b002d09_756w_749h.jpg",
+      "sourceTitle": "腐乳通心菜（蒜蓉通菜的升级版本）",
+      "author": "小蟹私厨",
+      "license": "unknown",
+      "matchReason": "来源明确使用通心菜及红腐乳；照片可见空心茎叶和红腐乳酱汁。",
+      "src": "assets/food-0c0e00095be51789.webp",
+      "verified": true,
+      "sha256": "0c0e00095be517892715949d6a571cf3c3836de65d133bc0c5b342677025da90",
+      "dimensions": [
+        800,
+        793
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "腐乳通心菜"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/103458736/",
+      "sourceImage": "https://i2.chuimg.com/90055da18dcc4877ba3f9053c29a3837_508w_300h.jpg",
+      "sourceTitle": "蒜蓉炒青菜",
+      "author": "手机用户8953_4hfi",
+      "license": "unknown",
+      "matchReason": "来源标题精确匹配；图为成盘绿色菜茎叶配明显蒜蓉，与配料表青菜和蒜一致。",
+      "src": "assets/food-11399ad4d5b03739.webp",
+      "verified": true,
+      "sha256": "11399ad4d5b037395facf96b8ae68d9f9528f0665208f864bc64a14abec42411",
+      "dimensions": [
+        800,
+        472
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "蒜蓉炒青菜"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/107697353/",
+      "sourceImage": "https://i2.chuimg.com/0b5682b27ad849d39e1a27df65b9ff04_1280w_1706h.jpg",
+      "sourceTitle": "清炒莴笋",
+      "author": "野生小鱼仔",
+      "license": "unknown",
+      "matchReason": "来源清炒莴笋；图为去皮莴笋浅绿色薄片成菜，无肉类替代。",
+      "src": "assets/food-e81d1a2e98db6b70.webp",
+      "verified": true,
+      "sha256": "e81d1a2e98db6b707cf4cbef6fe2f6c2c8f79695a75d2841a3f6faca4e6246fc",
+      "dimensions": [
+        751,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "炒莴笋"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/106240503/",
+      "sourceImage": "https://i2.chuimg.com/7dd3302d10c14b83a93bf30f0e78ff2d_823w_656h.jpg",
+      "sourceTitle": "清炒生菜",
+      "author": "吃货的美食口袋",
+      "license": "unknown",
+      "matchReason": "来源清炒生菜；图为宽薄卷曲生菜叶和蒜，叶形与上海青、通心菜均明显不同。",
+      "src": "assets/food-d719541be9abe7a1.webp",
+      "verified": true,
+      "sha256": "d719541be9abe7a12673d2e36b5bc3371ff376247df912cd8693e54de1a6884a",
+      "dimensions": [
+        823,
+        656
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "炒生菜"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/100601574/",
+      "sourceImage": "https://i2.chuimg.com/b1d7b2ce89dd11e6b87c0242ac110003_1536w_2048h.jpg",
+      "sourceTitle": "清炒荷兰豆",
+      "author": "yss爱厨房",
+      "license": "unknown",
+      "matchReason": "来源清炒荷兰豆；照片可见整片扁平绿色豆荚。",
+      "src": "assets/food-2e45b473a5d3cb34.webp",
+      "verified": true,
+      "sha256": "2e45b473a5d3cb34327da20846846d6345d76dffacde7af75c4c904143c53960",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "炒荷兰豆"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/106098768/",
+      "sourceImage": "https://i2.chuimg.com/556de8cd6a944622b7e5958733f5ec8e_2448w_3264h.jpg",
+      "sourceTitle": "清炒油麦菜",
+      "author": "上官绾儿",
+      "license": "unknown",
+      "matchReason": "按用户括注油麦菜匹配，来源清炒油麦菜；图为切段油麦菜，与其他青菜图不同。",
+      "src": "assets/food-bf620adee1f369c8.webp",
+      "verified": true,
+      "sha256": "bf620adee1f369c8a6e7be94175763d0bc3a3571b3888d27fcf97449a7141530",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "炒麦菜"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/100444391/",
+      "sourceImage": "https://i2.chuimg.com/7e3b272888d611e6a9a10242ac110002_638w_618h.jpg",
+      "sourceTitle": "炒莲藕",
+      "author": "冰炎玥",
+      "license": "unknown",
+      "matchReason": "来源炒莲藕；照片可见多孔藕片，配料仅莲藕、蒜、酱油。",
+      "src": "assets/food-b0a3ca819bdc31ed.webp",
+      "verified": true,
+      "sha256": "b0a3ca819bdc31eda4553cdd2b97a4f2151d08d4333aa5b8d21b0ab432ca5738",
+      "dimensions": [
+        800,
+        775
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "炒莲藕"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/104216751/",
+      "sourceImage": "https://i2.chuimg.com/d6d2bc75fa244e20b611af40d5c127e4_1040w_780h.jpg",
+      "sourceTitle": "清炒上海青",
+      "author": "陪你吃饭",
+      "license": "unknown",
+      "matchReason": "来源清炒上海青；图为粗嫩青色菜梗配深绿色叶片。",
+      "src": "assets/food-7cc2e2e57c0ad5fa.webp",
+      "verified": true,
+      "sha256": "7cc2e2e57c0ad5fad78e54b3a4d551303453071b37ea7c63f6f4df9f699479d2",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "炒上海青"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/106157671/",
+      "sourceImage": "https://i2.chuimg.com/ac10f3d84ebd4fd690889cd5330f3819_1080w_864h.jpg",
+      "sourceTitle": "上汤菠菜",
+      "author": "小xia米",
+      "license": "unknown",
+      "matchReason": "来源上汤菠菜；图有菠菜茎叶、咸鸭蛋及浅色汤汁，非普通干炒青菜。",
+      "src": "assets/food-2fa71c63b2763dff.webp",
+      "verified": true,
+      "sha256": "2fa71c63b2763dff1a2cb103d0870cd39faede3eceac8c825a153177296a810d",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "上汤菠菜"
+    },
+    {
+      "src": "assets/veg-soup-crayfish.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Xiang_la_long_xia.jpg",
+      "author": "Anonymous Powered",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
+      "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
+      "verified": true,
+      "dish": "小龙虾"
+    },
+    {
+      "src": "assets/veg-soup-fish.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg",
+      "author": "Alpha from Melbourne, Australia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
+      "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
+      "verified": true,
+      "dish": "酸菜鱼"
+    },
+    {
+      "src": "assets/veg-soup-barbecue.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E7%96%86%E7%BE%8A%E8%82%89%E4%B8%B2_Uyghur_Lamb_Skewers_-_Chengdu_%281649050244%29.jpg",
+      "author": "Alpha from Melbourne, Australia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
+      "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
+      "verified": true,
+      "dish": "烧烤"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/103500743/",
+      "sourceImage": "https://i2.chuimg.com/a3568edf4efb4d47bbc1657cab875c8b_1080w_748h.jpg",
+      "sourceTitle": "潮州砂锅粥",
+      "author": "年年有鱼官方账号",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-b30e2df6c088e782.webp",
+      "verified": true,
+      "sha256": "b30e2df6c088e782c9a18d16db7b598c1204b07c817f3e95976873c264d80a5b",
+      "dimensions": [
+        1000,
+        693
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "砂锅粥"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/107557989/",
+      "sourceImage": "https://i2.chuimg.com/8bd9ce7fa5c041cca027b7e25957d920_1920w_2560h.jpg",
+      "sourceTitle": "小猪盖被，铁锅粘花卷，东北一锅炖都是这个菜哈。好吃极了，一锅居然都被父子吃光光，简单又美味，一起做吧做吧！",
+      "author": "南不南北不北",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-6104ccdb24c4f880.webp",
+      "verified": true,
+      "sha256": "6104ccdb24c4f88066ce0f6cde0b7acf9b0c3c5a29d97502519495885eb86c74",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "东北一锅炖"
+    },
+    {
+      "src": "assets/veg-soup-hotpot.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chongqing_hotpot.1.jpg",
+      "author": "Hawyih",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+      "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
+      "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
+      "verified": true,
+      "dish": "火锅"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/102936699/",
+      "sourceImage": "https://i2.chuimg.com/561714a3f73b4b879c151805f9cdb754_1000w_750h.jpg",
+      "sourceTitle": "卤水拼盘――最简单的开一锅卤汤",
+      "author": "prettytree美树",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-865d0e48639e3a4d.webp",
+      "verified": true,
+      "sha256": "865d0e48639e3a4de127d83bb58b902cb4dfaf0444a7c5c9c0bfbfa08c6fa64f",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "卤水拼盘"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/1014841/",
+      "sourceImage": "https://i2.chuimg.com/3ddc751e875111e6a9a10242ac110002_3284w_2288h.jpg",
+      "sourceTitle": "清甜椰子鸡汤",
+      "author": "莫言catlam",
+      "license": "unknown",
+      "matchReason": "来源清甜椰子鸡汤；照片有白色椰肉长条与鸡肉块，汤中另有配方红枣及猪骨。",
+      "src": "assets/food-54836edb870b18fb.webp",
+      "verified": true,
+      "sha256": "54836edb870b18fbcc23c5f4d3a9f152d14d963b02c0f5727030e07371f78088",
+      "dimensions": [
+        1000,
+        696
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "椰子鸡汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/128303/",
+      "sourceImage": "https://i2.chuimg.com/760d683c870e11e6a9a10242ac110002_525w_700h.jpg",
+      "sourceTitle": "花旗参炖鸡汤",
+      "author": "幸福-Apple",
+      "license": "unknown",
+      "matchReason": "来源花旗参炖鸡汤，配料明确花旗参和鸡；照片可见参切片、鸡肉和汤，保留原摄影水印。",
+      "src": "assets/food-f06ce07b5a4ad266.webp",
+      "verified": true,
+      "sha256": "f06ce07b5a4ad266a50fbed77c587dbe5bf0108b2a3b1358b1d109595cc505b8",
+      "dimensions": [
+        600,
+        800
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "花旗参鸡汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/106094069/",
+      "sourceImage": "https://i2.chuimg.com/842a884899354d168b2d9d6e0865c788_2664w_2000h.jpg",
+      "sourceTitle": "猪肚鸡汤",
+      "author": "龙宝宝陈诺",
+      "license": "unknown",
+      "matchReason": "来源猪肚鸡汤；图上清楚可见大片褶皱猪肚、鸡肉及乳白汤底，已弃用猪肚不可见的初选。",
+      "src": "assets/food-0bc9d6e3e8f32098.webp",
+      "verified": true,
+      "sha256": "0bc9d6e3e8f32098e120b708fdf894af9cca3747e61a4197943a121ca7a7ee88",
+      "dimensions": [
+        1000,
+        751
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "猪肚鸡汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/104764192/",
+      "sourceImage": "https://i2.chuimg.com/12692065c14e4d0ab8ccc9501b1cccb5_1600w_1067h.jpg",
+      "sourceTitle": "胡萝卜玉米排骨汤（最简单好喝的广东老火靓汤）",
+      "author": "莉莉菲",
+      "license": "unknown",
+      "matchReason": "来源精确匹配；成碗照片同时清楚显示玉米段、胡萝卜片和带骨排骨。",
+      "src": "assets/food-79be2e5463dd7c5a.webp",
+      "verified": true,
+      "sha256": "79be2e5463dd7c5a703799cbd0ea75c8df645800e7696b85170a85e16b46069d",
+      "dimensions": [
+        1000,
+        667
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "胡萝卜玉米排骨汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/103933386/",
+      "sourceImage": "https://i2.chuimg.com/a71a7852a360443fba9ab08836ad7801_1080w_871h.jpg",
+      "sourceTitle": "经典美味的客家猪肉汤",
+      "author": "Janic_o",
+      "license": "unknown",
+      "matchReason": "来源客家猪肉汤，配方仅猪瘦肉加水调味并盖盅隔水炖；图为清汤瘦肉片，符合清蒸猪肉汤做法。",
+      "src": "assets/food-c012417d947c2e9a.webp",
+      "verified": true,
+      "sha256": "c012417d947c2e9a4d0ca87d889650858e4825a62ac2a98bae1216ce4063489b",
+      "dimensions": [
+        1000,
+        806
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "清蒸猪肉汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/1069422/",
+      "sourceImage": "https://i2.chuimg.com/17b1341e878411e6b87c0242ac110003_400w_602h.jpg",
+      "sourceTitle": "莲藕排骨汤",
+      "author": "烟火间",
+      "license": "unknown",
+      "matchReason": "来源莲藕排骨汤；图上同时可见多孔藕段和带骨排骨，另有配方黄豆。",
+      "src": "assets/food-2bb1a90ac034e414.webp",
+      "verified": true,
+      "sha256": "2bb1a90ac034e4146a70650af30bc436ec1e2c2714e0ff6259df00643e8e7936",
+      "dimensions": [
+        532,
+        800
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "莲藕排骨汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/142766/",
+      "sourceImage": "https://i2.chuimg.com/97bc9a5e871111e6b87c0242ac110003_600w_402h.jpg",
+      "sourceTitle": "茶树菇煲鸡汤",
+      "author": "宅与路上",
+      "license": "unknown",
+      "matchReason": "来源茶树菇煲鸡汤，图可见茶树菇长柄小伞与鸡肉汤；这是茶树菇鸡汤版本，菜单未明确汤底时需保留此说明。",
+      "matchCaveat": "来源茶树菇煲鸡汤，图可见茶树菇长柄小伞与鸡肉汤；这是茶树菇鸡汤版本，菜单未明确汤底时需保留此说明。",
+      "src": "assets/food-8b4c28e2c5bc6eea.webp",
+      "verified": true,
+      "sha256": "8b4c28e2c5bc6eea3e1d1af7bdcc50cc2281fd7d0d622cb49c161a069851bbec",
+      "dimensions": [
+        800,
+        536
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "茶树菇汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/106998363/",
+      "sourceImage": "https://i2.chuimg.com/2e63b8a9007240bf928109f997be9cca_1280w_576h.jpg",
+      "sourceTitle": "红枣枸杞炖鸡汤",
+      "author": "你温暖我心",
+      "license": "unknown",
+      "matchReason": "来源红枣枸杞炖鸡汤；成汤照片可见鸡、红枣、枸杞，摆盘中亦有枣和枸杞，配料表完全对应。",
+      "src": "assets/food-753833598e672da8.webp",
+      "verified": true,
+      "sha256": "753833598e672da832f44d70c6f17a1b574c333107612117a0e8a6a3b38e71ff",
+      "dimensions": [
+        1000,
+        450
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "红枣枸杞鸡汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/102422168/",
+      "sourceImage": "https://i2.chuimg.com/26a7bbce5c004c048e83a366efa0ddc9_1200w_800h.jpg",
+      "sourceTitle": "老鸭冬瓜汤",
+      "author": "钰儿美食Y",
+      "license": "unknown",
+      "matchReason": "来源老鸭冬瓜汤；成碗图可见鸭腿和冬瓜块，汤底浅色。",
+      "src": "assets/food-bfdd3fc2060e241e.webp",
+      "verified": true,
+      "sha256": "bfdd3fc2060e241eb4ff5ff556aedea62e7294079ddc464f7faf7302dc9e3cc3",
+      "dimensions": [
+        1000,
+        667
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "老鸭冬瓜汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/106424639/",
+      "sourceImage": "https://i2.chuimg.com/502e5a76b0e9488d9980a1632c9f38a2_1158w_1230h.jpg",
+      "sourceTitle": "番茄蛋花汤",
+      "author": "欢欢早安",
+      "license": "unknown",
+      "matchReason": "来源番茄蛋花汤；图中红色番茄汤和大量黄色蛋花明显，仅用于此一道汤。",
+      "src": "assets/food-0492cf71739aa2cf.webp",
+      "verified": true,
+      "sha256": "0492cf71739aa2cfd78dfb49b9858f8a22734eafb38f531e03eefbac8d197dbc",
+      "dimensions": [
+        942,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "番茄蛋花汤"
+    },
+    {
+      "sourcePage": "https://jingyan.baidu.com/article/e4d08ffddaf7604ed2f60d91.html",
+      "sourceImage": "https://exp-picture.cdn.bcebos.com/d400248ca608a50f642e773a10cec7f88b77ff68.jpg",
+      "sourceTitle": "紫菜肉丸汤的做法",
+      "author": "美食杰（百度认证账号）",
+      "license": "unknown",
+      "matchReason": "来源标题紫菜肉丸汤，配料明确紫菜及肉丸；成碗照片可见紫菜和肉丸，来源未进一步注明肉丸使用猪肉或牛肉。",
+      "matchCaveat": "来源标题紫菜肉丸汤，配料明确紫菜及肉丸；成碗照片可见紫菜和肉丸，来源未进一步注明肉丸使用猪肉或牛肉。",
+      "src": "assets/food-4638231b7d50c621.webp",
+      "verified": true,
+      "sha256": "4638231b7d50c6215f20a32010db624058e762e5ddf032e979ed6a5321869920",
+      "dimensions": [
+        600,
+        800
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "紫菜肉丸汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/104641787/",
+      "sourceImage": "https://i2.chuimg.com/76a9ebd5047a4a52bb86626163008450_3024w_2417h.jpg",
+      "sourceTitle": "丝瓜汤",
+      "author": "朱古力xs",
+      "license": "unknown",
+      "matchReason": "来源丝瓜汤，配料仅丝瓜和可选蒜；图是清汤绿色丝瓜片，已弃用含番茄虾丸的手机截图。",
+      "src": "assets/food-f55d6dc493cd12da.webp",
+      "verified": true,
+      "sha256": "f55d6dc493cd12daf2680d36a6fdf82a160c7e2784a973735cf64beff2814021",
+      "dimensions": [
+        1000,
+        799
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "丝瓜汤"
+    },
+    {
+      "sourcePage": "https://m.xiachufang.com/recipe/106087827/",
+      "sourceImage": "https://i2.chuimg.com/fc38baf58bd141908ac8f4f71bb30d81_3506w_2806h.jpg",
+      "sourceTitle": "如何将枸杞汤煮到最好",
+      "author": "被注册的阿海",
+      "license": "unknown",
+      "matchReason": "来源如何将枸杞汤煮到最好，步骤明确摘枸杞叶、煮梗后去梗、再下叶与蛋花；图为枸杞叶蛋花汤。此处枸杞指叶，若用户指枸杞果汤则不能使用本图。",
+      "matchCaveat": "来源如何将枸杞汤煮到最好，步骤明确摘枸杞叶、煮梗后去梗、再下叶与蛋花；图为枸杞叶蛋花汤。此处枸杞指叶，若用户指枸杞果汤则不能使用本图。",
+      "src": "assets/food-395fd44e6d0bffdc.webp",
+      "verified": true,
+      "sha256": "395fd44e6d0bffdc56f4acff73730469be68bd65bc4f88222e8d16e51f8b86e6",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "caption": "枸杞叶汤示意",
+      "dish": "枸杞汤"
+    },
+    {
+      "src": "assets/veg-soup-chicken-feet.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Passion_fruit_boneless_chicken_feet.jpg",
+      "author": "François Nguyen",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
+      "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
+      "verified": true,
+      "dish": "凉拌鸡爪"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/107149634/",
+      "sourceImage": "https://i2.chuimg.com/98cedca1d1984cefae3da5f619564a42_1280w_853h.jpg",
+      "sourceTitle": "酸辣带感的凉拌八爪鱼",
+      "author": "橙不方",
+      "license": "unknown",
+      "matchReason": "同菜谱完成图：章鱼切段、柠檬、小青柑与辣椒凉拌，主料与酸辣做法匹配",
+      "src": "assets/food-7c098463ec275b30.webp",
+      "verified": true,
+      "sha256": "7c098463ec275b3026232f1e7807f920509c52dd20750d525c443582e0aa9bdf",
+      "dimensions": [
+        900,
+        600
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "酸辣八爪鱼"
+    },
+    {
+      "src": "assets/veg-soup-cucumber.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pai_huang_gua.jpg",
+      "author": "John",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
+      "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
+      "verified": true,
+      "dish": "凉拌青瓜"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/107631851/",
+      "sourceImage": "https://i2.chuimg.com/86c0c355b4e54dcfaea60dd3caf9bf0c_1920w_2560h.jpg",
+      "sourceTitle": "酸辣毛豆",
+      "author": "王小厨Jessie",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-408d2ad824c7ecd3.webp",
+      "verified": true,
+      "sha256": "408d2ad824c7ecd3005d6076578c9070e4be555cd4b34a5589cc944c1c306255",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "酸辣毛豆"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/107129021/",
+      "sourceImage": "https://i2.chuimg.com/9be857d1f6074e649094fe05824b9b2a_1080w_1080h.jpg",
+      "sourceTitle": "凉拌八爪鱼",
+      "author": "Imely",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-a900dd82faf5932a.webp",
+      "verified": true,
+      "sha256": "a900dd82faf5932a6fc06d44381e00d20d9cfc6137b62266ef44846b470af732",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "label": "凉拌八爪鱼",
+      "dish": "凉拌八爪鱼虾"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106494970/",
+      "sourceImage": "https://i2.chuimg.com/c2b8a712d1eb4662a1066292bd2284dd_1916w_2558h.jpg",
+      "sourceTitle": "无油！清爽开胃！！泰式风味｜柠檬酸辣凉拌虾",
+      "author": "烟火间",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-f8cbb60e88686630.webp",
+      "verified": true,
+      "sha256": "f8cbb60e88686630569e635808f2e93b68708aaf2b3c2a604800ec44f0aa32e8",
+      "dimensions": [
+        749,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "label": "凉拌虾",
+      "dish": "凉拌八爪鱼虾"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/105966061/",
+      "sourceImage": "https://i2.chuimg.com/cba175f7a2834f55bbd1da9b2c6767ae_750w_1000h.jpg",
+      "sourceTitle": "酸豆角炒猪生肠",
+      "author": "小趴菜爱吃菜",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-53b3065a39610e9d.webp",
+      "verified": true,
+      "sha256": "53b3065a39610e9d749c63d4caf387f291698bdd7bc574df2bca82e1f684801f",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "dish": "酸豆角炒生肠"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/107476345/",
+      "sourceImage": "https://i2.chuimg.com/58a0b9627565465690f083480d103647_1080w_1440h.jpg",
+      "sourceTitle": "白灼鱿鱼",
+      "author": "DD_獨角戯",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-08f32343421acbf7.webp",
+      "verified": true,
+      "sha256": "08f32343421acbf7d356ccfd0595ab091748227aa809cd0e395c3fa6e850401f",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "label": "白灼鱿鱼",
+      "dish": "白灼鱿鱼+花螺"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/104164863/",
+      "sourceImage": "https://i2.chuimg.com/9d796690504e43189cc218eaa47996db_684w_684h.jpg",
+      "sourceTitle": "3分钟快手菜「白灼花螺」",
+      "author": "广东厨娘食光记",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-5ac2d933c05c76bb.webp",
+      "verified": true,
+      "sha256": "5ac2d933c05c76bb02657f4fcf817d8ae0ff8e8eb002ec3618549bd1f1c9c4be",
+      "dimensions": [
+        684,
+        684
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "label": "白灼花螺",
+      "dish": "白灼鱿鱼+花螺"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/106813055/",
+      "sourceImage": "https://i2.chuimg.com/f44e8311ce8a4a3693b8d8b5188916eb_1080w_864h.jpg",
+      "sourceTitle": "客家百酿之酿蛋（蛋饺）-简单少量材料做成一道菜",
+      "author": "宝宝贝贝_妈",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-c429db7139bf90cd.webp",
+      "verified": true,
+      "sha256": "c429db7139bf90cd4ae01584b2e4cc2bfb00be43c628b7b9b2ecd436f67936bb",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "label": "酿蛋",
+      "dish": "酿蛋+苦瓜"
+    },
+    {
+      "sourcePage": "https://www.xiachufang.com/recipe/100516234/",
+      "sourceImage": "https://i2.chuimg.com/8034d5ac892f11e6a9a10242ac110002_1280w_1280h.jpg",
+      "sourceTitle": "客家酿苦瓜",
+      "author": "tangtang瑭瑭",
+      "license": "unknown",
+      "matchReason": "标题、食材和成菜主图匹配",
+      "src": "assets/food-a5ec09249b972714.webp",
+      "verified": true,
+      "sha256": "a5ec09249b972714b6e283468e17c926126b574956639a1a06dded85d7232090",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "label": "酿苦瓜",
+      "dish": "酿蛋+苦瓜"
+    }
+  ]
+}
