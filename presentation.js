@@ -1,13 +1,26 @@
-/* V7 display-only metadata. Stable menu IDs and order state stay in menu.js/app.js. */
+/* V8 display-only metadata. Stable menu IDs and order state stay in menu.js/app.js. */
+const bannerSizes = {"signature":{"mobile":214,"desktop":427},"signature-set":{"mobile":214,"desktop":427},"hakka":{"mobile":214,"desktop":427},"pork":{"mobile":213,"desktop":427},"chicken":{"mobile":213,"desktop":427},"beef":{"mobile":213,"desktop":427},"seafood":{"mobile":213,"desktop":428},"vegetables":{"mobile":213,"desktop":427},"soup":{"mobile":213,"desktop":427},"night":{"mobile":213,"desktop":427}};
 const menuArt = id => ({
-  src: `assets/banner-v7-${id}-w640.webp`,
-  srcset: `assets/banner-v7-${id}-w320.webp 320w, assets/banner-v7-${id}-w640.webp 640w`,
-  width: 640, height: 213
+  src: `assets/banner-v8-${id}-mobile-w640.webp`,
+  srcset: `assets/banner-v8-${id}-mobile-w320.webp 320w, assets/banner-v8-${id}-mobile-w640.webp 640w`,
+  width: 640, height: bannerSizes[id].mobile,
+  desktop: {
+    srcset: `assets/banner-v8-${id}-desktop-w640.webp 640w, assets/banner-v8-${id}-desktop-w1280.webp 1280w`,
+    width: 1280, height: bannerSizes[id].desktop, displayRatio: 6, centeredContentBand: true
+  },
+  textIncluded: true
 });
 window.MENU_PRESENTATION = {
-  version: 7,
-  masthead: { ...menuArt('masthead'), src: 'assets/banner-v7-masthead-w1280.webp', srcset: 'assets/banner-v7-masthead-w320.webp 320w, assets/banner-v7-masthead-w640.webp 640w, assets/banner-v7-masthead-w1280.webp 1280w', width: 1280, height: 427 },
-  badge: { src: 'assets/signature-seal-v6.webp', mobile: 44, compact: 36, desktop: 48, offset: 8 },
+  version: 8,
+  masthead: { src: 'assets/seafood-banquet-v5.webp', srcset: 'assets/responsive/seafood-banquet-v5-w320.webp 320w, assets/responsive/seafood-banquet-v5-w640.webp 640w, assets/responsive/seafood-banquet-v5-w1280.webp 1280w', width: 1280, height: 960, textIncluded: false },
+  badge: { src: 'assets/signature-seal-v8.webp', mobile: 48, compact: 40, desktop: 52, offset: 8, textIncluded: true },
+  featuredMedia: {
+    'dish-029': {
+      src: 'assets/food-v8-egg-feature-w640.webp',
+      srcset: 'assets/food-v8-egg-feature-w320.webp 320w, assets/food-v8-egg-feature-w640.webp 640w',
+      width: 640, height: 480, copy: '蛋香软嫩，包裹肉汁'
+    }
+  },
   categories: {
     signature: { art: menuArt('signature'), subtitle: '来家吃饭，先尝这几道', eyebrow: '家里的拿手味', navigation: 'signature' },
     'signature-set': { art: menuArt('signature-set'), subtitle: '一桌海鲜好菜，一次配齐', eyebrow: '海鲜当主角', navigation: 'banquet' },

@@ -1,5 +1,5 @@
 {
-  "checked": "2026-09-13",
+  "checked": "2026-09-14",
   "dishCount": 106,
   "imageCount": 106,
   "note": "菜图仅供示意。unknown 表示未核实独立再使用许可，不表示开放许可。V5 单菜酿蛋和 V6 指定八道菜图由内置 ImageGen 生成，并在相应条目注明；海鲜版套餐图由用户提供且保持不变。响应式图片只进行等比缩放和压缩，来源沿用原图。",
@@ -1705,21 +1705,24 @@
       "generationPrompt": "Use case: photorealistic-natural. Create exactly ONE photorealistic Chinese home-menu food photograph, landscape 4:3. Unified series styling: camera about 45 degrees above the table, one centered unbranded ivory ceramic serving vessel with its complete rim visible, dish occupies about 75% of the frame with a little breathing room; pale light-oak wooden tabletop; soft natural window light; appetizing realistic food textures, true ingredient colors, fresh modest green garnish. No people, hands, utensils, extra dishes, table clutter, collage, panels, typography, titles, captions, numbers, badges, labels, watermarks, signatures or logos anywhere. Keep the entire dish in focus. Subject: Hakka egg-skin pork dumplings together with pork-stuffed bitter melon, 酿蛋＋苦瓜, ONE coherent round ivory platter. On the same plate, five golden half-moon dumplings made of THIN FRIED EGG SKIN wrapped around cooked minced pork, with gently crinkled natural egg-skin edges; one dumpling is cut open showing its beige cooked pork filling and thin yellow egg wrapper. Alongside them are six thick ridged green BITTER MELON RINGS, each cavity completely filled with lightly browned cooked pork mince. Both foods equally clear and recognizable. Sparse chopped scallions, tiny amount of clear savory sauce. Egg wrappers are made of egg, NOT wheat pastry, NOT boiled eggs, NOT omelette with bitter-melon slices mixed in, NOT deviled eggs. Natural coherent single-plate composition, not split images."
     },
     {
-      "sourcePage": "https://m.thepaper.cn/newsDetail_forward_8480619",
-      "sourceImage": "https://imagepphcloud.thepaper.cn/pph/image/80/175/902.jpg",
-      "sourceTitle": "仲恺：碌鹅浓香飘百年",
-      "author": "惠州日报 / 仲恺发布（照片作者未单独标明）",
-      "license": "unknown",
-      "matchReason": "地方报道明确为潼湖/沥林碌鹅，鹅先煎并反复翻身，再焖煮浇汁；本文成菜实拍为带酱汁的斩件碌鹅。",
-      "src": "assets/food-863d3cfb41f9b484.webp",
+      "src": "assets/food-v8-goose-w640.webp",
+      "srcset": "assets/food-v8-goose-w320.webp 320w, assets/food-v8-goose-w640.webp 640w",
+      "width": 640,
+      "height": 480,
+      "sourceTitle": "碌鹅 · V8 清晰菜图",
+      "author": "ImageGen",
+      "license": "AI-generated",
       "verified": true,
-      "sha256": "863d3cfb41f9b484bc0672c6a3d32e12ca787fee6690ff1a199ba7411e0b7160",
+      "position": "50% 50%",
+      "sha256": "2b5ed219fe2d531d59d77643f6cd183b830593186a0001dcca48257bdd958d2b",
       "dimensions": [
         640,
-        423
+        480
       ],
-      "position": "50% 52%",
-      "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。",
+      "sourcePage": "V8图片生成记录.json",
+      "referenceSourcePage": "https://m.thepaper.cn/newsDetail_forward_8480619",
+      "matchReason": "以原碌鹅照片作为菜品形态参考，保留斩件鹅肉与酱汁；重新生成自然光、暖木桌和白色器皿的菜品示意。",
+      "modifications": "内置ImageGen参考生成；仅等比编码WebP。",
       "dishName": "碌鹅"
     },
     {
@@ -1830,5 +1833,6 @@
       "note": "由用户指定用于海鲜版套餐展示；套餐具体菜品以文字清单为准。",
       "dishName": "海鲜套餐家宴"
     }
-  ]
+  ],
+  "v8GeneratedRecord": "V8图片生成记录.json"
 }

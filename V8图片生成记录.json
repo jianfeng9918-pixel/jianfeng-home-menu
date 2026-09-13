@@ -1,0 +1,996 @@
+{
+  "version": 8,
+  "updated": "2026-09-14",
+  "direction": "含字栏目横幅、招牌奖章、碌鹅菜图和客家招牌酿蛋首卡卖点；菜名与阅读布局保持左对齐，仅按钮内部文字居中。",
+  "masthead": "复用用户提供的家宴照片原文件与响应式文件；只在网页上虚化及叠加绿色遮罩，标题与黄标保留网页文字。",
+  "desktopStrategy": "工具输出约3:1源图，桌面独立构图集中于中央横带；6:1容器内以94%宽居中展示，隐藏画布上下留白，保护完整文字与食物主体。",
+  "processing": "仅等比缩放和WebP编码；无外部文字合成、去背景或图像修补。",
+  "assets": [
+    {
+      "id": "signature",
+      "variant": "mobile",
+      "title": "家里招牌",
+      "subtitle": "来家吃饭，先尝这几道",
+      "prompt": "Use case: ads-marketing. Premium finished Chinese restaurant section banner illustration. Refined fresh spring-green gouache dining table, light-filled vivid green, cream/light-gold bold clear upright Chinese typography and thin elegant gold outline. Delicate painterly texture, appetizing ivory dishware and golden food. No UI, no buttons, no prices, no extra words, no logo or watermark. Only these TWO lines, all exactly centered: line1 \"家里招牌\", line2 \"来家吃饭，先尝这几道\". On the LEFT edge show an ivory platter of rich glossy Cantonese braised pork slices, braised tofu and a few egg halves (卤水拼盘). On the RIGHT edge show an ivory platter of glossy amber Cantonese braised goose pieces with skin (碌鹅). Never include any stuffed eggs, egg-skin dumplings, egg jiao, omelette dumplings, fried eggs or egg-shaped parcels; the only eggs allowed are small boiled egg halves on the braised platter.\nMOBILE: exact3:1 full canvas, 2172×724 pixels. All text horizontally and vertically center aligned as a single block. Main-title Chinese glyphs are extremely large 200pixels tall (about28% of canvas height). Subtitle glyphs must be LARGE BOLD 100pixels tall (about14% of canvas height, absolutely at least HALF of headline glyph height), not a small caption. At240px whole-image width the title is22px and subtitle11px. Subtitle may span75% of image width. Central76% image width is clean green for the text block. Food is only at extreme left12% and right12%; reduce food importance to prioritize the giant typography. If title is two lines, preserve both title lines at equal200px size; fit the 3 text lines comfortably within630px of canvasheight. Gold outline follows fullcanvas with20px margin.",
+      "visualReview": {
+        "originalReviewed": true,
+        "originalReviewMethod": "generatedImage原图逐张目视",
+        "textCorrect": true,
+        "centered": true,
+        "finalReviewMethod": "view_image，逐张查看完整640WebP及240px等比审看图",
+        "reviewedWidths": [
+          640,
+          240
+        ],
+        "mobile240Readable": true,
+        "approxTitlePxAt240": 26,
+        "approxSubtitlePxAt240": 12,
+        "note": "所有主标题及副标题与指定文本逐字核对正确，均在画面中央对齐；无按钮、价格、品牌杂字。卤水拼盘与碌鹅；未出现酿蛋或蛋角，拼盘仅有卤水熟蛋半只。240px实宽标题及副标题清晰完整，约26px／12px。",
+        "result": "pass"
+      },
+      "sourceRatio": 2.9931034482758623,
+      "displayRatio": 3,
+      "processing": "完整原图等比缩放和WebP编码；未裁切、未调色、未外部修改图片内容。",
+      "sourceSHA256": "22a661e7ce1ec96d28d334f959a8be0c23c5b1f0673fa63cdb1a4f56d8d35e5b",
+      "dimensions": {
+        "width": 2170,
+        "height": 725,
+        "mode": "RGB"
+      },
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-signature-mobile-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 12550,
+          "sha256": "8494011fbe57bed13c8a50bedb5d5b0d4ebb16ff159afd310b6636c79311db4c"
+        },
+        {
+          "file": "assets/banner-v8-signature-mobile-w640.webp",
+          "width": 640,
+          "height": 214,
+          "bytes": 39856,
+          "sha256": "38a12ebe2997b6b41fa732577de6e061a562087ae8762ab4e25c8301f7b500e5"
+        }
+      ]
+    },
+    {
+      "id": "signature",
+      "variant": "desktop",
+      "title": "家里招牌",
+      "subtitle": "来家吃饭，先尝这几道",
+      "prompt": "Use case: ads-marketing. Premium finished Chinese restaurant section banner illustration. Refined fresh spring-green gouache dining table, light-filled vivid green, cream/light-gold bold clear upright Chinese typography and thin elegant gold outline. Delicate painterly texture, appetizing ivory dishware and golden food. No UI, no buttons, no prices, no extra words, no logo or watermark. Only these TWO lines, all exactly centered: line1 \"家里招牌\", line2 \"来家吃饭，先尝这几道\". On the LEFT edge show an ivory platter of rich glossy Cantonese braised pork slices, braised tofu and a few egg halves (卤水拼盘). On the RIGHT edge show an ivory platter of glossy amber Cantonese braised goose pieces with skin (碌鹅). Never include any stuffed eggs, egg-skin dumplings, egg jiao, omelette dumplings, fried eggs or egg-shaped parcels; the only eggs allowed are small boiled egg halves on the braised platter.\nDESKTOP DESIGN INSIDE 3:1 SOURCE CANVAS: produce complete2172×724 opaque RGB original. Its eventual display is a centered6:1 horizontal strip, so ALL visible composition must be strictly within the central50% height: x0..2172, y181..543. Entire top quarter y0..181 and entire bottom quarter y543..724 must be totally plain solid freshgreen (#4b8b36), no food, no text, no line, no flowers, no texture details, no objects. Inside central horizontal strip only, create a VERY WIDE SHORT6:1 full food banner, centered title about120px tall and subtitle about54px tall. Only within this strip add a thin elegant gold rectangular outline, fullbounds x15..2157,y190..534. BOTH side food compositions are entirely contained in this band and its safe margins, horizontally arranged. Title and subtitle in the exact stripcenter, 8% vertical padding, no letter or food extends beyond band. IMPORTANT: do not make a normal3:1 scene; actually design a6:1 banner occupying only the CENTER HALF-height strip of the3:1 green canvas.",
+      "visualReview": {
+        "originalReviewed": true,
+        "originalReviewMethod": "generatedImage原图逐张目视",
+        "textCorrect": true,
+        "centered": true,
+        "finalReviewMethod": "view_image，逐张查看完整1280WebP",
+        "reviewedWidths": [
+          1280
+        ],
+        "note": "所有主标题及副标题与指定文本逐字核对正确，均在画面中央对齐；无按钮、价格、品牌杂字。卤水拼盘与碌鹅；未出现酿蛋或蛋角，拼盘仅有卤水熟蛋半只。桌面内容独立排布在源图中央约半高横带，上下为空绿；细边框边界有数像素浮动，按主线程94%图宽居中显示的6:1窗口可保全内容。未裁切源文件。",
+        "result": "pass"
+      },
+      "sourceRatio": 3.0,
+      "displayRatio": 6,
+      "processing": "完整原图等比缩放和WebP编码；未裁切、未调色、未外部修改图片内容。",
+      "sourceSHA256": "000e5a20550ca8fb15d3c7207e7dbb86332f2d05e2a78dcb169284a52d1a7574",
+      "dimensions": {
+        "width": 2172,
+        "height": 724,
+        "mode": "RGB"
+      },
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-signature-desktop-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 17896,
+          "sha256": "01b0a3b398fc35a9d5cf2e120cbfa9311d75a446af66f9de6e2e23fa042c6bd0"
+        },
+        {
+          "file": "assets/banner-v8-signature-desktop-w1280.webp",
+          "width": 1280,
+          "height": 427,
+          "bytes": 56856,
+          "sha256": "0d7b53e24f33bf52dadcdaf12f8bf003c9f382352ce527b07016e9c5d7f9cd58"
+        }
+      ]
+    },
+    {
+      "id": "signature-set",
+      "variant": "mobile",
+      "title": "剑锋家招牌套餐",
+      "subtitle": "一桌海鲜好菜，一次配齐",
+      "prompt": "Use case: ads-marketing. Premium finished Chinese restaurant section banner illustration. Refined fresh spring-green gouache dining table, light-filled vivid green, cream/light-gold bold clear upright Chinese typography and thin elegant gold outline. Delicate painterly texture, appetizing ivory dishware and golden food. No UI, no buttons, no prices, no extra words, no logo or watermark. Only these THREE lines, all exactly centered: line1 \"剑锋家招牌套餐\", line2 \"（海鲜版）\", line3 \"一桌海鲜好菜，一次配齐\". Lines1 and2 are the title. An abundant illustrated seafood family banquet at the two outer edges: complete cooked fish in an ivory platter, warm golden-orange shrimps and open clam shells in ivory bowls. Keep the main central typography unobstructed. This is newly illustrated banquet ambience, not a reproduction or edit of any uploaded photograph.\nMOBILE: exact3:1 full canvas, 2172×724 pixels. All text horizontally and vertically center aligned as a single block. Main-title Chinese glyphs are extremely large 200pixels tall (about28% of canvas height). Subtitle glyphs must be LARGE BOLD 100pixels tall (about14% of canvas height, absolutely at least HALF of headline glyph height), not a small caption. At240px whole-image width the title is22px and subtitle11px. Subtitle may span75% of image width. Central76% image width is clean green for the text block. Food is only at extreme left12% and right12%; reduce food importance to prioritize the giant typography. If title is two lines, preserve both title lines at equal200px size; fit the 3 text lines comfortably within630px of canvasheight. Gold outline follows fullcanvas with20px margin.",
+      "visualReview": {
+        "originalReviewed": true,
+        "originalReviewMethod": "generatedImage原图逐张目视",
+        "textCorrect": true,
+        "centered": true,
+        "finalReviewMethod": "view_image，逐张查看完整640WebP及240px等比审看图",
+        "reviewedWidths": [
+          640,
+          240
+        ],
+        "mobile240Readable": true,
+        "approxTitlePxAt240": 20,
+        "approxSubtitlePxAt240": 10,
+        "note": "所有主标题及副标题与指定文本逐字核对正确，均在画面中央对齐；无按钮、价格、品牌杂字。鱼、虾、贝类海鲜宴席，主标题分两层，海鲜版括号完整。三层套餐标题实际约20–21px／副题约10px，略小于22／11目标但完整可读；主线程已明确保留现版、不重生成。",
+        "result": "pass"
+      },
+      "sourceRatio": 2.9931034482758623,
+      "displayRatio": 3,
+      "processing": "完整原图等比缩放和WebP编码；未裁切、未调色、未外部修改图片内容。",
+      "sourceSHA256": "7fe81b2ac2389b345a7b1bdf36a204d274778df2b36273a5ec9e3a70f4c1197e",
+      "dimensions": {
+        "width": 2170,
+        "height": 725,
+        "mode": "RGB"
+      },
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-signature-set-mobile-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 12850,
+          "sha256": "6ff00f25ed19c98588e036e554c7152aa1d88ceac7646fcfd9752b74bb210dec"
+        },
+        {
+          "file": "assets/banner-v8-signature-set-mobile-w640.webp",
+          "width": 640,
+          "height": 214,
+          "bytes": 38822,
+          "sha256": "9ed1a3afed8d5d19bbded05f4d4a2a31fc32ef59d349cc095c4778f6d06db729"
+        }
+      ]
+    },
+    {
+      "id": "signature-set",
+      "variant": "desktop",
+      "title": "剑锋家招牌套餐",
+      "subtitle": "一桌海鲜好菜，一次配齐",
+      "prompt": "Use case: ads-marketing. Premium finished Chinese restaurant section banner illustration. Refined fresh spring-green gouache dining table, light-filled vivid green, cream/light-gold bold clear upright Chinese typography and thin elegant gold outline. Delicate painterly texture, appetizing ivory dishware and golden food. No UI, no buttons, no prices, no extra words, no logo or watermark. Only these THREE lines, all exactly centered: line1 \"剑锋家招牌套餐\", line2 \"（海鲜版）\", line3 \"一桌海鲜好菜，一次配齐\". Lines1 and2 are the title. An abundant illustrated seafood family banquet at the two outer edges: complete cooked fish in an ivory platter, warm golden-orange shrimps and open clam shells in ivory bowls. Keep the main central typography unobstructed. This is newly illustrated banquet ambience, not a reproduction or edit of any uploaded photograph.\nDESKTOP DESIGN INSIDE 3:1 SOURCE CANVAS: produce complete2172×724 opaque RGB original. Its eventual display is a centered6:1 horizontal strip, so ALL visible composition must be strictly within the central50% height: x0..2172, y181..543. Entire top quarter y0..181 and entire bottom quarter y543..724 must be totally plain solid freshgreen (#4b8b36), no food, no text, no line, no flowers, no texture details, no objects. Inside central horizontal strip only, create a VERY WIDE SHORT6:1 full food banner, centered title about120px tall and subtitle about54px tall. Only within this strip add a thin elegant gold rectangular outline, fullbounds x15..2157,y190..534. BOTH side food compositions are entirely contained in this band and its safe margins, horizontally arranged. Title and subtitle in the exact stripcenter, 8% vertical padding, no letter or food extends beyond band. IMPORTANT: do not make a normal3:1 scene; actually design a6:1 banner occupying only the CENTER HALF-height strip of the3:1 green canvas.",
+      "visualReview": {
+        "originalReviewed": true,
+        "originalReviewMethod": "generatedImage原图逐张目视",
+        "textCorrect": true,
+        "centered": true,
+        "finalReviewMethod": "view_image，逐张查看完整1280WebP",
+        "reviewedWidths": [
+          1280
+        ],
+        "note": "所有主标题及副标题与指定文本逐字核对正确，均在画面中央对齐；无按钮、价格、品牌杂字。鱼、虾、贝类海鲜宴席，主标题分两层，海鲜版括号完整。桌面内容独立排布在源图中央约半高横带，上下为空绿；细边框边界有数像素浮动，按主线程94%图宽居中显示的6:1窗口可保全内容。未裁切源文件。",
+        "result": "pass"
+      },
+      "sourceRatio": 2.998618784530387,
+      "displayRatio": 6,
+      "processing": "完整原图等比缩放和WebP编码；未裁切、未调色、未外部修改图片内容。",
+      "sourceSHA256": "6697c53c75ef93318d3667f6dd662a1553753d33307f0db8dae8d479a7198fe0",
+      "dimensions": {
+        "width": 2171,
+        "height": 724,
+        "mode": "RGB"
+      },
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-signature-set-desktop-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 17680,
+          "sha256": "c21f45345c32000464c9d11fdb9f589fcca0f793aceb9039def4e17bcac2fb52"
+        },
+        {
+          "file": "assets/banner-v8-signature-set-desktop-w1280.webp",
+          "width": 1280,
+          "height": 427,
+          "bytes": 56902,
+          "sha256": "e05b59581b6565f56370c7335d403a4b31148a70168b79f86d8848aea5d8d923"
+        }
+      ]
+    },
+    {
+      "id": "hakka",
+      "variant": "mobile",
+      "title": "客家经典",
+      "subtitle": "一口家乡味，几道拿手菜",
+      "prompt": "Use case: ads-marketing. Premium finished Chinese restaurant section banner illustration. Refined fresh spring-green gouache dining table, light-filled vivid green, cream/light-gold bold clear upright Chinese typography and thin elegant gold outline. Delicate painterly texture, appetizing ivory dishware and golden food. No UI, no buttons, no prices, no extra words, no logo or watermark. Only these TWO lines, all exactly centered: line1 \"客家经典\", line2 \"一口家乡味，几道拿手菜\". At the two outer edges, an ivory dish of golden Hakka stuffed tofu blocks with cooked minced pork filling clearly visible in the center of each tofu block, and a warm terracotta casserole filled with a homely stew. Real recognizable appetizing food.\nMOBILE: exact3:1 full canvas, 2172×724 pixels. All text horizontally and vertically center aligned as a single block. Main-title Chinese glyphs are extremely large 200pixels tall (about28% of canvas height). Subtitle glyphs must be LARGE BOLD 100pixels tall (about14% of canvas height, absolutely at least HALF of headline glyph height), not a small caption. At240px whole-image width the title is22px and subtitle11px. Subtitle may span75% of image width. Central76% image width is clean green for the text block. Food is only at extreme left12% and right12%; reduce food importance to prioritize the giant typography. If title is two lines, preserve both title lines at equal200px size; fit the 3 text lines comfortably within630px of canvasheight. Gold outline follows fullcanvas with20px margin.",
+      "visualReview": {
+        "originalReviewed": true,
+        "originalReviewMethod": "generatedImage原图逐张目视",
+        "textCorrect": true,
+        "centered": true,
+        "finalReviewMethod": "view_image，逐张查看完整640WebP及240px等比审看图",
+        "reviewedWidths": [
+          640,
+          240
+        ],
+        "mobile240Readable": true,
+        "approxTitlePxAt240": 26,
+        "approxSubtitlePxAt240": 12,
+        "note": "所有主标题及副标题与指定文本逐字核对正确，均在画面中央对齐；无按钮、价格、品牌杂字。肉馅酿豆腐与暖陶瓦煲可辨。240px实宽标题及副标题清晰完整，约26px／12px。",
+        "result": "pass"
+      },
+      "sourceRatio": 2.9931034482758623,
+      "displayRatio": 3,
+      "processing": "完整原图等比缩放和WebP编码；未裁切、未调色、未外部修改图片内容。",
+      "sourceSHA256": "5e67f132db9d781c92d8e8900d1fae9fd2b59b4c50f8e9a3ae96ee4dd6078f12",
+      "dimensions": {
+        "width": 2170,
+        "height": 725,
+        "mode": "RGB"
+      },
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-hakka-mobile-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 12282,
+          "sha256": "99d5e495478a95d300e5fea517a14a6f63274968883169a076cb7cf18217ae57"
+        },
+        {
+          "file": "assets/banner-v8-hakka-mobile-w640.webp",
+          "width": 640,
+          "height": 214,
+          "bytes": 37572,
+          "sha256": "99c9b63cb557cbdf1fc418d38bdd6b2631391d3c299c1ea5455df87051cda317"
+        }
+      ]
+    },
+    {
+      "id": "hakka",
+      "variant": "desktop",
+      "title": "客家经典",
+      "subtitle": "一口家乡味，几道拿手菜",
+      "prompt": "Use case: ads-marketing. Premium finished Chinese restaurant section banner illustration. Refined fresh spring-green gouache dining table, light-filled vivid green, cream/light-gold bold clear upright Chinese typography and thin elegant gold outline. Delicate painterly texture, appetizing ivory dishware and golden food. No UI, no buttons, no prices, no extra words, no logo or watermark. Only these TWO lines, all exactly centered: line1 \"客家经典\", line2 \"一口家乡味，几道拿手菜\". At the two outer edges, an ivory dish of golden Hakka stuffed tofu blocks with cooked minced pork filling clearly visible in the center of each tofu block, and a warm terracotta casserole filled with a homely stew. Real recognizable appetizing food.\nDESKTOP DESIGN INSIDE 3:1 SOURCE CANVAS: produce complete2172×724 opaque RGB original. Its eventual display is a centered6:1 horizontal strip, so ALL visible composition must be strictly within the central50% height: x0..2172, y181..543. Entire top quarter y0..181 and entire bottom quarter y543..724 must be totally plain solid freshgreen (#4b8b36), no food, no text, no line, no flowers, no texture details, no objects. Inside central horizontal strip only, create a VERY WIDE SHORT6:1 full food banner, centered title about120px tall and subtitle about54px tall. Only within this strip add a thin elegant gold rectangular outline, fullbounds x15..2157,y190..534. BOTH side food compositions are entirely contained in this band and its safe margins, horizontally arranged. Title and subtitle in the exact stripcenter, 8% vertical padding, no letter or food extends beyond band. IMPORTANT: do not make a normal3:1 scene; actually design a6:1 banner occupying only the CENTER HALF-height strip of the3:1 green canvas.",
+      "visualReview": {
+        "originalReviewed": true,
+        "originalReviewMethod": "generatedImage原图逐张目视",
+        "textCorrect": true,
+        "centered": true,
+        "finalReviewMethod": "view_image，逐张查看完整1280WebP",
+        "reviewedWidths": [
+          1280
+        ],
+        "note": "所有主标题及副标题与指定文本逐字核对正确，均在画面中央对齐；无按钮、价格、品牌杂字。肉馅酿豆腐与暖陶瓦煲可辨。桌面内容独立排布在源图中央约半高横带，上下为空绿；细边框边界有数像素浮动，按主线程94%图宽居中显示的6:1窗口可保全内容。未裁切源文件。",
+        "result": "pass"
+      },
+      "sourceRatio": 2.998618784530387,
+      "displayRatio": 6,
+      "processing": "完整原图等比缩放和WebP编码；未裁切、未调色、未外部修改图片内容。",
+      "sourceSHA256": "4df3e1f28b1fdb25b42aa7094150b43754aa7692e171449ad81377d66ef1cb58",
+      "dimensions": {
+        "width": 2171,
+        "height": 724,
+        "mode": "RGB"
+      },
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-hakka-desktop-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 16740,
+          "sha256": "da5b9aee674e06324a0e92ab411bd3a2e86be74dfbe284282809edda15c7456e"
+        },
+        {
+          "file": "assets/banner-v8-hakka-desktop-w1280.webp",
+          "width": 1280,
+          "height": 427,
+          "bytes": 56832,
+          "sha256": "d44949103c7657c6362afcfd8e5a550fcb19a5f3a42cbe121928a13509cc222f"
+        }
+      ]
+    },
+    {
+      "id": "pork",
+      "variant": "mobile",
+      "title": "下饭肉菜",
+      "subtitle": "新鲜买菜，又好吃又下饭",
+      "prompt": "Use case: ads-marketing. Premium finished Chinese restaurant section banner illustration. Refined fresh spring-green gouache dining table, light-filled vivid green, cream/light-gold bold clear upright Chinese typography and thin elegant gold outline. Delicate painterly texture, appetizing ivory dishware and golden food. No UI, no buttons, no prices, no extra words, no logo or watermark. Only these TWO lines, all exactly centered: line1 \"下饭肉菜\", line2 \"新鲜买菜，又好吃又下饭\". At the two outer edges, a warm dark wok of glossy cooked pork slices stir-fried with fresh green peppers and scallions, subtle steam, accompanied by a small ivory rice bowl. Real recognizable appetizing food, not raw meat.\nMOBILE: exact3:1 full canvas, 2172×724 pixels. All text horizontally and vertically center aligned as a single block. Main-title Chinese glyphs are extremely large 200pixels tall (about28% of canvas height). Subtitle glyphs must be LARGE BOLD 100pixels tall (about14% of canvas height, absolutely at least HALF of headline glyph height), not a small caption. At240px whole-image width the title is22px and subtitle11px. Subtitle may span75% of image width. Central76% image width is clean green for the text block. Food is only at extreme left12% and right12%; reduce food importance to prioritize the giant typography. If title is two lines, preserve both title lines at equal200px size; fit the 3 text lines comfortably within630px of canvasheight. Gold outline follows fullcanvas with20px margin.",
+      "visualReview": {
+        "originalReviewed": true,
+        "originalReviewMethod": "generatedImage原图逐张目视",
+        "textCorrect": true,
+        "centered": true,
+        "finalReviewMethod": "view_image，逐张查看完整640WebP及240px等比审看图",
+        "reviewedWidths": [
+          640,
+          240
+        ],
+        "mobile240Readable": true,
+        "approxTitlePxAt240": 26,
+        "approxSubtitlePxAt240": 12,
+        "note": "所有主标题及副标题与指定文本逐字核对正确，均在画面中央对齐；无按钮、价格、品牌杂字。熟肉片、青椒、热锅小炒与米饭可辨。240px实宽标题及副标题清晰完整，约26px／12px。",
+        "result": "pass"
+      },
+      "sourceRatio": 2.998618784530387,
+      "displayRatio": 3,
+      "processing": "完整原图等比缩放和WebP编码；未裁切、未调色、未外部修改图片内容。",
+      "sourceSHA256": "c0ca8124a115446173a4431cd6d74f39f8e5d3d068ff5a86735d905978036205",
+      "dimensions": {
+        "width": 2171,
+        "height": 724,
+        "mode": "RGB"
+      },
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-pork-mobile-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 12546,
+          "sha256": "087b10ed4877768db68b5ce8d74b9c50567b52381da38d666b1c64d87674016f"
+        },
+        {
+          "file": "assets/banner-v8-pork-mobile-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 34470,
+          "sha256": "3c3d6c0b8a41b8cb738315750f513e1bac204e1d7da578f1e25d3afd75a8b9dd"
+        }
+      ]
+    },
+    {
+      "id": "pork",
+      "variant": "desktop",
+      "title": "下饭肉菜",
+      "subtitle": "新鲜买菜，又好吃又下饭",
+      "prompt": "Use case: ads-marketing. Premium finished Chinese restaurant section banner illustration. Refined fresh spring-green gouache dining table, light-filled vivid green, cream/light-gold bold clear upright Chinese typography and thin elegant gold outline. Delicate painterly texture, appetizing ivory dishware and golden food. No UI, no buttons, no prices, no extra words, no logo or watermark. Only these TWO lines, all exactly centered: line1 \"下饭肉菜\", line2 \"新鲜买菜，又好吃又下饭\". At the two outer edges, a warm dark wok of glossy cooked pork slices stir-fried with fresh green peppers and scallions, subtle steam, accompanied by a small ivory rice bowl. Real recognizable appetizing food, not raw meat.\nDESKTOP DESIGN INSIDE 3:1 SOURCE CANVAS: produce complete2172×724 opaque RGB original. Its eventual display is a centered6:1 horizontal strip, so ALL visible composition must be strictly within the central50% height: x0..2172, y181..543. Entire top quarter y0..181 and entire bottom quarter y543..724 must be totally plain solid freshgreen (#4b8b36), no food, no text, no line, no flowers, no texture details, no objects. Inside central horizontal strip only, create a VERY WIDE SHORT6:1 full food banner, centered title about120px tall and subtitle about54px tall. Only within this strip add a thin elegant gold rectangular outline, fullbounds x15..2157,y190..534. BOTH side food compositions are entirely contained in this band and its safe margins, horizontally arranged. Title and subtitle in the exact stripcenter, 8% vertical padding, no letter or food extends beyond band. IMPORTANT: do not make a normal3:1 scene; actually design a6:1 banner occupying only the CENTER HALF-height strip of the3:1 green canvas.",
+      "visualReview": {
+        "originalReviewed": true,
+        "originalReviewMethod": "generatedImage原图逐张目视",
+        "textCorrect": true,
+        "centered": true,
+        "finalReviewMethod": "view_image，逐张查看完整1280WebP",
+        "reviewedWidths": [
+          1280
+        ],
+        "note": "所有主标题及副标题与指定文本逐字核对正确，均在画面中央对齐；无按钮、价格、品牌杂字。熟肉片、青椒、热锅小炒与米饭可辨。桌面内容独立排布在源图中央约半高横带，上下为空绿；细边框边界有数像素浮动，按主线程94%图宽居中显示的6:1窗口可保全内容。未裁切源文件。",
+        "result": "pass"
+      },
+      "sourceRatio": 3.0,
+      "displayRatio": 6,
+      "processing": "完整原图等比缩放和WebP编码；未裁切、未调色、未外部修改图片内容。",
+      "sourceSHA256": "974e96a639c453d77155fdca46079d8b8af077da5a02869e790af4fe76974d50",
+      "dimensions": {
+        "width": 2172,
+        "height": 724,
+        "mode": "RGB"
+      },
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-pork-desktop-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 17124,
+          "sha256": "b551b446ca881970c9c8190d00a2796f588a9664967f3c4c700067b0cb65fdec"
+        },
+        {
+          "file": "assets/banner-v8-pork-desktop-w1280.webp",
+          "width": 1280,
+          "height": 427,
+          "bytes": 59378,
+          "sha256": "fc97561f6bd372cc73745dddd387c5e4442118651e3aa458bfb3b6716457b06f"
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "variant": "mobile",
+      "title": "鸡肉与蛋",
+      "subtitle": "鲜嫩有滋味，家常也好吃",
+      "prompt": "Use case: ads-marketing. Premium finished Chinese restaurant section banner illustration. Refined fresh spring-green gouache dining table, light-filled vivid green, cream/light-gold bold clear upright Chinese typography and thin elegant gold outline. Delicate painterly texture, appetizing ivory dishware and golden food. No UI, no buttons, no prices, no extra words, no logo or watermark. Only these TWO lines, all exactly centered: line1 \"鸡肉与蛋\", line2 \"鲜嫩有滋味，家常也好吃\". At the two outer edges, an ivory platter of home-cooked chopped golden-skin chicken with pale cooked meat visible, scallions and ginger, plus a small warm terracotta bowl. Chicken must be the visible featured food.\nMOBILE: exact3:1 full canvas, 2172×724 pixels. All text horizontally and vertically center aligned as a single block. Main-title Chinese glyphs are extremely large 200pixels tall (about28% of canvas height). Subtitle glyphs must be LARGE BOLD 100pixels tall (about14% of canvas height, absolutely at least HALF of headline glyph height), not a small caption. At240px whole-image width the title is22px and subtitle11px. Subtitle may span75% of image width. Central76% image width is clean green for the text block. Food is only at extreme left12% and right12%; reduce food importance to prioritize the giant typography. If title is two lines, preserve both title lines at equal200px size; fit the 3 text lines comfortably within630px of canvasheight. Gold outline follows fullcanvas with20px margin.",
+      "visualReview": {
+        "originalReviewed": true,
+        "originalReviewMethod": "generatedImage原图逐张目视",
+        "textCorrect": true,
+        "centered": true,
+        "finalReviewMethod": "view_image，逐张查看完整640WebP及240px等比审看图",
+        "reviewedWidths": [
+          640,
+          240
+        ],
+        "mobile240Readable": true,
+        "approxTitlePxAt240": 26,
+        "approxSubtitlePxAt240": 12,
+        "note": "所有主标题及副标题与指定文本逐字核对正确，均在画面中央对齐；无按钮、价格、品牌杂字。金黄熟鸡肉盘、姜葱和暖陶小碗可辨。240px实宽标题及副标题清晰完整，约26px／12px。",
+        "result": "pass"
+      },
+      "sourceRatio": 3.0,
+      "displayRatio": 3,
+      "processing": "完整原图等比缩放和WebP编码；未裁切、未调色、未外部修改图片内容。",
+      "sourceSHA256": "ed7a2416b0c76edd564c112bbf16397db4b0ed9a4333add43c5a894ef069a912",
+      "dimensions": {
+        "width": 2172,
+        "height": 724,
+        "mode": "RGB"
+      },
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-chicken-mobile-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 12336,
+          "sha256": "4fb97f9aa5b2e4f058716540a30d28d1c41da6f94fee157b68e8a9ffe6bfebc7"
+        },
+        {
+          "file": "assets/banner-v8-chicken-mobile-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 37298,
+          "sha256": "ef5abfad14844156ae9bcba1e1491adf06c5fc4b4cc6a2121cefe5aa4cd10740"
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "variant": "desktop",
+      "title": "鸡肉与蛋",
+      "subtitle": "鲜嫩有滋味，家常也好吃",
+      "prompt": "Use case: ads-marketing. Premium finished Chinese restaurant section banner illustration. Refined fresh spring-green gouache dining table, light-filled vivid green, cream/light-gold bold clear upright Chinese typography and thin elegant gold outline. Delicate painterly texture, appetizing ivory dishware and golden food. No UI, no buttons, no prices, no extra words, no logo or watermark. Only these TWO lines, all exactly centered: line1 \"鸡肉与蛋\", line2 \"鲜嫩有滋味，家常也好吃\". At the two outer edges, an ivory platter of home-cooked chopped golden-skin chicken with pale cooked meat visible, scallions and ginger, plus a small warm terracotta bowl. Chicken must be the visible featured food.\nDESKTOP DESIGN INSIDE 3:1 SOURCE CANVAS: produce complete2172×724 opaque RGB original. Its eventual display is a centered6:1 horizontal strip, so ALL visible composition must be strictly within the central50% height: x0..2172, y181..543. Entire top quarter y0..181 and entire bottom quarter y543..724 must be totally plain solid freshgreen (#4b8b36), no food, no text, no line, no flowers, no texture details, no objects. Inside central horizontal strip only, create a VERY WIDE SHORT6:1 full food banner, centered title about120px tall and subtitle about54px tall. Only within this strip add a thin elegant gold rectangular outline, fullbounds x15..2157,y190..534. BOTH side food compositions are entirely contained in this band and its safe margins, horizontally arranged. Title and subtitle in the exact stripcenter, 8% vertical padding, no letter or food extends beyond band. IMPORTANT: do not make a normal3:1 scene; actually design a6:1 banner occupying only the CENTER HALF-height strip of the3:1 green canvas.",
+      "visualReview": {
+        "originalReviewed": true,
+        "originalReviewMethod": "generatedImage原图逐张目视",
+        "textCorrect": true,
+        "centered": true,
+        "finalReviewMethod": "view_image，逐张查看完整1280WebP",
+        "reviewedWidths": [
+          1280
+        ],
+        "note": "所有主标题及副标题与指定文本逐字核对正确，均在画面中央对齐；无按钮、价格、品牌杂字。金黄熟鸡肉盘、姜葱和暖陶小碗可辨。桌面内容独立排布在源图中央约半高横带，上下为空绿；细边框边界有数像素浮动，按主线程94%图宽居中显示的6:1窗口可保全内容。未裁切源文件。",
+        "result": "pass"
+      },
+      "sourceRatio": 2.998618784530387,
+      "displayRatio": 6,
+      "processing": "完整原图等比缩放和WebP编码；未裁切、未调色、未外部修改图片内容。",
+      "sourceSHA256": "d174c2811a8bf2f9abfa9c37b0e327d677340f82f64b699de1de9d64a2690b54",
+      "dimensions": {
+        "width": 2171,
+        "height": 724,
+        "mode": "RGB"
+      },
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-chicken-desktop-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 17362,
+          "sha256": "d813d79104eca53665f7b8bdc246ce537bb9cb9bfa08a6d35893154913cfcc86"
+        },
+        {
+          "file": "assets/banner-v8-chicken-desktop-w1280.webp",
+          "width": 1280,
+          "height": 427,
+          "bytes": 56906,
+          "sha256": "cf2d30c0c453a8f558f4fbd63367fd89ec77dc0f457c04e0ec1422440bc41d00"
+        }
+      ]
+    },
+    {
+      "id": "beef",
+      "variant": "mobile",
+      "title": "牛肉好菜",
+      "subtitle": "浓香或鲜嫩，挑个合口味",
+      "prompt": "Use case: ads-marketing. Create one finished, full-bleed rectangular Chinese restaurant category banner, with accurate integrated Chinese typography, not a UI screenshot.\nFresh vivid green tabletop in the #2F7D32 family fills the whole scene, with restrained soft gouache brushwork, delicate paper texture and soft warm side light. Elegant premium hand-painted food editorial art, inviting and refined, not photorealistic, not dark, not cartoon icons. Tiny warm wood notes may appear at the outer bottom corners only. Milk-white ivory ceramic, vibrant greens and appetizing warm-gold food colors. A delicate simple pale-gold hairline border is inset from all edges, elegant and quiet, with no ornamental flourishes.\nLayout is rigorously centered: exact title and subtitle are horizontally centered on the canvas and share the same vertical center line. Together the two text lines sit in the middle of the full banner. The CENTRAL 75 PERCENT of the width is clean gently textured medium-fresh green with strong contrast and no food, no steam, no props behind words. Food is integrated into the tabletop at the TWO FAR OUTER SIDES, never crossing behind the text. Do not use a left-aligned heading, do not reserve an empty side for later text, and do not place all the food on just one side.\nTypography: large HEAVY BOLD Chinese display type, refined thick Songti / restaurant sign lettering, crisp legible strokes in bright warm ivory with restrained pale-gold detail, not thin calligraphy. The title is the dominant visual element. Subtitle is smaller but clear, medium-to-bold simple Chinese type in bright ivory; enough line spacing that title and subtitle never touch. Exact simplified Chinese characters, precise spelling, no substitutions. No additional text, no English, no numbers, no brand names, no logos, no badges, no buttons, no prices, no fake writing, no watermark, no checkerboard. Keep all typography, vessel edges, and skewer tips comfortably inside the image. Food decoration must never reduce text legibility.\n\nCanvas and scale: EXACT aspect ratio 3:1, panoramic 2172 by 724 pixels. This mobile banner will be displayed at about 240 CSS pixels wide and 80 CSS pixels tall. Make the title cap height about 22 CSS pixels at that display size, corresponding to about 200 pixels in this 2172-wide original; subtitle cap height about 11 CSS pixels, corresponding to about 100 pixels. Thus the title is genuinely very large for the short banner, not a small caption. The subtitle should fit one single centered line.\nTitle text exactly: \"牛肉好菜\"\nSubtitle text exactly: \"浓香或鲜嫩，挑个合口味\"\nFood scene: Tender golden-brown beef brisket and white-radish clay casserole, appetizing chunks in glossy sauce; complete compact ivory casserole at one outer side and a very restrained complementary small serving of the same dish at the other outer side.\nNON-NEGOTIABLE TYPE SCALE: In the 2172 × 724 artwork, title glyph ink height must be at least 210 pixels and subtitle glyph ink height must be at least 105 pixels. The subtitle is genuinely LARGE, at least one-half the title height, with bold substantial strokes. At 240px display width the subtitle must read about 11.6px high, never 6–8px. The subtitle spans about 65–75% of the full canvas width, visibly WIDER than the four-character title. Do not shrink the subtitle to the width of the title. Keep both lines centered and separated by at least 40px. Reduce the size of the side food instead of shrinking either line of text. Food can be small near the outer frame edges so that the subtitle can use the central 75 percent uninterrupted.",
+      "visualReview": {
+        "status": "passed as asset; browser placement to be verified by root",
+        "method": "Generated full original visually inspected; mobile full-image proportional 240px preview individually opened with view_image; desktop exported640px source individually opened with view_image.",
+        "titleCorrect": true,
+        "subtitleCorrect": true,
+        "textChecked": "牛肉好菜 / 浓香或鲜嫩，挑个合口味",
+        "reading": "240px preview readable; strengthened subtitle now about11px rather than tiny caption.",
+        "composition": "牛腩和萝卜辨识清楚，左右奶白煲皿与绿色桌布统一。",
+        "unwantedText": "No price, buttons, brand, fake words, UI or watermark.",
+        "imageAlterations": "None except proportional resizing and WebP encoding."
+      },
+      "sourceRatio": 2.998618784530387,
+      "displayRatio": 3,
+      "sourceSHA256": "6db9e754b10093e9be6d93872ac15e1add76c20040c62a6f395815824ce31c75",
+      "dimensions": [
+        2171,
+        724
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-beef-mobile-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 13338,
+          "sha256": "12bbd9f4df34130191b121442098dede01d0436a5ec0c153cb8dd3175706b37e"
+        },
+        {
+          "file": "assets/banner-v8-beef-mobile-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 33362,
+          "sha256": "9f55555cc6a5a0c0cac5d493bc15faf59ffd1822810f16ae6a55de7f8ac426cb"
+        }
+      ]
+    },
+    {
+      "id": "beef",
+      "variant": "desktop",
+      "title": "牛肉好菜",
+      "subtitle": "浓香或鲜嫩，挑个合口味",
+      "prompt": "Use case: ads-marketing. Create one finished, full-bleed rectangular Chinese restaurant category banner, with accurate integrated Chinese typography, not a UI screenshot.\nFresh vivid green tabletop in the #2F7D32 family fills the whole scene, with restrained soft gouache brushwork, delicate paper texture and soft warm side light. Elegant premium hand-painted food editorial art, inviting and refined, not photorealistic, not dark, not cartoon icons. Tiny warm wood notes may appear at the outer bottom corners only. Milk-white ivory ceramic, vibrant greens and appetizing warm-gold food colors. A delicate simple pale-gold hairline border is inset from all edges, elegant and quiet, with no ornamental flourishes.\nLayout is rigorously centered: exact title and subtitle are horizontally centered on the canvas and share the same vertical center line. Together the two text lines sit in the middle of the full banner. The CENTRAL 60 PERCENT of the width is clean gently textured medium-fresh green with strong contrast and no food, no steam, no props behind words. Food is integrated into the tabletop at the TWO FAR OUTER SIDES, never crossing behind the text. Do not use a left-aligned heading, do not reserve an empty side for later text, and do not place all the food on just one side.\nTypography: large HEAVY BOLD Chinese display type, refined thick Songti / restaurant sign lettering, crisp legible strokes in bright warm ivory with restrained pale-gold detail, not thin calligraphy. The title is the dominant visual element. Subtitle is smaller but clear, medium-to-bold simple Chinese type in bright ivory; enough line spacing that title and subtitle never touch. Exact simplified Chinese characters, precise spelling, no substitutions. No additional text, no English, no numbers, no brand names, no logos, no badges, no buttons, no prices, no fake writing, no watermark, no checkerboard. Keep all typography, vessel edges, and skewer tips comfortably inside the image. Food decoration must never reduce text legibility.\n\nCanvas and scale: Source canvas EXACTLY 3:1, 2172 × 724 pixels. Within it, create a SEPARATE DESKTOP ULTRA-WIDE 6:1 BANNER occupying ONLY the central half of the canvas height: y=181 through y=543, width=2172. The top quarter y=0..180 and bottom quarter y=544..724 must be completely empty solid green with NO texture, NO border, NO food, NO steam, NO shadow, NO letters, nothing. This is intentional padding; the website will hide only these empty bands.\nEVERY visible design element belongs strictly INSIDE the central 6:1 band, including full food illustrations at far outer ends, the complete thin gold border around this central strip, and both complete Chinese text lines. Never put a border around the outer 3:1 canvas. Do not paint anything across y=181 or y=543. This is an independent ultra-wide composition, not a mobile banner.\nIn the central horizontal strip, the four-character title has an ink height around 120px, centered horizontally at x=1086, and the subtitle has an ink height around 54px, also centered. Both lines together are centered vertically around y=362, with comfortable line spacing. Use the outer left and right ends for complete food and reserve the middle for text. Border roughly y=193..531 and x=22..2150; ALL food and steam inside that border, not crossing it. Upper and lower padding remains the same clean solid green.\nTitle text exactly: \"牛肉好菜\"\nSubtitle text exactly: \"浓香或鲜嫩，挑个合口味\"\nFood scene: Tender golden-brown beef brisket and white-radish clay casserole, appetizing chunks in glossy sauce; complete compact ivory casserole at one outer side and a very restrained complementary small serving of the same dish at the other outer side.",
+      "visualReview": {
+        "status": "passed as asset; browser placement to be verified by root",
+        "method": "Generated full original visually inspected; mobile full-image proportional 240px preview individually opened with view_image; desktop exported640px source individually opened with view_image.",
+        "titleCorrect": true,
+        "subtitleCorrect": true,
+        "textChecked": "牛肉好菜 / 浓香或鲜嫩，挑个合口味",
+        "reading": "Chinese title and subtitle complete and centered inside desktop strip, safe from padding edges.",
+        "composition": "牛腩和萝卜辨识清楚，左右奶白煲皿与绿色桌布统一。",
+        "unwantedText": "No price, buttons, brand, fake words, UI or watermark.",
+        "imageAlterations": "None except proportional resizing and WebP encoding."
+      },
+      "sourceRatio": 3.0,
+      "displayRatio": 6,
+      "sourceSHA256": "3f7e75ce62f0cdc2fe1456872f0b1ccf17ee5406c6ba805ea5921ee16b41c1fe",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-beef-desktop-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 23042,
+          "sha256": "972fdb236346a53bd612ef792f2cb3229a3bba31cd3e2399261a3c0c73546710"
+        },
+        {
+          "file": "assets/banner-v8-beef-desktop-w1280.webp",
+          "width": 1280,
+          "height": 427,
+          "bytes": 54224,
+          "sha256": "966420c523167bebbea7cd8bed253011e22057a432f8634054575e3c8fab2c68"
+        }
+      ]
+    },
+    {
+      "id": "seafood",
+      "variant": "mobile",
+      "title": "鱼虾海鲜",
+      "subtitle": "清鲜到浓香，换着尝尝",
+      "prompt": "Use case: ads-marketing. Create one finished, full-bleed rectangular Chinese restaurant category banner, with accurate integrated Chinese typography, not a UI screenshot.\nFresh vivid green tabletop in the #2F7D32 family fills the whole scene, with restrained soft gouache brushwork, delicate paper texture and soft warm side light. Elegant premium hand-painted food editorial art, inviting and refined, not photorealistic, not dark, not cartoon icons. Tiny warm wood notes may appear at the outer bottom corners only. Milk-white ivory ceramic, vibrant greens and appetizing warm-gold food colors. A delicate simple pale-gold hairline border is inset from all edges, elegant and quiet, with no ornamental flourishes.\nLayout is rigorously centered: exact title and subtitle are horizontally centered on the canvas and share the same vertical center line. Together the two text lines sit in the middle of the full banner. The CENTRAL 75 PERCENT of the width is clean gently textured medium-fresh green with strong contrast and no food, no steam, no props behind words. Food is integrated into the tabletop at the TWO FAR OUTER SIDES, never crossing behind the text. Do not use a left-aligned heading, do not reserve an empty side for later text, and do not place all the food on just one side.\nTypography: large HEAVY BOLD Chinese display type, refined thick Songti / restaurant sign lettering, crisp legible strokes in bright warm ivory with restrained pale-gold detail, not thin calligraphy. The title is the dominant visual element. Subtitle is smaller but clear, medium-to-bold simple Chinese type in bright ivory; enough line spacing that title and subtitle never touch. Exact simplified Chinese characters, precise spelling, no substitutions. No additional text, no English, no numbers, no brand names, no logos, no badges, no buttons, no prices, no fake writing, no watermark, no checkerboard. Keep all typography, vessel edges, and skewer tips comfortably inside the image. Food decoration must never reduce text legibility.\n\nCanvas and scale: EXACT aspect ratio 3:1, panoramic 2172 by 724 pixels. This mobile banner will be displayed at about 240 CSS pixels wide and 80 CSS pixels tall. Make the title cap height about 22 CSS pixels at that display size, corresponding to about 200 pixels in this 2172-wide original; subtitle cap height about 11 CSS pixels, corresponding to about 100 pixels. Thus the title is genuinely very large for the short banner, not a small caption. The subtitle should fit one single centered line.\nTitle text exactly: \"鱼虾海鲜\"\nSubtitle text exactly: \"清鲜到浓香，换着尝尝\"\nFood scene: An elegant cooked fish on an ivory plate at the far left and warm-coral prawns with opened clams on a small ivory plate at the far right. Fish, shrimp and shells clearly recognizable.\nNON-NEGOTIABLE TYPE SCALE: In the 2172 × 724 artwork, title glyph ink height must be at least 210 pixels and subtitle glyph ink height must be at least 105 pixels. The subtitle is genuinely LARGE, at least one-half the title height, with bold substantial strokes. At 240px display width the subtitle must read about 11.6px high, never 6–8px. The subtitle spans about 65–75% of the full canvas width, visibly WIDER than the four-character title. Do not shrink the subtitle to the width of the title. Keep both lines centered and separated by at least 40px. Reduce the size of the side food instead of shrinking either line of text. Food can be small near the outer frame edges so that the subtitle can use the central 75 percent uninterrupted.",
+      "visualReview": {
+        "status": "passed as asset; browser placement to be verified by root",
+        "method": "Generated full original visually inspected; mobile full-image proportional 240px preview individually opened with view_image; desktop exported640px source individually opened with view_image.",
+        "titleCorrect": true,
+        "subtitleCorrect": true,
+        "textChecked": "鱼虾海鲜 / 清鲜到浓香，换着尝尝",
+        "reading": "240px preview readable; strengthened subtitle now about11px rather than tiny caption.",
+        "composition": "左右分别为整鱼与虾贝，食物主题正确且不进入文字区。",
+        "unwantedText": "No price, buttons, brand, fake words, UI or watermark.",
+        "imageAlterations": "None except proportional resizing and WebP encoding."
+      },
+      "sourceRatio": 2.998618784530387,
+      "displayRatio": 3,
+      "sourceSHA256": "29ac022e8604aaebe9ff72b2bd000241bf5c83096254120bb80886c383f18e1b",
+      "dimensions": [
+        2171,
+        724
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-seafood-mobile-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 14728,
+          "sha256": "fec6abb244dc5dda8cf382c9a2e8c0b362d27a4b2782bd0fdd1932f446ce2f65"
+        },
+        {
+          "file": "assets/banner-v8-seafood-mobile-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 36778,
+          "sha256": "6eaa238e2edda947a20d5f676f80d0c8d1562cefad25f4ee235c9a1dc6e883b7"
+        }
+      ]
+    },
+    {
+      "id": "seafood",
+      "variant": "desktop",
+      "title": "鱼虾海鲜",
+      "subtitle": "清鲜到浓香，换着尝尝",
+      "prompt": "Use case: ads-marketing. Create one finished, full-bleed rectangular Chinese restaurant category banner, with accurate integrated Chinese typography, not a UI screenshot.\nFresh vivid green tabletop in the #2F7D32 family fills the whole scene, with restrained soft gouache brushwork, delicate paper texture and soft warm side light. Elegant premium hand-painted food editorial art, inviting and refined, not photorealistic, not dark, not cartoon icons. Tiny warm wood notes may appear at the outer bottom corners only. Milk-white ivory ceramic, vibrant greens and appetizing warm-gold food colors. A delicate simple pale-gold hairline border is inset from all edges, elegant and quiet, with no ornamental flourishes.\nLayout is rigorously centered: exact title and subtitle are horizontally centered on the canvas and share the same vertical center line. Together the two text lines sit in the middle of the full banner. The CENTRAL 60 PERCENT of the width is clean gently textured medium-fresh green with strong contrast and no food, no steam, no props behind words. Food is integrated into the tabletop at the TWO FAR OUTER SIDES, never crossing behind the text. Do not use a left-aligned heading, do not reserve an empty side for later text, and do not place all the food on just one side.\nTypography: large HEAVY BOLD Chinese display type, refined thick Songti / restaurant sign lettering, crisp legible strokes in bright warm ivory with restrained pale-gold detail, not thin calligraphy. The title is the dominant visual element. Subtitle is smaller but clear, medium-to-bold simple Chinese type in bright ivory; enough line spacing that title and subtitle never touch. Exact simplified Chinese characters, precise spelling, no substitutions. No additional text, no English, no numbers, no brand names, no logos, no badges, no buttons, no prices, no fake writing, no watermark, no checkerboard. Keep all typography, vessel edges, and skewer tips comfortably inside the image. Food decoration must never reduce text legibility.\n\nCanvas and scale: Source canvas EXACTLY 3:1, 2172 × 724 pixels. Within it, create a SEPARATE DESKTOP ULTRA-WIDE 6:1 BANNER occupying ONLY the central half of the canvas height: y=181 through y=543, width=2172. The top quarter y=0..180 and bottom quarter y=544..724 must be completely empty solid green with NO texture, NO border, NO food, NO steam, NO shadow, NO letters, nothing. This is intentional padding; the website will hide only these empty bands.\nEVERY visible design element belongs strictly INSIDE the central 6:1 band, including full food illustrations at far outer ends, the complete thin gold border around this central strip, and both complete Chinese text lines. Never put a border around the outer 3:1 canvas. Do not paint anything across y=181 or y=543. This is an independent ultra-wide composition, not a mobile banner.\nIn the central horizontal strip, the four-character title has an ink height around 120px, centered horizontally at x=1086, and the subtitle has an ink height around 54px, also centered. Both lines together are centered vertically around y=362, with comfortable line spacing. Use the outer left and right ends for complete food and reserve the middle for text. Border roughly y=193..531 and x=22..2150; ALL food and steam inside that border, not crossing it. Upper and lower padding remains the same clean solid green.\nTitle text exactly: \"鱼虾海鲜\"\nSubtitle text exactly: \"清鲜到浓香，换着尝尝\"\nFood scene: An elegant cooked fish on an ivory plate at the far left and warm-coral prawns with opened clams on a small ivory plate at the far right. Fish, shrimp and shells clearly recognizable.",
+      "visualReview": {
+        "status": "passed as asset; browser placement to be verified by root",
+        "method": "Generated full original visually inspected; mobile full-image proportional 240px preview individually opened with view_image; desktop exported640px source individually opened with view_image.",
+        "titleCorrect": true,
+        "subtitleCorrect": true,
+        "textChecked": "鱼虾海鲜 / 清鲜到浓香，换着尝尝",
+        "reading": "Chinese title and subtitle complete and centered inside desktop strip, safe from padding edges.",
+        "composition": "左右分别为整鱼与虾贝，食物主题正确且不进入文字区。",
+        "unwantedText": "No price, buttons, brand, fake words, UI or watermark.",
+        "imageAlterations": "None except proportional resizing and WebP encoding."
+      },
+      "sourceRatio": 2.9931034482758623,
+      "displayRatio": 6,
+      "sourceSHA256": "de12d5742b17daef92177bacbac5c062169f49c3edd4ffb288942f939c0ef2c6",
+      "dimensions": [
+        2170,
+        725
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-seafood-desktop-w640.webp",
+          "width": 640,
+          "height": 214,
+          "bytes": 22010,
+          "sha256": "fe758974acb85a56a693c623735e1591ac6440a0653de6118cf7f6cd789e9fd0"
+        },
+        {
+          "file": "assets/banner-v8-seafood-desktop-w1280.webp",
+          "width": 1280,
+          "height": 428,
+          "bytes": 56894,
+          "sha256": "2caa6745c41f948615ef5fcb832fe9cd1e6000c3ed366635852f3124a0e087fe"
+        }
+      ]
+    },
+    {
+      "id": "vegetables",
+      "variant": "mobile",
+      "title": "蔬菜小菜",
+      "subtitle": "来点清爽，荤素刚刚好",
+      "prompt": "Use case: ads-marketing. Create one finished, full-bleed rectangular Chinese restaurant category banner, with accurate integrated Chinese typography, not a UI screenshot.\nFresh vivid green tabletop in the #2F7D32 family fills the whole scene, with restrained soft gouache brushwork, delicate paper texture and soft warm side light. Elegant premium hand-painted food editorial art, inviting and refined, not photorealistic, not dark, not cartoon icons. Tiny warm wood notes may appear at the outer bottom corners only. Milk-white ivory ceramic, vibrant greens and appetizing warm-gold food colors. A delicate simple pale-gold hairline border is inset from all edges, elegant and quiet, with no ornamental flourishes.\nLayout is rigorously centered: exact title and subtitle are horizontally centered on the canvas and share the same vertical center line. Together the two text lines sit in the middle of the full banner. The CENTRAL 75 PERCENT of the width is clean gently textured medium-fresh green with strong contrast and no food, no steam, no props behind words. Food is integrated into the tabletop at the TWO FAR OUTER SIDES, never crossing behind the text. Do not use a left-aligned heading, do not reserve an empty side for later text, and do not place all the food on just one side.\nTypography: large HEAVY BOLD Chinese display type, refined thick Songti / restaurant sign lettering, crisp legible strokes in bright warm ivory with restrained pale-gold detail, not thin calligraphy. The title is the dominant visual element. Subtitle is smaller but clear, medium-to-bold simple Chinese type in bright ivory; enough line spacing that title and subtitle never touch. Exact simplified Chinese characters, precise spelling, no substitutions. No additional text, no English, no numbers, no brand names, no logos, no badges, no buttons, no prices, no fake writing, no watermark, no checkerboard. Keep all typography, vessel edges, and skewer tips comfortably inside the image. Food decoration must never reduce text legibility.\n\nCanvas and scale: EXACT aspect ratio 3:1, panoramic 2172 by 724 pixels. This mobile banner will be displayed at about 240 CSS pixels wide and 80 CSS pixels tall. Make the title cap height about 22 CSS pixels at that display size, corresponding to about 200 pixels in this 2172-wide original; subtitle cap height about 11 CSS pixels, corresponding to about 100 pixels. Thus the title is genuinely very large for the short banner, not a small caption. The subtitle should fit one single centered line.\nTitle text exactly: \"蔬菜小菜\"\nSubtitle text exactly: \"来点清爽，荤素刚刚好\"\nFood scene: Two small shallow ivory serving plates of vibrant cooked leafy Chinese greens, one at each outer side, with fresh green leaves, pale-green tender stems and restrained warm-gold highlights.\nNON-NEGOTIABLE TYPE SCALE: In the 2172 × 724 artwork, title glyph ink height must be at least 210 pixels and subtitle glyph ink height must be at least 105 pixels. The subtitle is genuinely LARGE, at least one-half the title height, with bold substantial strokes. At 240px display width the subtitle must read about 11.6px high, never 6–8px. The subtitle spans about 65–75% of the full canvas width, visibly WIDER than the four-character title. Do not shrink the subtitle to the width of the title. Keep both lines centered and separated by at least 40px. Reduce the size of the side food instead of shrinking either line of text. Food can be small near the outer frame edges so that the subtitle can use the central 75 percent uninterrupted.",
+      "visualReview": {
+        "status": "passed as asset; browser placement to be verified by root",
+        "method": "Generated full original visually inspected; mobile full-image proportional 240px preview individually opened with view_image; desktop exported640px source individually opened with view_image.",
+        "titleCorrect": true,
+        "subtitleCorrect": true,
+        "textChecked": "蔬菜小菜 / 来点清爽，荤素刚刚好",
+        "reading": "240px preview readable; strengthened subtitle now about11px rather than tiny caption.",
+        "composition": "两侧绿叶青菜清楚，鲜绿桌布与浅金字有清晰层级。",
+        "unwantedText": "No price, buttons, brand, fake words, UI or watermark.",
+        "imageAlterations": "None except proportional resizing and WebP encoding."
+      },
+      "sourceRatio": 2.998618784530387,
+      "displayRatio": 3,
+      "sourceSHA256": "e3fa83e4c25d86694a80bacba5d053e2a35aa0a521b69e9fb64a63f920f0251f",
+      "dimensions": [
+        2171,
+        724
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-vegetables-mobile-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 14182,
+          "sha256": "ceeaecbed9de764788a63e32167ca9cc4ccf359b8cd19009e178ac671135b2fa"
+        },
+        {
+          "file": "assets/banner-v8-vegetables-mobile-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 35640,
+          "sha256": "4f6a350965352905e52690c2f3e82213db6214ba81c9f26c499fb0b113763aad"
+        }
+      ]
+    },
+    {
+      "id": "vegetables",
+      "variant": "desktop",
+      "title": "蔬菜小菜",
+      "subtitle": "来点清爽，荤素刚刚好",
+      "prompt": "Use case: ads-marketing. Create one finished, full-bleed rectangular Chinese restaurant category banner, with accurate integrated Chinese typography, not a UI screenshot.\nFresh vivid green tabletop in the #2F7D32 family fills the whole scene, with restrained soft gouache brushwork, delicate paper texture and soft warm side light. Elegant premium hand-painted food editorial art, inviting and refined, not photorealistic, not dark, not cartoon icons. Tiny warm wood notes may appear at the outer bottom corners only. Milk-white ivory ceramic, vibrant greens and appetizing warm-gold food colors. A delicate simple pale-gold hairline border is inset from all edges, elegant and quiet, with no ornamental flourishes.\nLayout is rigorously centered: exact title and subtitle are horizontally centered on the canvas and share the same vertical center line. Together the two text lines sit in the middle of the full banner. The CENTRAL 60 PERCENT of the width is clean gently textured medium-fresh green with strong contrast and no food, no steam, no props behind words. Food is integrated into the tabletop at the TWO FAR OUTER SIDES, never crossing behind the text. Do not use a left-aligned heading, do not reserve an empty side for later text, and do not place all the food on just one side.\nTypography: large HEAVY BOLD Chinese display type, refined thick Songti / restaurant sign lettering, crisp legible strokes in bright warm ivory with restrained pale-gold detail, not thin calligraphy. The title is the dominant visual element. Subtitle is smaller but clear, medium-to-bold simple Chinese type in bright ivory; enough line spacing that title and subtitle never touch. Exact simplified Chinese characters, precise spelling, no substitutions. No additional text, no English, no numbers, no brand names, no logos, no badges, no buttons, no prices, no fake writing, no watermark, no checkerboard. Keep all typography, vessel edges, and skewer tips comfortably inside the image. Food decoration must never reduce text legibility.\n\nCanvas and scale: Source canvas EXACTLY 3:1, 2172 × 724 pixels. Within it, create a SEPARATE DESKTOP ULTRA-WIDE 6:1 BANNER occupying ONLY the central half of the canvas height: y=181 through y=543, width=2172. The top quarter y=0..180 and bottom quarter y=544..724 must be completely empty solid green with NO texture, NO border, NO food, NO steam, NO shadow, NO letters, nothing. This is intentional padding; the website will hide only these empty bands.\nEVERY visible design element belongs strictly INSIDE the central 6:1 band, including full food illustrations at far outer ends, the complete thin gold border around this central strip, and both complete Chinese text lines. Never put a border around the outer 3:1 canvas. Do not paint anything across y=181 or y=543. This is an independent ultra-wide composition, not a mobile banner.\nIn the central horizontal strip, the four-character title has an ink height around 120px, centered horizontally at x=1086, and the subtitle has an ink height around 54px, also centered. Both lines together are centered vertically around y=362, with comfortable line spacing. Use the outer left and right ends for complete food and reserve the middle for text. Border roughly y=193..531 and x=22..2150; ALL food and steam inside that border, not crossing it. Upper and lower padding remains the same clean solid green.\nTitle text exactly: \"蔬菜小菜\"\nSubtitle text exactly: \"来点清爽，荤素刚刚好\"\nFood scene: Two small shallow ivory serving plates of vibrant cooked leafy Chinese greens, one at each outer side, with fresh green leaves, pale-green tender stems and restrained warm-gold highlights.",
+      "visualReview": {
+        "status": "passed as asset; browser placement to be verified by root",
+        "method": "Generated full original visually inspected; mobile full-image proportional 240px preview individually opened with view_image; desktop exported640px source individually opened with view_image.",
+        "titleCorrect": true,
+        "subtitleCorrect": true,
+        "textChecked": "蔬菜小菜 / 来点清爽，荤素刚刚好",
+        "reading": "Chinese title and subtitle complete and centered inside desktop strip, safe from padding edges.",
+        "composition": "两侧绿叶青菜清楚，鲜绿桌布与浅金字有清晰层级。",
+        "unwantedText": "No price, buttons, brand, fake words, UI or watermark.",
+        "imageAlterations": "None except proportional resizing and WebP encoding."
+      },
+      "sourceRatio": 3.0,
+      "displayRatio": 6,
+      "sourceSHA256": "fafcdb1e0258deba817306372d9634c9cfa099cb96a49e8e796533a1fbd6039a",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-vegetables-desktop-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 23008,
+          "sha256": "da415a7c1ebb5843450238977aad93c26b76794b3edb95ca7e0fe1390dcacd3d"
+        },
+        {
+          "file": "assets/banner-v8-vegetables-desktop-w1280.webp",
+          "width": 1280,
+          "height": 427,
+          "bytes": 57398,
+          "sha256": "9e80c278932d33913037349dcb557cfe75bae1f0f4cd6ac4f8ad4107dface0e2"
+        }
+      ]
+    },
+    {
+      "id": "soup",
+      "variant": "mobile",
+      "title": "热汤与粥",
+      "subtitle": "一碗热乎的，慢慢喝",
+      "prompt": "Use case: ads-marketing. Create one finished, full-bleed rectangular Chinese restaurant category banner, with accurate integrated Chinese typography, not a UI screenshot.\nFresh vivid green tabletop in the #2F7D32 family fills the whole scene, with restrained soft gouache brushwork, delicate paper texture and soft warm side light. Elegant premium hand-painted food editorial art, inviting and refined, not photorealistic, not dark, not cartoon icons. Tiny warm wood notes may appear at the outer bottom corners only. Milk-white ivory ceramic, vibrant greens and appetizing warm-gold food colors. A delicate simple pale-gold hairline border is inset from all edges, elegant and quiet, with no ornamental flourishes.\nLayout is rigorously centered: exact title and subtitle are horizontally centered on the canvas and share the same vertical center line. Together the two text lines sit in the middle of the full banner. The CENTRAL 75 PERCENT of the width is clean gently textured medium-fresh green with strong contrast and no food, no steam, no props behind words. Food is integrated into the tabletop at the TWO FAR OUTER SIDES, never crossing behind the text. Do not use a left-aligned heading, do not reserve an empty side for later text, and do not place all the food on just one side.\nTypography: large HEAVY BOLD Chinese display type, refined thick Songti / restaurant sign lettering, crisp legible strokes in bright warm ivory with restrained pale-gold detail, not thin calligraphy. The title is the dominant visual element. Subtitle is smaller but clear, medium-to-bold simple Chinese type in bright ivory; enough line spacing that title and subtitle never touch. Exact simplified Chinese characters, precise spelling, no substitutions. No additional text, no English, no numbers, no brand names, no logos, no badges, no buttons, no prices, no fake writing, no watermark, no checkerboard. Keep all typography, vessel edges, and skewer tips comfortably inside the image. Food decoration must never reduce text legibility.\n\nCanvas and scale: EXACT aspect ratio 3:1, panoramic 2172 by 724 pixels. This mobile banner will be displayed at about 240 CSS pixels wide and 80 CSS pixels tall. Make the title cap height about 22 CSS pixels at that display size, corresponding to about 200 pixels in this 2172-wide original; subtitle cap height about 11 CSS pixels, corresponding to about 100 pixels. Thus the title is genuinely very large for the short banner, not a small caption. The subtitle should fit one single centered line.\nTitle text exactly: \"热汤与粥\"\nSubtitle text exactly: \"一碗热乎的，慢慢喝\"\nFood scene: A welcoming ivory bowl of clear golden hot soup with gentle steam at one outer side, and a small ivory bowl of softly cooked pale rice congee with two tiny green scallion flecks at the other outer side.\nNON-NEGOTIABLE TYPE SCALE: In the 2172 × 724 artwork, title glyph ink height must be at least 210 pixels and subtitle glyph ink height must be at least 105 pixels. The subtitle is genuinely LARGE, at least one-half the title height, with bold substantial strokes. At 240px display width the subtitle must read about 11.6px high, never 6–8px. The subtitle spans about 65–75% of the full canvas width, visibly WIDER than the four-character title. Do not shrink the subtitle to the width of the title. Keep both lines centered and separated by at least 40px. Reduce the size of the side food instead of shrinking either line of text. Food can be small near the outer frame edges so that the subtitle can use the central 75 percent uninterrupted.",
+      "visualReview": {
+        "status": "passed as asset; browser placement to be verified by root",
+        "method": "Generated full original visually inspected; mobile full-image proportional 240px preview individually opened with view_image; desktop exported640px source individually opened with view_image.",
+        "titleCorrect": true,
+        "subtitleCorrect": true,
+        "textChecked": "热汤与粥 / 一碗热乎的，慢慢喝",
+        "reading": "240px preview readable; strengthened subtitle now about11px rather than tiny caption.",
+        "composition": "左侧热汤、右侧白粥与轻柔蒸汽符合栏目内容。",
+        "unwantedText": "No price, buttons, brand, fake words, UI or watermark.",
+        "imageAlterations": "None except proportional resizing and WebP encoding."
+      },
+      "sourceRatio": 3.0,
+      "displayRatio": 3,
+      "sourceSHA256": "8db3db14cd68fc5345fb79b3cb974367f33db5ee7c8b4938922429b8883785a1",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-soup-mobile-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 14086,
+          "sha256": "1801357f0d7bebdb88461f7192d5bdb4156deaa804c226abb98fd50a7b255caf"
+        },
+        {
+          "file": "assets/banner-v8-soup-mobile-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 32166,
+          "sha256": "645996f0fb7fb1473b44e8dd872394018e8b04e310cfa5fd1cb25e04a4d77f20"
+        }
+      ]
+    },
+    {
+      "id": "soup",
+      "variant": "desktop",
+      "title": "热汤与粥",
+      "subtitle": "一碗热乎的，慢慢喝",
+      "prompt": "Use case: ads-marketing. Create one finished, full-bleed rectangular Chinese restaurant category banner, with accurate integrated Chinese typography, not a UI screenshot.\nFresh vivid green tabletop in the #2F7D32 family fills the whole scene, with restrained soft gouache brushwork, delicate paper texture and soft warm side light. Elegant premium hand-painted food editorial art, inviting and refined, not photorealistic, not dark, not cartoon icons. Tiny warm wood notes may appear at the outer bottom corners only. Milk-white ivory ceramic, vibrant greens and appetizing warm-gold food colors. A delicate simple pale-gold hairline border is inset from all edges, elegant and quiet, with no ornamental flourishes.\nLayout is rigorously centered: exact title and subtitle are horizontally centered on the canvas and share the same vertical center line. Together the two text lines sit in the middle of the full banner. The CENTRAL 60 PERCENT of the width is clean gently textured medium-fresh green with strong contrast and no food, no steam, no props behind words. Food is integrated into the tabletop at the TWO FAR OUTER SIDES, never crossing behind the text. Do not use a left-aligned heading, do not reserve an empty side for later text, and do not place all the food on just one side.\nTypography: large HEAVY BOLD Chinese display type, refined thick Songti / restaurant sign lettering, crisp legible strokes in bright warm ivory with restrained pale-gold detail, not thin calligraphy. The title is the dominant visual element. Subtitle is smaller but clear, medium-to-bold simple Chinese type in bright ivory; enough line spacing that title and subtitle never touch. Exact simplified Chinese characters, precise spelling, no substitutions. No additional text, no English, no numbers, no brand names, no logos, no badges, no buttons, no prices, no fake writing, no watermark, no checkerboard. Keep all typography, vessel edges, and skewer tips comfortably inside the image. Food decoration must never reduce text legibility.\n\nCanvas and scale: Source canvas EXACTLY 3:1, 2172 × 724 pixels. Within it, create a SEPARATE DESKTOP ULTRA-WIDE 6:1 BANNER occupying ONLY the central half of the canvas height: y=181 through y=543, width=2172. The top quarter y=0..180 and bottom quarter y=544..724 must be completely empty solid green with NO texture, NO border, NO food, NO steam, NO shadow, NO letters, nothing. This is intentional padding; the website will hide only these empty bands.\nEVERY visible design element belongs strictly INSIDE the central 6:1 band, including full food illustrations at far outer ends, the complete thin gold border around this central strip, and both complete Chinese text lines. Never put a border around the outer 3:1 canvas. Do not paint anything across y=181 or y=543. This is an independent ultra-wide composition, not a mobile banner.\nIn the central horizontal strip, the four-character title has an ink height around 120px, centered horizontally at x=1086, and the subtitle has an ink height around 54px, also centered. Both lines together are centered vertically around y=362, with comfortable line spacing. Use the outer left and right ends for complete food and reserve the middle for text. Border roughly y=193..531 and x=22..2150; ALL food and steam inside that border, not crossing it. Upper and lower padding remains the same clean solid green.\nTitle text exactly: \"热汤与粥\"\nSubtitle text exactly: \"一碗热乎的，慢慢喝\"\nFood scene: A welcoming ivory bowl of clear golden hot soup with gentle steam at one outer side, and a small ivory bowl of softly cooked pale rice congee with two tiny green scallion flecks at the other outer side.",
+      "visualReview": {
+        "status": "passed as asset; browser placement to be verified by root",
+        "method": "Generated full original visually inspected; mobile full-image proportional 240px preview individually opened with view_image; desktop exported640px source individually opened with view_image.",
+        "titleCorrect": true,
+        "subtitleCorrect": true,
+        "textChecked": "热汤与粥 / 一碗热乎的，慢慢喝",
+        "reading": "Chinese title and subtitle complete and centered inside desktop strip, safe from padding edges.",
+        "composition": "左侧热汤、右侧白粥与轻柔蒸汽符合栏目内容。",
+        "unwantedText": "No price, buttons, brand, fake words, UI or watermark.",
+        "imageAlterations": "None except proportional resizing and WebP encoding."
+      },
+      "sourceRatio": 3.0,
+      "displayRatio": 6,
+      "sourceSHA256": "a2fd3ee1e9bb13c32a7d18cd5a74edba5de34bfcc22d16676b84cfb0aaf7ab90",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-soup-desktop-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 21676,
+          "sha256": "cf2aaeb89e5be6a015d9996bba1798ee95e32cbb5d83ee5448f5049bb2759347"
+        },
+        {
+          "file": "assets/banner-v8-soup-desktop-w1280.webp",
+          "width": 1280,
+          "height": 427,
+          "bytes": 59908,
+          "sha256": "29503ab9e26d64b560cba20e1bcc7bec75a68befd5f6d61abad324ddd332264f"
+        }
+      ]
+    },
+    {
+      "id": "night",
+      "variant": "mobile",
+      "title": "宵夜加点",
+      "subtitle": "夜里再加点，边吃边聊",
+      "prompt": "Use case: ads-marketing. Create one finished, full-bleed rectangular Chinese restaurant category banner, with accurate integrated Chinese typography, not a UI screenshot.\nFresh vivid green tabletop in the #2F7D32 family fills the whole scene, with restrained soft gouache brushwork, delicate paper texture and soft warm side light. Elegant premium hand-painted food editorial art, inviting and refined, not photorealistic, not dark, not cartoon icons. Tiny warm wood notes may appear at the outer bottom corners only. Milk-white ivory ceramic, vibrant greens and appetizing warm-gold food colors. A delicate simple pale-gold hairline border is inset from all edges, elegant and quiet, with no ornamental flourishes.\nLayout is rigorously centered: exact title and subtitle are horizontally centered on the canvas and share the same vertical center line. Together the two text lines sit in the middle of the full banner. The CENTRAL 75 PERCENT of the width is clean gently textured medium-fresh green with strong contrast and no food, no steam, no props behind words. Food is integrated into the tabletop at the TWO FAR OUTER SIDES, never crossing behind the text. Do not use a left-aligned heading, do not reserve an empty side for later text, and do not place all the food on just one side.\nTypography: large HEAVY BOLD Chinese display type, refined thick Songti / restaurant sign lettering, crisp legible strokes in bright warm ivory with restrained pale-gold detail, not thin calligraphy. The title is the dominant visual element. Subtitle is smaller but clear, medium-to-bold simple Chinese type in bright ivory; enough line spacing that title and subtitle never touch. Exact simplified Chinese characters, precise spelling, no substitutions. No additional text, no English, no numbers, no brand names, no logos, no badges, no buttons, no prices, no fake writing, no watermark, no checkerboard. Keep all typography, vessel edges, and skewer tips comfortably inside the image. Food decoration must never reduce text legibility.\n\nCanvas and scale: EXACT aspect ratio 3:1, panoramic 2172 by 724 pixels. This mobile banner will be displayed at about 240 CSS pixels wide and 80 CSS pixels tall. Make the title cap height about 22 CSS pixels at that display size, corresponding to about 200 pixels in this 2172-wide original; subtitle cap height about 11 CSS pixels, corresponding to about 100 pixels. Thus the title is genuinely very large for the short banner, not a small caption. The subtitle should fit one single centered line.\nTitle text exactly: \"宵夜加点\"\nSubtitle text exactly: \"夜里再加点，边吃边聊\"\nFood scene: Fresh-green cooked edamame pods on a compact ivory plate at one outer side and three short wooden skewers of golden-brown grilled meat on an ivory plate at the other outer side.\nNON-NEGOTIABLE TYPE SCALE: In the 2172 × 724 artwork, title glyph ink height must be at least 210 pixels and subtitle glyph ink height must be at least 105 pixels. The subtitle is genuinely LARGE, at least one-half the title height, with bold substantial strokes. At 240px display width the subtitle must read about 11.6px high, never 6–8px. The subtitle spans about 65–75% of the full canvas width, visibly WIDER than the four-character title. Do not shrink the subtitle to the width of the title. Keep both lines centered and separated by at least 40px. Reduce the size of the side food instead of shrinking either line of text. Food can be small near the outer frame edges so that the subtitle can use the central 75 percent uninterrupted.",
+      "visualReview": {
+        "status": "passed as asset; browser placement to be verified by root",
+        "method": "Generated full original visually inspected; mobile full-image proportional 240px preview individually opened with view_image; desktop exported640px source individually opened with view_image.",
+        "titleCorrect": true,
+        "subtitleCorrect": true,
+        "textChecked": "宵夜加点 / 夜里再加点，边吃边聊",
+        "reading": "240px preview readable; strengthened subtitle now about11px rather than tiny caption.",
+        "composition": "左侧毛豆、右侧烤串辨识清楚，标题副标题均完整。",
+        "unwantedText": "No price, buttons, brand, fake words, UI or watermark.",
+        "imageAlterations": "None except proportional resizing and WebP encoding."
+      },
+      "sourceRatio": 3.0,
+      "displayRatio": 3,
+      "sourceSHA256": "b6ea99d11dedd100204ac4fdefc990a4258575f2f5212c8f9c2ee859b641134b",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-night-mobile-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 13642,
+          "sha256": "8600d148ce21833c766371473a4e4da277a268d1e62226957504d1933215872f"
+        },
+        {
+          "file": "assets/banner-v8-night-mobile-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 32068,
+          "sha256": "597d105f14fe736ac79a270487ae6a016166eafa23c0b12d07c7e25de6fec53e"
+        }
+      ]
+    },
+    {
+      "id": "night",
+      "variant": "desktop",
+      "title": "宵夜加点",
+      "subtitle": "夜里再加点，边吃边聊",
+      "prompt": "Use case: ads-marketing. Create one finished, full-bleed rectangular Chinese restaurant category banner, with accurate integrated Chinese typography, not a UI screenshot.\nFresh vivid green tabletop in the #2F7D32 family fills the whole scene, with restrained soft gouache brushwork, delicate paper texture and soft warm side light. Elegant premium hand-painted food editorial art, inviting and refined, not photorealistic, not dark, not cartoon icons. Tiny warm wood notes may appear at the outer bottom corners only. Milk-white ivory ceramic, vibrant greens and appetizing warm-gold food colors. A delicate simple pale-gold hairline border is inset from all edges, elegant and quiet, with no ornamental flourishes.\nLayout is rigorously centered: exact title and subtitle are horizontally centered on the canvas and share the same vertical center line. Together the two text lines sit in the middle of the full banner. The CENTRAL 60 PERCENT of the width is clean gently textured medium-fresh green with strong contrast and no food, no steam, no props behind words. Food is integrated into the tabletop at the TWO FAR OUTER SIDES, never crossing behind the text. Do not use a left-aligned heading, do not reserve an empty side for later text, and do not place all the food on just one side.\nTypography: large HEAVY BOLD Chinese display type, refined thick Songti / restaurant sign lettering, crisp legible strokes in bright warm ivory with restrained pale-gold detail, not thin calligraphy. The title is the dominant visual element. Subtitle is smaller but clear, medium-to-bold simple Chinese type in bright ivory; enough line spacing that title and subtitle never touch. Exact simplified Chinese characters, precise spelling, no substitutions. No additional text, no English, no numbers, no brand names, no logos, no badges, no buttons, no prices, no fake writing, no watermark, no checkerboard. Keep all typography, vessel edges, and skewer tips comfortably inside the image. Food decoration must never reduce text legibility.\n\nCanvas and scale: Source canvas EXACTLY 3:1, 2172 × 724 pixels. Within it, create a SEPARATE DESKTOP ULTRA-WIDE 6:1 BANNER occupying ONLY the central half of the canvas height: y=181 through y=543, width=2172. The top quarter y=0..180 and bottom quarter y=544..724 must be completely empty solid green with NO texture, NO border, NO food, NO steam, NO shadow, NO letters, nothing. This is intentional padding; the website will hide only these empty bands.\nEVERY visible design element belongs strictly INSIDE the central 6:1 band, including full food illustrations at far outer ends, the complete thin gold border around this central strip, and both complete Chinese text lines. Never put a border around the outer 3:1 canvas. Do not paint anything across y=181 or y=543. This is an independent ultra-wide composition, not a mobile banner.\nIn the central horizontal strip, the four-character title has an ink height around 120px, centered horizontally at x=1086, and the subtitle has an ink height around 54px, also centered. Both lines together are centered vertically around y=362, with comfortable line spacing. Use the outer left and right ends for complete food and reserve the middle for text. Border roughly y=193..531 and x=22..2150; ALL food and steam inside that border, not crossing it. Upper and lower padding remains the same clean solid green.\nTitle text exactly: \"宵夜加点\"\nSubtitle text exactly: \"夜里再加点，边吃边聊\"\nFood scene: Fresh-green cooked edamame pods on a compact ivory plate at one outer side and three short wooden skewers of golden-brown grilled meat on an ivory plate at the other outer side.",
+      "visualReview": {
+        "status": "passed as asset; browser placement to be verified by root",
+        "method": "Generated full original visually inspected; mobile full-image proportional 240px preview individually opened with view_image; desktop exported640px source individually opened with view_image.",
+        "titleCorrect": true,
+        "subtitleCorrect": true,
+        "textChecked": "宵夜加点 / 夜里再加点，边吃边聊",
+        "reading": "Chinese title and subtitle complete and centered inside desktop strip, safe from padding edges.",
+        "composition": "左侧毛豆、右侧烤串辨识清楚，标题副标题均完整。",
+        "unwantedText": "No price, buttons, brand, fake words, UI or watermark.",
+        "imageAlterations": "None except proportional resizing and WebP encoding."
+      },
+      "sourceRatio": 3.0,
+      "displayRatio": 6,
+      "sourceSHA256": "944dee7d8d9e76290e83e24e7fe9b954c19c6fcb703fa5e4057e3630fba63cdc",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/banner-v8-night-desktop-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 20976,
+          "sha256": "77cc1aeb7d7e73e27393d77750716c87d9282eaf0eda9395d3bc0cbf72aadac0"
+        },
+        {
+          "file": "assets/banner-v8-night-desktop-w1280.webp",
+          "width": 1280,
+          "height": 427,
+          "bytes": 59934,
+          "sha256": "71d4c07b2440f606ecd75dfe9c721829096d2bf45e76beabfbd5e33a96027b0d"
+        }
+      ]
+    },
+    {
+      "id": "goose",
+      "prompt": "Use case: photorealistic-natural. Produce a fresh, high-quality 4:3 Chinese home-menu food photograph using the attached photo strictly as reference for the identity and cut shape of 碌鹅 (Cantonese/Hakka soy-braised pan-basted goose). Preserve chopped bone-in goose pieces, visible brown glossy skin, thicker goose meat slices, brown sauce lightly pooling, and the overall chopped-goose-platter character. Recompose it centered on a clean white ceramic plate on a light warm wood tabletop. Warm neutral daylight, crisp clear natural food texture, gentle shadows, even exposure; goose skin and meat easily identifiable. Match an honest inviting home-cooking photograph. No cold blue cast, no dark muddy blur, no dramatic restaurant darkness. No orchid or distracting garnish, no rice, no replacement with roast pork, roast duck, chicken or steaks. Plate and food fully within the 4:3 frame with sensible breathing room. No text, no logo, no watermark.",
+      "visualReview": {
+        "text": "",
+        "originalVisual": "斩件鹅肉、带皮带骨、酱汁、白方盘、浅木桌均清晰；已消除冷蓝背景，无文字水印。",
+        "sourceRatio": 1.3333333333333333,
+        "displayRatio": 1.3333333333333333,
+        "encodedVisual": "已打开最终WebP逐张检查：文字正确、无失真变形，菜品形态保留。"
+      },
+      "sourceSHA256": "1b8e0749360d4627ba46ac5f5757fe2e2e765abad3080ed0c552eec175887851",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/food-v8-goose-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 29724,
+          "sha256": "0635dd5fb8544dd8d0610d8e83902f98d886b4b0db80dd9b44dfce9cbda29d37"
+        },
+        {
+          "file": "assets/food-v8-goose-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 98680,
+          "sha256": "2b5ed219fe2d531d59d77643f6cd183b830593186a0001dcca48257bdd958d2b"
+        }
+      ]
+    },
+    {
+      "id": "egg-feature",
+      "prompt": "Use case: compositing. Produce a finished 4:3 menu-card photograph based on the attached image of 客家酿蛋: preserve the same golden folded thin egg-skin parcels filled with minced pork, a whole plate of oval folded parcels with one cut open at front showing juicy meat filling, lightly browned egg surface, a few scallions, white plate with dark green rim, warm light wood table, warm natural daylight. The dish must stay recognizable as egg-skin-wrapped meat, NOT boiled stuffed eggs and NOT scrambled eggs. Keep the food centered, clear, appetizing, realistically photographed. Integrate an independent deep-green selling-point ribbon along the bottom edge of the finished frame, with a fine pale-gold trim; reserve space for it below the plate and do not cover the food. The only text is EXACTLY “蛋香软嫩，包裹肉汁” in centered bold clearly legible warm pale-gold Chinese. One concise line, correct Chinese comma, no other text, no dish name, no logo, no watermark. Food area approximately upper 85 percent, ribbon approximately lower 15 percent, full 4:3 image, no outer white frame.",
+      "visualReview": {
+        "text": "蛋香软嫩，包裹肉汁",
+        "originalVisual": "蛋皮包肉整盘形态保留，前方切开可见肉馅；底部绿金卖点条未遮食物，八字及逗号逐字核对正确。",
+        "sourceRatio": 1.3333333333333333,
+        "displayRatio": 1.3333333333333333,
+        "encodedVisual": "已打开最终WebP逐张检查：文字正确、无失真变形，菜品形态保留。"
+      },
+      "sourceSHA256": "e2469f9911342383ec60272d556d87277e70d8777a29eeebaa0db7e7d88ff3fb",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/food-v8-egg-feature-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 31092,
+          "sha256": "9852b48ff56c4fa6aa2dd192036c0faa294fa2ffef84ccbcd81d00dfae54bc3d"
+        },
+        {
+          "file": "assets/food-v8-egg-feature-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 97602,
+          "sha256": "161976bcd2c2c674d7ec436ba87194b614d5881f6ab3772526df3e804cba50ba"
+        }
+      ]
+    },
+    {
+      "id": "signature-seal",
+      "prompt": "Use case: logo-brand. Generate a premium yet simple Chinese menu signature badge as a genuine transparent-background raster image with real alpha transparency, NOT checkerboard squares and NOT a flat background. A centered pale-gold award medal with a restrained double-line border, very subtle embossed paper/metal texture, and short symmetrical ribbon tails below. Only the exact dark-green very bold Chinese characters “招牌”, horizontally centered on one line, large, thick, exceptionally legible even when the entire badge is displayed at 40 pixels. The characters should fill most of the medal's inner area. Clean simple silhouette, no thin decorative filigree, no stars, no extra words, no watermarks, no backdrop or cast shadow outside the badge. Square canvas, medal and ribbon fully visible with a small transparent safe margin. Actual RGBA transparent pixels outside the object are mandatory.",
+      "visualReview": {
+        "text": "招牌",
+        "originalVisual": "只有深绿色粗体招牌二字，浅金双线奖章、轻压纹、短绶带；透明像素需编码校验。",
+        "displayRatio": 1,
+        "encodedVisual": "已打开最终WebP逐张检查：文字正确、无失真变形，菜品形态保留。",
+        "alphaVerified": true,
+        "smallSizeVisual": "40×40缩略预览仍可辨认招牌两字；原图和WebP均真实RGBA，alpha范围0–255。"
+      },
+      "sourceSHA256": "419bcd907db8a791ad9fa87ef8cd3c99a7941d673a12b0cf4345cd66c145b406",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "tool": "built-in ImageGen",
+      "outputs": [
+        {
+          "file": "assets/signature-seal-v8.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 23426,
+          "sha256": "ee2325de6c19f71be9959a2a82ee876a8bf77f71b2542835715838cfca5bacae"
+        }
+      ]
+    }
+  ],
+  "assetCount": 23,
+  "fileCount": 45,
+  "totalBytes": 1543842
+}

@@ -21,7 +21,7 @@
   const chosenVariant=d=>choices[d.id]||state.lines.find(l=>l.id===d.id)?.variantId||defaultVariant(d);
   const quantity=(id,variantId='')=>state.lines.find(l=>l.id===id&&l.variantId===variantId)?.quantity||0;
   const totalQuantity=id=>state.lines.filter(l=>l.id===id).reduce((n,l)=>n+l.quantity,0);
-  function lineName(line){const d=byId.get(line.id);const name=variantFor(d,line.variantId)?.cartName||d.name;return d.scope==='seafood-set'?name+'（海鲜套餐）':name;}
+  function lineName(line,plain=false){const d=byId.get(line.id);const name=variantFor(d,line.variantId)?.cartName||d.name;return !plain&&d.scope==='seafood-set'?name+'（海鲜套餐）':name;}
   function normalizeLine(item){
     if(!item||typeof item!=='object')return null;
     const d=byId.get(item.id);if(!d||!Number.isInteger(item.quantity)||item.quantity<=0)return null;
@@ -61,20 +61,22 @@
   }
   function photoFor(d){return images[d.imageKey||d.name];}
   function imageMarkup(photo,alt,{eager=false,wide=false,hero=false}={}){
-    const size=imageSizes[photo.src]||{},sizes=hero?'(max-width: 700px) calc(100vw - 118px), 1000px':wide?'(max-width: 700px) calc(100vw - 96px), (max-width: 1000px) calc(100vw - 146px), 340px':'(max-width: 359px) 92px, (max-width: 700px) calc((100vw - 105px) / 2), (max-width: 1000px) calc((100vw - 180px) / 2), 340px';
+    const size=photo.srcset?photo:(imageSizes[photo.src]||{}),sizes=hero?'(max-width: 700px) calc(100vw - 118px), 1000px':wide?'(max-width: 700px) calc(100vw - 96px), (max-width: 1000px) calc(100vw - 146px), 340px':'(max-width: 359px) 92px, (max-width: 700px) calc((100vw - 105px) / 2), (max-width: 1000px) calc((100vw - 180px) / 2), 340px';
     return `<img class="food-image" src="${esc(photo.src)}" ${size.srcset?`srcset="${esc(size.srcset)}" sizes="${sizes}"`:''} alt="${esc(alt)}" width="${size.width||800}" height="${size.height||600}" loading="${eager?'eager':'lazy'}" ${eager?'fetchpriority="high"':''} decoding="async" style="object-position:${esc(photo.position||'center')}">`;
   }
   function dishPhoto(d,index=9,feature=false){
-    const photo=photoFor(d);if(!photo||d.display==='text')return '';
+    const featureMedia=feature&&index===0?presentation.featuredMedia?.[d.id]:null;
+    const photo=featureMedia||photoFor(d);if(!photo||d.display==='text')return '';
     const parts=photo.parts||[photo];
-    return `<figure class="dish-photo ${photo.parts?'dish-photo-pair':''}">${parts.map(p=>`<div class="photo-part">${imageMarkup(p,(p.label||d.name)+'示意图',{eager:feature&&index===0,wide:feature&&index%3===0})}${photo.parts?`<span class="photo-part-label">${esc(p.label)}</span>`:''}</div>`).join('')}${featured.includes(d.id)?signatureBadge():''}</figure>`;
+    return `<figure class="dish-photo ${photo.parts?'dish-photo-pair':''} ${featureMedia?'has-feature-message':''}">${parts.map(p=>`<div class="photo-part">${imageMarkup(p,(p.label||d.name)+(featureMedia?'，'+featureMedia.copy:'示意图'),{eager:feature&&index===0,wide:feature&&index%3===0})}${photo.parts?`<span class="photo-part-label">${esc(p.label)}</span>`:''}</div>`).join('')}${featured.includes(d.id)?signatureBadge():''}</figure>`;
   }
   function variantPicker(d){return d.variants?.length>1?`<div class="variant-picker" role="group" aria-label="${esc(d.name)}做法">${d.variants.map(v=>`<button type="button" data-choice="${esc(v.id)}" data-id="${esc(d.id)}" aria-pressed="${chosenVariant(d)===v.id}" class="variant-pill ${chosenVariant(d)===v.id?'active':''}">${esc(v.label)}</button>`).join('')}</div>`:'';}
   function card(d,index=9,feature=false){
     const photo=dishPhoto(d,index,feature),qty=totalQuantity(d.id);
-    const recommendation=recommendationFor(d);
+    const featureMedia=feature&&index===0?presentation.featuredMedia?.[d.id]:null;
+    const recommendation=featureMedia?.copy||recommendationFor(d);
     const chips=feature?'家里拿手':d.fulfillment==='takeaway'?'点外卖':d.tags.includes('hakka')?'客家风味':'';
-    return `<article class="dish-card ${photo?'photo-card':'text-card'} ${highlightFor(d)?'highlight-card':''} ${feature?'featured-card':''} ${feature&&index===0?'feature-lead':''} ${qty?'selected':''}" data-dish="${esc(d.id)}">${photo}<div class="dish-info"><div class="dish-name-line"><h3>${esc(d.name)}</h3>${d.fulfillment==='takeaway'&&!d.name.includes('外卖')?'<span class="takeaway-label">外卖</span>':''}</div><p class="dish-description ${highlightFor(d)?'selling-point':''}">${esc(recommendation)}</p>${variantPicker(d)}<div class="dish-bottom"><span class="selection-status">${qty?`已选 ${qty} 份`:`<span class="quiet-tag">${esc(chips)}</span>`}</span>${stepper(d)}</div></div></article>`;
+    return `<article class="dish-card ${photo?'photo-card':'text-card'} ${highlightFor(d)?'highlight-card':''} ${feature?'featured-card':''} ${feature&&index===0?'feature-lead':''} ${featureMedia?'feature-message-card':''} ${qty?'selected':''}" data-dish="${esc(d.id)}">${photo}<div class="dish-info"><div class="dish-name-line"><h3>${esc(d.name)}</h3>${d.fulfillment==='takeaway'&&!d.name.includes('外卖')?'<span class="takeaway-label">外卖</span>':''}</div><p class="dish-description ${highlightFor(d)?'selling-point':''}">${esc(recommendation)}</p>${variantPicker(d)}<div class="dish-bottom"><span class="selection-status">${qty?`已选 ${qty} 份`:`<span class="quiet-tag">${esc(chips)}</span>`}</span>${stepper(d)}</div></div></article>`;
   }
   function visibleDishes(){return dishes.filter(d=>state.preference==='all'||d.tags.includes(state.preference));}
   function rowsForCategory(id){return visibleDishes().filter(d=>d.categories.includes(id));}
@@ -85,11 +87,12 @@
   }
   function decorationMarkup(art,eager=false,masthead=false){
     if(!art?.src)return '';
-    return `<img class="decor-image" src="${esc(art.src)}" srcset="${esc(art.srcset)}" sizes="${masthead?'(max-width: 1400px) 100vw, 1400px':'(max-width: 700px) calc(100vw - 98px), (max-width: 1000px) calc(100vw - 184px), 1100px'}" alt="" aria-hidden="true" width="${art.width}" height="${art.height}" loading="${eager?'eager':'lazy'}" decoding="async">`;
+    const sizes=masthead?'(max-width: 1400px) 100vw, 1400px':'(max-width: 700px) calc(100vw - 98px), (max-width: 1000px) calc(100vw - 184px), 1100px';
+    return `<picture class="banner-picture">${art.desktop?`<source media="(min-width: 701px)" srcset="${esc(art.desktop.srcset)}" sizes="${sizes}" width="${art.desktop.width}" height="${art.desktop.height}">`:''}<img class="decor-image" data-text-included="${art.textIncluded?'true':'false'}" src="${esc(art.src)}" srcset="${esc(art.srcset)}" sizes="${sizes}" alt="" aria-hidden="true" width="${art.width}" height="${art.height}" loading="${eager?'eager':'lazy'}" ${eager?'fetchpriority="high"':''} decoding="async"></picture>`;
   }
   function signatureBadge(){
     const badge=presentation.badge||{src:'assets/signature-seal-v6.webp',mobile:44,compact:36,desktop:48,offset:8};
-    return `<span class="signature-stamp" aria-label="家里招牌" style="--badge-mobile:${badge.mobile}px;--badge-compact:${badge.compact}px;--badge-desktop:${badge.desktop}px;--badge-offset:${badge.offset}px"><img class="signature-badge" src="${esc(badge.src)}" alt="" width="160" height="160"><span><b>招牌</b></span></span>`;
+    return `<span class="signature-stamp ${badge.textIncluded?'badge-has-text':''}" aria-label="家里招牌" style="--badge-mobile:${badge.mobile}px;--badge-compact:${badge.compact}px;--badge-desktop:${badge.desktop}px;--badge-offset:${badge.offset}px"><img class="signature-badge" src="${esc(badge.src)}" alt="" width="160" height="160"><span><b>招牌</b></span></span>`;
   }
   function categoryBanner(id,count,{headingId,title}={}){
     const category=categories.find(c=>c.id===id),display=presentation.categories[id]||{};
@@ -158,6 +161,7 @@
   }
   function observeImages(){
     imageObserver?.disconnect();
+    document.querySelectorAll('.decor-image, .signature-badge, .has-feature-message .food-image').forEach(img=>{if(img.complete&&img.naturalWidth)imageReady(img);});
     if(!window.IntersectionObserver)return;
     imageObserver=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){entry.target.loading='eager';imageObserver.unobserve(entry.target);}},{rootMargin:'1200px 0px'});
     $('menu-main').querySelectorAll('.food-image[loading="lazy"], .decor-image[loading="lazy"]').forEach(img=>imageObserver.observe(img));
@@ -178,7 +182,7 @@
       const d=byId.get(card.dataset.dish),qty=totalQuantity(d.id);card.classList.toggle('selected',!!qty);
       card.querySelector('.stepper').outerHTML=stepper(d);
       const picker=card.querySelector('.variant-picker');if(picker)picker.outerHTML=variantPicker(d);
-      const description=card.querySelector('.dish-description');if(description)description.textContent=recommendationFor(d);
+      const description=card.querySelector('.dish-description');if(description)description.textContent=card.classList.contains('feature-message-card')?presentation.featuredMedia[d.id].copy:recommendationFor(d);
       const status=card.querySelector('.selection-status');if(status)status.textContent=qty?`已选 ${qty} 份`:d.tags.includes('hakka')?'客家风味':'';
     }
     updateSummary();updateNavigation();updateSet();if($('cart-dialog').open)renderCart();
@@ -203,7 +207,7 @@
   function openCart(custom=false){renderCart();$('guest-notes').value=state.notes;$('custom-dish').value=state.custom;$('extra-details').open=custom||!!state.custom;openDialog('cart-dialog');if(custom)$('custom-dish').focus();}
   function menuText(){
     const c=counts();if(!c.dishes)return '';const lines=['剑锋家点菜单',`共 ${c.dishes} 道菜，${c.portions} 份`,''];
-    state.lines.forEach((l,i)=>lines.push(`${i+1}. ${lineName(l)} × ${l.quantity}份`));
+    state.lines.forEach((l,i)=>lines.push(`${i+1}. ${lineName(l,true)} × ${l.quantity}份`));
     if(state.custom.trim())lines.push(`${state.lines.length+1}. 菜单外想吃：${state.custom.trim()} × 1份`);
     if(state.preference!=='all')lines.push('',`口味偏好：${preferences[state.preference]}`);
     if(state.notes.trim())lines.push('',`口味与忌口：${state.notes.trim()}`);
@@ -239,16 +243,22 @@
   }
   $('open-sources').addEventListener('click',()=>{
     const seen=new Set();const sources=dishes.filter(d=>d.display!=='text'||signatureSet.some(i=>i.id===d.id)).flatMap(d=>{const photo=photoFor(d);return photo?(photo.parts||[photo]).map(img=>[d.name,img]):[];}).concat(images['海鲜套餐家宴']?[['海鲜套餐家宴',images['海鲜套餐家宴']]]:[]).filter(([,img])=>{if(seen.has(img.src))return false;seen.add(img.src);return true;});
-    $('source-list').innerHTML='<p>图片为菜品示意，实际做法和摆盘以家里制作的为准。</p>'+sources.map(([name,img])=>`<article><h3>${esc(name)}</h3><p>${esc(img.author||'来源见原文')}${img.license&&img.license!=='unknown'?` · ${esc(img.license)}`:''}</p>${img.sourcePage?`<a href="${esc(img.sourcePage)}" target="_blank" rel="noopener noreferrer">查看原始来源</a>`:''}${img.licenseUrl?` · <a href="${esc(img.licenseUrl)}" target="_blank" rel="noopener noreferrer">使用许可</a>`:''}</article>`).join('')+'<article><h3>V7 手绘栏目装饰</h3><p>门头与十个栏目插画由 ImageGen 生成；仅用于页面装饰。</p><a href="装饰生成记录.json" target="_blank" rel="noopener noreferrer">查看提示词与生成记录</a></article>';openDialog('sources-dialog');
+    $('source-list').innerHTML='<p>图片为菜品示意，实际做法和摆盘以家里制作的为准。</p>'+sources.map(([name,img])=>`<article><h3>${esc(name)}</h3><p>${esc(img.author||'来源见原文')}${img.license&&img.license!=='unknown'?` · ${esc(img.license)}`:''}</p>${img.sourcePage?`<a href="${esc(img.sourcePage)}" target="_blank" rel="noopener noreferrer">查看原始来源</a>`:''}${img.licenseUrl?` · <a href="${esc(img.licenseUrl)}" target="_blank" rel="noopener noreferrer">使用许可</a>`:''}</article>`).join('')+'<article><h3>V8 招牌与栏目设计</h3><p>门头以家宴照片制作，栏目横幅、碌鹅图、酿蛋卖点图及招牌章由 ImageGen 生成或编辑。</p><a href="V8图片生成记录.json" target="_blank" rel="noopener noreferrer">查看提示词与生成记录</a></article>';openDialog('sources-dialog');
   });
   function sizeToolbar(){document.documentElement.style.setProperty('--header',document.querySelector('.toolbar').offsetHeight+'px');}
   if(window.ResizeObserver)new ResizeObserver(sizeToolbar).observe(document.querySelector('.toolbar'));else window.addEventListener('resize',sizeToolbar);
+  function imageReady(img){
+    if(img.classList.contains('decor-image')){img.hidden=false;img.closest('.category-banner, .masthead')?.classList.toggle('art-ready',img.dataset.textIncluded==='true');}
+    if(img.classList.contains('signature-badge'))img.closest('.signature-stamp')?.classList.add('badge-ready');
+    if(img.classList.contains('food-image')&&img.closest('.has-feature-message'))img.closest('.dish-card')?.classList.add('feature-message-ready');
+  }
+  document.addEventListener('load',event=>{if(event.target.tagName==='IMG')imageReady(event.target);},true);
   document.addEventListener('error',event=>{
     if(event.target.tagName!=='IMG')return;const img=event.target;
-    if(img.classList.contains('decor-image')){img.hidden=true;return;}
-    if(img.classList.contains('signature-badge')){img.hidden=true;return;}
+    if(img.classList.contains('decor-image')){img.hidden=true;img.closest('.category-banner, .masthead')?.classList.remove('art-ready');return;}
+    if(img.classList.contains('signature-badge')){img.hidden=true;img.closest('.signature-stamp')?.classList.remove('badge-ready');return;}
     if(img.getAttribute('srcset')&&!img.dataset.fallback){img.dataset.fallback='true';img.removeAttribute('srcset');img.removeAttribute('sizes');img.src=img.getAttribute('src');return;}
-    const card=img.closest('.dish-card');if(card){img.closest('.dish-photo')?.remove();card.classList.remove('photo-card');card.classList.add('text-card');}else img.hidden=true;
+    const card=img.closest('.dish-card');if(card){img.closest('.dish-photo')?.remove();card.classList.remove('photo-card','feature-message-ready');card.classList.add('text-card');}else img.hidden=true;
   },true);
   window.addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(syncActiveCategory);},{passive:true});
   window.addEventListener('resize',()=>{sizeToolbar();syncActiveCategory();});

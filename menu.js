@@ -350,7 +350,8 @@
   },
   {
     "id": "dish-029",
-    "name": "酿蛋",
+    "name": "客家招牌酿蛋",
+    "aliases": ["酿蛋"],
     "ingredients": "鸡蛋 · 酿制",
     "categories": [
       "signature",

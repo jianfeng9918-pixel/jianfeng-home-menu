@@ -1581,21 +1581,24 @@ window.MENU_IMAGES = {
     "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。"
   },
   "碌鹅": {
-    "sourcePage": "https://m.thepaper.cn/newsDetail_forward_8480619",
-    "sourceImage": "https://imagepphcloud.thepaper.cn/pph/image/80/175/902.jpg",
-    "sourceTitle": "仲恺：碌鹅浓香飘百年",
-    "author": "惠州日报 / 仲恺发布（照片作者未单独标明）",
-    "license": "unknown",
-    "matchReason": "地方报道明确为潼湖/沥林碌鹅，鹅先煎并反复翻身，再焖煮浇汁；本文成菜实拍为带酱汁的斩件碌鹅。",
-    "src": "assets/food-863d3cfb41f9b484.webp",
+    "src": "assets/food-v8-goose-w640.webp",
+    "srcset": "assets/food-v8-goose-w320.webp 320w, assets/food-v8-goose-w640.webp 640w",
+    "width": 640,
+    "height": 480,
+    "sourceTitle": "碌鹅 · V8 清晰菜图",
+    "author": "ImageGen",
+    "license": "AI-generated",
     "verified": true,
-    "sha256": "863d3cfb41f9b484bc0672c6a3d32e12ca787fee6690ff1a199ba7411e0b7160",
+    "position": "50% 50%",
+    "sha256": "2b5ed219fe2d531d59d77643f6cd183b830593186a0001dcca48257bdd958d2b",
     "dimensions": [
       640,
-      423
+      480
     ],
-    "position": "50% 52%",
-    "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。"
+    "sourcePage": "V8图片生成记录.json",
+    "referenceSourcePage": "https://m.thepaper.cn/newsDetail_forward_8480619",
+    "matchReason": "以原碌鹅照片作为菜品形态参考，保留斩件鹅肉与酱汁；重新生成自然光、暖木桌和白色器皿的菜品示意。",
+    "modifications": "内置ImageGen参考生成；仅等比编码WebP。"
   },
   "客家酿豆腐": {
     "sourcePage": "https://cook1cook.com/zh-hk/recipe/36897",
