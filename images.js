@@ -14,7 +14,8 @@ window.MENU_IMAGES = {
       960,
       685
     ],
-    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
+    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+    "position": "50% 50%"
   },
   "酸甜排骨": {
     "sourcePage": "https://www.xiachufang.com/recipe/104386617/",
@@ -466,7 +467,8 @@ window.MENU_IMAGES = {
       640,
       426
     ],
-    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
+    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+    "position": "40% 55%"
   },
   "韭菜炒蛋": {
     "sourcePage": "https://www.douguo.com/cookbook/1148753.html",
@@ -646,7 +648,8 @@ window.MENU_IMAGES = {
       1000,
       750
     ],
-    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
+    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+    "position": "50% 55%"
   },
   "煎海鱼": {
     "sourcePage": "https://www.xiachufang.com/recipe/106158944/",
@@ -1152,7 +1155,8 @@ window.MENU_IMAGES = {
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
     "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
-    "verified": true
+    "verified": true,
+    "position": "50% 50%"
   },
   "酸菜鱼": {
     "src": "assets/veg-soup-fish.webp",
@@ -1230,7 +1234,8 @@ window.MENU_IMAGES = {
       1000,
       750
     ],
-    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
+    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+    "position": "50% 52%"
   },
   "椰子鸡汤": {
     "sourcePage": "https://m.xiachufang.com/recipe/1014841/",
@@ -1246,7 +1251,8 @@ window.MENU_IMAGES = {
       1000,
       696
     ],
-    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
+    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+    "position": "50% 60%"
   },
   "花旗参鸡汤": {
     "sourcePage": "https://m.xiachufang.com/recipe/128303/",
@@ -1628,5 +1634,108 @@ window.MENU_IMAGES = {
       }
     ],
     "verified": true
+  },
+  "碌鹅": {
+    "sourcePage": "https://m.thepaper.cn/newsDetail_forward_8480619",
+    "sourceImage": "https://imagepphcloud.thepaper.cn/pph/image/80/175/902.jpg",
+    "sourceTitle": "仲恺：碌鹅浓香飘百年",
+    "author": "惠州日报 / 仲恺发布（照片作者未单独标明）",
+    "license": "unknown",
+    "matchReason": "地方报道明确为潼湖/沥林碌鹅，鹅先煎并反复翻身，再焖煮浇汁；本文成菜实拍为带酱汁的斩件碌鹅。",
+    "src": "assets/food-863d3cfb41f9b484.webp",
+    "verified": true,
+    "sha256": "863d3cfb41f9b484bc0672c6a3d32e12ca787fee6690ff1a199ba7411e0b7160",
+    "dimensions": [
+      640,
+      423
+    ],
+    "position": "50% 52%",
+    "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。"
+  },
+  "客家酿豆腐": {
+    "sourcePage": "https://cook1cook.com/zh-hk/recipe/36897",
+    "sourceImage": "https://img.cook1cook.com/upload/cover/201810/8/964955bbf032cd4efa1.jpg",
+    "sourceTitle": "客家煎釀豆腐 Pan Fire Tofu with Pork",
+    "author": "Ruby Wong",
+    "license": "unknown",
+    "matchReason": "菜谱明确将猪肉与冬菇馅酿入硬豆腐，再煎两面并收芡；主图可见豆腐与肉馅的煎面，主料做法与客家酿豆腐一致。",
+    "src": "assets/food-d603c17e26e29b29.webp",
+    "verified": true,
+    "sha256": "d603c17e26e29b29cc30331fb1438d54eebdb8fc60f52af77b6ba5f73cd85ba9",
+    "dimensions": [
+      800,
+      601
+    ],
+    "position": "50% 53%",
+    "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。"
+  },
+  "客家土猪汤": {
+    "sourcePage": "https://k.sina.cn/article_7235451621_1af443ae500100lp3r.html?from=food",
+    "sourceImage": "https://k.sinaimg.cn/n/sinacn10118/226/w640h386/20200106/d68b-imrkkfy4003052.jpg/w700d1q75cms.jpg",
+    "sourceTitle": "原汁原味客家菜“客家本色”全面升级（客家土猪汤）",
+    "author": "星辰的广场舞（发布者；摄影作者未单独标明）",
+    "license": "unknown",
+    "matchReason": "文章明确为客家土猪汤，使用农家土黑猪肉与水密封蒸制60分钟；对应成菜图为清汤猪肉碗，可见瘦肉、汤汁与葱花。",
+    "src": "assets/food-45a63ff6f2ec1a8c.webp",
+    "verified": true,
+    "sha256": "45a63ff6f2ec1a8c76c17c7f4f5ccbfcbc0659c2d577544cbc37fa6565404555",
+    "dimensions": [
+      640,
+      386
+    ],
+    "position": "50% 53%",
+    "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。"
+  },
+  "叉烧肉": {
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Char_siu_pieces.jpg",
+    "sourceImage": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Char_siu_pieces.jpg",
+    "sourceTitle": "Char siu pieces.jpg",
+    "author": "Michael（Wikimedia Commons 用户 Bacon Noodles）",
+    "license": "CC0 1.0",
+    "matchReason": "Commons作者明确描述为切片叉烧肉；实拍清楚呈现红色蜜汁外层、猪肉纹理和烧烤焦边。",
+    "src": "assets/food-4fabde835c8b72c0.webp",
+    "verified": true,
+    "sha256": "4fabde835c8b72c0964708d99d5b9398cc9174fd7d887d681710b4bd242b5e12",
+    "dimensions": [
+      1000,
+      563
+    ],
+    "position": "45% 50%",
+    "modifications": "等比缩放并转换为WebP；保留原图文字与水印，网页卡片按焦点裁切。",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "卤牛腱肉": {
+    "sourcePage": "https://icook.tw/recipes/238098",
+    "sourceImage": "https://tokyo-kitchen.icook.network/uploads/recipe/cover/238098/large_c0352e1199a65ddf.jpg",
+    "sourceTitle": "十三香滷牛腱",
+    "author": "Marc",
+    "license": "unknown",
+    "matchReason": "原菜谱明确使用牛腱、十三香卤包与酱油卤制90分钟，浸泡后切片；已目视主图的牛腱切片与筋络，照片无居中标题，主料与卤制做法对应。",
+    "src": "assets/food-a8c3f8deb488241e.webp",
+    "verified": true,
+    "sha256": "a8c3f8deb488241ef935ee6e26a88d1a10ab3847d91864a98ebbbefc63bfb0d0",
+    "dimensions": [
+      800,
+      600
+    ],
+    "position": "50% 52%",
+    "modifications": "按原比例转换为WebP；未对原照片裁切、抹除或添加文字。"
+  },
+  "豆豉炸鱼": {
+    "sourcePage": "https://www.sohu.com/a/484035962_121057256",
+    "sourceImage": "https://p6.itc.cn/images01/20210818/73dd20ebcec04cc5bbde61c7ca230aeb.jpeg",
+    "sourceTitle": "豆豉鲫鱼的家常做法，鲜香辣爽，不用吐鱼刺，一口一个吃着真过瘾",
+    "author": "王叔教你做菜",
+    "license": "unknown",
+    "matchReason": "菜谱明确先将小鲫鱼中小火炸至金黄酥脆，再淋炒香的黑豆豉料并蒸入味；成菜照片可见炸鱼酥壳、黑豆豉与葱花，采用先炸后蒸的豆豉鱼版本。",
+    "src": "assets/food-f14b937fa39019b5.webp",
+    "verified": true,
+    "sha256": "f14b937fa39019b5f8b89d9ced9bf0311337b6e80d17a99a4c01377ddcfb5f06",
+    "dimensions": [
+      640,
+      444
+    ],
+    "position": "50% 52%",
+    "modifications": "等比缩放并转换为WebP；保留原图文字与水印，网页卡片按焦点裁切。"
   }
 };
