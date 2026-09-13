@@ -4,12 +4,14 @@
   const images=window.MENU_IMAGES||{};
   const presentation=window.MENU_PRESENTATION||{categories:{},highlights:{}};
   const highlightFor=d=>presentation.highlights[d.id];
+  const signatureCopy=d=>presentation.signatureRibbons?.[d.id];
   const recommendationFor=d=>variantFor(d,chosenVariant(d))?.description||highlightFor(d)?.copy||d.recommendation||'';
   const imageSizes=window.MENU_IMAGE_SIZES||{};
   const byId=new Map([...archivedDishes,...dishes,...setDishes].map(d=>[d.id,d]));
   const activeIds=new Set([...dishes,...setDishes].map(d=>d.id));
   const $=id=>document.getElementById(id);
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const dishTitle=d=>d.id==='dish-029'?'<span class="dish-name-word">客家</span><span class="dish-name-word">招牌</span><span class="dish-name-word">酿蛋</span>':esc(d.name);
   const preferences={all:'随心选',mild:'偏清淡',spicy:'偏麻辣',kids:'小孩爱吃'};
   const STORAGE_KEY='jianfeng-home-menu:v1';
   let state={version:4,lines:[],notes:'',custom:'',preference:'all'};
@@ -65,18 +67,17 @@
     return `<img class="food-image" src="${esc(photo.src)}" ${size.srcset?`srcset="${esc(size.srcset)}" sizes="${sizes}"`:''} alt="${esc(alt)}" width="${size.width||800}" height="${size.height||600}" loading="${eager?'eager':'lazy'}" ${eager?'fetchpriority="high"':''} decoding="async" style="object-position:${esc(photo.position||'center')}">`;
   }
   function dishPhoto(d,index=9,feature=false){
-    const featureMedia=feature&&index===0?presentation.featuredMedia?.[d.id]:null;
-    const photo=featureMedia||photoFor(d);if(!photo||d.display==='text')return '';
-    const parts=photo.parts||[photo];
-    return `<figure class="dish-photo ${photo.parts?'dish-photo-pair':''} ${featureMedia?'has-feature-message':''}">${parts.map(p=>`<div class="photo-part">${imageMarkup(p,(p.label||d.name)+(featureMedia?'，'+featureMedia.copy:'示意图'),{eager:feature&&index===0,wide:feature&&index%3===0})}${photo.parts?`<span class="photo-part-label">${esc(p.label)}</span>`:''}</div>`).join('')}${featured.includes(d.id)?signatureBadge():''}</figure>`;
+    const photo=photoFor(d);if(!photo||d.display==='text')return '';
+    const parts=photo.parts||[photo],copy=signatureCopy(d);
+    return `<figure class="dish-photo ${photo.parts?'dish-photo-pair':''} ${copy?'has-signature-ribbon':''}">${parts.map(p=>`<div class="photo-part">${imageMarkup(p,(p.label||d.name)+'示意图',{eager:feature&&index===0,wide:feature&&index%3===0})}${photo.parts?`<span class="photo-part-label">${esc(p.label)}</span>`:''}</div>`).join('')}${copy?`${signatureBadge()}<figcaption class="signature-ribbon"><span class="ribbon-copy">${esc(copy).replace('，','，<wbr>')}</span></figcaption>`:''}</figure>`;
   }
   function variantPicker(d){return d.variants?.length>1?`<div class="variant-picker" role="group" aria-label="${esc(d.name)}做法">${d.variants.map(v=>`<button type="button" data-choice="${esc(v.id)}" data-id="${esc(d.id)}" aria-pressed="${chosenVariant(d)===v.id}" class="variant-pill ${chosenVariant(d)===v.id?'active':''}">${esc(v.label)}</button>`).join('')}</div>`:'';}
   function card(d,index=9,feature=false){
     const photo=dishPhoto(d,index,feature),qty=totalQuantity(d.id);
-    const featureMedia=feature&&index===0?presentation.featuredMedia?.[d.id]:null;
-    const recommendation=featureMedia?.copy||recommendationFor(d);
+    const signature=signatureCopy(d);
+    const recommendation=signature||recommendationFor(d);
     const chips=feature?'家里拿手':d.fulfillment==='takeaway'?'点外卖':d.tags.includes('hakka')?'客家风味':'';
-    return `<article class="dish-card ${photo?'photo-card':'text-card'} ${highlightFor(d)?'highlight-card':''} ${feature?'featured-card':''} ${feature&&index===0?'feature-lead':''} ${featureMedia?'feature-message-card':''} ${qty?'selected':''}" data-dish="${esc(d.id)}">${photo}<div class="dish-info"><div class="dish-name-line"><h3>${esc(d.name)}</h3>${d.fulfillment==='takeaway'&&!d.name.includes('外卖')?'<span class="takeaway-label">外卖</span>':''}</div><p class="dish-description ${highlightFor(d)?'selling-point':''}">${esc(recommendation)}</p>${variantPicker(d)}<div class="dish-bottom"><span class="selection-status">${qty?`已选 ${qty} 份`:`<span class="quiet-tag">${esc(chips)}</span>`}</span>${stepper(d)}</div></div></article>`;
+    return `<article class="dish-card ${photo?'photo-card':'text-card'} ${highlightFor(d)?'highlight-card':''} ${feature?'featured-card':''} ${feature&&index===0?'feature-lead':''} ${signature?'signature-card':''} ${qty?'selected':''}" data-dish="${esc(d.id)}">${photo}<div class="dish-info"><div class="dish-name-line"><h3>${dishTitle(d)}</h3>${d.fulfillment==='takeaway'&&!d.name.includes('外卖')?'<span class="takeaway-label">外卖</span>':''}</div><p class="dish-description ${highlightFor(d)?'selling-point':''}">${esc(recommendation)}</p>${variantPicker(d)}<div class="dish-bottom"><span class="selection-status">${qty?`已选 ${qty} 份`:`<span class="quiet-tag">${esc(chips)}</span>`}</span>${stepper(d)}</div></div></article>`;
   }
   function visibleDishes(){return dishes.filter(d=>state.preference==='all'||d.tags.includes(state.preference));}
   function rowsForCategory(id){return visibleDishes().filter(d=>d.categories.includes(id));}
@@ -87,12 +88,12 @@
   }
   function decorationMarkup(art,eager=false,masthead=false){
     if(!art?.src)return '';
-    const sizes=masthead?'(max-width: 1400px) 100vw, 1400px':'(max-width: 700px) calc(100vw - 98px), (max-width: 1000px) calc(100vw - 184px), 1100px';
+    const sizes=masthead?'(max-width: 1400px) 100vw, 1400px':art.role==='ingredients'?'(max-width: 700px) 40vw, 380px':'(max-width: 700px) calc(100vw - 98px), 1100px';
     return `<picture class="banner-picture">${art.desktop?`<source media="(min-width: 701px)" srcset="${esc(art.desktop.srcset)}" sizes="${sizes}" width="${art.desktop.width}" height="${art.desktop.height}">`:''}<img class="decor-image" data-text-included="${art.textIncluded?'true':'false'}" src="${esc(art.src)}" srcset="${esc(art.srcset)}" sizes="${sizes}" alt="" aria-hidden="true" width="${art.width}" height="${art.height}" loading="${eager?'eager':'lazy'}" ${eager?'fetchpriority="high"':''} decoding="async"></picture>`;
   }
   function signatureBadge(){
-    const badge=presentation.badge||{src:'assets/signature-seal-v6.webp',mobile:44,compact:36,desktop:48,offset:8};
-    return `<span class="signature-stamp ${badge.textIncluded?'badge-has-text':''}" aria-label="家里招牌" style="--badge-mobile:${badge.mobile}px;--badge-compact:${badge.compact}px;--badge-desktop:${badge.desktop}px;--badge-offset:${badge.offset}px"><img class="signature-badge" src="${esc(badge.src)}" alt="" width="160" height="160"><span><b>招牌</b></span></span>`;
+    const badge=presentation.badge;
+    return `<span class="signature-stamp signature-seal" aria-label="家里招牌" style="--seal-size:${badge.large.width}px;--seal-font:${badge.large.font}px;--seal-small-size:${badge.compact.width}px;--seal-small-font:${badge.compact.font}px;--badge-offset:${badge.offset}px"><b aria-hidden="true">招牌</b></span>`;
   }
   function categoryBanner(id,count,{headingId,title}={}){
     const category=categories.find(c=>c.id===id),display=presentation.categories[id]||{};
@@ -117,7 +118,7 @@
     const show=state.preference==='all';$('signature-set').hidden=!show;if(!show)return;
     const hero=images['海鲜套餐家宴'];
     const fallback=[];
-    $('signature-set').innerHTML=`${categoryBanner('signature-set',10,{headingId:'seafood-set-title',title:setTitle})}<div class="set-panel">${hero?`<figure class="set-table-photo">${imageMarkup(hero,'用户提供的家宴照片，海鲜版套餐菜品以清单为准',{hero:true})}</figure>`:`<div class="set-photos">${fallback.map(d=>imageMarkup(photoFor(d),d.name+'示意图')).join('')}</div>`}<div class="set-intro"><strong>海鲜当主角，好菜聚一桌</strong><span>10 道搭配 · 独立选，不与单点合并</span></div><ol class="set-menu-preview"></ol><button type="button" id="add-signature-set" class="primary-button set-button"></button><p class="set-note"></p><details id="set-details"><summary>也可以单独挑 <span aria-hidden="true">＋</span></summary><div class="set-dishes"></div></details></div>`;
+    $('signature-set').innerHTML=`${categoryBanner('signature-set',10,{headingId:'seafood-set-title'})}<div class="set-panel">${hero?`<figure class="set-table-photo">${imageMarkup(hero,'用户提供的家宴照片，海鲜版套餐菜品以清单为准',{hero:true})}</figure>`:`<div class="set-photos">${fallback.map(d=>imageMarkup(photoFor(d),d.name+'示意图')).join('')}</div>`}<div class="set-intro"><strong>${esc(setTitle)}</strong><span>10 道搭配 · 独立选，不与单点合并</span></div><ol class="set-menu-preview"></ol><button type="button" id="add-signature-set" class="primary-button set-button"></button><p class="set-note"></p><details id="set-details"><summary>也可以单独挑 <span aria-hidden="true">＋</span></summary><div class="set-dishes"></div></details></div>`;
     updateSet();
   }
   function updateSet(){
@@ -161,7 +162,7 @@
   }
   function observeImages(){
     imageObserver?.disconnect();
-    document.querySelectorAll('.decor-image, .signature-badge, .has-feature-message .food-image').forEach(img=>{if(img.complete&&img.naturalWidth)imageReady(img);});
+    document.querySelectorAll('.decor-image').forEach(img=>{if(img.complete&&img.naturalWidth)imageReady(img);});
     if(!window.IntersectionObserver)return;
     imageObserver=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){entry.target.loading='eager';imageObserver.unobserve(entry.target);}},{rootMargin:'1200px 0px'});
     $('menu-main').querySelectorAll('.food-image[loading="lazy"], .decor-image[loading="lazy"]').forEach(img=>imageObserver.observe(img));
@@ -182,7 +183,7 @@
       const d=byId.get(card.dataset.dish),qty=totalQuantity(d.id);card.classList.toggle('selected',!!qty);
       card.querySelector('.stepper').outerHTML=stepper(d);
       const picker=card.querySelector('.variant-picker');if(picker)picker.outerHTML=variantPicker(d);
-      const description=card.querySelector('.dish-description');if(description)description.textContent=card.classList.contains('feature-message-card')?presentation.featuredMedia[d.id].copy:recommendationFor(d);
+      const description=card.querySelector('.dish-description');if(description)description.textContent=signatureCopy(d)||recommendationFor(d);
       const status=card.querySelector('.selection-status');if(status)status.textContent=qty?`已选 ${qty} 份`:d.tags.includes('hakka')?'客家风味':'';
     }
     updateSummary();updateNavigation();updateSet();if($('cart-dialog').open)renderCart();
@@ -243,22 +244,19 @@
   }
   $('open-sources').addEventListener('click',()=>{
     const seen=new Set();const sources=dishes.filter(d=>d.display!=='text'||signatureSet.some(i=>i.id===d.id)).flatMap(d=>{const photo=photoFor(d);return photo?(photo.parts||[photo]).map(img=>[d.name,img]):[];}).concat(images['海鲜套餐家宴']?[['海鲜套餐家宴',images['海鲜套餐家宴']]]:[]).filter(([,img])=>{if(seen.has(img.src))return false;seen.add(img.src);return true;});
-    $('source-list').innerHTML='<p>图片为菜品示意，实际做法和摆盘以家里制作的为准。</p>'+sources.map(([name,img])=>`<article><h3>${esc(name)}</h3><p>${esc(img.author||'来源见原文')}${img.license&&img.license!=='unknown'?` · ${esc(img.license)}`:''}</p>${img.sourcePage?`<a href="${esc(img.sourcePage)}" target="_blank" rel="noopener noreferrer">查看原始来源</a>`:''}${img.licenseUrl?` · <a href="${esc(img.licenseUrl)}" target="_blank" rel="noopener noreferrer">使用许可</a>`:''}</article>`).join('')+'<article><h3>V8 招牌与栏目设计</h3><p>门头以家宴照片制作，栏目横幅、碌鹅图、酿蛋卖点图及招牌章由 ImageGen 生成或编辑。</p><a href="V8图片生成记录.json" target="_blank" rel="noopener noreferrer">查看提示词与生成记录</a></article>';openDialog('sources-dialog');
+    $('source-list').innerHTML='<p>图片为菜品示意，实际做法和摆盘以家里制作的为准。</p>'+sources.map(([name,img])=>`<article><h3>${esc(name)}</h3><p>${esc(img.author||'来源见原文')}${img.license&&img.license!=='unknown'?` · ${esc(img.license)}`:''}</p>${img.sourcePage?`<a href="${esc(img.sourcePage)}" target="_blank" rel="noopener noreferrer">查看原始来源</a>`:''}${img.licenseUrl?` · <a href="${esc(img.licenseUrl)}" target="_blank" rel="noopener noreferrer">使用许可</a>`:''}</article>`).join('')+'<article><h3>V9 栏目食材图</h3><p>十张食材画面由内置 ImageGen 生成，栏目文字、暖金招牌标签和绿色卖点条由网页排版。门头继续使用家宴照片。</p><a href="V9图片生成记录.json" target="_blank" rel="noopener noreferrer">查看提示词与生成记录</a></article><article><h3>此前菜品图记录</h3><a href="V8图片生成记录.json" target="_blank" rel="noopener noreferrer">查看 V8 生成记录</a></article>';openDialog('sources-dialog');
   });
   function sizeToolbar(){document.documentElement.style.setProperty('--header',document.querySelector('.toolbar').offsetHeight+'px');}
   if(window.ResizeObserver)new ResizeObserver(sizeToolbar).observe(document.querySelector('.toolbar'));else window.addEventListener('resize',sizeToolbar);
   function imageReady(img){
     if(img.classList.contains('decor-image')){img.hidden=false;img.closest('.category-banner, .masthead')?.classList.toggle('art-ready',img.dataset.textIncluded==='true');}
-    if(img.classList.contains('signature-badge'))img.closest('.signature-stamp')?.classList.add('badge-ready');
-    if(img.classList.contains('food-image')&&img.closest('.has-feature-message'))img.closest('.dish-card')?.classList.add('feature-message-ready');
   }
   document.addEventListener('load',event=>{if(event.target.tagName==='IMG')imageReady(event.target);},true);
   document.addEventListener('error',event=>{
     if(event.target.tagName!=='IMG')return;const img=event.target;
     if(img.classList.contains('decor-image')){img.hidden=true;img.closest('.category-banner, .masthead')?.classList.remove('art-ready');return;}
-    if(img.classList.contains('signature-badge')){img.hidden=true;img.closest('.signature-stamp')?.classList.remove('badge-ready');return;}
     if(img.getAttribute('srcset')&&!img.dataset.fallback){img.dataset.fallback='true';img.removeAttribute('srcset');img.removeAttribute('sizes');img.src=img.getAttribute('src');return;}
-    const card=img.closest('.dish-card');if(card){img.closest('.dish-photo')?.remove();card.classList.remove('photo-card','feature-message-ready');card.classList.add('text-card');}else img.hidden=true;
+    const card=img.closest('.dish-card');if(card){img.closest('.dish-photo')?.remove();card.classList.remove('photo-card');card.classList.add('text-card');}else img.hidden=true;
   },true);
   window.addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(syncActiveCategory);},{passive:true});
   window.addEventListener('resize',()=>{sizeToolbar();syncActiveCategory();});

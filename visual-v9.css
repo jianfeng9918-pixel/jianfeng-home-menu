@@ -1,0 +1,263 @@
+/* V9 — preserve the menu layout; refine the warm green and gold signature system. */
+:root {
+  --section-green: #f1f4e9;
+  --section-ink: #2f583a;
+  --signature-green: #33733c;
+  --jade: #edf4e8;
+  --jade-border: #c9d9c0;
+  --jade-ink: #315f3c;
+}
+.dish-name-word { display: inline-block; }
+
+/* The real banquet stays recognizable, quietly behind the shop name. */
+.masthead { background: #65705b; }
+.masthead-art .decor-image {
+  opacity: .38;
+  filter: blur(1.5px) saturate(.45);
+  transform: scale(1.025);
+}
+.masthead-art::after {
+  background: linear-gradient(90deg, #213f31ad, #304a3540 56%, #5060440a);
+}
+.masthead h1 { text-shadow: 0 1px 2px #1c30231a; }
+
+/* Native text remains readable even when the decorative artwork fails. */
+.category-banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  aspect-ratio: auto;
+  min-height: 112px;
+  padding: 18px 22px;
+  background: linear-gradient(110deg, #faf9f1, #f1f4e9 68%, #e9f0de);
+  border: 1px solid #dfe5d4;
+  border-radius: 11px 11px 11px 3px;
+  box-shadow: inset 0 1px 0 #fffaf1;
+  gap: 0;
+}
+.category-banner .banner-copy,
+.category-banner[data-banner="signature-set"] .banner-copy {
+  position: relative;
+  width: 60%;
+  height: auto;
+  padding: 0!important;
+  margin: 0;
+  text-align: left;
+  clip: auto;
+  clip-path: none;
+  white-space: normal;
+  overflow: visible;
+}
+.category-banner h2,
+.category-banner[data-banner="signature-set"] h2 {
+  color: var(--section-ink);
+  font-family: 'Songti SC', STSong, 'Noto Serif CJK SC', serif;
+  font-weight: 900;
+  line-height: 1.3;
+  font-size: 28px;
+  letter-spacing: .035em;
+  text-align: left;
+}
+.category-banner .banner-subtitle {
+  color: #657259;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 5px;
+  text-align: left;
+  max-width: 24em;
+}
+.category-banner .banner-copy::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin-top: 8px;
+  background: #b49b60;
+}
+.category-banner .banner-art {
+  inset: 0 0 0 auto;
+  width: 36%;
+  max-width: 280px;
+  height: 100%;
+  transform: none;
+  z-index: 0;
+}
+.category-banner .banner-art .decor-image {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  object-fit: contain;
+  object-position: right center;
+  mix-blend-mode: multiply;
+  mask-image: radial-gradient(ellipse at 63% 52%, #000 42%, #0000 79%);
+  -webkit-mask-image: radial-gradient(ellipse at 63% 52%, #000 42%, #0000 79%);
+}
+.category-banner .banner-art::after { display: none; }
+.category-banner .decor-image[hidden] { display: none; }
+.category-banner[data-banner="signature"] {
+  border-color: #d9c78f;
+  background: linear-gradient(105deg, #fbf0cb, #f6efd8 67%, #e9edd9);
+  box-shadow: inset 0 0 0 3px #fffbeb80;
+}
+.category-banner[data-banner="signature"] h2 { color: #735323; }
+.category-banner[data-banner="signature"] .banner-subtitle { color: #796d4d; }
+.category-banner[data-banner="signature-set"] {
+  border-color: #c6d6b9;
+  background: linear-gradient(105deg, #eff5e6, #e3efda);
+}
+
+/* Use the same complete food frame and signature treatment across categories. */
+.signature-card .dish-photo,
+.featured-card.signature-card:nth-child(3n + 1) .dish-photo {
+  display: block;
+  aspect-ratio: auto;
+  isolation: isolate;
+}
+.signature-card .dish-photo .photo-part {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
+.signature-card .food-image { position: absolute; inset: 0; object-fit: cover; }
+.signature-card.photo-card .dish-description { display: none; }
+.signature-card.text-card .dish-description { display: inline-block; }
+
+/* A scalloped gold label, kept at the outer corner instead of the food center. */
+.signature-stamp.signature-seal,
+.dish-grid .signature-stamp.signature-seal,
+.featured-card:nth-child(3n + 1) .signature-stamp.signature-seal {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: var(--seal-size);
+  height: var(--seal-size);
+  top: var(--badge-offset);
+  right: var(--badge-offset);
+  left: auto;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  transform: rotate(7deg);
+  filter: drop-shadow(0 1px 2px #49361840);
+  pointer-events: none;
+  z-index: 3;
+}
+.signature-seal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #fff9df 10%, #dfb660 40%, #fff3c3 56%, #d7ac55);
+  clip-path: polygon(50% 0,58% 5%,66% 3%,72% 10%,81% 10%,85% 18%,93% 23%,93% 32%,99% 39%,96% 48%,100% 56%,94% 64%,94% 73%,86% 77%,82% 86%,73% 87%,67% 95%,58% 94%,50% 100%,42% 95%,34% 97%,28% 90%,19% 90%,15% 82%,7% 77%,7% 68%,1% 61%,4% 52%,0 44%,6% 36%,6% 27%,14% 23%,18% 14%,27% 13%,33% 5%,42% 6%);
+}
+.signature-seal::after {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border: 1px solid #bb9346;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 38% 27%, #fffbee, #f6e6b8 75%);
+  box-shadow: 0 0 0 2px #fff4d2, inset 0 0 0 2px #fff9e6;
+}
+.signature-stamp.signature-seal b,
+.dish-grid .signature-stamp.signature-seal b,
+.featured-card:nth-child(3n + 1) .signature-stamp.signature-seal b {
+  position: relative;
+  z-index: 1;
+  color: #70501f;
+  font-family: 'Kaiti SC', STKaiti, KaiTi, 'Songti SC', serif;
+  font-size: var(--seal-font);
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.07em;
+  transform: rotate(-7deg);
+  text-shadow: 0 .4px 0 currentColor;
+}
+
+/* The sell line borrows the reference's sweeping lower band, in house green. */
+.signature-ribbon,
+.featured-card:nth-child(3n + 1) .signature-ribbon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 40px;
+  margin: 0;
+  padding: 7px 10px 9px;
+  color: #fff8df;
+  background: linear-gradient(105deg, #3c8245, #2d6637 76%);
+  border: 0;
+  font-family: 'Kaiti SC', STKaiti, KaiTi, 'Songti SC', serif;
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-align: center;
+  isolation: isolate;
+}
+.signature-ribbon::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -8px -4px auto;
+  height: 16px;
+  border-radius: 56% 38% 0 0 / 90% 70% 0 0;
+  background: inherit;
+  border-top: 1px solid #edf3d88c;
+}
+.signature-ribbon::after {
+  content: '';
+  position: absolute;
+  width: 74px;
+  height: 18px;
+  right: -9px;
+  bottom: -13px;
+  border: 1px solid #d7e7a34d;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+  pointer-events: none;
+}
+.ribbon-copy { min-width: 0; text-wrap: balance; text-shadow: 0 .3px 0 currentColor; }
+
+/* Fine borders and a light raised face clarify the invitation to add a dish. */
+.photo-card h3 { font-weight: 750; letter-spacing: -.02em; }
+.dish-description { line-height: 1.6; }
+.add-dish {
+  background: linear-gradient(155deg, #f3f8ee, #e6f0e0);
+  border-color: #c6d7bc;
+  box-shadow: inset 0 1px 0 #ffffffc7, 0 1px 2px #33573208;
+}
+.add-dish .add-symbol { background: #fffef6; box-shadow: 0 1px 2px #385b2b13; }
+.add-dish:active { box-shadow: inset 0 1px 2px #31532c18; }
+.category-button.nav-signature { background: linear-gradient(140deg, #faebbd, #ecd08a); }
+.category-button.nav-signature.active { background: linear-gradient(140deg, #f7e5ac, #eacb79); }
+.category-button.active::before { background: #659554; }
+.category-button.nav-signature.active::before { background: #b39343; }
+.taste-pill.active { box-shadow: inset 0 1px 0 #fff, 0 1px 4px #395d2d0c; }
+
+@media (max-width: 700px) {
+  .masthead-art .decor-image { filter: blur(1px) saturate(.45); }
+  .category-banner { min-height: 96px; padding: 13px 12px; }
+  .category-banner h2,
+  .category-banner[data-banner="signature-set"] h2 { font-size: 22px; }
+  .category-banner .banner-subtitle { font-size: 12px; line-height: 1.55; margin-top: 4px; }
+  .signature-stamp.signature-seal,
+  .dish-grid .signature-stamp.signature-seal { width: var(--seal-small-size); height: var(--seal-small-size); }
+  .signature-stamp.signature-seal b,
+  .dish-grid .signature-stamp.signature-seal b { font-size: var(--seal-small-font); }
+  .signature-ribbon { min-height: 45px; padding: 5px 7px 7px; font-size: 15px; }
+  .featured-card:nth-child(3n + 1) .signature-ribbon { min-height: 40px; font-size: 19px; padding: 7px 9px 9px; }
+}
+@media (max-width: 359px) {
+  .category-banner { padding-inline: 10px; }
+  .category-banner h2,
+  .category-banner[data-banner="signature-set"] h2 { font-size: 20px; }
+  .dish-grid .signature-card.photo-card > .dish-photo { height: auto; min-height: 0; aspect-ratio: auto; align-self: start; }
+  .dish-grid .signature-ribbon { padding-inline: 4px; font-size: 13px; }
+  .featured-card:nth-child(3n + 1) .signature-ribbon { font-size: 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .category-button, .add-dish, .quantity-button { transition: none; }
+}

@@ -1,25 +1,20 @@
-/* V8 display-only metadata. Stable menu IDs and order state stay in menu.js/app.js. */
-const bannerSizes = {"signature":{"mobile":214,"desktop":427},"signature-set":{"mobile":214,"desktop":427},"hakka":{"mobile":214,"desktop":427},"pork":{"mobile":213,"desktop":427},"chicken":{"mobile":213,"desktop":427},"beef":{"mobile":213,"desktop":427},"seafood":{"mobile":213,"desktop":428},"vegetables":{"mobile":213,"desktop":427},"soup":{"mobile":213,"desktop":427},"night":{"mobile":213,"desktop":427}};
+/* V9 display metadata. Menu IDs and saved selections remain unchanged. */
 const menuArt = id => ({
-  src: `assets/banner-v8-${id}-mobile-w640.webp`,
-  srcset: `assets/banner-v8-${id}-mobile-w320.webp 320w, assets/banner-v8-${id}-mobile-w640.webp 640w`,
-  width: 640, height: bannerSizes[id].mobile,
-  desktop: {
-    srcset: `assets/banner-v8-${id}-desktop-w640.webp 640w, assets/banner-v8-${id}-desktop-w1280.webp 1280w`,
-    width: 1280, height: bannerSizes[id].desktop, displayRatio: 6, centeredContentBand: true
-  },
-  textIncluded: true
+  src: `assets/ingredients-v9-${id}-w640.webp`,
+  srcset: `assets/ingredients-v9-${id}-w320.webp 320w, assets/ingredients-v9-${id}-w640.webp 640w`,
+  width: 640, height: 480, textIncluded: false, role: 'ingredients'
 });
 window.MENU_PRESENTATION = {
-  version: 8,
+  version: 9,
   masthead: { src: 'assets/seafood-banquet-v5.webp', srcset: 'assets/responsive/seafood-banquet-v5-w320.webp 320w, assets/responsive/seafood-banquet-v5-w640.webp 640w, assets/responsive/seafood-banquet-v5-w1280.webp 1280w', width: 1280, height: 960, textIncluded: false },
-  badge: { src: 'assets/signature-seal-v8.webp', mobile: 48, compact: 40, desktop: 52, offset: 8, textIncluded: true },
-  featuredMedia: {
-    'dish-029': {
-      src: 'assets/food-v8-egg-feature-w640.webp',
-      srcset: 'assets/food-v8-egg-feature-w320.webp 320w, assets/food-v8-egg-feature-w640.webp 640w',
-      width: 640, height: 480, copy: '蛋香软嫩，包裹肉汁'
-    }
+  badge: { kind: 'seal', compact: { width: 44, height: 44, font: 16 }, large: { width: 56, height: 56, font: 20 }, offset: 7 },
+  signatureRibbons: {
+    'dish-029': '蛋香软嫩，包裹肉汁',
+    'dish-078': '卤香入味，越嚼越香',
+    'dish-001': '豉香鲜嫩，肉汁饱满',
+    'dish-lu-goose': '酱香醇厚，越吃越香',
+    'dish-hakka-tofu': '外香里嫩，一口入味',
+    'dish-hakka-pork-soup': '清鲜甘甜，喝着舒服'
   },
   categories: {
     signature: { art: menuArt('signature'), subtitle: '来家吃饭，先尝这几道', eyebrow: '家里的拿手味', navigation: 'signature' },

@@ -1,0 +1,299 @@
+{
+  "version": 9,
+  "createdAt": "2026-09-13T17:42:30.536749+00:00",
+  "purpose": "十个栏目右侧的无字新鲜食材图",
+  "layout": "左侧原生网页文字60%，右侧食材图约36%；原图按比例编码，不额外裁切，网页边缘渐隐。",
+  "editing": "Proportional resize and WebP encoding only.",
+  "sourceNotes": "这些图片为生成的食材视觉；实际菜品以菜单和家里制作为准。套餐照片沿用用户提供的原图。",
+  "assets": [
+    {
+      "id": "signature",
+      "subject": "鸡蛋、豆腐、排骨",
+      "prompt": "Use case: photorealistic-natural. Asset type: ingredient photograph for the right side of a refined Chinese family-menu category banner. Generate ONE landscape 4:3 photo. Premium fresh ingredient product photography on a clean continuous pale sage green #EAF5E6 matte tabletop/backdrop. Subject: three natural beige chicken eggs, two fresh ivory firm tofu blocks, and several clean uncooked pork rib segments on one small plain ivory tray. Group all three ingredient types naturally into one cohesive centered cluster, unmistakably recognizable, appetizing and clean, no cooked food. Subject fills about 78% of image width and 72% of height, all ingredients inside generous margins; clear readable silhouettes even at 120px thumbnail. Camera approximately 45 degrees down toward tabletop, soft natural daylight from upper left, gentle grounded shadows, accurate natural food colors, subtle high-end editorial photography. Unadorned matching pale sage background across entire image, no horizon line, no wood. No text, letters, numbers, logo, badge, border, cutlery, flowers, decorative herbs, people, pools of liquid, blood or gore. Do not create a collage or a menu layout; only a single coherent fresh-ingredient photo. No intentionally empty left text area.",
+      "generationTool": "Built-in ImageGen",
+      "modelVersion": "Not exposed by the tool",
+      "originalSha256": "3043b788d66e404c717c162249ecb07e16bbf0dcee713c412a45d3f4a712b55e",
+      "exports": [
+        {
+          "path": "assets/ingredients-v9-signature-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 11838,
+          "sha256": "a104bc82180f602553d7eb1061b0206b28ccf7cc27422d99cc9c31a4798aa1e2",
+          "quality": 88
+        },
+        {
+          "path": "assets/ingredients-v9-signature-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 34518,
+          "sha256": "6e4cac57f9fa90f660deb5872aa1484b9b7c7795a12d4665a8215a7f54a89ec2",
+          "quality": 88
+        }
+      ],
+      "visualReview": "三只鸡蛋、两块豆腐和排骨均可辨认；自然浅绿背景，45度视角，无文字或熟菜。"
+    },
+    {
+      "id": "signature-set",
+      "subject": "鲜虾、花螺、石斑鱼",
+      "prompt": "Use case: photorealistic-natural. Asset type: ingredient photograph for the right side of a refined Chinese family-menu category banner. Generate ONE landscape 4:3 photo. Premium fresh ingredient product photography on a clean continuous pale sage green #EAF5E6 matte tabletop/backdrop. Subject: a modest whole fresh cleaned grouper fish with recognizable gray-brown spotted skin (石斑鱼), a few uncooked fresh striped prawns (鲜虾), and a compact group of ivory spotted spiral whelk shells (花螺). These are fresh raw seafood ingredients, not cooked dishes. Group all three ingredient types naturally into one cohesive centered cluster on a single plain ivory shallow oval tray. Fish must be fully in frame, naturally proportioned; shells distinct from clams; prawns naturally pale gray with subtle stripes, not red boiled shrimp. Subject fills about 78% of width and 72% of height with all key parts inside margins; clarity at a 120px thumbnail. Camera approximately 45 degrees down toward tabletop, soft natural daylight from upper left, gentle grounded shadows, accurate natural colors, subtle high-end editorial photography. Matching pale sage unadorned background across the entire image, no horizon line, no wood. No text, letters, numbers, logo, badge, border, cutlery, flowers, herbs, people, pools of liquid, blood, gore or excessive ice. Do not create a collage/menu layout; only one coherent ingredient photo. No intentionally empty left text area.",
+      "generationTool": "Built-in ImageGen",
+      "modelVersion": "Not exposed by the tool",
+      "originalSha256": "097e365f818217d8cea0b9f1131557d72b96baa55432d6fd92523bddf7adc452",
+      "exports": [
+        {
+          "path": "assets/ingredients-v9-signature-set-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 19058,
+          "sha256": "b526f64027f81d9f02f594eafd1acfeddd44ca784d044f12c68abff74655bda3",
+          "quality": 88
+        },
+        {
+          "path": "assets/ingredients-v9-signature-set-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 49586,
+          "sha256": "4f314750c4b4d6c445ecac83042a017cee45961bb3cff078e83a1dfefaecb1af",
+          "quality": 84
+        }
+      ],
+      "visualReview": "完整石斑鱼、灰色生虾与螺形花螺均可辨认；浅绿背景与其他三张统一，鱼尾完整。"
+    },
+    {
+      "id": "hakka",
+      "subject": "豆腐、苦瓜、猪肉",
+      "prompt": "Use case: photorealistic-natural. Asset type: ingredient photograph for the right side of a refined Chinese family-menu category banner. Generate ONE landscape 4:3 photo. Premium fresh ingredient product photography on a clean continuous pale sage green #EAF5E6 matte tabletop/backdrop. Subject: two blocks of fresh firm ivory tofu, a vivid natural green Chinese bitter melon with deeply ridged bumpy skin and one clean cross-cut ring revealing its pale interior, and one small fresh raw boneless pork shoulder cut with subtle natural marbling. Group these three ingredient types naturally as one cohesive centered cluster on a plain ivory shallow tray. Fresh ingredients, not cooked dishes; no stuffed cooked food. Subject fills about 78% of image width and72% of height with all ingredients inside generous margins; recognizable clean silhouettes and texture at a120px thumbnail. Camera approximately45 degrees down toward tabletop, soft natural daylight from upper left, gentle grounded shadows, accurate natural food colors, subtle high-end editorial photography. Uniform pale sage background, no horizon line, no wood. No text, letters, numbers, logos, badges, border, cutlery, flowers, decorative herbs, people, pools of liquid, blood or gore. No collage or menu layout, only a single coherent ingredient photograph. No intentionally empty left text area.",
+      "generationTool": "Built-in ImageGen",
+      "modelVersion": "Not exposed by the tool",
+      "originalSha256": "c6db6f368f53967002c286307bfaea08bb12749e6127b700177e28dd39bfe130",
+      "exports": [
+        {
+          "path": "assets/ingredients-v9-hakka-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 14606,
+          "sha256": "3b21db53b098f56e454c99db227fa2ddb2a99533e078a7cb906826bbc4c83f1c",
+          "quality": 88
+        },
+        {
+          "path": "assets/ingredients-v9-hakka-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 42238,
+          "sha256": "45ff914152b2076d4102c27506b9b6f7ee7a387faa1135b35c0267c7837a72f0",
+          "quality": 88
+        }
+      ],
+      "visualReview": "豆腐、带苦瓜环切面的苦瓜与猪肉清楚；一体摄影光线，无文字或额外食材。"
+    },
+    {
+      "id": "pork",
+      "subject": "排骨、五花肉、青椒",
+      "prompt": "Use case: photorealistic-natural. Asset type: ingredient photograph for the right side of a refined Chinese family-menu category banner. Generate ONE landscape 4:3 photo. Premium fresh ingredient product photography on a clean continuous pale sage green #EAF5E6 matte tabletop/backdrop. Subject: several clean fresh uncooked pork rib segments with visible small bones, two neat uncooked pork belly strips showing alternating pale fat and pink meat layers, and two fresh green Chinese cooking peppers, one short diagonally cut pepper piece. Group these three ingredient types naturally into one cohesive centered cluster on one plain ivory shallow tray. Fresh ingredients, no cooked dishes. Subject fills approximately78% of width and72% of height with all ingredient parts comfortably within image; distinguish ribs from belly clearly at120px thumbnail. Camera approximately45 degrees down toward tabletop, soft natural daylight from upper left, gentle grounded shadows, accurate natural food colors, subtle high-end editorial photography. Matching pale sage unadorned background across entire image, no horizon line, no wood. No text, letters, numbers, logo, badge, border, cutlery, flowers, extra herbs, people, pools of liquid, blood or gore. Do not create a collage/menu layout; only a single coherent fresh-ingredient photo. No intentionally empty left text area.",
+      "generationTool": "Built-in ImageGen",
+      "modelVersion": "Not exposed by the tool",
+      "originalSha256": "e028693a94965abd25fd1e4fe87a265980b98f7bf39431764a32ee502c994450",
+      "exports": [
+        {
+          "path": "assets/ingredients-v9-pork-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 16260,
+          "sha256": "3e2bf6d0d504708316b972c9cfcab69302b172bbe9d875889f0e505c596879e7",
+          "quality": 88
+        },
+        {
+          "path": "assets/ingredients-v9-pork-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 47804,
+          "sha256": "eb4611d93ab8200e1832d39d20dec0c8729c4bdaaa7f6722ce36dd4b9e336a20",
+          "quality": 88
+        }
+      ],
+      "visualReview": "排骨骨截面、五花肉层次与青椒清楚分组；背景和光线与本组统一，无文字或熟菜。"
+    },
+    {
+      "id": "chicken",
+      "subject": "鸡肉、鸡蛋、沙姜",
+      "prompt": "Use case: photorealistic-natural. Asset type: Chinese home menu category ingredient photography, chicken and eggs. Create one premium natural product photo in exact 4:3 landscape. Continuous pale sage green #EAF5E6 matte tabletop and seamless backdrop. A single cohesive centered group of fresh chicken pieces on a small plain ivory tray, three intact brown and pale eggs, and several small fresh sand ginger (沙姜, kaempferia galanga) roots with one cut surface. This is prepared raw ingredient photography, not a cooked dish. Clean chicken pieces with pale natural skin, no exposed organs, no blood or liquid pools. Clean simple arrangement with clearly distinguishable eggs and sand ginger. Soft natural light from upper left, gentle real shadows, premium natural editorial food photography, 45-degree view, natural appetizing colors. Subject fills about 78 percent of canvas width and 72 percent height, all key ingredients comfortably within margins. A compact group readable at 120px thumbnail, no separate scene panels. No garnish, no utensils, no extra props except one small ivory tray. No cooked food, no typography, no letters, no logos, no borders, no labels, no watermarks, no graphic badges. This image will occupy only the right side of a website banner, do not add a separate text space or left copy area.",
+      "generationTool": "Built-in ImageGen",
+      "modelVersion": "Not exposed by the tool",
+      "originalSha256": "eb1616cecece4c1749680571ebe0b425fd6cff08310ee7ef0222887d6c16c645",
+      "exports": [
+        {
+          "path": "assets/ingredients-v9-chicken-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 10184,
+          "sha256": "cf9e8f2e57eb25bb47929894b44183cd40014dfb620e5438dcc91734e6ad4c12",
+          "quality": 84
+        },
+        {
+          "path": "assets/ingredients-v9-chicken-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 31874,
+          "sha256": "a0621cbe37363b3fe7a5a3635b6cd28fda2fa44d56667e91412e6968ebc21e3e",
+          "quality": 84
+        }
+      ],
+      "visualReview": "已逐张查看原图：鸡腿与鸡翅、三枚完整鸡蛋和切开的沙姜清晰可辨；浅绿背景、米白盘、左上自然光；无字、无熟菜、无血水，完整构图。"
+    },
+    {
+      "id": "beef",
+      "subject": "牛腩、白萝卜",
+      "prompt": "Use case: photorealistic-natural. Asset type: Chinese home menu category ingredient photography, beef dishes. Create one premium natural product photo in exact 4:3 landscape. Continuous pale sage green #EAF5E6 matte tabletop and seamless backdrop. A single cohesive centered group of fresh raw beef brisket cut in large natural cubes with modest creamy fat seams, on one small plain ivory tray, accompanied by a short fresh white daikon radish section with its pale green shoulder and several thick round cut slices beside it. This is prepared raw ingredient photography, not cooked food. Clean deep natural red beef, white radish flesh distinct, no exposed organs, no blood or liquid pools. Soft natural light from upper left, gentle real shadows, premium natural editorial food photography, 45-degree view, natural appetizing colors. Subject fills about 78 percent of canvas width and 72 percent height, all key ingredients comfortably within margins. A compact group readable at 120px thumbnail, no separate scene panels. No garnish, no utensils, no extra props except one small ivory tray. No cooked food, no typography, no letters, no logos, no borders, no labels, no watermarks, no graphic badges. This image will occupy only the right side of a website banner, do not add a separate text space or left copy area.",
+      "generationTool": "Built-in ImageGen",
+      "modelVersion": "Not exposed by the tool",
+      "originalSha256": "e69f3c95e99f8ef5e2e4f93b386f9b4ca583c9eb88cfcb7423a8475298113474",
+      "exports": [
+        {
+          "path": "assets/ingredients-v9-beef-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 11404,
+          "sha256": "d9ef879b8dcf05ef015ae42f71b981b170309630392f07919ee3db506e61aed0",
+          "quality": 84
+        },
+        {
+          "path": "assets/ingredients-v9-beef-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 36128,
+          "sha256": "61e7c20bbe777906f4abad5b529fe5804aa043d85b4156f9f30109acb4f5d9be",
+          "quality": 84
+        }
+      ],
+      "visualReview": "已逐张查看原图：带脂肪纹理的牛腩块与白萝卜段/切片清晰可辨；浅绿背景、米白盘、左上自然光；无文字、无血水，完整构图。"
+    },
+    {
+      "id": "seafood",
+      "subject": "鲜鱼、虾、花甲",
+      "prompt": "Use case: photorealistic-natural. Asset type: Chinese home menu category ingredient photography, fish shrimp and shellfish. Create one premium natural product photo in exact 4:3 landscape. Continuous pale sage green #EAF5E6 matte tabletop and seamless backdrop. A single cohesive centered group of one fresh silver sea bass laid diagonally with clean intact scales and clear eye, six fresh uncooked grey translucent prawns with recognizable striped shells, and a compact handful of closed patterned Manila clams (花甲), placed on a small plain ivory shallow tray. All three ingredient types must be clearly distinct and visible, fish fully visible including tail within image. This is fresh ingredient photography, not cooked food. Clean prepared fish without blood or exposed cuts; no ice, no water pools. Soft natural light from upper left, gentle real shadows, premium natural editorial food photography, 45-degree view, natural colors. Subject fills about 78 percent of canvas width and 72 percent height, all key ingredients comfortably within margins. A compact group readable at 120px thumbnail, no separate scene panels. No garnish, no utensils, no extra props except one small ivory tray. No cooked food, no typography, no letters, no logos, no borders, no labels, no watermarks, no graphic badges. This image will occupy only the right side of a website banner, do not add a separate text space or left copy area.",
+      "generationTool": "Built-in ImageGen",
+      "modelVersion": "Not exposed by the tool",
+      "originalSha256": "aca21c46fc22962f296ea41b072a903d2d0bcaf1659b1b8cd2964dc8870f0e8f",
+      "exports": [
+        {
+          "path": "assets/ingredients-v9-seafood-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 13662,
+          "sha256": "10341fa8bd8ddf88d8fbfefe4be843f44df381277cf2e816632f54b1d97b6335",
+          "quality": 84
+        },
+        {
+          "path": "assets/ingredients-v9-seafood-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 47730,
+          "sha256": "32af426732c08a8c8ca6faa772aea7a3c072ccdf487b87b796ee344a0d0c7362",
+          "quality": 84
+        }
+      ],
+      "visualReview": "已逐张查看原图：完整鲜鱼、灰透明生虾与闭合花甲三组清楚；浅绿背景、米白盘、左上自然光；无字、无熟菜、无血水；鱼尾距右缘较近但完整未裁切。"
+    },
+    {
+      "id": "vegetables",
+      "subject": "通心菜、生菜、莴笋",
+      "prompt": "Use case: product-mockup. Asset type: Chinese family menu category ingredient photography. Generate a single premium natural ingredient product photograph, landscape 4:3. Clean continuous pale sage green #EAF5E6 matte tabletop and seamless backdrop. One cohesive centered cluster containing only fresh water spinach (通心菜, long hollow stems and pointed green leaves), fresh lettuce (生菜, loose ruffled leaves), and celtuce (莴笋, a thick peeled pale-green stem with one natural leafy tip). All three ingredients clearly identifiable, washed clean, no cooked food. Soft natural light from upper left, true fresh green color, gentle contact shadows, realistic fine surface texture, comfortable appetizing home kitchen freshness. View around 45 degrees. Cluster occupies about 78% of frame width and 72% of height, leave safe margins around all identifiable vegetables. Clear composition readable even at 120px thumbnail. This entire image will occupy only the right 40% of a webpage banner, so do not create a left copy area. No people, no hands, no extra ingredients, no seasoning, no branding, no text, no logo, no badge, no border, no utensils, no wood, no ornate props. Photographic, not illustration.",
+      "generationTool": "Built-in ImageGen",
+      "modelVersion": "Not exposed by the tool",
+      "originalSha256": "a6390800a9d630567481f0a76b5e0cfc305a507dc7bc09566f2e3c7121feef56",
+      "exports": [
+        {
+          "path": "assets/ingredients-v9-vegetables-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 18656,
+          "sha256": "60d001c9fa72151d56994da3923563e7f94a1be19cd31df18ac4412704191b74",
+          "quality": 84
+        },
+        {
+          "path": "assets/ingredients-v9-vegetables-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 46082,
+          "sha256": "aca4c4087bd8a04025e3e1fbdf49aaf9a38c3bd00656f0de8d0388b5d66ba4a7",
+          "quality": 80
+        }
+      ],
+      "visualReview": {
+        "status": "passed",
+        "composition": "4:3, single coherent cluster, plain sage background",
+        "editing": "proportional resizing and WebP compression only",
+        "method": "view_image inspected each final 640px WebP",
+        "notes": "审看640px导出：左侧通心菜空心茎与尖叶清楚，中间生菜卷曲叶片可辨，右侧莴笋粗茎与叶端明确；无文字、无熟菜、无额外配料，三类菜构成同一自然光画面。植物主体接近左右安全边，不宜额外横向裁切。"
+      }
+    },
+    {
+      "id": "soup",
+      "subject": "玉米、莲藕、菌菇",
+      "prompt": "Use case: product-mockup. Asset type: Chinese family menu category ingredient photography. Generate a single premium natural ingredient product photograph, landscape 4:3. Clean continuous pale sage green #EAF5E6 matte tabletop and seamless backdrop. One cohesive centered cluster containing only a fresh yellow sweetcorn cob cut into two short pieces, lotus root with one short whole segment and two clean circular cut sections displaying distinct holes, and a small cluster of fresh shiitake and white shimeji mushrooms. All ingredients clearly identifiable, washed clean raw ingredients, no cooked food. Soft natural light from upper left, true natural colors, gentle contact shadows, realistic fine surface texture, comfortable appetizing home kitchen freshness. View around 45 degrees. Cluster occupies about 78% of frame width and 72% of height, leave safe margins around all identifiable ingredients. Clear composition readable even at 120px thumbnail. This entire image will occupy only the right 40% of a webpage banner, so do not create a left copy area. No people, no hands, no extra ingredients, no seasoning, no branding, no text, no logo, no badge, no border, no utensils, no wood, no ornate props. Photographic, not illustration.",
+      "generationTool": "Built-in ImageGen",
+      "modelVersion": "Not exposed by the tool",
+      "originalSha256": "65852ce87ca9933e164c390c653013c539b1ed065a192f555c234cf7161027d2",
+      "exports": [
+        {
+          "path": "assets/ingredients-v9-soup-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 10006,
+          "sha256": "1dfebe0024b1da293c5caa18c48fb9c54cde39e7ec18e9c41ad807830f5b2e93",
+          "quality": 84
+        },
+        {
+          "path": "assets/ingredients-v9-soup-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28288,
+          "sha256": "f14ad5ca983f5a6459f1393fed577b137dbea4f200ef4083db899aaa7408e03f",
+          "quality": 84
+        }
+      ],
+      "visualReview": {
+        "status": "passed",
+        "composition": "4:3, single coherent cluster, plain sage background",
+        "editing": "proportional resizing and WebP compression only",
+        "method": "view_image inspected each final 640px WebP",
+        "notes": "审看640px导出：玉米金黄颗粒、莲藕孔洞切面、香菇与蟹味菇完整可辨；同一浅绿背景和柔光，无文字、无熟食或多余配料，留白与光线协调。"
+      }
+    },
+    {
+      "id": "night",
+      "subject": "毛豆、黄瓜",
+      "prompt": "Use case: product-mockup. Asset type: Chinese family menu category ingredient photography. Generate a single premium natural ingredient product photograph, landscape 4:3. Clean continuous pale sage green #EAF5E6 matte tabletop and seamless backdrop. One cohesive centered cluster containing only a small natural mound of fresh green edamame pods (毛豆) with a single opened pod showing its beans and two fresh dark-green Chinese cucumbers (黄瓜), one whole and one short section with three clear fresh cucumber slices beside it. All ingredients clearly identifiable, washed clean raw ingredients, no cooked food. Soft natural light from upper left, true natural fresh green colors, gentle contact shadows, realistic fine surface texture, comfortable appetizing home kitchen freshness. View around 45 degrees. Cluster occupies about 78% of frame width and 72% of height, leave safe margins around all identifiable ingredients. Clear composition readable even at 120px thumbnail. This entire image will occupy only the right 40% of a webpage banner, so do not create a left copy area. No people, no hands, no extra ingredients, no seasoning, no branding, no text, no logo, no badge, no border, no utensils, no wood, no ornate props. Photographic, not illustration.",
+      "generationTool": "Built-in ImageGen",
+      "modelVersion": "Not exposed by the tool",
+      "originalSha256": "3dea95a5ea6651950a2be30599d6194dcb7e4ee150ba0c785c3de8c23b015752",
+      "exports": [
+        {
+          "path": "assets/ingredients-v9-night-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 13434,
+          "sha256": "2d5a164fa23b80cd1b4a074eb38ba12cdd747a18ec60a20ae5e0cad5841a2454",
+          "quality": 84
+        },
+        {
+          "path": "assets/ingredients-v9-night-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 43852,
+          "sha256": "06a074099b35c2706225beb4c8e694b09e3a86fe97f3f231cbd228bdd69b1fb0",
+          "quality": 84
+        }
+      ],
+      "visualReview": {
+        "status": "passed",
+        "composition": "4:3, single coherent cluster, plain sage background",
+        "editing": "proportional resizing and WebP compression only",
+        "method": "view_image inspected each final 640px WebP",
+        "notes": "审看640px导出：毛豆荚、打开露豆的一荚、整根黄瓜及横切片可辨；无文字、无额外配料，背景与本组一致，食材质感清楚。"
+      }
+    }
+  ],
+  "signatureTreatment": "六道招牌沿用现有无字菜图。右上暖金花边标签与下沿绿色弧形卖点均由网页绘制，不新增图片请求。"
+}
