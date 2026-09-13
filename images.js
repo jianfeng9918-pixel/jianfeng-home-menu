@@ -1,21 +1,23 @@
-/* 菜图逐道匹配；生成图和用户照片分别在来源中标示。 */
+/* 菜图逐道匹配；V6指定八道菜使用统一生成示意图。 */
 window.MENU_IMAGES = {
   "豆豉蒸排骨": {
-    "sourcePage": "https://www.xiachufang.com/recipe/101790134/",
-    "sourceImage": "https://i2.chuimg.com/09d0d9cc8ac111e6a9a10242ac110002_1400w_1000h.jpg",
-    "sourceTitle": "豆豉蒸排骨",
-    "author": "闸坡阿静",
-    "license": "unknown",
-    "matchReason": "菜谱标题与食材为豆豉、猪排骨，做法为蒸；主图可见带骨排骨、黑豆豉和蒸汁。",
-    "src": "assets/food-7d5f828cb94c405f.webp",
+    "src": "assets/food-v6-black-bean-steamed-ribs.webp",
+    "sourceTitle": "豆豉蒸排骨 · V6 统一菜品示意",
+    "author": "ImageGen · AI 生成",
+    "license": "AI-generated",
+    "sourcePage": "",
+    "sourceImage": "",
+    "position": "50% 50%",
+    "caption": "菜品示意",
+    "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+    "matchReason": "已目视带骨小排、黑豆豉、清浅蒸汁，呈清蒸后的浅色湿润质感，区别于红烧与糖醋。",
     "verified": true,
-    "sha256": "7d5f828cb94c405fb127a69e9615a9b5a1308a81e6a7c55482355e2521b47cab",
     "dimensions": [
       960,
-      685
+      720
     ],
-    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-    "position": "50% 50%"
+    "sha256": "d0d32af1c5036a7ec057bb832af206ac3b98a135e454471446f3e315026e9799",
+    "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。"
   },
   "酸甜排骨": {
     "sourcePage": "https://www.xiachufang.com/recipe/104386617/",
@@ -162,20 +164,23 @@ window.MENU_IMAGES = {
     "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
   },
   "酿苦瓜、辣椒、豆腐": {
-    "sourcePage": "https://www.xiachufang.com/recipe/106449585/",
-    "sourceImage": "https://i2.chuimg.com/3fe083d8690040038c192fd3d10f182e_1280w_959h.jpg",
-    "sourceTitle": "煎酿三宝",
-    "author": "廚娘_Mary姐",
-    "license": "unknown",
-    "matchReason": "煎酿三宝菜谱与主图同时包含肉馅酿苦瓜、酿青辣椒、酿豆腐三种，煎熟成菜，同一真实照片呈现全部三种。",
-    "src": "assets/food-d1a15fd9ed11ba5a.webp",
+    "src": "assets/food-v6-hakka-stuffed-trio.webp",
+    "sourceTitle": "酿苦瓜、辣椒、豆腐 · V6 统一菜品示意",
+    "author": "ImageGen · AI 生成",
+    "license": "AI-generated",
+    "sourcePage": "",
+    "sourceImage": "",
+    "position": "50% 50%",
+    "caption": "菜品示意",
+    "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+    "matchReason": "已目视同一盘内肉馅酿苦瓜环、酿青辣椒与方块酿豆腐，三种主料均清楚并有熟肉馅。",
     "verified": true,
-    "sha256": "d1a15fd9ed11ba5a03721341a5ae571152e200e700390158c599c24093486261",
     "dimensions": [
       960,
-      719
+      720
     ],
-    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
+    "sha256": "24784bff57be2dcc10f9d957787ad7629a5bb775ee3eaca589f69be0ac4e527f",
+    "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。"
   },
   "梅菜肉饼": {
     "sourcePage": "https://icook.tw/recipes/419456",
@@ -308,20 +313,23 @@ window.MENU_IMAGES = {
     "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
   },
   "沙姜鸡": {
-    "sourcePage": "https://www.douguo.com/cookbook/3302923.html",
-    "sourceImage": "https://cp1.douguo.com/upload/caiku/4/7/8/960_4763a013d98f744e42bca13f11232428.jpg",
-    "sourceTitle": "广东丨沙姜鸡煲",
-    "author": "陈家快乐厨娘",
-    "license": "unknown",
-    "matchReason": "豆果原菜谱广东沙姜鸡煲，配料明确沙姜与鸡肉；主图为沙姜鸡煲成菜，保留原照片文字。",
-    "src": "assets/food-3c5296ae208c2f78.webp",
+    "src": "assets/food-v6-sand-ginger-chicken.webp",
+    "sourceTitle": "沙姜鸡 · V6 统一菜品示意",
+    "author": "ImageGen · AI 生成",
+    "license": "AI-generated",
+    "sourcePage": "",
+    "sourceImage": "",
+    "position": "50% 50%",
+    "caption": "菜品示意",
+    "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+    "matchReason": "已目视切块熟鸡肉、金黄鸡皮与浅色沙姜片，清浅酱汁，按用户指定沙姜鸡做法生成。",
     "verified": true,
-    "sha256": "3c5296ae208c2f78b7a2aefd9d7490abd02984272f88a6310fbac3b5886bc7d8",
     "dimensions": [
-      820,
-      960
+      960,
+      720
     ],
-    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
+    "sha256": "52d4e3ec17f897838a277efb5633b8eacc4cf02a30b7bbf3f52f37cadeeb5833",
+    "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。"
   },
   "咖喱鸡": {
     "sourcePage": "https://www.douguo.com/cookbook/1129592.html",
@@ -854,20 +862,23 @@ window.MENU_IMAGES = {
     "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
   },
   "姜葱炒花甲": {
-    "sourcePage": "https://www.xiachufang.com/recipe/107360281/",
-    "sourceImage": "https://i2.chuimg.com/c311fec0face43118f3b9694a48f9743_1920w_2560h.jpg",
-    "sourceTitle": "姜葱炒花甲，简单复刻大排档招牌菜！",
-    "author": "Rola的厨房日记",
-    "license": "unknown",
-    "matchReason": "标题、食材和成菜主图匹配",
-    "src": "assets/food-0a1e9a8c9710f3bf.webp",
+    "src": "assets/food-v6-ginger-scallion-clams.webp",
+    "sourceTitle": "姜葱炒花甲 · V6 统一菜品示意",
+    "author": "ImageGen · AI 生成",
+    "license": "AI-generated",
+    "sourcePage": "",
+    "sourceImage": "",
+    "position": "50% 50%",
+    "caption": "菜品示意",
+    "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+    "matchReason": "已目视开口花甲贝壳、熟贝肉、姜丝及葱段，呈清浅汁炒制质感，区别于螺或青口。",
     "verified": true,
-    "sha256": "0a1e9a8c9710f3bfa74ab3f6c221eb8de75d87845c97038b83dc4097c837d4b7",
     "dimensions": [
-      750,
-      1000
+      960,
+      720
     ],
-    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
+    "sha256": "7470c6d6415b6901399277d368889614fac8b94086d696996690b4aa1a8e5556",
+    "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。"
   },
   "姜葱炒田螺": {
     "sourcePage": "https://www.xiachufang.com/recipe/100160878/",
@@ -1497,43 +1508,23 @@ window.MENU_IMAGES = {
     "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
   },
   "凉拌八爪鱼虾": {
-    "parts": [
-      {
-        "sourcePage": "https://www.xiachufang.com/recipe/107129021/",
-        "sourceImage": "https://i2.chuimg.com/9be857d1f6074e649094fe05824b9b2a_1080w_1080h.jpg",
-        "sourceTitle": "凉拌八爪鱼",
-        "author": "Imely",
-        "license": "unknown",
-        "matchReason": "标题、食材和成菜主图匹配",
-        "src": "assets/food-a900dd82faf5932a.webp",
-        "verified": true,
-        "sha256": "a900dd82faf5932a6fc06d44381e00d20d9cfc6137b62266ef44846b470af732",
-        "dimensions": [
-          1000,
-          1000
-        ],
-        "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-        "label": "凉拌八爪鱼"
-      },
-      {
-        "sourcePage": "https://www.xiachufang.com/recipe/106494970/",
-        "sourceImage": "https://i2.chuimg.com/c2b8a712d1eb4662a1066292bd2284dd_1916w_2558h.jpg",
-        "sourceTitle": "无油！清爽开胃！！泰式风味｜柠檬酸辣凉拌虾",
-        "author": "烟火间",
-        "license": "unknown",
-        "matchReason": "标题、食材和成菜主图匹配",
-        "src": "assets/food-f8cbb60e88686630.webp",
-        "verified": true,
-        "sha256": "f8cbb60e88686630569e635808f2e93b68708aaf2b3c2a604800ec44f0aa32e8",
-        "dimensions": [
-          749,
-          1000
-        ],
-        "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-        "label": "凉拌虾"
-      }
+    "src": "assets/food-v6-octopus-shrimp-salad.webp",
+    "sourceTitle": "凉拌八爪鱼虾 · V6 统一菜品示意",
+    "author": "ImageGen · AI 生成",
+    "license": "AI-generated",
+    "sourcePage": "",
+    "sourceImage": "",
+    "position": "50% 50%",
+    "caption": "菜品示意",
+    "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+    "matchReason": "已目视同一盘熟八爪鱼腕足段及吸盘、去壳熟虾，清淡凉拌汁与少量香草，双主料同时可辨。",
+    "verified": true,
+    "dimensions": [
+      960,
+      720
     ],
-    "verified": true
+    "sha256": "1de5b84f7850bc6361c0abf081a4ed34bfb690b460a7ac10d2665741ac263289",
+    "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。"
   },
   "酸豆角炒生肠": {
     "sourcePage": "https://www.xiachufang.com/recipe/105966061/",
@@ -1552,77 +1543,42 @@ window.MENU_IMAGES = {
     "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
   },
   "白灼鱿鱼+花螺": {
-    "parts": [
-      {
-        "sourcePage": "https://www.xiachufang.com/recipe/107476345/",
-        "sourceImage": "https://i2.chuimg.com/58a0b9627565465690f083480d103647_1080w_1440h.jpg",
-        "sourceTitle": "白灼鱿鱼",
-        "author": "DD_獨角戯",
-        "license": "unknown",
-        "matchReason": "标题、食材和成菜主图匹配",
-        "src": "assets/food-08f32343421acbf7.webp",
-        "verified": true,
-        "sha256": "08f32343421acbf7d356ccfd0595ab091748227aa809cd0e395c3fa6e850401f",
-        "dimensions": [
-          750,
-          1000
-        ],
-        "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-        "label": "白灼鱿鱼"
-      },
-      {
-        "sourcePage": "https://www.xiachufang.com/recipe/104164863/",
-        "sourceImage": "https://i2.chuimg.com/9d796690504e43189cc218eaa47996db_684w_684h.jpg",
-        "sourceTitle": "3分钟快手菜「白灼花螺」",
-        "author": "广东厨娘食光记",
-        "license": "unknown",
-        "matchReason": "标题、食材和成菜主图匹配",
-        "src": "assets/food-5ac2d933c05c76bb.webp",
-        "verified": true,
-        "sha256": "5ac2d933c05c76bb02657f4fcf817d8ae0ff8e8eb002ec3618549bd1f1c9c4be",
-        "dimensions": [
-          684,
-          684
-        ],
-        "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-        "label": "白灼花螺"
-      }
+    "src": "assets/food-v6-blanched-squid-spotted-snails.webp",
+    "sourceTitle": "白灼鱿鱼+花螺 · V6 统一菜品示意",
+    "author": "ImageGen · AI 生成",
+    "license": "AI-generated",
+    "sourcePage": "",
+    "sourceImage": "",
+    "position": "50% 50%",
+    "caption": "菜品示意",
+    "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+    "matchReason": "已目视同一盘鱿鱼筒段与须、带褐色斑纹的花螺螺壳，呈简单白灼清淡质感，双主料同时可辨。",
+    "verified": true,
+    "dimensions": [
+      960,
+      720
     ],
-    "verified": true
+    "sha256": "7b0d39cbd05d675658e59d5f005db4ee216da97f6f5047799454f5ddbcd0a009",
+    "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。"
   },
   "酿蛋+苦瓜": {
-    "parts": [
-      {
-        "src": "assets/hakka-stuffed-eggs-v5.webp",
-        "sourceTitle": "客家酿蛋整盘示意",
-        "author": "ImageGen · AI 生成",
-        "license": "AI-generated",
-        "sourcePage": "",
-        "sourceImage": "",
-        "position": "center",
-        "caption": "菜品示意",
-        "note": "按蛋皮包肉的客家酿蛋形态生成，非用户实拍。",
-        "label": "酿蛋"
-      },
-      {
-        "sourcePage": "https://www.xiachufang.com/recipe/100516234/",
-        "sourceImage": "https://i2.chuimg.com/8034d5ac892f11e6a9a10242ac110002_1280w_1280h.jpg",
-        "sourceTitle": "客家酿苦瓜",
-        "author": "tangtang瑭瑭",
-        "license": "unknown",
-        "matchReason": "标题、食材和成菜主图匹配",
-        "src": "assets/food-a5ec09249b972714.webp",
-        "verified": true,
-        "sha256": "a5ec09249b972714b6e283468e17c926126b574956639a1a06dded85d7232090",
-        "dimensions": [
-          1000,
-          1000
-        ],
-        "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-        "label": "酿苦瓜"
-      }
+    "src": "assets/food-v6-stuffed-eggs-bitter-melon.webp",
+    "sourceTitle": "酿蛋+苦瓜 · V6 统一菜品示意",
+    "author": "ImageGen · AI 生成",
+    "license": "AI-generated",
+    "sourcePage": "",
+    "sourceImage": "",
+    "position": "50% 50%",
+    "caption": "菜品示意",
+    "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+    "matchReason": "已目视同一盘蛋皮包肉的金黄酿蛋（切开可见肉馅）与有明显纹理、填满熟肉馅的苦瓜环；没有将苦瓜炒蛋替代。",
+    "verified": true,
+    "dimensions": [
+      960,
+      720
     ],
-    "verified": true
+    "sha256": "062d876493dc879de40d814dd52f36a76ea5d0319bf4fab3f0342d5799d54aac",
+    "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。"
   },
   "碌鹅": {
     "sourcePage": "https://m.thepaper.cn/newsDetail_forward_8480619",
@@ -1659,21 +1615,23 @@ window.MENU_IMAGES = {
     "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。"
   },
   "客家土猪汤": {
-    "sourcePage": "https://k.sina.cn/article_7235451621_1af443ae500100lp3r.html?from=food",
-    "sourceImage": "https://k.sinaimg.cn/n/sinacn10118/226/w640h386/20200106/d68b-imrkkfy4003052.jpg/w700d1q75cms.jpg",
-    "sourceTitle": "原汁原味客家菜“客家本色”全面升级（客家土猪汤）",
-    "author": "星辰的广场舞（发布者；摄影作者未单独标明）",
-    "license": "unknown",
-    "matchReason": "文章明确为客家土猪汤，使用农家土黑猪肉与水密封蒸制60分钟；对应成菜图为清汤猪肉碗，可见瘦肉、汤汁与葱花。",
-    "src": "assets/food-45a63ff6f2ec1a8c.webp",
+    "src": "assets/food-v6-hakka-pork-soup.webp",
+    "sourceTitle": "客家土猪汤 · V6 统一菜品示意",
+    "author": "ImageGen · AI 生成",
+    "license": "AI-generated",
+    "sourcePage": "",
+    "sourceImage": "",
+    "position": "50% 50%",
+    "caption": "菜品示意",
+    "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+    "matchReason": "已目视清浅肉汤与熟猪肉片，米白汤碗，未混入内脏、骨头或其他汤料；土猪汤为用户指定菜品示意。",
     "verified": true,
-    "sha256": "45a63ff6f2ec1a8c76c17c7f4f5ccbfcbc0659c2d577544cbc37fa6565404555",
     "dimensions": [
-      640,
-      386
+      960,
+      720
     ],
-    "position": "50% 53%",
-    "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。"
+    "sha256": "00580e747f47142815b63cddb883034399e61ac3c0073dcb9f37d1687199eb77",
+    "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。"
   },
   "叉烧肉": {
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Char_siu_pieces.jpg",

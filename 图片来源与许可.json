@@ -1,26 +1,31 @@
 {
   "checked": "2026-09-13",
   "dishCount": 106,
-  "imageCount": 109,
-  "note": "菜图仅供示意。unknown 表示未核实独立再使用许可，不表示开放许可。V5 酿蛋图由 ImageGen 生成；海鲜版套餐图由用户提供。响应式图片只进行等比缩放和压缩，来源沿用原图。",
+  "imageCount": 106,
+  "note": "菜图仅供示意。unknown 表示未核实独立再使用许可，不表示开放许可。V5 单菜酿蛋和 V6 指定八道菜图由内置 ImageGen 生成，并在相应条目注明；海鲜版套餐图由用户提供且保持不变。响应式图片只进行等比缩放和压缩，来源沿用原图。",
   "images": [
     {
-      "sourcePage": "https://www.xiachufang.com/recipe/101790134/",
-      "sourceImage": "https://i2.chuimg.com/09d0d9cc8ac111e6a9a10242ac110002_1400w_1000h.jpg",
-      "sourceTitle": "豆豉蒸排骨",
-      "author": "闸坡阿静",
-      "license": "unknown",
-      "matchReason": "菜谱标题与食材为豆豉、猪排骨，做法为蒸；主图可见带骨排骨、黑豆豉和蒸汁。",
-      "src": "assets/food-7d5f828cb94c405f.webp",
+      "src": "assets/food-v6-black-bean-steamed-ribs.webp",
+      "sourceTitle": "豆豉蒸排骨 · V6 统一菜品示意",
+      "author": "ImageGen · AI 生成",
+      "license": "AI-generated",
+      "sourcePage": "",
+      "sourceImage": "",
+      "position": "50% 50%",
+      "caption": "菜品示意",
+      "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+      "matchReason": "已目视带骨小排、黑豆豉、清浅蒸汁，呈清蒸后的浅色湿润质感，区别于红烧与糖醋。",
       "verified": true,
-      "sha256": "7d5f828cb94c405fb127a69e9615a9b5a1308a81e6a7c55482355e2521b47cab",
       "dimensions": [
         960,
-        685
+        720
       ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "position": "50% 50%",
-      "dishName": "豆豉蒸排骨"
+      "sha256": "d0d32af1c5036a7ec057bb832af206ac3b98a135e454471446f3e315026e9799",
+      "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。",
+      "dishName": "豆豉蒸排骨",
+      "generationMethod": "内置 image_gen；每道菜独立调用一次",
+      "generationVersion": "V6",
+      "generationPrompt": "Use case: photorealistic-natural. Create exactly ONE photorealistic Chinese home-menu food photograph, landscape 4:3. Unified series styling: camera about 45 degrees above the table, one centered unbranded ivory ceramic serving vessel with its complete rim visible, dish occupies about 75% of the frame with a little breathing room; pale light-oak wooden tabletop; soft natural window light; appetizing realistic food textures, true ingredient colors, fresh modest green garnish. No people, hands, utensils, extra dishes, table clutter, collage, panels, typography, titles, captions, numbers, badges, labels, watermarks, signatures or logos anywhere. Keep the entire dish in focus. Subject: Cantonese fermented-black-bean STEAMED pork spare ribs, served on a shallow ivory round plate. About 12 small chopped bone-in pork rib pieces, moist pale beige tender pork with clearly recognizable small rib bones and natural light fat, scattered distinct black fermented soybeans and a few thin green scallion pieces. A shallow pool of clear pale-golden steaming juice. It must look gently steamed, not dark braised, roasted, grilled or sweet-and-sour. No thick red or dark sauce. Natural portion, appetizing home cooking."
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/104386617/",
@@ -176,21 +181,27 @@
       "dishName": "猪肉炒青菜"
     },
     {
-      "sourcePage": "https://www.xiachufang.com/recipe/106449585/",
-      "sourceImage": "https://i2.chuimg.com/3fe083d8690040038c192fd3d10f182e_1280w_959h.jpg",
-      "sourceTitle": "煎酿三宝",
-      "author": "廚娘_Mary姐",
-      "license": "unknown",
-      "matchReason": "煎酿三宝菜谱与主图同时包含肉馅酿苦瓜、酿青辣椒、酿豆腐三种，煎熟成菜，同一真实照片呈现全部三种。",
-      "src": "assets/food-d1a15fd9ed11ba5a.webp",
+      "src": "assets/food-v6-hakka-stuffed-trio.webp",
+      "sourceTitle": "酿苦瓜、辣椒、豆腐 · V6 统一菜品示意",
+      "author": "ImageGen · AI 生成",
+      "license": "AI-generated",
+      "sourcePage": "",
+      "sourceImage": "",
+      "position": "50% 50%",
+      "caption": "菜品示意",
+      "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+      "matchReason": "已目视同一盘内肉馅酿苦瓜环、酿青辣椒与方块酿豆腐，三种主料均清楚并有熟肉馅。",
       "verified": true,
-      "sha256": "d1a15fd9ed11ba5a03721341a5ae571152e200e700390158c599c24093486261",
       "dimensions": [
         960,
-        719
+        720
       ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dishName": "酿苦瓜、辣椒、豆腐"
+      "sha256": "24784bff57be2dcc10f9d957787ad7629a5bb775ee3eaca589f69be0ac4e527f",
+      "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。",
+      "dishName": "酿苦瓜、辣椒、豆腐",
+      "generationMethod": "内置 image_gen；每道菜独立调用一次",
+      "generationVersion": "V6",
+      "generationPrompt": "Use case: photorealistic-natural. Create exactly ONE photorealistic Chinese home-menu food photograph, landscape 4:3. Unified series styling: camera about 45 degrees above the table, one centered unbranded ivory ceramic serving vessel with its complete rim visible, dish occupies about 75% of the frame with a little breathing room; pale light-oak wooden tabletop; soft natural window light; appetizing realistic food textures, true ingredient colors, fresh modest green garnish. No people, hands, utensils, extra dishes, table clutter, collage, panels, typography, titles, captions, numbers, badges, labels, watermarks, signatures or logos anywhere. Keep the entire dish in focus. Subject: Hakka pan-seared stuffed trio, 煎酿三宝, ONE coherent round ivory platter containing ALL THREE distinct foods. Four thick GREEN BITTER MELON RINGS with naturally ridged bitter-melon skin and central cavities filled with cooked minced pork; four clearly square WHITE TOFU BLOCKS with a small cavity filled with browned pork mince; three lengthwise green chilli/pepper halves generously filled with cooked pork mince. All fillings visibly cooked and lightly golden from pan searing. Make tofu blocks and ridged bitter melon rings clearly distinguishable. Arrange all three naturally together on the same plate, with very light savory pan juices and a few scallion bits. No egg dumplings, no stuffed zucchini, no separate panels."
     },
     {
       "sourcePage": "https://icook.tw/recipes/419456",
@@ -331,21 +342,27 @@
       "dishName": "盐焗鸡"
     },
     {
-      "sourcePage": "https://www.douguo.com/cookbook/3302923.html",
-      "sourceImage": "https://cp1.douguo.com/upload/caiku/4/7/8/960_4763a013d98f744e42bca13f11232428.jpg",
-      "sourceTitle": "广东丨沙姜鸡煲",
-      "author": "陈家快乐厨娘",
-      "license": "unknown",
-      "matchReason": "豆果原菜谱广东沙姜鸡煲，配料明确沙姜与鸡肉；主图为沙姜鸡煲成菜，保留原照片文字。",
-      "src": "assets/food-3c5296ae208c2f78.webp",
+      "src": "assets/food-v6-sand-ginger-chicken.webp",
+      "sourceTitle": "沙姜鸡 · V6 统一菜品示意",
+      "author": "ImageGen · AI 生成",
+      "license": "AI-generated",
+      "sourcePage": "",
+      "sourceImage": "",
+      "position": "50% 50%",
+      "caption": "菜品示意",
+      "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+      "matchReason": "已目视切块熟鸡肉、金黄鸡皮与浅色沙姜片，清浅酱汁，按用户指定沙姜鸡做法生成。",
       "verified": true,
-      "sha256": "3c5296ae208c2f78b7a2aefd9d7490abd02984272f88a6310fbac3b5886bc7d8",
       "dimensions": [
-        820,
-        960
+        960,
+        720
       ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dishName": "沙姜鸡"
+      "sha256": "52d4e3ec17f897838a277efb5633b8eacc4cf02a30b7bbf3f52f37cadeeb5833",
+      "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。",
+      "dishName": "沙姜鸡",
+      "generationMethod": "内置 image_gen；每道菜独立调用一次",
+      "generationVersion": "V6",
+      "generationPrompt": "Use case: photorealistic-natural. Create exactly ONE photorealistic Chinese home-menu food photograph, landscape 4:3. Unified series styling: camera about 45 degrees above the table, one centered unbranded ivory ceramic serving vessel with its complete rim visible, dish occupies about 75% of the frame with a little breathing room; pale light-oak wooden tabletop; soft natural window light; appetizing realistic food textures, true ingredient colors, fresh modest green garnish. No people, hands, utensils, extra dishes, table clutter, collage, panels, typography, titles, captions, numbers, badges, labels, watermarks, signatures or logos anywhere. Keep the entire dish in focus. Subject: Guangdong sand-ginger chicken, 沙姜鸡, presented on one shallow ivory round plate. Generous bite-size chopped cooked bone-in chicken pieces with lightly golden glossy skin and tender white meat at cut surfaces; small aromatic pale-beige slices/bits of sand ginger visible between chicken pieces, a few fresh green scallion lengths. Light savory ginger cooking juices coating the chicken, not a thick dark glaze. A natural cooked dish of chopped chicken rather than a whole roast, no curry, no potatoes, no red chilli sauce, no heavy dark soy braise. Keep chicken piece shapes and skin texture realistic."
     },
     {
       "sourcePage": "https://www.douguo.com/cookbook/1129592.html",
@@ -911,21 +928,27 @@
       "dishName": "姜葱炒鱿鱼"
     },
     {
-      "sourcePage": "https://www.xiachufang.com/recipe/107360281/",
-      "sourceImage": "https://i2.chuimg.com/c311fec0face43118f3b9694a48f9743_1920w_2560h.jpg",
-      "sourceTitle": "姜葱炒花甲，简单复刻大排档招牌菜！",
-      "author": "Rola的厨房日记",
-      "license": "unknown",
-      "matchReason": "标题、食材和成菜主图匹配",
-      "src": "assets/food-0a1e9a8c9710f3bf.webp",
+      "src": "assets/food-v6-ginger-scallion-clams.webp",
+      "sourceTitle": "姜葱炒花甲 · V6 统一菜品示意",
+      "author": "ImageGen · AI 生成",
+      "license": "AI-generated",
+      "sourcePage": "",
+      "sourceImage": "",
+      "position": "50% 50%",
+      "caption": "菜品示意",
+      "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+      "matchReason": "已目视开口花甲贝壳、熟贝肉、姜丝及葱段，呈清浅汁炒制质感，区别于螺或青口。",
       "verified": true,
-      "sha256": "0a1e9a8c9710f3bfa74ab3f6c221eb8de75d87845c97038b83dc4097c837d4b7",
       "dimensions": [
-        750,
-        1000
+        960,
+        720
       ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dishName": "姜葱炒花甲"
+      "sha256": "7470c6d6415b6901399277d368889614fac8b94086d696996690b4aa1a8e5556",
+      "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。",
+      "dishName": "姜葱炒花甲",
+      "generationMethod": "内置 image_gen；每道菜独立调用一次",
+      "generationVersion": "V6",
+      "generationPrompt": "Use case: photorealistic-natural. Create exactly ONE photorealistic Chinese home-menu food photograph, landscape 4:3. Unified series styling: camera about 45 degrees above the table, one centered unbranded ivory ceramic serving vessel with its complete rim visible, dish occupies about 75% of the frame with a little breathing room; pale light-oak wooden tabletop; soft natural window light; appetizing realistic food textures, true ingredient colors, fresh modest green garnish. No people, hands, utensils, extra dishes, table clutter, collage, panels, typography, titles, captions, numbers, badges, labels, watermarks, signatures or logos anywhere. Keep the entire dish in focus. Subject: Cantonese ginger-and-scallion stir-fried Manila clams, 姜葱炒花甲, in one shallow ivory round plate. Many realistically sized small Manila clam shells, naturally patterned gray-beige/brown and open to show plump cooked clam meat; thin yellow ginger julienne and fresh bright green scallion lengths distributed through the clams. Light glossy savory stir-fry juices pooled sparingly below, no thick sauce. Clearly bivalve clam shells with two natural halves, not spiral snails, mussels or oysters. No pasta, no unrelated ingredients. A generous fresh appetizing home-style portion."
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/100160878/",
@@ -1596,40 +1619,27 @@
       "dishName": "酸辣毛豆"
     },
     {
-      "sourcePage": "https://www.xiachufang.com/recipe/107129021/",
-      "sourceImage": "https://i2.chuimg.com/9be857d1f6074e649094fe05824b9b2a_1080w_1080h.jpg",
-      "sourceTitle": "凉拌八爪鱼",
-      "author": "Imely",
-      "license": "unknown",
-      "matchReason": "标题、食材和成菜主图匹配",
-      "src": "assets/food-a900dd82faf5932a.webp",
+      "src": "assets/food-v6-octopus-shrimp-salad.webp",
+      "sourceTitle": "凉拌八爪鱼虾 · V6 统一菜品示意",
+      "author": "ImageGen · AI 生成",
+      "license": "AI-generated",
+      "sourcePage": "",
+      "sourceImage": "",
+      "position": "50% 50%",
+      "caption": "菜品示意",
+      "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+      "matchReason": "已目视同一盘熟八爪鱼腕足段及吸盘、去壳熟虾，清淡凉拌汁与少量香草，双主料同时可辨。",
       "verified": true,
-      "sha256": "a900dd82faf5932a6fc06d44381e00d20d9cfc6137b62266ef44846b470af732",
       "dimensions": [
-        1000,
-        1000
+        960,
+        720
       ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "label": "凉拌八爪鱼",
-      "dishName": "凉拌八爪鱼虾"
-    },
-    {
-      "sourcePage": "https://www.xiachufang.com/recipe/106494970/",
-      "sourceImage": "https://i2.chuimg.com/c2b8a712d1eb4662a1066292bd2284dd_1916w_2558h.jpg",
-      "sourceTitle": "无油！清爽开胃！！泰式风味｜柠檬酸辣凉拌虾",
-      "author": "烟火间",
-      "license": "unknown",
-      "matchReason": "标题、食材和成菜主图匹配",
-      "src": "assets/food-f8cbb60e88686630.webp",
-      "verified": true,
-      "sha256": "f8cbb60e88686630569e635808f2e93b68708aaf2b3c2a604800ec44f0aa32e8",
-      "dimensions": [
-        749,
-        1000
-      ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "label": "凉拌虾",
-      "dishName": "凉拌八爪鱼虾"
+      "sha256": "1de5b84f7850bc6361c0abf081a4ed34bfb690b460a7ac10d2665741ac263289",
+      "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。",
+      "dishName": "凉拌八爪鱼虾",
+      "generationMethod": "内置 image_gen；每道菜独立调用一次",
+      "generationVersion": "V6",
+      "generationPrompt": "Use case: photorealistic-natural. Create exactly ONE photorealistic Chinese home-menu food photograph, landscape 4:3. Unified series styling: camera about 45 degrees above the table, one centered unbranded ivory ceramic serving vessel with its complete rim visible, dish occupies about 75% of the frame with a little breathing room; pale light-oak wooden tabletop; soft natural window light; appetizing realistic food textures, true ingredient colors, fresh modest green garnish. No people, hands, utensils, extra dishes, table clutter, collage, panels, typography, titles, captions, numbers, badges, labels, watermarks, signatures or logos anywhere. Keep the entire dish in focus. Subject: Chinese cold tossed octopus and shrimp salad, 凉拌八爪鱼虾, in ONE shallow ivory round serving plate. Both main ingredients visibly abundant and recognizable: bite-size cooked octopus arm pieces with purple skin, pale tender flesh and distinct rows of round SUCTION CUPS; and plump fully cooked peeled pink-orange SHRIMP curled naturally, around equal proportions. Tossed lightly in clear savory-vinegar dressing with a small amount of fine green scallion/cilantro and tiny red chilli accents. Seafood remains the clear majority. No squid rings, no fish, no giant raw tentacles, no separate bowls or collage, no thick mayonnaise."
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/105966061/",
@@ -1649,71 +1659,50 @@
       "dishName": "酸豆角炒生肠"
     },
     {
-      "sourcePage": "https://www.xiachufang.com/recipe/107476345/",
-      "sourceImage": "https://i2.chuimg.com/58a0b9627565465690f083480d103647_1080w_1440h.jpg",
-      "sourceTitle": "白灼鱿鱼",
-      "author": "DD_獨角戯",
-      "license": "unknown",
-      "matchReason": "标题、食材和成菜主图匹配",
-      "src": "assets/food-08f32343421acbf7.webp",
-      "verified": true,
-      "sha256": "08f32343421acbf7d356ccfd0595ab091748227aa809cd0e395c3fa6e850401f",
-      "dimensions": [
-        750,
-        1000
-      ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "label": "白灼鱿鱼",
-      "dishName": "白灼鱿鱼+花螺"
-    },
-    {
-      "sourcePage": "https://www.xiachufang.com/recipe/104164863/",
-      "sourceImage": "https://i2.chuimg.com/9d796690504e43189cc218eaa47996db_684w_684h.jpg",
-      "sourceTitle": "3分钟快手菜「白灼花螺」",
-      "author": "广东厨娘食光记",
-      "license": "unknown",
-      "matchReason": "标题、食材和成菜主图匹配",
-      "src": "assets/food-5ac2d933c05c76bb.webp",
-      "verified": true,
-      "sha256": "5ac2d933c05c76bb02657f4fcf817d8ae0ff8e8eb002ec3618549bd1f1c9c4be",
-      "dimensions": [
-        684,
-        684
-      ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "label": "白灼花螺",
-      "dishName": "白灼鱿鱼+花螺"
-    },
-    {
-      "src": "assets/hakka-stuffed-eggs-v5.webp",
-      "sourceTitle": "客家酿蛋整盘示意",
+      "src": "assets/food-v6-blanched-squid-spotted-snails.webp",
+      "sourceTitle": "白灼鱿鱼+花螺 · V6 统一菜品示意",
       "author": "ImageGen · AI 生成",
       "license": "AI-generated",
       "sourcePage": "",
       "sourceImage": "",
-      "position": "center",
+      "position": "50% 50%",
       "caption": "菜品示意",
-      "note": "按蛋皮包肉的客家酿蛋形态生成，非用户实拍。",
-      "label": "酿蛋",
-      "dishName": "酿蛋+苦瓜"
+      "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+      "matchReason": "已目视同一盘鱿鱼筒段与须、带褐色斑纹的花螺螺壳，呈简单白灼清淡质感，双主料同时可辨。",
+      "verified": true,
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "7b0d39cbd05d675658e59d5f005db4ee216da97f6f5047799454f5ddbcd0a009",
+      "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。",
+      "dishName": "白灼鱿鱼+花螺",
+      "generationMethod": "内置 image_gen；每道菜独立调用一次",
+      "generationVersion": "V6",
+      "generationPrompt": "Use case: photorealistic-natural. Create exactly ONE photorealistic Chinese home-menu food photograph, landscape 4:3. Unified series styling: camera about 45 degrees above the table, one centered unbranded ivory ceramic serving vessel with its complete rim visible, dish occupies about 75% of the frame with a little breathing room; pale light-oak wooden tabletop; soft natural window light; appetizing realistic food textures, true ingredient colors, fresh modest green garnish. No people, hands, utensils, extra dishes, table clutter, collage, panels, typography, titles, captions, numbers, badges, labels, watermarks, signatures or logos anywhere. Keep the entire dish in focus. Subject: Cantonese simply blanched squid AND spotted babylon sea snails, 白灼鱿鱼＋花螺, on ONE ivory round platter. One half of the plate holds tender fully cooked squid: natural white-and-light-pink short mantle/tube pieces, a few rings, and small delicate squid tentacle clusters. Other half holds about eight intact spotted babylon shells (花螺), creamy ivory conical spiral shells with unmistakable brown rectangular blotches, visible small cooked snail meat at openings. Both parts naturally share the same plate under the same light and scale. Simple blanched presentation, modest green scallion slivers, almost no sauce. No clams, mussels, oysters, shrimp or octopus; no breading, frying, red spicy sauce, collage or divided photo panels."
     },
     {
-      "sourcePage": "https://www.xiachufang.com/recipe/100516234/",
-      "sourceImage": "https://i2.chuimg.com/8034d5ac892f11e6a9a10242ac110002_1280w_1280h.jpg",
-      "sourceTitle": "客家酿苦瓜",
-      "author": "tangtang瑭瑭",
-      "license": "unknown",
-      "matchReason": "标题、食材和成菜主图匹配",
-      "src": "assets/food-a5ec09249b972714.webp",
+      "src": "assets/food-v6-stuffed-eggs-bitter-melon.webp",
+      "sourceTitle": "酿蛋+苦瓜 · V6 统一菜品示意",
+      "author": "ImageGen · AI 生成",
+      "license": "AI-generated",
+      "sourcePage": "",
+      "sourceImage": "",
+      "position": "50% 50%",
+      "caption": "菜品示意",
+      "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+      "matchReason": "已目视同一盘蛋皮包肉的金黄酿蛋（切开可见肉馅）与有明显纹理、填满熟肉馅的苦瓜环；没有将苦瓜炒蛋替代。",
       "verified": true,
-      "sha256": "a5ec09249b972714b6e283468e17c926126b574956639a1a06dded85d7232090",
       "dimensions": [
-        1000,
-        1000
+        960,
+        720
       ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "label": "酿苦瓜",
-      "dishName": "酿蛋+苦瓜"
+      "sha256": "062d876493dc879de40d814dd52f36a76ea5d0319bf4fab3f0342d5799d54aac",
+      "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。",
+      "dishName": "酿蛋+苦瓜",
+      "generationMethod": "内置 image_gen；每道菜独立调用一次",
+      "generationVersion": "V6",
+      "generationPrompt": "Use case: photorealistic-natural. Create exactly ONE photorealistic Chinese home-menu food photograph, landscape 4:3. Unified series styling: camera about 45 degrees above the table, one centered unbranded ivory ceramic serving vessel with its complete rim visible, dish occupies about 75% of the frame with a little breathing room; pale light-oak wooden tabletop; soft natural window light; appetizing realistic food textures, true ingredient colors, fresh modest green garnish. No people, hands, utensils, extra dishes, table clutter, collage, panels, typography, titles, captions, numbers, badges, labels, watermarks, signatures or logos anywhere. Keep the entire dish in focus. Subject: Hakka egg-skin pork dumplings together with pork-stuffed bitter melon, 酿蛋＋苦瓜, ONE coherent round ivory platter. On the same plate, five golden half-moon dumplings made of THIN FRIED EGG SKIN wrapped around cooked minced pork, with gently crinkled natural egg-skin edges; one dumpling is cut open showing its beige cooked pork filling and thin yellow egg wrapper. Alongside them are six thick ridged green BITTER MELON RINGS, each cavity completely filled with lightly browned cooked pork mince. Both foods equally clear and recognizable. Sparse chopped scallions, tiny amount of clear savory sauce. Egg wrappers are made of egg, NOT wheat pastry, NOT boiled eggs, NOT omelette with bitter-melon slices mixed in, NOT deviled eggs. Natural coherent single-plate composition, not split images."
     },
     {
       "sourcePage": "https://m.thepaper.cn/newsDetail_forward_8480619",
@@ -1752,22 +1741,27 @@
       "dishName": "客家酿豆腐"
     },
     {
-      "sourcePage": "https://k.sina.cn/article_7235451621_1af443ae500100lp3r.html?from=food",
-      "sourceImage": "https://k.sinaimg.cn/n/sinacn10118/226/w640h386/20200106/d68b-imrkkfy4003052.jpg/w700d1q75cms.jpg",
-      "sourceTitle": "原汁原味客家菜“客家本色”全面升级（客家土猪汤）",
-      "author": "星辰的广场舞（发布者；摄影作者未单独标明）",
-      "license": "unknown",
-      "matchReason": "文章明确为客家土猪汤，使用农家土黑猪肉与水密封蒸制60分钟；对应成菜图为清汤猪肉碗，可见瘦肉、汤汁与葱花。",
-      "src": "assets/food-45a63ff6f2ec1a8c.webp",
+      "src": "assets/food-v6-hakka-pork-soup.webp",
+      "sourceTitle": "客家土猪汤 · V6 统一菜品示意",
+      "author": "ImageGen · AI 生成",
+      "license": "AI-generated",
+      "sourcePage": "",
+      "sourceImage": "",
+      "position": "50% 50%",
+      "caption": "菜品示意",
+      "note": "用户确认后按菜名与主料生成的示意图片，非用户实拍。",
+      "matchReason": "已目视清浅肉汤与熟猪肉片，米白汤碗，未混入内脏、骨头或其他汤料；土猪汤为用户指定菜品示意。",
       "verified": true,
-      "sha256": "45a63ff6f2ec1a8c76c17c7f4f5ccbfcbc0659c2d577544cbc37fa6565404555",
       "dimensions": [
-        640,
-        386
+        960,
+        720
       ],
-      "position": "50% 53%",
-      "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。",
-      "dishName": "客家土猪汤"
+      "sha256": "00580e747f47142815b63cddb883034399e61ac3c0073dcb9f37d1687199eb77",
+      "modifications": "内置image_gen逐菜全新生成；仅等比缩放及WebP编码，没有外部网图素材、照片去字或拼接。",
+      "dishName": "客家土猪汤",
+      "generationMethod": "内置 image_gen；每道菜独立调用一次",
+      "generationVersion": "V6",
+      "generationPrompt": "Use case: photorealistic-natural. Create exactly ONE photorealistic Chinese home-menu food photograph, landscape 4:3. Unified series styling: camera about 45 degrees above the table, one centered unbranded ivory ceramic serving vessel with its complete rim visible, dish occupies about 75% of the frame with a little breathing room; pale light-oak wooden tabletop; soft natural window light; appetizing realistic food textures, true ingredient colors, fresh modest green garnish. No people, hands, utensils, extra dishes, table clutter, collage, panels, typography, titles, captions, numbers, badges, labels, watermarks, signatures or logos anywhere. Keep the entire dish in focus. Subject: Hakka clear pork soup, 客家土猪汤. One centered ivory ceramic soup bowl, with a complete visible rim, filled with clear lightly golden pork broth. Several generous irregular thin slices and small tender chunks of fully cooked lean pork visibly suspended near the surface; subtle natural oil droplets; just a few chopped green scallions. Pure pork and water style, no bones, organs, noodles, mushrooms, vegetables, seafood, heavy spices or creamy broth. The pork pieces must be visibly cooked, not pink raw meat. Comforting simple homemade clear meat soup."
     },
     {
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Char_siu_pieces.jpg",
