@@ -1,0 +1,445 @@
+{
+  "version": 7,
+  "createdAt": "2026-09-14",
+  "direction": "完整手绘餐桌场景横幅；门头和十个栏目均为独立的全幅背景，网页文字可编辑。",
+  "processing": "内置 ImageGen 全新生成，仅进行完整画布等比缩放和 WebP 压缩；未裁剪、调色或拼接。旧透明小插画方案不用于网页。",
+  "note": "现有菜图、菜单数据和海鲜套餐照片保持不变。",
+  "assetCount": 11,
+  "fileCount": 23,
+  "totalBytes": 352260,
+  "assets": [
+    {
+      "id": "masthead",
+      "theme": "Subject on the right: a generous home-family meal led by golden Hakka stuffed egg dumplings and an inviting braised-meat platter. Show thin golden fried EGG SKIN wrapped around cooked minced pork, one opened dumpling visibly showing its mince filling; alongside a small ivory platter of glossy braised pork slices, a few braised egg halves and tofu. A modest small leafy-green side dish and the edge of a warm terracotta serving pot can imply a welcoming family meal, all naturally sharing the same green-clothed table. The main visual MUST be appetizing food, specifically golden stuffed eggs plus braised meats. Do NOT use a stack of empty bowls, chopsticks or a tray of tableware as the main subject. Maintain the calm LEFT 55 percent green fabric area and continuous tabletop; no people or hands.",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE complete premium hand-painted gouache restaurant/home-menu BANNER BACKGROUND, exactly landscape 3:1 composition, 1536 x 512 pixels. This must be a FULL-BLEED OPAQUE RGB PAINTING, no transparency, no checkerboard, no cutout icon, no isolated sticker. A continuous welcoming home dining-table scene with believable 3/4-view perspective and soft side lighting, subtle depth and atmosphere. Fresh leafy GREEN TABLECLOTH runs across the ENTIRE image from left edge to right edge. The LEFT approximately 55 percent is intentionally low-detail green painted fabric with only soft fine paper/linen texture and gentle tonal variation, generous calm space for webpage text; do NOT draw text. Along the bottom, a restrained continuous warm wooden table edge and delicate painted texture visually connect the whole scene. On the RIGHT approximately 45 percent, the specified real food subject is naturally arranged in complete ivory ceramic serving dishes, at a scale that reads as a rich full-width dining-table illustration rather than tiny clipart. Keep the food inside the right half, all main dishes and rims complete; no clipping of main food. Fine layered gouache brushwork, delicate integrated paper texture, refined food illustration with cream/ivory ceramics, warm golden food, fresh greens, a little warm terracotta, harmonious sophisticated palette. Appetizing and hospitable, NOT a photograph, NOT 3D, NOT a cartoon character, no cute faces. No lettering, calligraphy, numbers, logo, brand, badge, labels, frame, watermark, or corner tag anywhere. Subject on the right: a generous home-family meal led by golden Hakka stuffed egg dumplings and an inviting braised-meat platter. Show thin golden fried EGG SKIN wrapped around cooked minced pork, one opened dumpling visibly showing its mince filling; alongside a small ivory platter of glossy braised pork slices, a few braised egg halves and tofu. A modest small leafy-green side dish and the edge of a warm terracotta serving pot can imply a welcoming family meal, all naturally sharing the same green-clothed table. The main visual MUST be appetizing food, specifically golden stuffed eggs plus braised meats. Do NOT use a stack of empty bowls, chopsticks or a tray of tableware as the main subject. Maintain the calm LEFT 55 percent green fabric area and continuous tabletop; no people or hands.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "42a6687126983d5b4b7ee534d15196402e4b397e1b603772fbd74ae8b49e9db4",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-masthead-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 5408,
+          "quality": 56,
+          "sha256": "7845ad8e1cadb36d1fc2bb6d53c919af99fcdae2277a428a16302217afe2d031"
+        },
+        {
+          "src": "assets/banner-v7-masthead-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 17712,
+          "quality": 58,
+          "sha256": "3fcfd22c6945c5472da4d0499c3625fb697e0fab50b4e86bccbe10c01b96c53c"
+        },
+        {
+          "src": "assets/banner-v7-masthead-w1280.webp",
+          "width": 1280,
+          "height": 427,
+          "bytes": 48826,
+          "quality": 52,
+          "sha256": "71d5c2770bdcc11ff9c3324a6b539c5fc4da44e5b5a9f1f734c799c0f01b1e6e"
+        }
+      ],
+      "inspection": {
+        "originalInspectedWith": "view_image",
+        "finalInspectedWith": "view_image",
+        "finalInspectedWidths": [
+          640,
+          1280
+        ],
+        "conclusion": "完整绿色餐桌全幅场景，右侧金黄蛋皮包肉馅（切开处可见熟肉馅）、卤肉卤蛋豆腐与青菜；左侧低细节绿色区域可容纳网页文字。主要菜盘完整，无文字或棋盘格。",
+        "result": "pass"
+      }
+    },
+    {
+      "id": "signature",
+      "theme": "Subject on the right: a beautiful generous ivory serving plate of golden Hakka stuffed egg dumplings. Thin pan-fried EGG SKIN wraps cooked pork mince, naturally folded with delicate crinkled edges; one piece opened to reveal the beige cooked minced-meat filling and thin yellow egg wrapper. A few fresh green scallion pieces and a restrained small side dish imply comforting home cooking. Whole plate and food complete in the right side of the continuous green-tablecloth dining scene. NOT wheat pastry, not boiled eggs, not egg halves. Avoid isolated stickers; paint natural table shadows and depth while keeping the left 55 percent calm.",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE complete premium hand-painted gouache restaurant/home-menu BANNER BACKGROUND, exactly landscape 3:1 composition, 1536 x 512 pixels. This must be a FULL-BLEED OPAQUE RGB PAINTING, no transparency, no checkerboard, no cutout icon, no isolated sticker. A continuous welcoming home dining-table scene with believable 3/4-view perspective and soft side lighting, subtle depth and atmosphere. Fresh leafy GREEN TABLECLOTH runs across the ENTIRE image from left edge to right edge. The LEFT approximately 55 percent is intentionally low-detail green painted fabric with only soft fine paper/linen texture and gentle tonal variation, generous calm space for webpage text; do NOT draw text. Along the bottom, a restrained continuous warm wooden table edge and delicate painted texture visually connect the whole scene. On the RIGHT approximately 45 percent, the specified real food subject is naturally arranged in complete ivory ceramic serving dishes, at a scale that reads as a rich full-width dining-table illustration rather than tiny clipart. Keep the food inside the right half, all main dishes and rims complete; no clipping of main food. Fine layered gouache brushwork, delicate integrated paper texture, refined food illustration with cream/ivory ceramics, warm golden food, fresh greens, a little warm terracotta, harmonious sophisticated palette. Appetizing and hospitable, NOT a photograph, NOT 3D, NOT a cartoon character, no cute faces. No lettering, calligraphy, numbers, logo, brand, badge, labels, frame, watermark, or corner tag anywhere. Subject on the right: a beautiful generous ivory serving plate of golden Hakka stuffed egg dumplings. Thin pan-fried EGG SKIN wraps cooked pork mince, naturally folded with delicate crinkled edges; one piece opened to reveal the beige cooked minced-meat filling and thin yellow egg wrapper. A few fresh green scallion pieces and a restrained small side dish imply comforting home cooking. Whole plate and food complete in the right side of the continuous green-tablecloth dining scene. NOT wheat pastry, not boiled eggs, not egg halves. Avoid isolated stickers; paint natural table shadows and depth while keeping the left 55 percent calm.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "680ac5e850c0e5aba67e443d5b43631ac4313e24bad19ec439290578a950b836",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-signature-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 5828,
+          "quality": 56,
+          "sha256": "a09682f8ee9068835a7994b43bbdbbce1e8a7cd7acf7b24be2a852feaa2499db"
+        },
+        {
+          "src": "assets/banner-v7-signature-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 19194,
+          "quality": 56,
+          "sha256": "97f047eb6390bd83b105ef6dc7cb6a4a4c461d882d8b3d96bed1be25aef0dba4"
+        }
+      ],
+      "inspection": {
+        "originalInspectedWith": "view_image",
+        "finalInspectedWith": "view_image",
+        "finalInspectedWidths": [
+          640
+        ],
+        "conclusion": "金黄薄蛋皮包肉馅，切开的酿蛋可见肉馅；主菜与盘沿完整，左侧保留绿色桌布文字空间。无文字或棋盘格。",
+        "result": "pass"
+      }
+    },
+    {
+      "id": "signature-set",
+      "theme": "Subject on the right: a small festive seafood family meal on the same continuous green-clothed table, three naturally overlapping ivory serving plates: one elegant small whole cooked fish with complete head and tail and fine green garnish, one plate of orange cooked shrimp, one plate of open beige-brown clams with visible clam meat. Keep main plate rims and food complete. Warm home-banquet atmosphere, a discreet terracotta vessel edge behind can support depth. The left 55 percent stays low-detail green fabric. This is a newly drawn background scene, not a copy or replacement of any user's photo.",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE complete premium hand-painted gouache restaurant/home-menu BANNER BACKGROUND, exactly landscape 3:1 composition, 1536 x 512 pixels. This must be a FULL-BLEED OPAQUE RGB PAINTING, no transparency, no checkerboard, no cutout icon, no isolated sticker. A continuous welcoming home dining-table scene with believable 3/4-view perspective and soft side lighting, subtle depth and atmosphere. Fresh leafy GREEN TABLECLOTH runs across the ENTIRE image from left edge to right edge. The LEFT approximately 55 percent is intentionally low-detail green painted fabric with only soft fine paper/linen texture and gentle tonal variation, generous calm space for webpage text; do NOT draw text. Along the bottom, a restrained continuous warm wooden table edge and delicate painted texture visually connect the whole scene. On the RIGHT approximately 45 percent, the specified real food subject is naturally arranged in complete ivory ceramic serving dishes, at a scale that reads as a rich full-width dining-table illustration rather than tiny clipart. Keep the food inside the right half, all main dishes and rims complete; no clipping of main food. Fine layered gouache brushwork, delicate integrated paper texture, refined food illustration with cream/ivory ceramics, warm golden food, fresh greens, a little warm terracotta, harmonious sophisticated palette. Appetizing and hospitable, NOT a photograph, NOT 3D, NOT a cartoon character, no cute faces. No lettering, calligraphy, numbers, logo, brand, badge, labels, frame, watermark, or corner tag anywhere. Subject on the right: a small festive seafood family meal on the same continuous green-clothed table, three naturally overlapping ivory serving plates: one elegant small whole cooked fish with complete head and tail and fine green garnish, one plate of orange cooked shrimp, one plate of open beige-brown clams with visible clam meat. Keep main plate rims and food complete. Warm home-banquet atmosphere, a discreet terracotta vessel edge behind can support depth. The left 55 percent stays low-detail green fabric. This is a newly drawn background scene, not a copy or replacement of any user's photo.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "f6eeae63d86cc24578a29ee3cf487375a058cd7a88f8e2f679a270365ecf0ebc",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-signature-set-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 5606,
+          "quality": 56,
+          "sha256": "47a6a651f61e64f71355fc8df4804a239c58a592923e4e6d980301981a9f0841"
+        },
+        {
+          "src": "assets/banner-v7-signature-set-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 18912,
+          "quality": 56,
+          "sha256": "1eb0aa2473e788101ed0114a6395c42d6cb1d157457d0db7870c2235e9eb2259"
+        }
+      ],
+      "inspection": {
+        "originalInspectedWith": "view_image",
+        "finalInspectedWith": "view_image",
+        "finalInspectedWidths": [
+          640
+        ],
+        "conclusion": "同一餐桌上的完整鱼（头尾可见）、熟虾与开口贝类三盘；主食物可辨，左侧绿色低细节空间连续。独立标题插画，不是用户套餐照片修改。无文字或棋盘格。",
+        "result": "pass"
+      }
+    },
+    {
+      "id": "hakka",
+      "theme": "Subject on the right: authentic Hakka home cooking, a complete ivory plate of three or four white stuffed tofu blocks with cooked pork mince clearly inside top cavities, lightly golden seared surfaces and small fresh green scallions. Beside and slightly behind, a small warm terracotta Chinese clay casserole with two short handles, lid resting nearby, some light savory stew visible. Both plate and pot rest naturally on the continuous green tablecloth, cast soft painted shadows, have fine gouache texture, and stay on the right. The left 55 percent remains calm painted green cloth. No recipe words or lettering on pottery.",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE complete premium hand-painted gouache restaurant/home-menu BANNER BACKGROUND, exactly landscape 3:1 composition, 1536 x 512 pixels. This must be a FULL-BLEED OPAQUE RGB PAINTING, no transparency, no checkerboard, no cutout icon, no isolated sticker. A continuous welcoming home dining-table scene with believable 3/4-view perspective and soft side lighting, subtle depth and atmosphere. Fresh leafy GREEN TABLECLOTH runs across the ENTIRE image from left edge to right edge. The LEFT approximately 55 percent is intentionally low-detail green painted fabric with only soft fine paper/linen texture and gentle tonal variation, generous calm space for webpage text; do NOT draw text. Along the bottom, a restrained continuous warm wooden table edge and delicate painted texture visually connect the whole scene. On the RIGHT approximately 45 percent, the specified real food subject is naturally arranged in complete ivory ceramic serving dishes, at a scale that reads as a rich full-width dining-table illustration rather than tiny clipart. Keep the food inside the right half, all main dishes and rims complete; no clipping of main food. Fine layered gouache brushwork, delicate integrated paper texture, refined food illustration with cream/ivory ceramics, warm golden food, fresh greens, a little warm terracotta, harmonious sophisticated palette. Appetizing and hospitable, NOT a photograph, NOT 3D, NOT a cartoon character, no cute faces. No lettering, calligraphy, numbers, logo, brand, badge, labels, frame, watermark, or corner tag anywhere. Subject on the right: authentic Hakka home cooking, a complete ivory plate of three or four white stuffed tofu blocks with cooked pork mince clearly inside top cavities, lightly golden seared surfaces and small fresh green scallions. Beside and slightly behind, a small warm terracotta Chinese clay casserole with two short handles, lid resting nearby, some light savory stew visible. Both plate and pot rest naturally on the continuous green tablecloth, cast soft painted shadows, have fine gouache texture, and stay on the right. The left 55 percent remains calm painted green cloth. No recipe words or lettering on pottery.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "31ec71e8028d49291ce579e5f4114e87f24b34c5a7c736d98ec297568fdf3465",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-hakka-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 5360,
+          "quality": 72,
+          "sha256": "d042475e584d4e5fbc4263ff87e6bd03fd8db830c1d1dcc9d10060e7e388d1db"
+        },
+        {
+          "src": "assets/banner-v7-hakka-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 17582,
+          "quality": 70,
+          "sha256": "ba401ba6a8e090aad066aaa1047b583d7d2c9e97cc9ac4993f3db3b9937d1f7e"
+        }
+      ],
+      "inspection": {
+        "originalInspectedWith": "view_image",
+        "finalInspectedWith": "view_image",
+        "finalInspectedWidths": [
+          640
+        ],
+        "conclusion": "酿豆腐表面中央可见熟肉馅，配暖陶色瓦煲；主豆腐盘完整，绿色桌布及下方木边延伸整幅。无文字或棋盘格。",
+        "result": "pass"
+      }
+    },
+    {
+      "id": "pork",
+      "theme": "Subject on the right: an inviting freshly cooked pork stir-fry in a warm dark-brown shallow wok with both compact handles visible. Recognizable thin cooked pork slices with fresh green pepper strips and scallion lengths, light glossy golden savory juices. Restrained hand-painted steam suggests heat; the wok sits naturally on a small warm wooden heat mat on the continuous green tablecloth. A subtle nearby small ivory side plate can add home-table atmosphere without taking over. Keep the whole wok and food in the right side. Left 55 percent stays low-detail green cloth, not an empty transparent area. No chef or hands.",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE complete premium hand-painted gouache restaurant/home-menu BANNER BACKGROUND, exactly landscape 3:1 composition, 1536 x 512 pixels. This must be a FULL-BLEED OPAQUE RGB PAINTING, no transparency, no checkerboard, no cutout icon, no isolated sticker. A continuous welcoming home dining-table scene with believable 3/4-view perspective and soft side lighting, subtle depth and atmosphere. Fresh leafy GREEN TABLECLOTH runs across the ENTIRE image from left edge to right edge. The LEFT approximately 55 percent is intentionally low-detail green painted fabric with only soft fine paper/linen texture and gentle tonal variation, generous calm space for webpage text; do NOT draw text. Along the bottom, a restrained continuous warm wooden table edge and delicate painted texture visually connect the whole scene. On the RIGHT approximately 45 percent, the specified real food subject is naturally arranged in complete ivory ceramic serving dishes, at a scale that reads as a rich full-width dining-table illustration rather than tiny clipart. Keep the food inside the right half, all main dishes and rims complete; no clipping of main food. Fine layered gouache brushwork, delicate integrated paper texture, refined food illustration with cream/ivory ceramics, warm golden food, fresh greens, a little warm terracotta, harmonious sophisticated palette. Appetizing and hospitable, NOT a photograph, NOT 3D, NOT a cartoon character, no cute faces. No lettering, calligraphy, numbers, logo, brand, badge, labels, frame, watermark, or corner tag anywhere. Subject on the right: an inviting freshly cooked pork stir-fry in a warm dark-brown shallow wok with both compact handles visible. Recognizable thin cooked pork slices with fresh green pepper strips and scallion lengths, light glossy golden savory juices. Restrained hand-painted steam suggests heat; the wok sits naturally on a small warm wooden heat mat on the continuous green tablecloth. A subtle nearby small ivory side plate can add home-table atmosphere without taking over. Keep the whole wok and food in the right side. Left 55 percent stays low-detail green cloth, not an empty transparent area. No chef or hands.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "34da5b090c123c2c5395b14bf90f0d7996174d982f8f04efca6578dfce453d19",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-pork-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 5382,
+          "quality": 64,
+          "sha256": "0cf8325e5b63dfdd60468713ec04c09503569092fe20eacccb6c6df6cb5cc1c1"
+        },
+        {
+          "src": "assets/banner-v7-pork-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 17830,
+          "quality": 62,
+          "sha256": "2b9e22bc7bcbad3cce8e118b7e1b910cee0e650f605e561edeb56ebba92f9dfa"
+        }
+      ],
+      "inspection": {
+        "originalInspectedWith": "view_image",
+        "finalInspectedWith": "view_image",
+        "finalInspectedWidths": [
+          640
+        ],
+        "conclusion": "热锅中的熟猪肉片、青椒和葱可辨，锅双耳完整，轻微蒸汽与木垫构成餐桌场景。左侧文字空间完整，无文字或棋盘格。",
+        "result": "pass"
+      }
+    },
+    {
+      "id": "chicken",
+      "theme": "Subject on the right: a generous ivory platter of chopped home-style cooked chicken, golden tender chicken skin and pale cooked meat at the cut edges, a few fresh green scallion lengths and small ginger slices. Light warm-gold sauce, one complete visible platter with believable ceramic volume and soft natural table shadows. A modest warm terracotta soup bowl behind can create inviting depth. The chicken is fully cooked, not a live bird. All rests on the same continuous green-tablecloth scene; left 55 percent intentionally calm green cloth. No western fries, no cartoon animal, no text.",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE complete premium hand-painted gouache restaurant/home-menu BANNER BACKGROUND, exactly landscape 3:1 composition, 1536 x 512 pixels. This must be a FULL-BLEED OPAQUE RGB PAINTING, no transparency, no checkerboard, no cutout icon, no isolated sticker. A continuous welcoming home dining-table scene with believable 3/4-view perspective and soft side lighting, subtle depth and atmosphere. Fresh leafy GREEN TABLECLOTH runs across the ENTIRE image from left edge to right edge. The LEFT approximately 55 percent is intentionally low-detail green painted fabric with only soft fine paper/linen texture and gentle tonal variation, generous calm space for webpage text; do NOT draw text. Along the bottom, a restrained continuous warm wooden table edge and delicate painted texture visually connect the whole scene. On the RIGHT approximately 45 percent, the specified real food subject is naturally arranged in complete ivory ceramic serving dishes, at a scale that reads as a rich full-width dining-table illustration rather than tiny clipart. Keep the food inside the right half, all main dishes and rims complete; no clipping of main food. Fine layered gouache brushwork, delicate integrated paper texture, refined food illustration with cream/ivory ceramics, warm golden food, fresh greens, a little warm terracotta, harmonious sophisticated palette. Appetizing and hospitable, NOT a photograph, NOT 3D, NOT a cartoon character, no cute faces. No lettering, calligraphy, numbers, logo, brand, badge, labels, frame, watermark, or corner tag anywhere. Subject on the right: a generous ivory platter of chopped home-style cooked chicken, golden tender chicken skin and pale cooked meat at the cut edges, a few fresh green scallion lengths and small ginger slices. Light warm-gold sauce, one complete visible platter with believable ceramic volume and soft natural table shadows. A modest warm terracotta soup bowl behind can create inviting depth. The chicken is fully cooked, not a live bird. All rests on the same continuous green-tablecloth scene; left 55 percent intentionally calm green cloth. No western fries, no cartoon animal, no text.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "5d1dd2147c7c93606e7c47be6544d7587aaa4adff953e67d8cee49b589c20eba",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-chicken-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 5454,
+          "quality": 60,
+          "sha256": "a626a1f46eed9907a3ae0e96f2bb259134ba2e4f4052b8746bd7cfcb64306b0e"
+        },
+        {
+          "src": "assets/banner-v7-chicken-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 17798,
+          "quality": 62,
+          "sha256": "b52f2748ca3c6aaeec5294a0cbc1f2793919683bd7889c5725217fe4d37a1839"
+        }
+      ],
+      "inspection": {
+        "originalInspectedWith": "view_image",
+        "finalInspectedWith": "view_image",
+        "finalInspectedWidths": [
+          640
+        ],
+        "conclusion": "金黄带皮熟鸡块，浅色熟肉切面、姜葱与后方暖陶汤煲可辨；主菜盘完整，绿色桌布延续整幅。无文字或棋盘格。",
+        "result": "pass"
+      }
+    },
+    {
+      "id": "beef",
+      "theme": "牛腩萝卜瓦煲",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE wide panoramic FULL-BLEED RECTANGULAR gouache illustration, EXACT 3:1 landscape aspect ratio, 1536 by 512 pixels, for a premium Chinese family menu category banner.\nPaint a coherent miniature restaurant tabletop SCENE spanning the entire canvas, not a cut-out, not a sticker, not an icon on an empty background. Fully opaque RGB artwork.\nShared art direction: exquisite delicate hand-painted opaque watercolor / gouache, restrained fine paper grain, natural believable proportions, soft warm light entering from upper left, elegant and inviting Chinese home-cooking atmosphere. Polished food editorial illustration, not photorealism, not 3D, not cartoon clipart.\nScene: fresh green tablecloth in a cohesive #2F7D32 family fills the full width and almost the entire height. Gentle low-contrast cloth folds and subtle painted texture connect the whole scene. A narrow warm natural wood tabletop edge runs continuously along the very bottom, approximately 6 percent of the image height. Keep the overall tabletop setting simple and premium.\nStrict layout: the LEFT 55 PERCENT is calm uninterrupted green tablecloth, low detail and low contrast, suitable for real white or pale-gold HTML titles to be placed later. No words or objects on that left area. The RIGHT 45 PERCENT naturally contains the complete theme dish on the same tablecloth, seen at a gentle elevated three-quarter angle; its vessel and any steam fit fully inside the canvas with modest breathing room. Put the dish on the table so it belongs to the whole scene, not a floating isolated object. Do not center the dish across the whole canvas. Use one coherent serving arrangement, no spare bowl or chopstick decorations.\nPalette: fresh and deeper green cloth, milk-white ivory ceramic, subtle pale-gold or warm-terracotta rim, appetizing warm golden-brown food, vibrant green vegetables. Restrained details and soft painted shadows connect vessel to table. No photorealistic material, no faces, no people, no hands.\nNo text, fake letters, words, typography, logo, label, corner badge, frame, icon, UI, price, watermark, checkerboard or transparent background anywhere.\nTheme dish: A full compact ivory glazed clay casserole of slow-braised beef brisket and white radish. Recognizable tender warm-brown beef chunks, pale golden-white radish wedges, two fresh-green spring-onion tips, naturally sitting in glossy braising sauce. The whole small casserole including its two short handles is visible. A restrained wisp of steam conveys warmth.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "d85f9c728a30bc27f911aadf751c8ba4b12487eccdd6873df0392ca879e83348",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-beef-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 8410,
+          "quality": 86,
+          "sha256": "f9dda27cc33f97c212ef196ebb497497cfb71adacb24083b591b5c11161a6799"
+        },
+        {
+          "src": "assets/banner-v7-beef-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 25908,
+          "quality": 82,
+          "sha256": "fa930e0e42e0db935865917976b978661c7c3e762df729e9f77dad347676bba3"
+        }
+      ],
+      "inspection": {
+        "status": "passed",
+        "method": "Original result inspected plus each exported 640px WebP opened separately with view_image",
+        "note": "Full ivory clay casserole including both handles is visible; beef chunks and radish are distinct. Calm left cloth area; warm wood strip at bottom; no text, logo, checkerboard or cut-out effect. Steam softly reaches upper edge but vessel and food are complete.",
+        "composition": "Full-bleed 3:1 table scene; dominant food on right; left central area reserved for HTML title and description",
+        "style": "Coherent refined gouache food editorial treatment, green cloth / ivory ceramics / warm golden food / narrow wood edge",
+        "remainingUICheck": "Root to verify real HTML text contrast; upper-left dappled side light varies across banners."
+      }
+    },
+    {
+      "id": "seafood",
+      "theme": "鱼虾贝拼盘",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE wide panoramic FULL-BLEED RECTANGULAR gouache illustration, EXACT 3:1 landscape aspect ratio, 1536 by 512 pixels, for a premium Chinese family menu category banner.\nPaint a coherent miniature restaurant tabletop SCENE spanning the entire canvas, not a cut-out, not a sticker, not an icon on an empty background. Fully opaque RGB artwork.\nShared art direction: exquisite delicate hand-painted opaque watercolor / gouache, restrained fine paper grain, natural believable proportions, soft warm light entering from upper left, elegant and inviting Chinese home-cooking atmosphere. Polished food editorial illustration, not photorealism, not 3D, not cartoon clipart.\nScene: fresh green tablecloth in a cohesive #2F7D32 family fills the full width and almost the entire height. Gentle low-contrast cloth folds and subtle painted texture connect the whole scene. A narrow warm natural wood tabletop edge runs continuously along the very bottom, approximately 6 percent of the image height. Keep the overall tabletop setting simple and premium.\nStrict layout: the LEFT 55 PERCENT is calm uninterrupted green tablecloth, low detail and low contrast, suitable for real white or pale-gold HTML titles to be placed later. No words or objects on that left area. The RIGHT 45 PERCENT naturally contains the complete theme dish on the same tablecloth, seen at a gentle elevated three-quarter angle; its vessel and any steam fit fully inside the canvas with modest breathing room. Put the dish on the table so it belongs to the whole scene, not a floating isolated object. Do not center the dish across the whole canvas. Use one coherent serving arrangement, no spare bowl or chopstick decorations.\nPalette: fresh and deeper green cloth, milk-white ivory ceramic, subtle pale-gold or warm-terracotta rim, appetizing warm golden-brown food, vibrant green vegetables. Restrained details and soft painted shadows connect vessel to table. No photorealistic material, no faces, no people, no hands.\nNo text, fake letters, words, typography, logo, label, corner badge, frame, icon, UI, price, watermark, checkerboard or transparent background anywhere.\nTheme dish: One full oval ivory serving platter presenting a cooked silver-white fish, two warm-coral cooked prawns with recognizable curled bodies and tails, and several opened cream-and-brown clam shells. The fish, prawns and clams are all recognizable at small size. A few slender spring-onion strokes add freshness. Complete platter and complete seafood contained within the right-hand scene.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "589060190a01d86bc92702d92abe5f7a0bf0e1274d632e317cbdd646758714ba",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-seafood-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 7776,
+          "quality": 82,
+          "sha256": "985a8c164c4f667cf246992f9b73f046a1e459d09e51fdf2483b70a4e54b99c9"
+        },
+        {
+          "src": "assets/banner-v7-seafood-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 25000,
+          "quality": 82,
+          "sha256": "6216568d17cd0f72ddd309085f00ec84a9f7dd048d51b9263f17dcffc1a9a4eb"
+        }
+      ],
+      "inspection": {
+        "status": "passed",
+        "method": "Original result inspected plus each exported 640px WebP opened separately with view_image",
+        "note": "Whole fish, two prawns and opened clams are recognizable. Oval plate complete; fish tail close to right edge but not cut. Left area has only cloth texture and soft light. No text, logo, checkerboard or isolated sticker effect.",
+        "composition": "Full-bleed 3:1 table scene; dominant food on right; left central area reserved for HTML title and description",
+        "style": "Coherent refined gouache food editorial treatment, green cloth / ivory ceramics / warm golden food / narrow wood edge",
+        "remainingUICheck": "Root to verify real HTML text contrast; upper-left dappled side light varies across banners."
+      }
+    },
+    {
+      "id": "vegetables",
+      "theme": "清爽绿叶菜",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE wide panoramic FULL-BLEED RECTANGULAR gouache illustration, EXACT 3:1 landscape aspect ratio, 1536 by 512 pixels, for a premium Chinese family menu category banner.\nPaint a coherent miniature restaurant tabletop SCENE spanning the entire canvas, not a cut-out, not a sticker, not an icon on an empty background. Fully opaque RGB artwork.\nShared art direction: exquisite delicate hand-painted opaque watercolor / gouache, restrained fine paper grain, natural believable proportions, soft warm light entering from upper left, elegant and inviting Chinese home-cooking atmosphere. Polished food editorial illustration, not photorealism, not 3D, not cartoon clipart.\nScene: fresh green tablecloth in a cohesive #2F7D32 family fills the full width and almost the entire height. Gentle low-contrast cloth folds and subtle painted texture connect the whole scene. A narrow warm natural wood tabletop edge runs continuously along the very bottom, approximately 6 percent of the image height. Keep the overall tabletop setting simple and premium.\nStrict layout: the LEFT 55 PERCENT is calm uninterrupted green tablecloth, low detail and low contrast, suitable for real white or pale-gold HTML titles to be placed later. No words or objects on that left area. The RIGHT 45 PERCENT naturally contains the complete theme dish on the same tablecloth, seen at a gentle elevated three-quarter angle; its vessel and any steam fit fully inside the canvas with modest breathing room. Put the dish on the table so it belongs to the whole scene, not a floating isolated object. Do not center the dish across the whole canvas. Use one coherent serving arrangement, no spare bowl or chopstick decorations.\nPalette: fresh and deeper green cloth, milk-white ivory ceramic, subtle pale-gold or warm-terracotta rim, appetizing warm golden-brown food, vibrant green vegetables. Restrained details and soft painted shadows connect vessel to table. No photorealistic material, no faces, no people, no hands.\nNo text, fake letters, words, typography, logo, label, corner badge, frame, icon, UI, price, watermark, checkerboard or transparent background anywhere.\nTheme dish: One full shallow oval ivory serving plate with appetizing freshly cooked Chinese leafy greens. Soft folded leaves in vibrant fresh green and darker jade, a few tender pale-green stems and delicate warm-gold oil highlights. Emphasize crisp-looking freshness and natural leaf shapes. No raw produce or loose props outside the plate.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "6aa763502dc07df7171803cf0d9f846df3e4d116e1e64e204fd84f6c6d734093",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-vegetables-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 7242,
+          "quality": 82,
+          "sha256": "27549b0f4c753bef43c0d972d43bcf8d7ae8047e12d5fa9a5ef288de9f709a1b"
+        },
+        {
+          "src": "assets/banner-v7-vegetables-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 24470,
+          "quality": 82,
+          "sha256": "a1b3b16cf9c7f39d0444b307fcfab167fae8931efcad3b566de3a8b325a13d00"
+        }
+      ],
+      "inspection": {
+        "status": "passed",
+        "method": "Original result inspected plus each exported 640px WebP opened separately with view_image",
+        "note": "Complete ivory oval plate of vivid green leafy vegetables. Leaf and stem forms remain readable at 640px; warm wood strip and green cloth unify scene. Upper-left side light is brighter; central-left remains available for HTML copy. No text or checkerboard.",
+        "composition": "Full-bleed 3:1 table scene; dominant food on right; left central area reserved for HTML title and description",
+        "style": "Coherent refined gouache food editorial treatment, green cloth / ivory ceramics / warm golden food / narrow wood edge",
+        "remainingUICheck": "Root to verify real HTML text contrast; upper-left dappled side light varies across banners."
+      }
+    },
+    {
+      "id": "soup",
+      "theme": "热汤与轻柔蒸汽",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE wide panoramic FULL-BLEED RECTANGULAR gouache illustration, EXACT 3:1 landscape aspect ratio, 1536 by 512 pixels, for a premium Chinese family menu category banner.\nPaint a coherent miniature restaurant tabletop SCENE spanning the entire canvas, not a cut-out, not a sticker, not an icon on an empty background. Fully opaque RGB artwork.\nShared art direction: exquisite delicate hand-painted opaque watercolor / gouache, restrained fine paper grain, natural believable proportions, soft warm light entering from upper left, elegant and inviting Chinese home-cooking atmosphere. Polished food editorial illustration, not photorealism, not 3D, not cartoon clipart.\nScene: fresh green tablecloth in a cohesive #2F7D32 family fills the full width and almost the entire height. Gentle low-contrast cloth folds and subtle painted texture connect the whole scene. A narrow warm natural wood tabletop edge runs continuously along the very bottom, approximately 6 percent of the image height. Keep the overall tabletop setting simple and premium.\nStrict layout: the LEFT 55 PERCENT is calm uninterrupted green tablecloth, low detail and low contrast, suitable for real white or pale-gold HTML titles to be placed later. No words or objects on that left area. The RIGHT 45 PERCENT naturally contains the complete theme dish on the same tablecloth, seen at a gentle elevated three-quarter angle; its vessel and any steam fit fully inside the canvas with modest breathing room. Put the dish on the table so it belongs to the whole scene, not a floating isolated object. Do not center the dish across the whole canvas. Use one coherent serving arrangement, no spare bowl or chopstick decorations.\nPalette: fresh and deeper green cloth, milk-white ivory ceramic, subtle pale-gold or warm-terracotta rim, appetizing warm golden-brown food, vibrant green vegetables. Restrained details and soft painted shadows connect vessel to table. No photorealistic material, no faces, no people, no hands.\nNo text, fake letters, words, typography, logo, label, corner badge, frame, icon, UI, price, watermark, checkerboard or transparent background anywhere.\nTheme dish: One complete rounded ivory ceramic soup bowl with pale-golden warming clear broth, a few simple ivory tender morsels and tiny green scallion flecks. Two or three gentle translucent gouache strokes of steam rise above the bowl without touching the frame. Emphasize the warmth and inviting calm of a fresh bowl of home-style soup.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "ef557f1956e7206308418008ebaa53bfd1074b18d5ac48d3c28b451d6c8ce8c3",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-soup-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 7122,
+          "quality": 82,
+          "sha256": "01991e3753ca3aae7d6546f8a225ae0de31b54bdbc72fc32da6bfe5b762b4aca"
+        },
+        {
+          "src": "assets/banner-v7-soup-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 22036,
+          "quality": 82,
+          "sha256": "9d98f86100f8998a3437a136b269e16ca704b3a3b743c306ede4e3d7825f4b10"
+        }
+      ],
+      "inspection": {
+        "status": "passed",
+        "method": "Original result inspected plus each exported 640px WebP opened separately with view_image",
+        "note": "Complete ivory bowl with golden broth and pale morsels, gentle visible steam. Food belongs to coherent tabletop; upper-left foliage shadows stay decorative and no objects occupy central-left text region. No text, logo or checkerboard. Steam softly exits at top edge.",
+        "composition": "Full-bleed 3:1 table scene; dominant food on right; left central area reserved for HTML title and description",
+        "style": "Coherent refined gouache food editorial treatment, green cloth / ivory ceramics / warm golden food / narrow wood edge",
+        "remainingUICheck": "Root to verify real HTML text contrast; upper-left dappled side light varies across banners."
+      }
+    },
+    {
+      "id": "night",
+      "theme": "毛豆与烤串",
+      "tool": "内置 ImageGen",
+      "license": "AI-generated",
+      "prompt": "Use case: illustration-story. Create ONE wide panoramic FULL-BLEED RECTANGULAR gouache illustration, EXACT 3:1 landscape aspect ratio, 1536 by 512 pixels, for a premium Chinese family menu category banner.\nPaint a coherent miniature restaurant tabletop SCENE spanning the entire canvas, not a cut-out, not a sticker, not an icon on an empty background. Fully opaque RGB artwork.\nShared art direction: exquisite delicate hand-painted opaque watercolor / gouache, restrained fine paper grain, natural believable proportions, soft warm light entering from upper left, elegant and inviting Chinese home-cooking atmosphere. Polished food editorial illustration, not photorealism, not 3D, not cartoon clipart.\nScene: fresh green tablecloth in a cohesive #2F7D32 family fills the full width and almost the entire height. Gentle low-contrast cloth folds and subtle painted texture connect the whole scene. A narrow warm natural wood tabletop edge runs continuously along the very bottom, approximately 6 percent of the image height. Keep the overall tabletop setting simple and premium.\nStrict layout: the LEFT 55 PERCENT is calm uninterrupted green tablecloth, low detail and low contrast, suitable for real white or pale-gold HTML titles to be placed later. No words or objects on that left area. The RIGHT 45 PERCENT naturally contains the complete theme dish on the same tablecloth, seen at a gentle elevated three-quarter angle; its vessel and any steam fit fully inside the canvas with modest breathing room. Put the dish on the table so it belongs to the whole scene, not a floating isolated object. Do not center the dish across the whole canvas. Use one coherent serving arrangement, no spare bowl or chopstick decorations.\nPalette: fresh and deeper green cloth, milk-white ivory ceramic, subtle pale-gold or warm-terracotta rim, appetizing warm golden-brown food, vibrant green vegetables. Restrained details and soft painted shadows connect vessel to table. No photorealistic material, no faces, no people, no hands.\nNo text, fake letters, words, typography, logo, label, corner badge, frame, icon, UI, price, watermark, checkerboard or transparent background anywhere.\nTheme dish: One complete compact oval ivory platter, with a small cluster of fresh-green cooked edamame pods and three short natural wooden skewers of appetizing warm golden-brown grilled meat. The grill marks are delicate, not charred. All skewer tips remain inside the frame. A warm late-night snack feeling under the same soft side lighting; no beer, flames, grill or extra sauce dishes.",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "sourceSha256": "d1f47825b54a188127997a9f2f0aa107d09e28f7b3f6ca0b578da2639671451d",
+      "outputs": [
+        {
+          "src": "assets/banner-v7-night-w320.webp",
+          "width": 320,
+          "height": 107,
+          "bytes": 7786,
+          "quality": 82,
+          "sha256": "969d9428de0a4b43300a8685308dad036c30b05e1a6e09d5346e64237caa6493"
+        },
+        {
+          "src": "assets/banner-v7-night-w640.webp",
+          "width": 640,
+          "height": 213,
+          "bytes": 25618,
+          "quality": 82,
+          "sha256": "c133fb131ff4fd294e6851327ce5334e7a69c24b5c19e1a541fb02ace46df815"
+        }
+      ],
+      "inspection": {
+        "status": "passed",
+        "method": "Original result inspected plus each exported 640px WebP opened separately with view_image",
+        "note": "One complete platter of green edamame and three grilled meat skewers; every skewer tip visible. Same green cloth, pale ceramic and warm wood palette. Clear at 640px, no text, logo, checkerboard or pasted icon effect.",
+        "composition": "Full-bleed 3:1 table scene; dominant food on right; left central area reserved for HTML title and description",
+        "style": "Coherent refined gouache food editorial treatment, green cloth / ivory ceramics / warm golden food / narrow wood edge",
+        "remainingUICheck": "Root to verify real HTML text contrast; upper-left dappled side light varies across banners."
+      }
+    }
+  ]
+}

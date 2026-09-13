@@ -8,19 +8,20 @@
   <meta name="robots" content="noindex,nofollow">
   <title>剑锋家菜单</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23285a3d'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-size='27' fill='white' font-family='serif'%3E黄%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=menu-6">
-  <link rel="stylesheet" href="visual-v6.css?v=menu-6">
-  <script src="menu.js?v=menu-6" defer></script>
-  <script src="presentation.js?v=menu-6" defer></script>
-  <script src="images.js?v=menu-6" defer></script>
-  <script src="image-sizes.js?v=menu-6" defer></script>
-  <script src="app.js?v=menu-6" defer></script>
+  <link rel="stylesheet" href="styles.css?v=menu-7">
+  <link rel="stylesheet" href="visual-v6.css?v=menu-7">
+  <link rel="stylesheet" href="visual-v7.css?v=menu-7">
+  <script src="menu.js?v=menu-7" defer></script>
+  <script src="presentation.js?v=menu-7" defer></script>
+  <script src="images.js?v=menu-7" defer></script>
+  <script src="image-sizes.js?v=menu-7" defer></script>
+  <script src="app.js?v=menu-7" defer></script>
 </head>
 <body>
   <div class="app-shell">
     <header class="masthead">
       <div class="identity"><span class="home-mark" aria-hidden="true">黄</span><div><p class="eyebrow">剑锋家的私房菜</p><h1>剑锋家菜单</h1><p class="host-note">欢迎来家一起吃好吃的！</p></div></div>
-      <div class="masthead-art" aria-hidden="true"><span>好菜上桌</span><strong>来家吃饭</strong><span>一起好好吃饭</span></div>
+      <div id="masthead-art" class="masthead-art" aria-hidden="true"></div>
     </header>
     <div class="toolbar"><span class="preference-title">今天想吃</span>
       <div id="taste-filters" class="taste-filters" aria-label="口味偏好"></div>
@@ -32,7 +33,6 @@
         <section id="featured-section" class="featured-section menu-section" data-menu-section="signature" aria-labelledby="featured-title">
           <div id="featured-heading"></div>
           <div id="featured-list" class="featured-grid"></div>
-          <div id="featured-next"></div>
         </section>
         <section id="signature-set" class="signature-set menu-section" data-menu-section="signature-set" aria-label="招牌套餐"></section>
         <section id="regular-menu" aria-label="更多家常菜">

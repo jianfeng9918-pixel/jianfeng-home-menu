@@ -1,17 +1,24 @@
-/* V6 display-only metadata. Stable menu IDs and order state stay in menu.js/app.js. */
+/* V7 display-only metadata. Stable menu IDs and order state stay in menu.js/app.js. */
+const menuArt = id => ({
+  src: `assets/banner-v7-${id}-w640.webp`,
+  srcset: `assets/banner-v7-${id}-w320.webp 320w, assets/banner-v7-${id}-w640.webp 640w`,
+  width: 640, height: 213
+});
 window.MENU_PRESENTATION = {
-  version: 6,
+  version: 7,
+  masthead: { ...menuArt('masthead'), src: 'assets/banner-v7-masthead-w1280.webp', srcset: 'assets/banner-v7-masthead-w320.webp 320w, assets/banner-v7-masthead-w640.webp 640w, assets/banner-v7-masthead-w1280.webp 1280w', width: 1280, height: 427 },
+  badge: { src: 'assets/signature-seal-v6.webp', mobile: 44, compact: 36, desktop: 48, offset: 8 },
   categories: {
-    signature: { subtitle: '来家吃饭，先尝这几道', eyebrow: '家里的拿手味', navigation: 'signature' },
-    'signature-set': { subtitle: '一桌海鲜好菜，一次配齐', eyebrow: '海鲜当主角', navigation: 'banquet' },
-    hakka: { subtitle: '一口家乡味，几道拿手菜', eyebrow: '熟悉的家乡味' },
-    pork: { subtitle: '新鲜买菜，又好吃又下饭', eyebrow: '添一碗饭吧' },
-    chicken: { subtitle: '鲜嫩有滋味，家常也好吃', eyebrow: '家常好滋味' },
-    beef: { subtitle: '浓香或鲜嫩，挑个合口味', eyebrow: '越嚼越有味' },
-    seafood: { subtitle: '清鲜到浓香，换着尝尝', eyebrow: '尝一口鲜' },
-    vegetables: { subtitle: '来点清爽，荤素刚刚好', eyebrow: '给餐桌添点绿' },
-    soup: { subtitle: '一碗热乎的，慢慢喝', eyebrow: '暖暖胃，也暖暖心' },
-    night: { subtitle: '夜里再加点，边吃边聊', eyebrow: '好吃的，再来点' }
+    signature: { art: menuArt('signature'), subtitle: '来家吃饭，先尝这几道', eyebrow: '家里的拿手味', navigation: 'signature' },
+    'signature-set': { art: menuArt('signature-set'), subtitle: '一桌海鲜好菜，一次配齐', eyebrow: '海鲜当主角', navigation: 'banquet' },
+    hakka: { art: menuArt('hakka'), subtitle: '一口家乡味，几道拿手菜', eyebrow: '熟悉的家乡味' },
+    pork: { art: menuArt('pork'), subtitle: '新鲜买菜，又好吃又下饭', eyebrow: '添一碗饭吧' },
+    chicken: { art: menuArt('chicken'), subtitle: '鲜嫩有滋味，家常也好吃', eyebrow: '家常好滋味' },
+    beef: { art: menuArt('beef'), subtitle: '浓香或鲜嫩，挑个合口味', eyebrow: '越嚼越有味' },
+    seafood: { art: menuArt('seafood'), subtitle: '清鲜到浓香，换着尝尝', eyebrow: '尝一口鲜' },
+    vegetables: { art: menuArt('vegetables'), subtitle: '来点清爽，荤素刚刚好', eyebrow: '给餐桌添点绿' },
+    soup: { art: menuArt('soup'), subtitle: '一碗热乎的，慢慢喝', eyebrow: '暖暖胃，也暖暖心' },
+    night: { art: menuArt('night'), subtitle: '夜里再加点，边吃边聊', eyebrow: '好吃的，再来点' }
   },
   highlights: {
     'dish-029': { copy: '蛋香软嫩' },
