@@ -1767,7 +1767,7 @@
   "dish-hakka-tofu",
   "dish-hakka-pork-soup"
 ];
-  const signatureSet = [
+  const legacySignatureSet = [
   {
     "label": "椰子鸡汤",
     "id": "dish-079"
@@ -1810,5 +1810,119 @@
     "id": "dish-set-stuffed-egg"
   }
 ];
-  window.MENU = { version: 4, categories, dishes, archivedDishes, featured, signatureSet };
+  const setDishes = [
+  {
+    "id": "set-seafood-prawns",
+    "name": "白灼九节虾",
+    "role": "meat",
+    "scope": "seafood-set",
+    "categories": [
+      "signature-set"
+    ],
+    "tags": [],
+    "display": "text"
+  },
+  {
+    "id": "set-seafood-snails",
+    "name": "白灼花螺",
+    "role": "meat",
+    "scope": "seafood-set",
+    "categories": [
+      "signature-set"
+    ],
+    "tags": [],
+    "display": "text"
+  },
+  {
+    "id": "set-seafood-ribs",
+    "name": "蒜香排骨",
+    "role": "meat",
+    "scope": "seafood-set",
+    "categories": [
+      "signature-set"
+    ],
+    "tags": [],
+    "display": "text"
+  },
+  {
+    "id": "set-seafood-braised-platter",
+    "name": "卤水拼盘",
+    "role": "meat",
+    "scope": "seafood-set",
+    "categories": [
+      "signature-set"
+    ],
+    "tags": [],
+    "display": "text"
+  },
+  {
+    "id": "set-seafood-cold-dish",
+    "name": "凉拌菜",
+    "role": "side",
+    "scope": "seafood-set",
+    "categories": [
+      "signature-set"
+    ],
+    "tags": [],
+    "display": "text"
+  },
+  {
+    "id": "set-seafood-vegetables",
+    "name": "炒青菜",
+    "role": "veg",
+    "scope": "seafood-set",
+    "categories": [
+      "signature-set"
+    ],
+    "tags": [],
+    "display": "text"
+  },
+  {
+    "id": "set-seafood-roast-goose",
+    "name": "烧鹅",
+    "role": "meat",
+    "scope": "seafood-set",
+    "categories": [
+      "signature-set"
+    ],
+    "tags": [],
+    "display": "text"
+  },
+  {
+    "id": "set-seafood-chicken-feet",
+    "name": "盐焗鸡爪",
+    "role": "meat",
+    "scope": "seafood-set",
+    "categories": [
+      "signature-set"
+    ],
+    "tags": [],
+    "display": "text"
+  },
+  {
+    "id": "set-seafood-grouper",
+    "name": "清蒸石斑",
+    "role": "meat",
+    "scope": "seafood-set",
+    "categories": [
+      "signature-set"
+    ],
+    "tags": [],
+    "display": "text"
+  },
+  {
+    "id": "set-seafood-coconut-chicken",
+    "name": "椰子鸡汤",
+    "role": "soup",
+    "scope": "seafood-set",
+    "categories": [
+      "signature-set"
+    ],
+    "tags": [],
+    "display": "text"
+  }
+];
+  const signatureSet = setDishes.map(d=>({id:d.id,label:d.name}));
+  const setTitle = '剑锋家招牌套餐（海鲜版）';
+  window.MENU = { version: 5, categories, dishes, archivedDishes, featured, signatureSet, setDishes, setTitle, legacySignatureSet };
 })();

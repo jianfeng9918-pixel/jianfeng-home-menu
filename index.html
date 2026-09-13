@@ -8,10 +8,11 @@
   <meta name="robots" content="noindex,nofollow">
   <title>剑锋家菜单</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23285a3d'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-size='27' fill='white' font-family='serif'%3E黄%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=menu-4">
-  <script src="menu.js?v=menu-4" defer></script>
-  <script src="images.js?v=menu-4" defer></script>
-  <script src="app.js?v=menu-4" defer></script>
+  <link rel="stylesheet" href="styles.css?v=menu-5">
+  <script src="menu.js?v=menu-5" defer></script>
+  <script src="images.js?v=menu-5" defer></script>
+  <script src="image-sizes.js?v=menu-5" defer></script>
+  <script src="app.js?v=menu-5" defer></script>
 </head>
 <body>
   <div class="app-shell">
@@ -25,17 +26,17 @@
     <div class="menu-layout">
       <nav id="categories" class="categories" aria-label="菜品分类"></nav>
       <main id="menu-main" class="menu-main">
-        <section id="featured-section" class="featured-section" aria-labelledby="featured-title">
-          <div class="block-heading"><div><p class="section-kicker">先尝尝家里的拿手菜</p><h2 id="featured-title">家里招牌<span class="heading-seal">六道拿手菜</span></h2></div><span class="block-index" aria-hidden="true">01</span></div>
+        <p id="filter-hint" class="filter-hint" hidden></p>
+        <section id="featured-section" class="featured-section menu-section" data-menu-section="signature" aria-labelledby="featured-title">
+          <div class="block-heading"><div><p class="section-kicker">先尝尝家里的拿手菜</p><h2 id="featured-title" tabindex="-1">家里招牌<span id="featured-count" class="heading-seal">六道拿手菜</span></h2></div><span class="block-index" aria-hidden="true">01</span></div>
           <div id="featured-list" class="featured-grid"></div>
+          <div id="featured-next"></div>
         </section>
-        <section id="signature-set" class="signature-set" aria-label="招牌套餐"></section>
-        <section id="regular-menu" aria-labelledby="section-title">
-          <div class="section-heading"><div><p class="section-kicker" id="section-kicker">荤素搭配，随心挑</p><h2 id="section-title">家常菜单</h2></div><span id="result-count" class="result-count"></span></div>
-          <p id="filter-hint" class="filter-hint" hidden></p>
+        <section id="signature-set" class="signature-set menu-section" data-menu-section="signature-set" aria-label="招牌套餐"></section>
+        <section id="regular-menu" aria-label="更多家常菜">
           <div id="dish-list"></div>
         </section>
-        <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">—</span><h3>暂时没有找到这道菜</h3><p>换个口味偏好，看看还有哪些好菜。</p><button type="button" id="reset-filters" class="text-button">查看全部菜品</button></div>
+        <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">—</span><h3>暂时没有合适的菜</h3><p>换个口味偏好，看看还有哪些好菜。</p><button type="button" id="reset-filters" class="text-button">随心看看菜单</button></div>
         <div class="menu-end"><p>还有想吃的？也可以告诉我。</p><button type="button" id="custom-request" class="text-button">写一道菜单外的菜 <span aria-hidden="true">＋</span></button></div>
         <footer class="small-footer"><span>家里的味道，慢慢挑。</span><button type="button" id="open-sources">图片来源</button></footer>
       </main>

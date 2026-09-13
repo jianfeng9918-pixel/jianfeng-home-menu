@@ -1,4 +1,4 @@
-/* 菜图逐道匹配；组合菜使用带名称的独立分图。 */
+/* 菜图逐道匹配；生成图和用户照片分别在来源中标示。 */
 window.MENU_IMAGES = {
   "豆豉蒸排骨": {
     "sourcePage": "https://www.xiachufang.com/recipe/101790134/",
@@ -454,21 +454,15 @@ window.MENU_IMAGES = {
     "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。"
   },
   "酿蛋": {
-    "sourcePage": "https://www.sohu.com/a/366549549_582111",
-    "sourceImage": "https://5b0988e595225.cdn.sohucs.com/q_70%2Cc_zoom%2Cw_640/images/20200113/64e414b6a22440df9b34c9f6617d2a5a.jpeg",
-    "sourceTitle": "鸡蛋又有新做法！大冷天就想吃它，随手一煮好吃哭",
-    "author": "菜菜美食日记",
-    "license": "unknown",
-    "matchReason": "菜菜美食日记原文明确客家蛋饺，以蛋皮包猪肉馅后煮熟；成菜近照切口能看到蛋皮与肉馅，属于客家酿蛋的蛋饺版本。",
-    "src": "assets/food-582743cce9045398.webp",
-    "verified": true,
-    "sha256": "582743cce90453982840f39a2c7e597a751d2e3b5d86109de6e4efe65b9a78b6",
-    "dimensions": [
-      640,
-      426
-    ],
-    "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-    "position": "40% 55%"
+    "src": "assets/hakka-stuffed-eggs-v5.webp",
+    "sourceTitle": "客家酿蛋整盘示意",
+    "author": "ImageGen · AI 生成",
+    "license": "AI-generated",
+    "sourcePage": "",
+    "sourceImage": "",
+    "position": "center",
+    "caption": "菜品示意",
+    "note": "按蛋皮包肉的客家酿蛋形态生成，非用户实拍。"
   },
   "韭菜炒蛋": {
     "sourcePage": "https://www.douguo.com/cookbook/1148753.html",
@@ -1599,20 +1593,15 @@ window.MENU_IMAGES = {
   "酿蛋+苦瓜": {
     "parts": [
       {
-        "sourcePage": "https://www.xiachufang.com/recipe/106813055/",
-        "sourceImage": "https://i2.chuimg.com/f44e8311ce8a4a3693b8d8b5188916eb_1080w_864h.jpg",
-        "sourceTitle": "客家百酿之酿蛋（蛋饺）-简单少量材料做成一道菜",
-        "author": "宝宝贝贝_妈",
-        "license": "unknown",
-        "matchReason": "标题、食材和成菜主图匹配",
-        "src": "assets/food-c429db7139bf90cd.webp",
-        "verified": true,
-        "sha256": "c429db7139bf90cd4ae01584b2e4cc2bfb00be43c628b7b9b2ecd436f67936bb",
-        "dimensions": [
-          1000,
-          800
-        ],
-        "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+        "src": "assets/hakka-stuffed-eggs-v5.webp",
+        "sourceTitle": "客家酿蛋整盘示意",
+        "author": "ImageGen · AI 生成",
+        "license": "AI-generated",
+        "sourcePage": "",
+        "sourceImage": "",
+        "position": "center",
+        "caption": "菜品示意",
+        "note": "按蛋皮包肉的客家酿蛋形态生成，非用户实拍。",
         "label": "酿蛋"
       },
       {
@@ -1737,5 +1726,16 @@ window.MENU_IMAGES = {
     ],
     "position": "50% 52%",
     "modifications": "等比缩放并转换为WebP；保留原图文字与水印，网页卡片按焦点裁切。"
+  },
+  "海鲜套餐家宴": {
+    "src": "assets/seafood-banquet-v5.webp",
+    "sourceTitle": "剑锋家家宴照片",
+    "author": "用户提供",
+    "license": "user-provided",
+    "sourcePage": "",
+    "sourceImage": "",
+    "position": "center",
+    "caption": "家宴照片",
+    "note": "由用户指定用于海鲜版套餐展示；套餐具体菜品以文字清单为准。"
   }
 };

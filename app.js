@@ -1,22 +1,24 @@
 'use strict';
 (() => {
-  const {dishes,categories,signatureSet,featured,archivedDishes=[]}=window.MENU;
+  const {dishes,categories,signatureSet,featured,archivedDishes=[],setDishes=[],setTitle='招牌套餐',legacySignatureSet=[]}=window.MENU;
   const images=window.MENU_IMAGES||{};
-  const byId=new Map([...archivedDishes,...dishes].map(d=>[d.id,d]));
-  const activeIds=new Set(dishes.map(d=>d.id));
+  const imageSizes=window.MENU_IMAGE_SIZES||{};
+  const byId=new Map([...archivedDishes,...dishes,...setDishes].map(d=>[d.id,d]));
+  const activeIds=new Set([...dishes,...setDishes].map(d=>d.id));
   const $=id=>document.getElementById(id);
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const preferences={all:'随心选',mild:'偏清淡',spicy:'偏麻辣',kids:'小孩爱吃'};
   const STORAGE_KEY='jianfeng-home-menu:v1';
   let state={version:4,lines:[],notes:'',custom:'',preference:'all'};
-  let currentCategory='all',choices={},toastTimer,storageWarningShown=false;
+  let currentCategory='signature',choices={},toastTimer,storageWarningShown=false;
+  let imageObserver,scrollFrame=0;
   const variantFor=(d,id)=>d.variants?.find(v=>v.id===id);
   const defaultVariant=d=>d.defaultVariant||d.variants?.[0]?.id||'';
   const lineKey=(id,variantId='')=>id+'::'+variantId;
   const chosenVariant=d=>choices[d.id]||state.lines.find(l=>l.id===d.id)?.variantId||defaultVariant(d);
   const quantity=(id,variantId='')=>state.lines.find(l=>l.id===id&&l.variantId===variantId)?.quantity||0;
   const totalQuantity=id=>state.lines.filter(l=>l.id===id).reduce((n,l)=>n+l.quantity,0);
-  function lineName(line){const d=byId.get(line.id);return variantFor(d,line.variantId)?.cartName||d.name;}
+  function lineName(line){const d=byId.get(line.id);const name=variantFor(d,line.variantId)?.cartName||d.name;return d.scope==='seafood-set'?name+'（海鲜套餐）':name;}
   function normalizeLine(item){
     if(!item||typeof item!=='object')return null;
     const d=byId.get(item.id);if(!d||!Number.isInteger(item.quantity)||item.quantity<=0)return null;
@@ -32,7 +34,7 @@
       if(Object.prototype.hasOwnProperty.call(preferences,saved.preference))state.preference=saved.preference;
       let source=Array.isArray(saved.lines)?saved.lines:Object.entries(saved.items||{}).map(([id,quantity])=>({id,quantity}));
       // Older orders keep their IDs. A complete old package explicitly selected bass.
-      if(!Array.isArray(saved.lines)&&saved.bundle&&signatureSet.every(i=>saved.items?.[i.id]>0))source=source.map(l=>({...l,variantId:signatureSet.find(i=>i.id===l.id)?.variantId}));
+      if(!Array.isArray(saved.lines)&&saved.bundle&&legacySignatureSet.every(i=>saved.items?.[i.id]>0))source=source.map(l=>({...l,variantId:legacySignatureSet.find(i=>i.id===l.id)?.variantId}));
       const restored=new Map();
       for(const raw of source){const line=normalizeLine(raw);if(line){const key=lineKey(line.id,line.variantId);line.quantity=Math.min(99,line.quantity+(restored.get(key)?.quantity||0));restored.set(key,line);}}
       state.lines=[...restored.values()];
@@ -55,58 +57,99 @@
     return `<div class="stepper ${qty?'has-quantity':''}">${qty?`<button type="button" class="quantity-button minus" data-action="minus" ${attrs} aria-label="减少${esc(name)}">−</button><span class="quantity-value" aria-label="${esc(name)}已选${qty}份">${qty}</span><button type="button" class="quantity-button plus" data-action="plus" ${attrs} aria-label="增加${esc(name)}" ${qty>=99?'disabled':''}>＋</button>`:`<button type="button" class="add-dish ${compact?'compact':''}" data-action="plus" ${attrs} aria-label="增加${esc(name)}"><span aria-hidden="true">＋</span>加一道</button>`}</div>`;
   }
   function photoFor(d){return images[d.imageKey||d.name];}
-  function dishPhoto(d,index=9){
+  function imageMarkup(photo,alt,{eager=false,wide=false,hero=false}={}){
+    const size=imageSizes[photo.src]||{},sizes=hero?'(max-width: 700px) calc(100vw - 118px), 1000px':wide?'(max-width: 700px) calc(100vw - 96px), 340px':'(max-width: 359px) 92px, (max-width: 700px) calc((100vw - 105px) / 2), (max-width: 1000px) calc((100vw - 180px) / 2), 340px';
+    return `<img class="food-image" src="${esc(photo.src)}" ${size.srcset?`srcset="${esc(size.srcset)}" sizes="${sizes}"`:''} alt="${esc(alt)}" width="${size.width||800}" height="${size.height||600}" loading="${eager?'eager':'lazy'}" ${eager?'fetchpriority="high"':''} decoding="async" style="object-position:${esc(photo.position||'center')}">`;
+  }
+  function dishPhoto(d,index=9,feature=false){
     const photo=photoFor(d);if(!photo||d.display==='text')return '';
     const parts=photo.parts||[photo];
-    return `<figure class="dish-photo ${photo.parts?'dish-photo-pair':''}">${parts.map(p=>`<div class="photo-part"><img src="${esc(p.src)}" alt="${esc(p.label||d.name)}示意图" width="800" height="600" loading="${index<2?'eager':'lazy'}" decoding="async" style="object-position:${esc(p.position||'center')}">${photo.parts?`<span class="photo-part-label">${esc(p.label)}</span>`:''}</div>`).join('')}${featured.includes(d.id)?'<img class="signature-badge" src="assets/signature-badge.png" alt="家里招牌" width="216" height="216">':''}<figcaption class="image-label">${esc(photo.parts?'搭配示意':photo.caption||(d.imageKey==='炒生菜'?'清炒示意':'菜品示意'))}</figcaption></figure>`;
+    return `<figure class="dish-photo ${photo.parts?'dish-photo-pair':''}">${parts.map(p=>`<div class="photo-part">${imageMarkup(p,(p.label||d.name)+'示意图',{eager:feature&&index===0,wide:feature&&index%3===0})}${photo.parts?`<span class="photo-part-label">${esc(p.label)}</span>`:''}</div>`).join('')}${featured.includes(d.id)?'<img class="signature-badge" src="assets/signature-badge.png" alt="家里招牌" width="240" height="240">':''}<figcaption class="image-label">${esc(photo.parts?'搭配示意':photo.caption||(d.imageKey==='炒生菜'?'清炒示意':'菜品示意'))}</figcaption></figure>`;
   }
   function variantPicker(d){return d.variants?.length>1?`<div class="variant-picker" role="group" aria-label="${esc(d.name)}做法">${d.variants.map(v=>`<button type="button" data-choice="${esc(v.id)}" data-id="${esc(d.id)}" aria-pressed="${chosenVariant(d)===v.id}" class="variant-pill ${chosenVariant(d)===v.id?'active':''}">${esc(v.label)}</button>`).join('')}</div>`:'';}
   function card(d,index=9,feature=false){
-    const photo=dishPhoto(d,index),qty=totalQuantity(d.id);
+    const photo=dishPhoto(d,index,feature),qty=totalQuantity(d.id);
     const recommendation=variantFor(d,chosenVariant(d))?.description||d.recommendation||'';
     const chips=feature?'家里拿手':d.fulfillment==='takeaway'?'点外卖':d.tags.includes('hakka')?'客家风味':'';
     return `<article class="dish-card ${photo?'photo-card':'text-card'} ${feature?'featured-card':''} ${feature&&index===0?'feature-lead':''} ${qty?'selected':''}" data-dish="${esc(d.id)}">${photo}<div class="dish-info"><div class="dish-name-line"><h3>${esc(d.name)}</h3>${d.fulfillment==='takeaway'?'<span class="takeaway-label">外卖</span>':''}</div><p class="dish-description">${esc(recommendation)}</p>${variantPicker(d)}<div class="dish-bottom"><span class="selection-status">${qty?`已选 ${qty} 份`:`<span class="quiet-tag">${esc(chips)}</span>`}</span>${stepper(d)}</div></div></article>`;
   }
-  function visibleDishes(){
-
-    return dishes.filter(d=>(currentCategory==='all'||d.categories.includes(currentCategory))&&(state.preference==='all'||d.tags.includes(state.preference)));
+  function visibleDishes(){return dishes.filter(d=>state.preference==='all'||d.tags.includes(state.preference));}
+  function rowsForCategory(id){return visibleDishes().filter(d=>d.categories.includes(id));}
+  function availableCategories(){return categories.filter(c=>c.id==='signature-set'?state.preference==='all':rowsForCategory(c.id).length);}
+  function nextCategory(id){
+    const available=availableCategories(),next=available[available.findIndex(c=>c.id===id)+1];
+    return next?`<button type="button" class="next-category" data-next-category="${esc(next.id)}"><span>接着看看 <strong>${esc(next.label)}</strong></span><span aria-hidden="true">↓</span></button>`:'<div class="menu-complete"><span>菜单看完啦，喜欢的都选上了吗？</span><button type="button" data-review-menu="true">看看已选 →</button></div>';
   }
   function dishGroups(rows){
     const photo=rows.filter(d=>d.display!=='text'&&photoFor(d)),text=rows.filter(d=>d.display==='text'||!photoFor(d));
     return `${photo.length?`<div class="dish-grid">${photo.map((d,i)=>card(d,i+3)).join('')}</div>`:''}${text.length?`<div class="text-dishes">${text.map(d=>card(d)).join('')}</div>`:''}`;
   }
   function renderMenu(){
-    const found=visibleDishes(),unfiltered=state.preference==='all',home=currentCategory==='all'&&unfiltered;
-    const featuresOnly=currentCategory==='signature'&&unfiltered,setOnly=currentCategory==='signature-set'&&unfiltered;
-    $('featured-section').hidden=!(home||featuresOnly);
-    $('featured-list').innerHTML=home||featuresOnly?featured.map((id,i)=>card(byId.get(id),i,true)).join(''):'';
-    $('regular-menu').hidden=featuresOnly||setOnly;
-    $('section-title').textContent=home?'家常好菜':currentCategory==='all'?preferences[state.preference]:categories.find(c=>c.id===currentCategory)?.label||'家常好菜';
-    $('section-kicker').textContent=home?'有荤有素，慢慢挑':'合口味的，加一道';
-    $('result-count').textContent=(home?dishes.length-featured.length:found.length)+' 道可选';
+    const found=visibleDishes(),available=availableCategories();
+    if(!available.some(c=>c.id===currentCategory))currentCategory=available[0]?.id||'signature';
+    const featuredRows=featured.map(id=>byId.get(id)).filter(d=>found.includes(d));
+    $('featured-section').hidden=!featuredRows.length;
+    $('featured-list').innerHTML=featuredRows.map((d,i)=>card(d,i,true)).join('');
+    $('featured-next').innerHTML=nextCategory('signature');
+    $('featured-count').textContent=featuredRows.length+'道拿手菜';
     $('filter-hint').hidden=state.preference==='all';
-    $('filter-hint').textContent=state.preference==='kids'?'先看看这些温和、软嫩或酸甜口味，具体要求选好后一起写。':`先看${preferences[state.preference]}的选择，具体口味和忌口选好后一起写。`;
-    $('empty-state').hidden=found.length>0||featuresOnly||setOnly;
-    if(home){
-      const regular=categories.filter(c=>!['signature','signature-set','hakka'].includes(c.id));
-      $('dish-list').innerHTML=regular.map(c=>{const rows=dishes.filter(d=>d.categories[0]===c.id&&!featured.includes(d.id));if(!rows.length)return '';return `<section class="dish-group" aria-labelledby="group-${esc(c.id)}"><div class="group-heading"><h3 id="group-${esc(c.id)}">${esc(c.label)}</h3><span>${rows.length} 道</span></div>${dishGroups(rows)}</section>`;}).join('');
-    }else $('dish-list').innerHTML=featuresOnly||setOnly?'':dishGroups(found);
-    renderSet();updateNavigation();updateSummary();
+    $('filter-hint').textContent=state.preference==='kids'?'先看看温和、软嫩或酸甜的菜。具体口味和忌口选好后一起写。':`已挑出${preferences[state.preference]}的菜，往下慢慢选。`;
+    $('empty-state').hidden=found.length>0;
+    const regular=available.filter(c=>!['signature','signature-set'].includes(c.id));
+    $('regular-menu').hidden=!regular.length;
+    $('dish-list').innerHTML=regular.map(c=>`<section id="menu-category-${esc(c.id)}" class="dish-group menu-section" data-menu-section="${esc(c.id)}" aria-labelledby="group-${esc(c.id)}"><div class="section-heading"><div><p class="section-kicker">${c.id==='hakka'?'家乡的味道，越吃越惦记':'合口味的，加一道'}</p><h2 id="group-${esc(c.id)}" tabindex="-1">${esc(c.label)}</h2></div><span class="result-count">${rowsForCategory(c.id).length} 道可选</span></div>${dishGroups(rowsForCategory(c.id))}${nextCategory(c.id)}</section>`).join('');
+    renderSet();updateNavigation();updateSummary();observeImages();
   }
   function renderSet(){
-    const show=(currentCategory==='all'||currentCategory==='signature-set')&&state.preference==='all';
-    $('signature-set').hidden=!show;if(!show)return;
-    const missing=signatureSet.filter(i=>!totalQuantity(i.id)).length,selected=signatureSet.length-missing;
-    const expanded=$('set-details')?.open||false;
-    const preview=signatureSet.slice(0,3).map(i=>byId.get(i.id)).filter(d=>photoFor(d)?.src);
-    $('signature-set').innerHTML=`<div class="block-heading"><div><p class="section-kicker">不用纠结，一桌配好了</p><h2>招牌套餐 <span class="set-count">10 道</span></h2></div><span class="block-index" aria-hidden="true">02</span></div><div class="set-panel"><div class="set-photos">${preview.map(d=>`<img src="${esc(photoFor(d).src)}" alt="${esc(d.name)}示意图" loading="lazy" width="300" height="225" style="object-position:${esc(photoFor(d).position||'center')}">`).join('')}<span class="image-label">菜品示意</span></div><ol class="set-menu-preview">${signatureSet.map(i=>`<li class="${totalQuantity(i.id)?'set-picked':''}">${esc(i.label)}${totalQuantity(i.id)?'<span aria-label="已选">✓</span>':''}</li>`).join('')}</ol><button type="button" id="add-signature-set" class="primary-button set-button">${!missing?'已配齐 · 查看菜单':selected?`补齐其余 ${missing} 道`:'这一桌都想吃'} <span aria-hidden="true">→</span></button><p class="set-note">${selected?'保留已选菜的做法和份数，只补还没选的。':'整套加入后，也可以自由增减。'}</p><details id="set-details" ${expanded?'open':''}><summary>也可以单独挑 <span aria-hidden="true">＋</span></summary><div class="set-dishes">${signatureSet.map(i=>{const d=byId.get(i.id),variantId=i.variantId||defaultVariant(d);const other=state.lines.filter(l=>l.id===i.id&&l.variantId!==variantId);return `<div class="set-dish"><div><span class="set-name">${esc(i.label)}</span>${other.length?`<small>已另选：${esc(other.map(l=>lineName(l)).join('、'))}</small>`:''}</div>${stepper(d,variantId,true)}</div>`;}).join('')}</div></details></div>`;
+    const show=state.preference==='all';$('signature-set').hidden=!show;if(!show)return;
+    const hero=images['海鲜套餐家宴'];
+    const fallback=[];
+    $('signature-set').innerHTML=`<div class="block-heading"><div><p class="section-kicker">不用纠结，一桌配好了</p><h2 class="seafood-set-title" tabindex="-1">${esc(setTitle)} <span class="set-count">10 道</span></h2></div><span class="block-index" aria-hidden="true">02</span></div><div class="set-panel">${hero?`<figure class="set-table-photo">${imageMarkup(hero,'用户提供的家宴照片，海鲜版套餐菜品以清单为准',{hero:true})}<figcaption class="image-label">家宴照片</figcaption></figure>`:`<div class="set-photos">${fallback.map(d=>imageMarkup(photoFor(d),d.name+'示意图')).join('')}<span class="image-label">菜品示意</span></div>`}<div class="set-intro"><strong>海鲜当主角，好菜聚一桌</strong><span>10 道搭配 · 独立选，不与单点合并</span></div><ol class="set-menu-preview"></ol><button type="button" id="add-signature-set" class="primary-button set-button"></button><p class="set-note"></p><details id="set-details"><summary>也可以单独挑 <span aria-hidden="true">＋</span></summary><div class="set-dishes"></div></details></div>${nextCategory('signature-set')}`;
+    updateSet();
+  }
+  function updateSet(){
+    if($('signature-set').hidden)return;
+    const root=$('signature-set'),missing=signatureSet.filter(i=>!totalQuantity(i.id)).length,selected=signatureSet.length-missing;
+    const preview=root.querySelector('.set-menu-preview'),button=$('add-signature-set'),note=root.querySelector('.set-note'),list=root.querySelector('.set-dishes');
+    if(preview)preview.innerHTML=signatureSet.map(i=>`<li class="${totalQuantity(i.id)?'set-picked':''}">${esc(i.label)}${totalQuantity(i.id)?'<span aria-label="已选">✓</span>':''}</li>`).join('');
+    if(button)button.innerHTML=`${!missing?'已配齐 · 查看菜单':selected?`补齐其余 ${missing} 道`:'这一桌都想吃'} <span aria-hidden="true">→</span>`;
+    if(note)note.textContent=selected?'保留套餐里已选的份数，只补还没选的。':'套餐独立计数，也可以在下面单独挑。';
+    if(list)list.innerHTML=signatureSet.map(i=>{const d=byId.get(i.id),variantId=i.variantId||defaultVariant(d),other=state.lines.filter(l=>l.id===i.id&&l.variantId!==variantId);return `<div class="set-dish"><div><span class="set-name">${esc(i.label)}</span>${other.length?`<small>已另选：${esc(other.map(l=>lineName(l)).join('、'))}</small>`:''}</div>${stepper(d,variantId,true)}</div>`;}).join('');
   }
   function updateNavigation(){
-    const nav=[{id:'all',label:'全部菜品',count:dishes.length},...categories];
-    $('categories').innerHTML=nav.map(c=>{const qty=dishes.filter(d=>c.id==='all'||d.categories.includes(c.id)).reduce((n,d)=>n+totalQuantity(d.id),0);return `${c.id==='pork'?'<span class="nav-divider" aria-hidden="true"></span>':''}<button type="button" class="category-button ${currentCategory===c.id?'active':''}" data-category="${esc(c.id)}" ${currentCategory===c.id?'aria-current="true"':''}><span>${esc(c.label)}</span><span class="category-number">${c.count}</span>${qty?`<span class="category-badge" aria-label="已选${qty}份">${qty}</span>`:''}</button>`;}).join('');
+    const available=new Set(availableCategories().map(c=>c.id)),scrollTop=$('categories').scrollTop;
+    $('categories').innerHTML=categories.map(c=>{const qty=(c.id==='signature-set'?setDishes:dishes.filter(d=>d.categories.includes(c.id))).reduce((n,d)=>n+totalQuantity(d.id),0),count=c.id==='signature-set'?(available.has(c.id)?10:0):rowsForCategory(c.id).length;return `${c.id==='pork'?'<span class="nav-divider" aria-hidden="true"></span>':''}<button type="button" class="category-button ${currentCategory===c.id?'active':''}" data-category="${esc(c.id)}" aria-controls="${c.id==='signature'?'featured-section':c.id==='signature-set'?'signature-set':'menu-category-'+c.id}" ${currentCategory===c.id?'aria-current="true"':''} ${available.has(c.id)?'':'disabled'}><span>${esc(c.label)}</span><span class="category-number">${count}</span>${qty?`<span class="category-badge" aria-label="已选${qty}份">${qty}</span>`:''}</button>`;}).join('');
+    $('categories').scrollTop=scrollTop;
     const pills=Object.entries(preferences).map(([id,label])=>`<button type="button" class="taste-pill ${state.preference===id?'active':''}" data-preference="${id}" aria-pressed="${state.preference===id}">${label}</button>`).join('');
-    $('taste-filters').innerHTML=pills;
-    $('cart-preferences').innerHTML=pills;
+    $('taste-filters').innerHTML=pills;$('cart-preferences').innerHTML=pills;
+  }
+  function setActiveCategory(id){
+    currentCategory=id;
+    const nav=$('categories');
+    for(const b of nav.querySelectorAll('[data-category]')){const active=b.dataset.category===id;b.classList.toggle('active',active);if(active)b.setAttribute('aria-current','true');else b.removeAttribute('aria-current');}
+    const active=nav.querySelector(`[data-category="${id}"]`);
+    if(active){const a=active.getBoundingClientRect(),r=nav.getBoundingClientRect();if(a.top<r.top)nav.scrollTop-=r.top-a.top+8;else if(a.bottom>r.bottom)nav.scrollTop+=a.bottom-r.bottom+8;}
+  }
+  function sectionFor(id){return $(id==='signature'?'featured-section':id==='signature-set'?'signature-set':'menu-category-'+id);}
+  function jumpToCategory(id){
+    const section=sectionFor(id);if(!section||section.hidden||!availableCategories().some(c=>c.id===id))return;
+    [...section.querySelectorAll('.food-image')].slice(0,4).forEach(img=>img.loading='eager');
+    const top=section.getBoundingClientRect().top+window.scrollY-document.querySelector('.toolbar').offsetHeight-14;
+    window.scrollTo({top:Math.max(0,top),behavior:'auto'});setActiveCategory(id);
+    section.querySelector('h2')?.focus({preventScroll:true});
+  }
+  function syncActiveCategory(){
+    scrollFrame=0;const sections=[...$('menu-main').querySelectorAll('[data-menu-section]')].filter(s=>!s.hidden);if(!sections.length)return;
+    const line=document.querySelector('.toolbar').offsetHeight+50;
+    let active=sections[0];for(const s of sections)if(s.getBoundingClientRect().top<=line)active=s;
+    if(window.scrollY>0&&window.scrollY+window.innerHeight>=document.documentElement.scrollHeight-5)active=sections[sections.length-1];
+    if(active.dataset.menuSection!==currentCategory)setActiveCategory(active.dataset.menuSection);
+  }
+  function observeImages(){
+    imageObserver?.disconnect();
+    if(!window.IntersectionObserver)return;
+    imageObserver=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){entry.target.loading='eager';imageObserver.unobserve(entry.target);}},{rootMargin:'1200px 0px'});
+    $('menu-main').querySelectorAll('.food-image[loading="lazy"]').forEach(img=>imageObserver.observe(img));
   }
   function updateSummary(){
     const c=counts();$('cart-title').textContent=c.dishes?`已选 ${c.dishes} 道`:'今天想吃点什么？';
@@ -119,14 +162,17 @@
     $('table-balance').innerHTML=`<span>这一桌：荤菜 ${balance.meat} · 蔬菜 ${balance.veg} · 汤 ${balance.soup}</span>${!balance.soup?'<button type="button" data-suggest="soup">再看看汤 →</button>':!balance.veg?'<button type="button" data-suggest="vegetables">再看看青菜 →</button>':''}`;
   }
   function updateCards(){
-    const focused=document.activeElement,dataset=focused?.dataset||{},root=focused?.closest('dialog')?.id|| (focused?.closest('#signature-set')?'signature-set':focused?.closest('#featured-list')?'featured-list':'dish-list');
+    const focused=document.activeElement,dataset=focused?.dataset||{},root=focused?.closest('dialog')?.id||focused?.closest('[data-menu-section]')?.id||'menu-main';
     for(const card of $('menu-main').querySelectorAll('[data-dish]')){
       const d=byId.get(card.dataset.dish),qty=totalQuantity(d.id);card.classList.toggle('selected',!!qty);
       card.querySelector('.stepper').outerHTML=stepper(d);
+      const picker=card.querySelector('.variant-picker');if(picker)picker.outerHTML=variantPicker(d);
+      const description=card.querySelector('.dish-description');if(description)description.textContent=variantFor(d,chosenVariant(d))?.description||d.recommendation||'';
       const status=card.querySelector('.selection-status');if(status)status.textContent=qty?`已选 ${qty} 份`:d.tags.includes('hakka')?'客家风味':'';
     }
-    updateSummary();updateNavigation();renderSet();if($('cart-dialog').open)renderCart();
-    if(dataset.action&&dataset.id){const target=$(root)?.querySelector(`[data-action="${dataset.action}"][data-id="${dataset.id}"][data-variant="${dataset.variant||''}"]`)||$(root)?.querySelector(`[data-action="plus"][data-id="${dataset.id}"]`);target?.focus({preventScroll:true});}
+    updateSummary();updateNavigation();updateSet();if($('cart-dialog').open)renderCart();
+    const attr=dataset.action?'action':dataset.choice?'choice':null;
+    if(attr&&dataset.id){const selector=`[data-${attr}="${dataset[attr]}"][data-id="${dataset.id}"]${attr==='action'?`[data-variant="${dataset.variant||''}"]`:''}`;const target=$(root)?.querySelector(selector)||$(root)?.querySelector(`[data-action="plus"][data-id="${dataset.id}"]`);target?.focus({preventScroll:true});}
   }
   function validateQuantity(id,quantity,variantId){const d=byId.get(id);if(!d||!Number.isInteger(quantity)||quantity<0||quantity>99)throw new Error('请选择有效菜品，份数为 0–99 的整数。');const v=variantId??defaultVariant(d);if(d.variants?.length?!variantFor(d,v):!!v)throw new Error('请选择有效做法。');return v;}
   function assignQuantity(id,quantity,variantId){const key=lineKey(id,variantId);const existing=state.lines.find(l=>lineKey(l.id,l.variantId)===key);if(!quantity)state.lines=state.lines.filter(l=>lineKey(l.id,l.variantId)!==key);else if(existing)existing.quantity=quantity;else state.lines.push({id,variantId,quantity});}
@@ -153,15 +199,16 @@
     return lines.join('\n');
   }
   async function copyMenu(){const text=menuText();if(!text)return;try{if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');await navigator.clipboard.writeText(text);notify('已复制，可以粘贴到微信发给剑锋');}catch{$('copy-text').value=text;openDialog('copy-dialog');}}
-  function scrollToMenu(){const top=$('menu-main').getBoundingClientRect().top+window.scrollY-document.querySelector('.toolbar').offsetHeight;if(window.scrollY>top)window.scrollTo({top:Math.max(0,top),behavior:'auto'});}
-  function resetFilters(){currentCategory='all';state.preference='all';persist();renderMenu();scrollToMenu();}
+  function resetFilters(){state.preference='all';persist();renderMenu();jumpToCategory('signature');}
   document.addEventListener('click',event=>{
     const button=event.target.closest('button');if(!button||button.disabled)return;
     if(button.dataset.action){const {id,variant=''}=button.dataset;const qty=quantity(id,variant);setQuantity(id,button.dataset.action==='plus'?qty+1:button.dataset.action==='minus'?Math.max(0,qty-1):0,variant);}
-    if(button.dataset.choice){choices[button.dataset.id]=button.dataset.choice;renderMenu();const root=button.closest('#featured-list')?$('featured-list'):$('dish-list');root.querySelector(`[data-id="${button.dataset.id}"][data-choice="${button.dataset.choice}"]`)?.focus({preventScroll:true});}
-    if(button.dataset.category){currentCategory=button.dataset.category;renderMenu();scrollToMenu();$('categories').querySelector(`[data-category="${currentCategory}"]`)?.focus({preventScroll:true});}
-    if(button.dataset.preference){state.preference=button.dataset.preference;persist();renderMenu();if(!$('cart-dialog').open)scrollToMenu();}
-    if(button.dataset.suggest){currentCategory=button.dataset.suggest;state.preference='all';persist();renderMenu();scrollToMenu();}
+    if(button.dataset.choice){choices[button.dataset.id]=button.dataset.choice;updateCards();}
+    if(button.dataset.category)jumpToCategory(button.dataset.category);
+    if(button.dataset.nextCategory)jumpToCategory(button.dataset.nextCategory);
+    if(button.dataset.reviewMenu)openCart();
+    if(button.dataset.preference){state.preference=button.dataset.preference;persist();renderMenu();if(!$('cart-dialog').open)jumpToCategory(currentCategory);}
+    if(button.dataset.suggest){if(state.preference!=='all'){state.preference='all';persist();renderMenu();}jumpToCategory(button.dataset.suggest);}
     if(button.id==='add-signature-set')addSet();
     if(button.classList.contains('close-dialog')){const dialog=button.closest('dialog');if(typeof dialog.close==='function')dialog.close();else{dialog.removeAttribute('open');document.body.style.overflow='';}}
   });
@@ -177,17 +224,24 @@
     dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
   }
   $('open-sources').addEventListener('click',()=>{
-    const seen=new Set();const sources=dishes.filter(d=>d.display!=='text'||signatureSet.some(i=>i.id===d.id)).flatMap(d=>{const photo=photoFor(d);return photo?(photo.parts||[photo]).map(img=>[d.name,img]):[];}).filter(([,img])=>{if(seen.has(img.src))return false;seen.add(img.src);return true;});
-    $('source-list').innerHTML='<p>图片为菜品示意，实际做法和摆盘以家里制作的为准。</p>'+sources.map(([name,img])=>`<article><h3>${esc(name)}</h3><p>${esc(img.author||'来源见原文')}${img.license&&img.license!=='unknown'?` · ${esc(img.license)}`:''}</p><a href="${esc(img.sourcePage)}" target="_blank" rel="noopener noreferrer">查看原始来源</a>${img.licenseUrl?` · <a href="${esc(img.licenseUrl)}" target="_blank" rel="noopener noreferrer">使用许可</a>`:''}</article>`).join('');openDialog('sources-dialog');
+    const seen=new Set();const sources=dishes.filter(d=>d.display!=='text'||signatureSet.some(i=>i.id===d.id)).flatMap(d=>{const photo=photoFor(d);return photo?(photo.parts||[photo]).map(img=>[d.name,img]):[];}).concat(images['招牌套餐整桌']?[['招牌套餐整桌',images['招牌套餐整桌']]]:[]).filter(([,img])=>{if(seen.has(img.src))return false;seen.add(img.src);return true;});
+    $('source-list').innerHTML='<p>图片为菜品示意，实际做法和摆盘以家里制作的为准。</p>'+sources.map(([name,img])=>`<article><h3>${esc(name)}</h3><p>${esc(img.author||'来源见原文')}${img.license&&img.license!=='unknown'?` · ${esc(img.license)}`:''}</p>${img.sourcePage?`<a href="${esc(img.sourcePage)}" target="_blank" rel="noopener noreferrer">查看原始来源</a>`:''}${img.licenseUrl?` · <a href="${esc(img.licenseUrl)}" target="_blank" rel="noopener noreferrer">使用许可</a>`:''}</article>`).join('');openDialog('sources-dialog');
   });
   function sizeToolbar(){document.documentElement.style.setProperty('--header',document.querySelector('.toolbar').offsetHeight+'px');}
   if(window.ResizeObserver)new ResizeObserver(sizeToolbar).observe(document.querySelector('.toolbar'));else window.addEventListener('resize',sizeToolbar);
-  $('menu-main').addEventListener('error',event=>{if(event.target.tagName!=='IMG')return;const img=event.target,card=img.closest('.dish-card');if(card){img.closest('.dish-photo')?.remove();card.classList.remove('photo-card');card.classList.add('text-card');}else img.hidden=true;},true);
+  $('menu-main').addEventListener('error',event=>{
+    if(event.target.tagName!=='IMG')return;const img=event.target;
+    if(img.classList.contains('signature-badge')){img.hidden=true;return;}
+    if(img.getAttribute('srcset')&&!img.dataset.fallback){img.dataset.fallback='true';img.removeAttribute('srcset');img.removeAttribute('sizes');img.src=img.getAttribute('src');return;}
+    const card=img.closest('.dish-card');if(card){img.closest('.dish-photo')?.remove();card.classList.remove('photo-card');card.classList.add('text-card');}else img.hidden=true;
+  },true);
+  window.addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(syncActiveCategory);},{passive:true});
+  window.addEventListener('resize',()=>{sizeToolbar();syncActiveCategory();});
   renderMenu();sizeToolbar();try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch{/* Defer storage notices until an edit. */}
   const context=document.modelContext;
   if(context?.registerTool){
     const definitions=[
-      {name:'read_menu',title:'查看剑锋家菜单',description:'读取可选菜、做法和当前份数。',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute(){return {dishes:dishes.map(d=>({...d,quantity:totalQuantity(d.id)})),counts:counts(),preference:state.preference};}},
+      {name:'read_menu',title:'查看剑锋家菜单',description:'读取可选菜、做法和当前份数。',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute(){return {dishes:dishes.map(d=>({...d,quantity:totalQuantity(d.id)})),counts:counts(),preference:state.preference,setTitle,setDishes:setDishes.map(d=>({...d,quantity:totalQuantity(d.id)}))};}},
       {name:'set_menu_quantities',title:'调整想吃的菜',description:'设置本浏览器的菜品与做法份数，0表示移除，不发送菜单。',inputSchema:{type:'object',properties:{items:{type:'array',items:{type:'object',properties:{id:{type:'string'},variantId:{type:'string'},quantity:{type:'integer',minimum:0,maximum:99}},required:['id','quantity'],additionalProperties:false}}},required:['items'],additionalProperties:false},annotations:{readOnlyHint:false},execute({items}){const checked=items.map(i=>({...i,variantId:validateQuantity(i.id,i.quantity,i.variantId)}));for(const i of checked)assignQuantity(i.id,i.quantity,i.variantId);persist();updateCards();return {counts:counts(),text:menuText()};}},
       {name:'read_selected_menu',title:'读取点菜单文本',description:'返回当前点菜单，不发送给任何人。',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute(){return {text:menuText(),counts:counts(),preference:state.preference,items:state.lines.map(l=>({...l,name:lineName(l)}))};}}
     ];

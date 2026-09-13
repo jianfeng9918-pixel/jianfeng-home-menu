@@ -1,8 +1,8 @@
 {
   "checked": "2026-09-13",
-  "dishCount": 105,
-  "imageCount": 108,
-  "note": "菜名、主料与做法逐道核对。网图仅供示意；组合菜各部分分别标示。unknown 表示未核实独立再使用许可，不表示开放许可。未复制菜谱正文。",
+  "dishCount": 106,
+  "imageCount": 109,
+  "note": "菜图仅供示意。unknown 表示未核实独立再使用许可，不表示开放许可。V5 酿蛋图由 ImageGen 生成；海鲜版套餐图由用户提供。响应式图片只进行等比缩放和压缩，来源沿用原图。",
   "images": [
     {
       "sourcePage": "https://www.xiachufang.com/recipe/101790134/",
@@ -20,7 +20,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "position": "50% 50%",
-      "dish": "豆豉蒸排骨"
+      "dishName": "豆豉蒸排骨"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/104386617/",
@@ -37,7 +37,7 @@
         684
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "酸甜排骨"
+      "dishName": "酸甜排骨"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106696764/",
@@ -54,7 +54,7 @@
         960
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "排骨芋头煲"
+      "dishName": "排骨芋头煲"
     },
     {
       "sourcePage": "https://www.gzstv.com/a/a3fa3fc197c14f6a855d0150505cbed0",
@@ -71,7 +71,7 @@
         426
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "粉肠排骨煲"
+      "dishName": "粉肠排骨煲"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106705024/",
@@ -88,7 +88,7 @@
         684
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "香煎猪颈肉"
+      "dishName": "香煎猪颈肉"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106748939/",
@@ -105,7 +105,7 @@
         718
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "香煎五花肉"
+      "dishName": "香煎五花肉"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/104057710/",
@@ -122,7 +122,7 @@
         767
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "酸菜炒生肠"
+      "dishName": "酸菜炒生肠"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106485567/",
@@ -139,7 +139,7 @@
         720
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "酸菜炒大肠"
+      "dishName": "酸菜炒大肠"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/100133266/",
@@ -156,7 +156,7 @@
         650
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "卤各种肠"
+      "dishName": "卤各种肠"
     },
     {
       "sourcePage": "https://cookpad.com/jp/recipes/17360874",
@@ -173,7 +173,7 @@
         852
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "猪肉炒青菜"
+      "dishName": "猪肉炒青菜"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106449585/",
@@ -190,7 +190,7 @@
         719
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "酿苦瓜、辣椒、豆腐"
+      "dishName": "酿苦瓜、辣椒、豆腐"
     },
     {
       "sourcePage": "https://icook.tw/recipes/419456",
@@ -207,7 +207,7 @@
         720
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "梅菜肉饼"
+      "dishName": "梅菜肉饼"
     },
     {
       "sourcePage": "https://www.lanyaa.com/zuofa/103000",
@@ -224,7 +224,7 @@
         677
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "凉拌猪肚"
+      "dishName": "凉拌猪肚"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106690851/",
@@ -241,7 +241,7 @@
         960
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "腊肉炒青菜"
+      "dishName": "腊肉炒青菜"
     },
     {
       "sourcePage": "https://www.lohaspottery.com/index.php/index/tech/techa/id/173.html",
@@ -258,7 +258,7 @@
         469
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "猪脚煲"
+      "dishName": "猪脚煲"
     },
     {
       "sourcePage": "https://cookidoo.thermomix.com/recipes/recipe/en-US/r597522",
@@ -275,7 +275,7 @@
         720
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "猪脚醋煲"
+      "dishName": "猪脚醋煲"
     },
     {
       "sourcePage": "https://rasamalaysia.com/three-cups-chicken-recipe/",
@@ -292,7 +292,7 @@
         960
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "三杯鸡"
+      "dishName": "三杯鸡"
     },
     {
       "sourcePage": "https://commons.wikimedia.org/wiki/File:BeiQieJi-WhiteCutChicken.jpg",
@@ -310,7 +310,7 @@
         720
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "白切鸡"
+      "dishName": "白切鸡"
     },
     {
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Salt_baked_chicken_-_San_Francisco%2C_CA.jpg",
@@ -328,7 +328,7 @@
         714
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "盐焗鸡"
+      "dishName": "盐焗鸡"
     },
     {
       "sourcePage": "https://www.douguo.com/cookbook/3302923.html",
@@ -345,7 +345,7 @@
         960
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "沙姜鸡"
+      "dishName": "沙姜鸡"
     },
     {
       "sourcePage": "https://www.douguo.com/cookbook/1129592.html",
@@ -362,7 +362,7 @@
         853
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "咖喱鸡"
+      "dishName": "咖喱鸡"
     },
     {
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Spicy_chicken_(La-zi-ji).jpg",
@@ -380,7 +380,7 @@
         600
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "辣子鸡"
+      "dishName": "辣子鸡"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/104770824/",
@@ -397,7 +397,7 @@
         563
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "茶树菇蒸鸡"
+      "dishName": "茶树菇蒸鸡"
     },
     {
       "sourcePage": "https://rasamalaysia.com/chicken-mushroom-stew/",
@@ -414,7 +414,7 @@
         960
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "香菇鸡煲"
+      "dishName": "香菇鸡煲"
     },
     {
       "sourcePage": "https://k.sina.cn/article_7032343632_1a3290c5000100rlt6.html",
@@ -431,7 +431,7 @@
         446
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "萝卜鸡煲"
+      "dishName": "萝卜鸡煲"
     },
     {
       "sourcePage": "https://k.sina.cn/article_1913000720_7206131000100gegn.html?from=food",
@@ -448,7 +448,7 @@
         427
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "鸡杂炒青菜"
+      "dishName": "鸡杂炒青菜"
     },
     {
       "sourcePage": "https://m.douguo.com/recipe/mip/1673470",
@@ -465,7 +465,7 @@
         562
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "奥尔良烤鸡翅"
+      "dishName": "奥尔良烤鸡翅"
     },
     {
       "sourcePage": "https://commons.wikimedia.org/wiki/File:蒸水蛋_-_基隆茶餐廳.jpg",
@@ -483,25 +483,19 @@
         800
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "蒸水蛋"
+      "dishName": "蒸水蛋"
     },
     {
-      "sourcePage": "https://www.sohu.com/a/366549549_582111",
-      "sourceImage": "https://5b0988e595225.cdn.sohucs.com/q_70%2Cc_zoom%2Cw_640/images/20200113/64e414b6a22440df9b34c9f6617d2a5a.jpeg",
-      "sourceTitle": "鸡蛋又有新做法！大冷天就想吃它，随手一煮好吃哭",
-      "author": "菜菜美食日记",
-      "license": "unknown",
-      "matchReason": "菜菜美食日记原文明确客家蛋饺，以蛋皮包猪肉馅后煮熟；成菜近照切口能看到蛋皮与肉馅，属于客家酿蛋的蛋饺版本。",
-      "src": "assets/food-582743cce9045398.webp",
-      "verified": true,
-      "sha256": "582743cce90453982840f39a2c7e597a751d2e3b5d86109de6e4efe65b9a78b6",
-      "dimensions": [
-        640,
-        426
-      ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "position": "40% 55%",
-      "dish": "酿蛋"
+      "src": "assets/hakka-stuffed-eggs-v5.webp",
+      "sourceTitle": "客家酿蛋整盘示意",
+      "author": "ImageGen · AI 生成",
+      "license": "AI-generated",
+      "sourcePage": "",
+      "sourceImage": "",
+      "position": "center",
+      "caption": "菜品示意",
+      "note": "按蛋皮包肉的客家酿蛋形态生成，非用户实拍。",
+      "dishName": "酿蛋"
     },
     {
       "sourcePage": "https://www.douguo.com/cookbook/1148753.html",
@@ -518,7 +512,7 @@
         960
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "韭菜炒蛋"
+      "dishName": "韭菜炒蛋"
     },
     {
       "sourcePage": "https://www.douguo.com/cookbook/3217339.html",
@@ -535,7 +529,7 @@
         452
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "姜葱炒牛肉"
+      "dishName": "姜葱炒牛肉"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106843285/",
@@ -552,7 +546,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "牛腩萝卜煲"
+      "dishName": "牛腩萝卜煲"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/104257462/",
@@ -569,7 +563,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "黑椒牛仔骨"
+      "dishName": "黑椒牛仔骨"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/104479347/",
@@ -586,7 +580,7 @@
         669
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "孜然炒牛肉"
+      "dishName": "孜然炒牛肉"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/102863982/",
@@ -603,7 +597,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "牛肉丸"
+      "dishName": "牛肉丸"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/104530502/",
@@ -621,7 +615,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "caption": "三杯鸭示意",
-      "dish": "三杯鸭鹅"
+      "dishName": "三杯鸭鹅"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106922784/",
@@ -639,7 +633,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "caption": "焖鸭示意",
-      "dish": "焖鸭鹅羊肉"
+      "dishName": "焖鸭鹅羊肉"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/101885558/",
@@ -657,7 +651,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "caption": "卤鹅示意",
-      "dish": "卤鸭鹅羊肉"
+      "dishName": "卤鸭鹅羊肉"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106969776/",
@@ -674,7 +668,7 @@
         563
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "羊肉煲"
+      "dishName": "羊肉煲"
     },
     {
       "sourcePage": "https://commons.wikimedia.org/wiki/File:%E6%B8%85%E8%92%B8%E9%B2%88%E9%B1%BC.jpg",
@@ -693,7 +687,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "position": "50% 55%",
-      "dish": "清蒸鱼"
+      "dishName": "清蒸鱼"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106158944/",
@@ -710,7 +704,7 @@
         750
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "煎海鱼"
+      "dishName": "煎海鱼"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106101593/",
@@ -727,7 +721,7 @@
         667
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "白灼虾"
+      "dishName": "白灼虾"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/102163930/",
@@ -744,7 +738,7 @@
         858
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "黄金虾（炸）"
+      "dishName": "黄金虾（炸）"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/101826722/",
@@ -761,7 +755,7 @@
         716
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "蒜蓉开边虾"
+      "dishName": "蒜蓉开边虾"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/107083543/",
@@ -778,7 +772,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "蒜蓉扇贝"
+      "dishName": "蒜蓉扇贝"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/107151376/",
@@ -795,7 +789,7 @@
         750
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "蒜蓉蒸鲍鱼"
+      "dishName": "蒜蓉蒸鲍鱼"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106177920/",
@@ -812,7 +806,7 @@
         749
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "蒜蓉烤生蚝"
+      "dishName": "蒜蓉烤生蚝"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/107691507/",
@@ -829,7 +823,7 @@
         750
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "高压锅生蚝"
+      "dishName": "高压锅生蚝"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/104587916/",
@@ -846,7 +840,7 @@
         992
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "清蒸生蚝"
+      "dishName": "清蒸生蚝"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106824859/",
@@ -863,7 +857,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "盐焗花螺"
+      "dishName": "盐焗花螺"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/103968083/",
@@ -880,7 +874,7 @@
         765
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "白灼花螺"
+      "dishName": "白灼花螺"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/107687621/",
@@ -897,7 +891,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "白灼鱿鱼"
+      "dishName": "白灼鱿鱼"
     },
     {
       "sourcePage": "https://www.orientalcuisine.my/recipe/姜葱炒鱿鱼/",
@@ -914,7 +908,7 @@
         800
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "姜葱炒鱿鱼"
+      "dishName": "姜葱炒鱿鱼"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/107360281/",
@@ -931,7 +925,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "姜葱炒花甲"
+      "dishName": "姜葱炒花甲"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/100160878/",
@@ -948,7 +942,7 @@
         800
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "姜葱炒田螺"
+      "dishName": "姜葱炒田螺"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/104505132/",
@@ -965,7 +959,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "姜葱炒圣子皇"
+      "dishName": "姜葱炒圣子皇"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/104647868/",
@@ -982,7 +976,7 @@
         697
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "姜葱炒蟹"
+      "dishName": "姜葱炒蟹"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106006280/",
@@ -999,7 +993,7 @@
         912
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "生蚝煎蛋"
+      "dishName": "生蚝煎蛋"
     },
     {
       "sourcePage": "https://k.sina.cn/article_6433466104_17f76e6f800100eaaj.html",
@@ -1016,7 +1010,7 @@
         459
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "番茄鲍鱼煲"
+      "dishName": "番茄鲍鱼煲"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106524908/",
@@ -1033,7 +1027,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "鱿鱼蒸粉丝"
+      "dishName": "鱿鱼蒸粉丝"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/107364897/",
@@ -1050,7 +1044,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "苦瓜炒蛋"
+      "dishName": "苦瓜炒蛋"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/104225044/",
@@ -1067,7 +1061,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "炒腰果玉米"
+      "dishName": "炒腰果玉米"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/106424781/",
@@ -1084,7 +1078,7 @@
         793
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "腐乳通心菜"
+      "dishName": "腐乳通心菜"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/103458736/",
@@ -1101,7 +1095,7 @@
         472
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "蒜蓉炒青菜"
+      "dishName": "蒜蓉炒青菜"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/107697353/",
@@ -1118,7 +1112,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "炒莴笋"
+      "dishName": "炒莴笋"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/106240503/",
@@ -1135,7 +1129,7 @@
         656
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "炒生菜"
+      "dishName": "炒生菜"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/100601574/",
@@ -1152,7 +1146,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "炒荷兰豆"
+      "dishName": "炒荷兰豆"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/106098768/",
@@ -1169,7 +1163,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "炒麦菜"
+      "dishName": "炒麦菜"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/100444391/",
@@ -1186,7 +1180,7 @@
         775
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "炒莲藕"
+      "dishName": "炒莲藕"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/104216751/",
@@ -1203,7 +1197,7 @@
         750
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "炒上海青"
+      "dishName": "炒上海青"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/106157671/",
@@ -1220,7 +1214,7 @@
         800
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "上汤菠菜"
+      "dishName": "上汤菠菜"
     },
     {
       "src": "assets/veg-soup-crayfish.webp",
@@ -1232,7 +1226,7 @@
       "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
       "verified": true,
       "position": "50% 50%",
-      "dish": "小龙虾"
+      "dishName": "小龙虾"
     },
     {
       "src": "assets/veg-soup-fish.webp",
@@ -1243,7 +1237,7 @@
       "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
       "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
       "verified": true,
-      "dish": "酸菜鱼"
+      "dishName": "酸菜鱼"
     },
     {
       "src": "assets/veg-soup-barbecue.webp",
@@ -1254,7 +1248,7 @@
       "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
       "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
       "verified": true,
-      "dish": "烧烤"
+      "dishName": "烧烤"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/103500743/",
@@ -1271,7 +1265,7 @@
         693
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "砂锅粥"
+      "dishName": "砂锅粥"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/107557989/",
@@ -1288,7 +1282,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "东北一锅炖"
+      "dishName": "东北一锅炖"
     },
     {
       "src": "assets/veg-soup-hotpot.webp",
@@ -1299,7 +1293,7 @@
       "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
       "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
       "verified": true,
-      "dish": "火锅"
+      "dishName": "火锅"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/102936699/",
@@ -1317,7 +1311,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "position": "50% 52%",
-      "dish": "卤水拼盘"
+      "dishName": "卤水拼盘"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/1014841/",
@@ -1335,7 +1329,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "position": "50% 60%",
-      "dish": "椰子鸡汤"
+      "dishName": "椰子鸡汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/128303/",
@@ -1352,7 +1346,7 @@
         800
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "花旗参鸡汤"
+      "dishName": "花旗参鸡汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/106094069/",
@@ -1369,7 +1363,7 @@
         751
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "猪肚鸡汤"
+      "dishName": "猪肚鸡汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/104764192/",
@@ -1386,7 +1380,7 @@
         667
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "胡萝卜玉米排骨汤"
+      "dishName": "胡萝卜玉米排骨汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/103933386/",
@@ -1403,7 +1397,7 @@
         806
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "清蒸猪肉汤"
+      "dishName": "清蒸猪肉汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/1069422/",
@@ -1420,7 +1414,7 @@
         800
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "莲藕排骨汤"
+      "dishName": "莲藕排骨汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/142766/",
@@ -1438,7 +1432,7 @@
         536
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "茶树菇汤"
+      "dishName": "茶树菇汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/106998363/",
@@ -1455,7 +1449,7 @@
         450
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "红枣枸杞鸡汤"
+      "dishName": "红枣枸杞鸡汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/102422168/",
@@ -1472,7 +1466,7 @@
         667
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "老鸭冬瓜汤"
+      "dishName": "老鸭冬瓜汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/106424639/",
@@ -1489,7 +1483,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "番茄蛋花汤"
+      "dishName": "番茄蛋花汤"
     },
     {
       "sourcePage": "https://jingyan.baidu.com/article/e4d08ffddaf7604ed2f60d91.html",
@@ -1507,7 +1501,7 @@
         800
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "紫菜肉丸汤"
+      "dishName": "紫菜肉丸汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/104641787/",
@@ -1524,7 +1518,7 @@
         799
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "丝瓜汤"
+      "dishName": "丝瓜汤"
     },
     {
       "sourcePage": "https://m.xiachufang.com/recipe/106087827/",
@@ -1543,7 +1537,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "caption": "枸杞叶汤示意",
-      "dish": "枸杞汤"
+      "dishName": "枸杞汤"
     },
     {
       "src": "assets/veg-soup-chicken-feet.webp",
@@ -1554,7 +1548,7 @@
       "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
       "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
       "verified": true,
-      "dish": "凉拌鸡爪"
+      "dishName": "凉拌鸡爪"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/107149634/",
@@ -1571,7 +1565,7 @@
         600
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "酸辣八爪鱼"
+      "dishName": "酸辣八爪鱼"
     },
     {
       "src": "assets/veg-soup-cucumber.webp",
@@ -1582,7 +1576,7 @@
       "modifications": "等比缩放并转换为 WebP；网页按 4:3 取景显示；图片延续原许可。",
       "matchReason": "本次再次目视核对成菜和主料，保留对应来源照片",
       "verified": true,
-      "dish": "凉拌青瓜"
+      "dishName": "凉拌青瓜"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/107631851/",
@@ -1599,7 +1593,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "酸辣毛豆"
+      "dishName": "酸辣毛豆"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/107129021/",
@@ -1617,7 +1611,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "label": "凉拌八爪鱼",
-      "dish": "凉拌八爪鱼虾"
+      "dishName": "凉拌八爪鱼虾"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/106494970/",
@@ -1635,7 +1629,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "label": "凉拌虾",
-      "dish": "凉拌八爪鱼虾"
+      "dishName": "凉拌八爪鱼虾"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/105966061/",
@@ -1652,7 +1646,7 @@
         1000
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
-      "dish": "酸豆角炒生肠"
+      "dishName": "酸豆角炒生肠"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/107476345/",
@@ -1670,7 +1664,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "label": "白灼鱿鱼",
-      "dish": "白灼鱿鱼+花螺"
+      "dishName": "白灼鱿鱼+花螺"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/104164863/",
@@ -1688,25 +1682,20 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "label": "白灼花螺",
-      "dish": "白灼鱿鱼+花螺"
+      "dishName": "白灼鱿鱼+花螺"
     },
     {
-      "sourcePage": "https://www.xiachufang.com/recipe/106813055/",
-      "sourceImage": "https://i2.chuimg.com/f44e8311ce8a4a3693b8d8b5188916eb_1080w_864h.jpg",
-      "sourceTitle": "客家百酿之酿蛋（蛋饺）-简单少量材料做成一道菜",
-      "author": "宝宝贝贝_妈",
-      "license": "unknown",
-      "matchReason": "标题、食材和成菜主图匹配",
-      "src": "assets/food-c429db7139bf90cd.webp",
-      "verified": true,
-      "sha256": "c429db7139bf90cd4ae01584b2e4cc2bfb00be43c628b7b9b2ecd436f67936bb",
-      "dimensions": [
-        1000,
-        800
-      ],
-      "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
+      "src": "assets/hakka-stuffed-eggs-v5.webp",
+      "sourceTitle": "客家酿蛋整盘示意",
+      "author": "ImageGen · AI 生成",
+      "license": "AI-generated",
+      "sourcePage": "",
+      "sourceImage": "",
+      "position": "center",
+      "caption": "菜品示意",
+      "note": "按蛋皮包肉的客家酿蛋形态生成，非用户实拍。",
       "label": "酿蛋",
-      "dish": "酿蛋+苦瓜"
+      "dishName": "酿蛋+苦瓜"
     },
     {
       "sourcePage": "https://www.xiachufang.com/recipe/100516234/",
@@ -1724,7 +1713,7 @@
       ],
       "modifications": "等比缩放并转换为 WebP；网页按卡片比例显示。",
       "label": "酿苦瓜",
-      "dish": "酿蛋+苦瓜"
+      "dishName": "酿蛋+苦瓜"
     },
     {
       "sourcePage": "https://m.thepaper.cn/newsDetail_forward_8480619",
@@ -1742,7 +1731,7 @@
       ],
       "position": "50% 52%",
       "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。",
-      "dish": "碌鹅"
+      "dishName": "碌鹅"
     },
     {
       "sourcePage": "https://cook1cook.com/zh-hk/recipe/36897",
@@ -1760,7 +1749,7 @@
       ],
       "position": "50% 53%",
       "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。",
-      "dish": "客家酿豆腐"
+      "dishName": "客家酿豆腐"
     },
     {
       "sourcePage": "https://k.sina.cn/article_7235451621_1af443ae500100lp3r.html?from=food",
@@ -1778,7 +1767,7 @@
       ],
       "position": "50% 53%",
       "modifications": "保留比例转换为WebP；未生成或改变菜品内容；网页卡片按焦点裁切。",
-      "dish": "客家土猪汤"
+      "dishName": "客家土猪汤"
     },
     {
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Char_siu_pieces.jpg",
@@ -1797,7 +1786,7 @@
       "position": "45% 50%",
       "modifications": "等比缩放并转换为WebP；保留原图文字与水印，网页卡片按焦点裁切。",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dish": "叉烧肉"
+      "dishName": "叉烧肉"
     },
     {
       "sourcePage": "https://icook.tw/recipes/238098",
@@ -1815,7 +1804,7 @@
       ],
       "position": "50% 52%",
       "modifications": "按原比例转换为WebP；未对原照片裁切、抹除或添加文字。",
-      "dish": "卤牛腱肉"
+      "dishName": "卤牛腱肉"
     },
     {
       "sourcePage": "https://www.sohu.com/a/484035962_121057256",
@@ -1833,7 +1822,19 @@
       ],
       "position": "50% 52%",
       "modifications": "等比缩放并转换为WebP；保留原图文字与水印，网页卡片按焦点裁切。",
-      "dish": "豆豉炸鱼"
+      "dishName": "豆豉炸鱼"
+    },
+    {
+      "src": "assets/seafood-banquet-v5.webp",
+      "sourceTitle": "剑锋家家宴照片",
+      "author": "用户提供",
+      "license": "user-provided",
+      "sourcePage": "",
+      "sourceImage": "",
+      "position": "center",
+      "caption": "家宴照片",
+      "note": "由用户指定用于海鲜版套餐展示；套餐具体菜品以文字清单为准。",
+      "dishName": "海鲜套餐家宴"
     }
   ]
 }
