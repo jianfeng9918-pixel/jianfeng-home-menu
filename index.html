@@ -8,16 +8,17 @@
   <meta name="robots" content="noindex,nofollow">
   <title>剑锋家菜单</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23285a3d'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-size='27' fill='white' font-family='serif'%3E黄%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=menu-10-1">
-  <link rel="stylesheet" href="visual-v6.css?v=menu-10-1">
-  <link rel="stylesheet" href="visual-v7.css?v=menu-10-1">
-  <link rel="stylesheet" href="visual-v8.css?v=menu-10-1">
-  <link rel="stylesheet" href="visual-v9.css?v=menu-10-1">
-  <script src="menu.js?v=menu-10-1" defer></script>
-  <script src="presentation.js?v=menu-10-1" defer></script>
-  <script src="images.js?v=menu-10-1" defer></script>
-  <script src="image-sizes.js?v=menu-10-1" defer></script>
-  <script src="app.js?v=menu-10-1" defer></script>
+  <link rel="preload" href="assets/fonts/jianfeng-menu-serif.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=menu-11">
+  <link rel="stylesheet" href="visual-v6.css?v=menu-11">
+  <link rel="stylesheet" href="visual-v7.css?v=menu-11">
+  <link rel="stylesheet" href="visual-v8.css?v=menu-11">
+  <link rel="stylesheet" href="visual-v9.css?v=menu-11">
+  <script src="menu.js?v=menu-11" defer></script>
+  <script src="presentation.js?v=menu-11" defer></script>
+  <script src="images.js?v=menu-11" defer></script>
+  <script src="image-sizes.js?v=menu-11" defer></script>
+  <script src="app.js?v=menu-11" defer></script>
 </head>
 <body>
   <div class="app-shell">
@@ -51,7 +52,7 @@
     </div>
   </div>
   <dialog id="cart-dialog" class="sheet" aria-labelledby="cart-dialog-title">
-    <div class="sheet-header"><div><p class="eyebrow">选好了，就开饭</p><h2 id="cart-dialog-title">这次想吃</h2></div><button type="button" class="icon-button close-dialog" aria-label="关闭点菜单">×</button></div>
+    <div class="sheet-header"><div class="menu-sheet-heading"><span class="menu-sheet-mark" aria-hidden="true">黄</span><div><p class="eyebrow">选好了，就开饭</p><h2 id="cart-dialog-title">这次想吃</h2></div></div><button type="button" class="icon-button close-dialog" aria-label="关闭点菜单">×</button></div>
     <div class="sheet-body">
       <div class="cart-list-top"><span id="sheet-count"></span><button type="button" id="clear-cart" class="text-button muted">清空选择</button></div>
       <div id="cart-items"></div>
