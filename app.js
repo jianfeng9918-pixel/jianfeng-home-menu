@@ -15,7 +15,7 @@
   const preferences={all:'随心选',mild:'偏清淡',spicy:'偏麻辣',kids:'小孩爱吃'};
   const STORAGE_KEY='jianfeng-home-menu:v1';
   let state={version:4,lines:[],notes:'',custom:'',preference:'all'};
-  let currentCategory='signature',choices={},toastTimer,copyFeedbackTimer,storageWarningShown=false;
+  let currentCategory='signature',choices={},toastTimer,storageWarningShown=false;
   let imageObserver,scrollFrame=0;
   const variantFor=(d,id)=>d.variants?.find(v=>v.id===id);
   const defaultVariant=d=>d.defaultVariant||d.variants?.[0]?.id||'';
@@ -131,7 +131,7 @@
   }
   function updateNavigation(){
     const available=new Set(availableCategories().map(c=>c.id)),scrollTop=$('categories').scrollTop;
-    $('categories').innerHTML=categories.map(c=>{const qty=(c.id==='signature-set'?setDishes:dishes.filter(d=>d.categories.includes(c.id))).reduce((n,d)=>n+totalQuantity(d.id),0),count=c.id==='signature-set'?(available.has(c.id)?10:0):rowsForCategory(c.id).length;return `${c.id==='pork'?'<span class="nav-divider" aria-hidden="true"></span>':''}<button type="button" class="category-button nav-${esc(presentation.categories[c.id]?.navigation||'regular')} ${currentCategory===c.id?'active':''}" data-category="${esc(c.id)}" aria-controls="${c.id==='signature'?'featured-section':c.id==='signature-set'?'signature-set':'menu-category-'+c.id}" ${currentCategory===c.id?'aria-current="true"':''} ${available.has(c.id)?'':'disabled'}><span class="category-label">${c.id==='signature-set'&&presentation.navigation?.banquetIcon?`<img class="banquet-nav-icon" src="${esc(presentation.navigation.banquetIcon)}" width="20" height="20" alt="" aria-hidden="true"><span>招牌<br>套餐</span>`:esc(c.label)}</span><span class="category-number">${count}</span>${qty?`<span class="category-badge" aria-label="已选${qty}份">${qty}</span>`:''}</button>`;}).join('');
+    $('categories').innerHTML=categories.map(c=>{const qty=(c.id==='signature-set'?setDishes:dishes.filter(d=>d.categories.includes(c.id))).reduce((n,d)=>n+totalQuantity(d.id),0),count=c.id==='signature-set'?(available.has(c.id)?10:0):rowsForCategory(c.id).length;return `${c.id==='pork'?'<span class="nav-divider" aria-hidden="true"></span>':''}<button type="button" class="category-button nav-${esc(presentation.categories[c.id]?.navigation||'regular')} ${currentCategory===c.id?'active':''}" data-category="${esc(c.id)}" aria-controls="${c.id==='signature'?'featured-section':c.id==='signature-set'?'signature-set':'menu-category-'+c.id}" ${currentCategory===c.id?'aria-current="true"':''} ${available.has(c.id)?'':'disabled'}><span class="category-label">${esc(c.label)}</span><span class="category-number">${count}</span>${qty?`<span class="category-badge" aria-label="已选${qty}份">${qty}</span>`:''}</button>`;}).join('');
     $('categories').scrollTop=scrollTop;
     const pills=Object.entries(preferences).map(([id,label])=>`<button type="button" class="taste-pill ${state.preference===id?'active':''}" data-preference="${id}" aria-pressed="${state.preference===id}"><span class="taste-check" aria-hidden="true">✓</span><span>${label}</span></button>`).join('');
     $('taste-filters').innerHTML=pills;$('cart-preferences').innerHTML=pills;
@@ -213,17 +213,7 @@
     if(state.notes.trim())lines.push('',`口味与忌口：${state.notes.trim()}`);
     return lines.join('\n');
   }
-  async function copyMenu(){
-    const text=menuText();if(!text)return;
-    clearTimeout(copyFeedbackTimer);$('copy-menu').textContent='复制菜单';
-    try{
-      if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');
-      await navigator.clipboard.writeText(text);
-      $('copy-menu').textContent='已复制';
-      copyFeedbackTimer=setTimeout(()=>{$('copy-menu').textContent='复制菜单';},2400);
-      notify('已复制，可以粘贴到微信发给剑锋');
-    }catch{$('copy-text').value=text;openDialog('copy-dialog');}
-  }
+  async function copyMenu(){const text=menuText();if(!text)return;try{if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');await navigator.clipboard.writeText(text);notify('已复制，可以粘贴到微信发给剑锋');}catch{$('copy-text').value=text;openDialog('copy-dialog');}}
   function resetFilters(){state.preference='all';persist();renderMenu();jumpToCategory('signature');}
   function selectionFeedback(id){
     const targets=[...document.querySelectorAll('[data-dish="'+id+'"]'),document.querySelector('.cart-bar')];
@@ -253,7 +243,7 @@
   }
   $('open-sources').addEventListener('click',()=>{
     const seen=new Set();const sources=dishes.filter(d=>d.display!=='text'||signatureSet.some(i=>i.id===d.id)).flatMap(d=>{const photo=photoFor(d);return photo?(photo.parts||[photo]).map(img=>[d.name,img]):[];}).concat(images['海鲜套餐家宴']?[['海鲜套餐家宴',images['海鲜套餐家宴']]]:[]).filter(([,img])=>{if(seen.has(img.src))return false;seen.add(img.src);return true;});
-    $('source-list').innerHTML='<p>图片为菜品示意，实际做法和摆盘以家里制作的为准。</p>'+sources.map(([name,img])=>`<article><h3>${esc(name)}</h3><p>${esc(img.author||'来源见原文')}${img.license&&img.license!=='unknown'?` · ${esc(img.license)}`:''}</p>${img.sourcePage?`<a href="${esc(img.sourcePage)}" target="_blank" rel="noopener noreferrer">查看原始来源</a>`:''}${img.licenseUrl?` · <a href="${esc(img.licenseUrl)}" target="_blank" rel="noopener noreferrer">使用许可</a>`:''}</article>`).join('')+'<article><h3>V11 温润家宴栏目图与字体</h3><p>十张栏目食材图由内置 ImageGen 生成。正式菜品照片沿用定稿；栏目标题和卖点使用本地宋体子集。</p><a href="V11图片生成记录.json" target="_blank" rel="noopener noreferrer">查看 V11 提示词与生成记录</a> · <a href="assets/fonts/OFL.txt" target="_blank" rel="noopener noreferrer">字体许可</a></article><article><h3>V10 三张食材构图精修</h3><p>家里招牌、鸡肉与蛋、鱼虾海鲜三张食材图由内置 ImageGen 重新生成，保留其他七张栏目图。麦穗短句和招牌标签由网页绘制。</p><a href="V10图片生成记录.json" target="_blank" rel="noopener noreferrer">查看 V10 提示词与生成记录</a></article><article><h3>V9 栏目食材图</h3><p>十张食材画面由内置 ImageGen 生成，栏目文字、暖金招牌标签和绿色卖点条由网页排版。门头继续使用家宴照片。</p><a href="V9图片生成记录.json" target="_blank" rel="noopener noreferrer">查看提示词与生成记录</a></article><article><h3>此前菜品图记录</h3><a href="V8图片生成记录.json" target="_blank" rel="noopener noreferrer">查看 V8 生成记录</a></article>';openDialog('sources-dialog');
+    $('source-list').innerHTML='<p>图片为菜品示意，实际做法和摆盘以家里制作的为准。</p>'+sources.map(([name,img])=>`<article><h3>${esc(name)}</h3><p>${esc(img.author||'来源见原文')}${img.license&&img.license!=='unknown'?` · ${esc(img.license)}`:''}</p>${img.sourcePage?`<a href="${esc(img.sourcePage)}" target="_blank" rel="noopener noreferrer">查看原始来源</a>`:''}${img.licenseUrl?` · <a href="${esc(img.licenseUrl)}" target="_blank" rel="noopener noreferrer">使用许可</a>`:''}</article>`).join('')+'<article><h3>V10 三张食材构图精修</h3><p>家里招牌、鸡肉与蛋、鱼虾海鲜三张食材图由内置 ImageGen 重新生成，保留其他七张栏目图。麦穗短句和招牌标签由网页绘制。</p><a href="V10图片生成记录.json" target="_blank" rel="noopener noreferrer">查看 V10 提示词与生成记录</a></article><article><h3>V9 栏目食材图</h3><p>十张食材画面由内置 ImageGen 生成，栏目文字、暖金招牌标签和绿色卖点条由网页排版。门头继续使用家宴照片。</p><a href="V9图片生成记录.json" target="_blank" rel="noopener noreferrer">查看提示词与生成记录</a></article><article><h3>此前菜品图记录</h3><a href="V8图片生成记录.json" target="_blank" rel="noopener noreferrer">查看 V8 生成记录</a></article>';openDialog('sources-dialog');
   });
   function sizeToolbar(){document.documentElement.style.setProperty('--header',document.querySelector('.toolbar').offsetHeight+'px');}
   if(window.ResizeObserver)new ResizeObserver(sizeToolbar).observe(document.querySelector('.toolbar'));else window.addEventListener('resize',sizeToolbar);

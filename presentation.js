@@ -1,13 +1,11 @@
-/* V11 display metadata. Menu IDs and saved selections remain unchanged. */
-const menuArt = (id, version = 11) => ({
+/* V10.1 display metadata. Menu IDs and saved selections remain unchanged. */
+const menuArt = (id, version = 9) => ({
   src: `assets/ingredients-v${version}-${id}-w640.webp`,
   srcset: `assets/ingredients-v${version}-${id}-w320.webp 320w, assets/ingredients-v${version}-${id}-w640.webp 640w`,
   width: 640, height: 480, textIncluded: false, role: 'ingredients'
 });
 window.MENU_PRESENTATION = {
-  version: 11,
-  typography: { family: 'Jianfeng Menu Serif', source: 'assets/fonts/jianfeng-menu-serif.woff', weight: 700, roles: ['masthead', 'category', 'navigation', 'signature-ribbon', 'menu-sheet'] },
-  navigation: { banquetIcon: 'assets/banquet-navigation.svg' },
+  version: 10.1,
   masthead: { src: 'assets/seafood-banquet-v5.webp', srcset: 'assets/responsive/seafood-banquet-v5-w320.webp 320w, assets/responsive/seafood-banquet-v5-w640.webp 640w, assets/responsive/seafood-banquet-v5-w1280.webp 1280w', width: 1280, height: 960, textIncluded: false },
   badge: { kind: 'seal', src: 'assets/signature-tag.svg', compact: { width: 48, height: 42.667 }, large: { width: 60, height: 53.333 }, offset: 7 },
   signatureRibbons: {
@@ -19,13 +17,13 @@ window.MENU_PRESENTATION = {
     'dish-hakka-pork-soup': '清鲜甘甜，喝着舒服'
   },
   categories: {
-    signature: { art: menuArt('signature'), subtitle: '来家吃饭，先尝这几道', eyebrow: '家里的拿手味', navigation: 'signature' },
+    signature: { art: menuArt('signature', 10), subtitle: '来家吃饭，先尝这几道', eyebrow: '家里的拿手味', navigation: 'signature' },
     'signature-set': { art: menuArt('signature-set'), subtitle: '一桌海鲜好菜，一次配齐', eyebrow: '海鲜当主角', navigation: 'banquet' },
     hakka: { art: menuArt('hakka'), subtitle: '一口家乡味，几道拿手菜', eyebrow: '熟悉的家乡味' },
     pork: { art: menuArt('pork'), subtitle: '新鲜买菜，又好吃又下饭', eyebrow: '添一碗饭吧' },
-    chicken: { art: menuArt('chicken'), subtitle: '鲜嫩有滋味，家常也好吃', eyebrow: '家常好滋味' },
+    chicken: { art: menuArt('chicken', 10), subtitle: '鲜嫩有滋味，家常也好吃', eyebrow: '家常好滋味' },
     beef: { art: menuArt('beef'), subtitle: '浓香或鲜嫩，挑个合口味', eyebrow: '越嚼越有味' },
-    seafood: { art: menuArt('seafood'), subtitle: '清鲜到浓香，换着尝尝', eyebrow: '尝一口鲜' },
+    seafood: { art: menuArt('seafood', 10), subtitle: '清鲜到浓香，换着尝尝', eyebrow: '尝一口鲜' },
     vegetables: { art: menuArt('vegetables'), subtitle: '来点清爽，荤素刚刚好', eyebrow: '给餐桌添点绿' },
     soup: { art: menuArt('soup'), subtitle: '一碗热乎的，慢慢喝', eyebrow: '暖暖胃，也暖暖心' },
     night: { art: menuArt('night'), subtitle: '夜里再加点，边吃边聊', eyebrow: '好吃的，再来点' }

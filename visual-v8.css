@@ -1,5 +1,59 @@
-
+/* V8 — original card reading layout, centered button content, text-inclusive artwork. */
+.masthead, .category-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-content: stretch;
+  place-items: center;
+  aspect-ratio: 6 / 1;
+  min-height: 0;
+  padding: 0;
+  background: #327c3b;
+  border: 1px solid #d7dfc8;
+  overflow: hidden;
+  isolation: isolate;
+}
+.masthead { border: 0; }
+.category-banner { margin-bottom: 14px; border-radius: 13px; }
+.masthead-art, .banner-art { inset: 0; width: 100%; height: 100%; max-width: none; }
+.masthead-art::after, .banner-art::after { display: none; }
+.banner-picture { display: block; width: 100%; height: 100%; }
+.masthead-art .decor-image, .banner-art .decor-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  object-fit: contain;
+  object-position: center;
+}
 .decor-image[hidden] { display: none!important; }
+.banner-copy, .category-banner[data-banner="signature-set"] .banner-copy {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  z-index: 2;
+}
+.category-banner h2 { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; font-weight: 800; font-size: 28px; }
+.banner-subtitle { font-size: 13px; font-weight: 600; }
+.banner-count { display: none; }
+.masthead .identity { justify-content: center; text-align: center; width: 100%; padding: 16px; gap: 18px; }
+.masthead h1 { font-weight: 850; }
+/* Retain semantic headings and focus targets when the generated lettering is visible. */
+.art-ready .banner-copy, .masthead.art-ready .identity {
+  position: absolute;
+  width: 1px!important;
+  height: 1px;
+  padding: 0!important;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
 .category-button { font-weight: 650; text-align: center; justify-content: center; }
 .category-button.active { font-weight: 750; }
 .category-label { text-align: center; }
@@ -48,6 +102,14 @@
 .signature-stamp b { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif; font-weight: 800; }
 .text-card .dish-info, .cart-item { text-align: left; }
 @media (max-width: 700px) {
+  .masthead, .category-banner { aspect-ratio: 3 / 1; min-height: 0; padding: 0; }
+  .masthead-art .decor-image, .banner-art .decor-image { position: static; height: 100%; transform: none; }
+  .category-banner h2 { font-size: 23px; }
+  .category-banner[data-banner="signature-set"] h2 { font-size: 17px; line-height: 1.3; }
+  .banner-subtitle { font-size: 11px; margin-top: 4px; line-height: 1.4; }
+  .banner-copy { padding: 8px!important; }
+  .masthead .identity { padding: 12px; gap: 12px; }
+  .masthead h1 { font-size: 28px; }
   .host-note { font-size: 12px; }
   .stepper { width: 109px; }
   .signature-stamp, .dish-grid .signature-stamp { width: var(--badge-compact,40px); height: var(--badge-compact,40px); }
@@ -57,10 +119,24 @@
   .stepper { width: 106px; }
   .add-dish, .text-card .add-dish { padding-inline: 5px; gap: 5px; }
   .dish-grid .photo-card { display: grid; }
+  .category-banner h2 { font-size: 21px; }
+  .category-banner[data-banner="signature-set"] h2 { font-size: 16px; }
+  .masthead h1 { font-size: 24px; }
   .host-note { font-size: 11px; }
 }
-@media (min-width: 701px) { }
+
+/* User correction: retain the V7 masthead identity; only soften the real photo behind it. */
+.masthead { display: flex; justify-content: flex-start; align-items: center; aspect-ratio: auto; min-height: 164px; padding: 28px 36px; }
+.masthead .identity { width: auto; padding: 0; text-align: left; justify-content: flex-start; gap: 22px; }
+.masthead h1 { font-weight: 800; }
+.masthead-art .decor-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.08); filter: blur(5px); }
+.masthead-art::after { display: block; background: linear-gradient(90deg, #245b32db, #245b32b3 62%, #245b326b); }
+@media (min-width: 701px) { .banner-art .decor-image { width: 94%; left: 3%; } }
 @media (max-width: 700px) {
+  .masthead { min-height: 132px; padding: 23px 20px; }
+  .masthead .identity { gap: 17px; }
+  .masthead h1 { font-size: 29px; }
   .host-note { font-size: 13px; }
+  .masthead-art .decor-image { filter: blur(4px); }
 }
-@media (max-width: 359px) { .host-note { font-size: 12px; } }
+@media (max-width: 359px) { .masthead { padding-inline: 16px; } .masthead h1 { font-size: 27px; } .host-note { font-size: 12px; } }
