@@ -1,13 +1,13 @@
-/* V10 display metadata. Menu IDs and saved selections remain unchanged. */
+/* V10.1 display metadata. Menu IDs and saved selections remain unchanged. */
 const menuArt = (id, version = 9) => ({
   src: `assets/ingredients-v${version}-${id}-w640.webp`,
   srcset: `assets/ingredients-v${version}-${id}-w320.webp 320w, assets/ingredients-v${version}-${id}-w640.webp 640w`,
   width: 640, height: 480, textIncluded: false, role: 'ingredients'
 });
 window.MENU_PRESENTATION = {
-  version: 10,
+  version: 10.1,
   masthead: { src: 'assets/seafood-banquet-v5.webp', srcset: 'assets/responsive/seafood-banquet-v5-w320.webp 320w, assets/responsive/seafood-banquet-v5-w640.webp 640w, assets/responsive/seafood-banquet-v5-w1280.webp 1280w', width: 1280, height: 960, textIncluded: false },
-  badge: { kind: 'seal', compact: { width: 44, height: 44, font: 16 }, large: { width: 56, height: 56, font: 20 }, offset: 7 },
+  badge: { kind: 'seal', src: 'assets/signature-tag.svg', compact: { width: 48, height: 42.667 }, large: { width: 60, height: 53.333 }, offset: 7 },
   signatureRibbons: {
     'dish-029': '蛋香软嫩，包裹肉汁',
     'dish-078': '卤香入味，越嚼越香',

@@ -69,7 +69,7 @@
   function dishPhoto(d,index=9,feature=false){
     const photo=photoFor(d);if(!photo||d.display==='text')return '';
     const parts=photo.parts||[photo],copy=signatureCopy(d);
-    return `<figure class="dish-photo ${photo.parts?'dish-photo-pair':''} ${copy?'has-signature-ribbon':''}">${parts.map(p=>`<div class="photo-part">${imageMarkup(p,(p.label||d.name)+'示意图',{eager:feature&&index===0,wide:feature&&index%3===0})}${photo.parts?`<span class="photo-part-label">${esc(p.label)}</span>`:''}</div>`).join('')}${copy?`${signatureBadge()}<figcaption class="signature-ribbon"><span class="ribbon-copy">${esc(copy).replace('，','，<br class="ribbon-break">')}</span></figcaption>`:''}</figure>`;
+    return `<figure class="dish-photo ${photo.parts?'dish-photo-pair':''} ${copy?'has-signature-ribbon':''}">${parts.map(p=>`<div class="photo-part">${imageMarkup(p,(p.label||d.name)+'示意图',{eager:feature&&index===0,wide:feature&&index%3===0})}${photo.parts?`<span class="photo-part-label">${esc(p.label)}</span>`:''}</div>`).join('')}${copy?`${signatureBadge()}<figcaption class="signature-ribbon"><span class="ribbon-copy"><strong class="ribbon-main">${esc(copy.split('，')[0])}</strong><span class="ribbon-comma">，</span><span class="ribbon-detail">${esc(copy.split('，')[1]||'')}</span></span></figcaption>`:''}</figure>`;
   }
   function variantPicker(d){return d.variants?.length>1?`<div class="variant-picker" role="group" aria-label="${esc(d.name)}做法">${d.variants.map(v=>`<button type="button" data-choice="${esc(v.id)}" data-id="${esc(d.id)}" aria-pressed="${chosenVariant(d)===v.id}" class="variant-pill ${chosenVariant(d)===v.id?'active':''}">${esc(v.label)}</button>`).join('')}</div>`:'';}
   function card(d,index=9,feature=false){
@@ -92,8 +92,7 @@
     return `<picture class="banner-picture">${art.desktop?`<source media="(min-width: 701px)" srcset="${esc(art.desktop.srcset)}" sizes="${sizes}" width="${art.desktop.width}" height="${art.desktop.height}">`:''}<img class="decor-image" data-text-included="${art.textIncluded?'true':'false'}" src="${esc(art.src)}" srcset="${esc(art.srcset)}" sizes="${sizes}" alt="" aria-hidden="true" width="${art.width}" height="${art.height}" loading="${eager?'eager':'lazy'}" ${eager?'fetchpriority="high"':''} decoding="async"></picture>`;
   }
   function signatureBadge(){
-    const badge=presentation.badge;
-    return `<span class="signature-stamp signature-seal" aria-label="家里招牌" style="--seal-size:${badge.large.width}px;--seal-font:${badge.large.font}px;--seal-small-size:${badge.compact.width}px;--seal-small-font:${badge.compact.font}px;--badge-offset:${badge.offset}px"><b aria-hidden="true">招牌</b></span>`;
+    return `<span class="signature-stamp signature-seal" aria-label="家里招牌"><img src="${esc(presentation.badge?.src||'assets/signature-tag.svg')}" width="72" height="64" alt="" aria-hidden="true"></span>`;
   }
   function categoryBanner(id,count,{headingId,title}={}){
     const category=categories.find(c=>c.id===id),display=presentation.categories[id]||{};

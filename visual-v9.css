@@ -130,56 +130,38 @@
 .signature-card.photo-card .dish-description { display: none; }
 .signature-card.text-card .dish-description { display: inline-block; }
 
-/* A scalloped gold label, kept at the outer corner instead of the food center. */
+/* A matte-gold label with stable outlined lettering on every device. */
 .signature-stamp.signature-seal,
 .dish-grid .signature-stamp.signature-seal,
 .featured-card:nth-child(3n + 1) .signature-stamp.signature-seal {
   position: absolute;
-  display: grid;
-  place-items: center;
-  width: var(--seal-size);
-  height: var(--seal-size);
-  top: var(--badge-offset);
-  right: var(--badge-offset);
+  display: block;
+  width: 60px;
+  height: 53.333px;
+  top: 7px;
+  right: 7px;
   left: auto;
+  padding: 0;
   background: none;
   border: 0;
   border-radius: 0;
-  transform: rotate(7deg);
-  filter: drop-shadow(0 1px 2px #49361840);
+  transform: none;
+  filter: drop-shadow(0 1px 1px #4536152b);
   pointer-events: none;
   z-index: 3;
 }
-.signature-seal::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(145deg, #fff9df 10%, #dfb660 40%, #fff3c3 56%, #d7ac55);
-  clip-path: polygon(50% 0,58% 5%,66% 3%,72% 10%,81% 10%,85% 18%,93% 23%,93% 32%,99% 39%,96% 48%,100% 56%,94% 64%,94% 73%,86% 77%,82% 86%,73% 87%,67% 95%,58% 94%,50% 100%,42% 95%,34% 97%,28% 90%,19% 90%,15% 82%,7% 77%,7% 68%,1% 61%,4% 52%,0 44%,6% 36%,6% 27%,14% 23%,18% 14%,27% 13%,33% 5%,42% 6%);
-}
-.signature-seal::after {
-  content: '';
-  position: absolute;
-  inset: 5px;
-  border: 1px solid #bb9346;
-  border-radius: 50%;
-  background: radial-gradient(ellipse at 38% 27%, #fffbee, #f6e6b8 75%);
-  box-shadow: 0 0 0 2px #fff4d2, inset 0 0 0 2px #fff9e6;
-}
-.signature-stamp.signature-seal b,
-.dish-grid .signature-stamp.signature-seal b,
-.featured-card:nth-child(3n + 1) .signature-stamp.signature-seal b {
-  position: relative;
-  z-index: 1;
-  color: #70501f;
-  font-family: 'Kaiti SC', STKaiti, KaiTi, 'Songti SC', serif;
-  font-size: var(--seal-font);
-  font-style: italic;
-  font-weight: 900;
-  line-height: 1;
-  letter-spacing: -.07em;
-  transform: rotate(-7deg);
-  text-shadow: 0 .4px 0 currentColor;
+.signature-stamp.signature-seal::before,
+.signature-stamp.signature-seal::after { content: none; }
+.signature-stamp.signature-seal img {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  inset: auto;
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
+  transform: none;
 }
 
 /* The sell line borrows the reference's sweeping lower band, in house green. */
@@ -188,16 +170,17 @@
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 40px;
+  height: var(--ribbon-height, 38px);
+  min-height: var(--ribbon-height, 38px);
   margin: 0;
-  padding: 7px 10px 9px;
+  padding: 0 8px;
   color: #fff8df;
   background: linear-gradient(105deg, #3c8245, #2d6637 76%);
   border: 0;
-  font-family: 'Kaiti SC', STKaiti, KaiTi, 'Songti SC', serif;
-  font-size: 19px;
-  font-weight: 900;
-  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
   text-align: center;
   isolation: isolate;
 }
@@ -205,8 +188,8 @@
   content: '';
   position: absolute;
   z-index: -1;
-  inset: -8px -4px auto;
-  height: 16px;
+  inset: -5px -4px auto;
+  height: 10px;
   border-radius: 56% 38% 0 0 / 90% 70% 0 0;
   background: inherit;
   border-top: 1px solid #edf3d88c;
@@ -223,8 +206,35 @@
   transform: rotate(-10deg);
   pointer-events: none;
 }
-.ribbon-copy { min-width: 0; white-space: nowrap; text-shadow: 0 .3px 0 currentColor; }
-.ribbon-break { display: none; }
+.ribbon-copy {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0;
+  min-width: 0;
+  white-space: nowrap;
+  text-shadow: none;
+}
+.ribbon-main, .ribbon-detail {
+  color: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: .035em;
+}
+/* Compact cards carry one four-character promise, never a second tiny line. */
+.ribbon-detail, .ribbon-comma { display: none; }
+/* Only cards with room show the complete phrase, at one consistent size. */
+@media (min-width: 1001px) {
+  .signature-ribbon,
+  .featured-card:nth-child(3n + 1) .signature-ribbon { --ribbon-height: 44px; font-size: 18px; }
+  .ribbon-detail, .ribbon-comma { display: inline; }
+}
+@media (max-width: 1000px) {
+  .featured-card:nth-child(3n + 1) .signature-ribbon { --ribbon-height: 44px; font-size: 18px; }
+  .featured-card:nth-child(3n + 1) .ribbon-detail,
+  .featured-card:nth-child(3n + 1) .ribbon-comma { display: inline; }
+}
 
 /* Fourteen quiet sell lines: open wheat ears, never another clickable control.
    Empty pseudo-elements keep decoration out of reading and survive text refresh. */
@@ -279,13 +289,8 @@
   .category-banner[data-banner="signature-set"] h2 { font-size: 22px; }
   .category-banner .banner-subtitle { font-size: 12px; line-height: 1.55; margin-top: 4px; }
   .signature-stamp.signature-seal,
-  .dish-grid .signature-stamp.signature-seal { width: var(--seal-small-size); height: var(--seal-small-size); }
-  .signature-stamp.signature-seal b,
-  .dish-grid .signature-stamp.signature-seal b { font-size: var(--seal-small-font); }
-  .signature-ribbon { height: 56px; min-height: 56px; padding: 5px 7px 7px; font-size: 15px; }
-  .ribbon-break { display: block; }
-  .featured-card:nth-child(3n + 1) .signature-ribbon { height: auto; min-height: 40px; font-size: 19px; padding: 7px 9px 9px; }
-  .featured-card:nth-child(3n + 1) .ribbon-break { display: none; }
+  .dish-grid .signature-stamp.signature-seal { width: 48px; height: 42.667px; }
+  .featured-card:nth-child(3n + 1) .signature-stamp.signature-seal { width: 60px; height: 53.333px; }
   .add-dish, .text-card .add-dish { font-size: 13px; font-weight: 650; }
 }
 @media (max-width: 359px) {
@@ -293,8 +298,9 @@
   .category-banner h2,
   .category-banner[data-banner="signature-set"] h2 { font-size: 20px; }
   .dish-grid .signature-card.photo-card > .dish-photo { height: auto; min-height: 0; aspect-ratio: auto; align-self: start; }
-  .dish-grid .signature-ribbon { padding-inline: 4px; font-size: 13px; }
-  .featured-card:nth-child(3n + 1) .signature-ribbon { font-size: 17px; }
+  .signature-ribbon { font-size: 15px; }
+  .dish-grid .signature-ribbon { padding-inline: 4px; }
+  .featured-card:nth-child(3n + 1) .signature-ribbon { font-size: 16px; }
   .add-dish, .text-card .add-dish { font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
