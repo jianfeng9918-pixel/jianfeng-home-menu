@@ -1,0 +1,135 @@
+{
+  "version": 10,
+  "created": "2026-09-14",
+  "scope": "仅精修家里招牌、鸡肉与蛋、鱼虾海鲜三张食材图；其余七张栏目图和四份套餐照片保持不变。",
+  "tool": "内置 ImageGen，工具未返回底层模型版本。",
+  "imageProcessing": "生成后仅等比例缩放及WebP编码，未后期合成、裁切或重绘。",
+  "totalExportBytes": 156774,
+  "records": [
+    {
+      "id": "signature",
+      "subject": "鸡蛋、豆腐、少量排骨",
+      "prompt": "Edit the supplied ingredient photograph to create a more refined fresh-food menu category asset. Preserve ONLY the three ingredient types in the reference: whole chicken eggs, fresh white tofu, and raw pork ribs. Completely recompose into a compact natural triangle: two or three eggs large and clear in the front foreground, two tofu blocks in the middle, and a SMALL restrained amount of ribs in the back; make the eggs/tofu the visual priority instead of the ribs. 4:3 landscape photograph, camera about45degrees, soft natural light from upper left, pale warm-white seamless tabletop and backdrop (approximately#F7F5EF), gentle realistic contact shadows. Photographic natural surfaces, clean freshly prepared ingredients, no cookedfood. Relative to reference, enlarge the ingredient cluster approximately15percent while retaining safe margins around ALL food. Reduce visible plate area; use a discreet plain warm-white small tray almost completely hidden under ingredients if necessary. Keep the composition elegant and readable at120px. No additional ingredient types, no garnish, no leaves, no utensils, no hands, no text, no numbers, no logo, no badge, no border. No crop of any egg or tofu or rib. No excessive gloss, no synthetic plastic surfaces.",
+      "reference": "assets/ingredients-v9-signature-w640.webp",
+      "generationTool": "built-in image_gen.imagegen (host native)",
+      "modelEvidence": "Tool response exposes generated output path; no specific model identifier returned.",
+      "visualReview": {
+        "status": "passed",
+        "editing": "proportional resizing and WebP compression only",
+        "method": "view_image inspection of each final640px WebP",
+        "notes": "640px人工审图通过：三个鸡蛋在前，豆腐居中左侧，排骨在后方右侧形成三角层次；底色浅暖白，盘沿仅少量露出；三种食材完整无裁切、无多余食材、无文字。主体较参考更饱满，约15%为视觉目标而非像素测量值。"
+      },
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "3270a117949c940d947b1f2b3def42001326cefbddff9daa696b8fab66f49588",
+      "outputs": [
+        {
+          "path": "assets/ingredients-v10-signature-w320.webp",
+          "dimensions": [
+            320,
+            240
+          ],
+          "bytes": 10244,
+          "quality": 86,
+          "sha256": "77d664820af631e13597e1f38c5c2f4b3005cae6c3158f114756f188bc2ed0ba"
+        },
+        {
+          "path": "assets/ingredients-v10-signature-w640.webp",
+          "dimensions": [
+            640,
+            480
+          ],
+          "bytes": 29778,
+          "quality": 86,
+          "sha256": "9bb5b11aaaff4c7a9b74419742409c7b212876b117cbf12b34439c474770ce2d"
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "subject": "净切鸡肉、鸡蛋、沙姜",
+      "prompt": "Edit the supplied ingredient photograph to create a more refined fresh-food menu category asset. Preserve ONLY the three ingredient types in the reference: fresh raw chicken meat, whole chicken eggs, and sand ginger (沙姜, small beige knobby rhizomes with ivory cut interior). Recompose with neatly cut fresh chicken pieces as the main ingredient, NOT a whole chicken leg; show six substantial tidy raw skin-on chicken chunks grouped in the rear/middle with natural clean cut surfaces. Place two whole eggs and a few pieces of sand ginger at the front and front-side; retain clear recognizable shapes. 4:3 landscape photograph, camera about45degrees, soft natural light from upper left, pale warm-white seamless tabletop and backdrop (approximately#F7F5EF), gentle realistic contact shadows. Photographic natural surfaces, clean freshly prepared ingredients, no cookedfood. Relative to reference, enlarge the ingredient cluster approximately15percent while retaining safe margins around ALL food. Greatly reduce visible white plate area; use a discreet small plain warm-white tray almost completely hidden under the chicken, no large rim. Keep the composition elegant and readable at120px. No additional ingredient types, no green garnish, no leaves, no utensils, no hands, no text, no numbers, no logo, no badge, no border. No crop of any food. No blood, no excessive gloss, no synthetic plastic surfaces.",
+      "reference": "assets/ingredients-v9-chicken-w640.webp",
+      "generationTool": "built-in image_gen.imagegen (host native)",
+      "modelEvidence": "Tool response exposes generated output path; no specific model identifier returned.",
+      "visualReview": {
+        "status": "passed",
+        "editing": "proportional resizing and WebP compression only",
+        "method": "view_image inspection of each final640px WebP",
+        "notes": "640px人工审图通过：净切带皮鸡肉块为主体，鸡蛋前侧、沙姜前左，白盘面积显著减少；浅暖白底与自然阴影统一，无新增食材、无文字、主体无裁切。鸡肉由原腿形改成整齐切块。"
+      },
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "683934d2dc41195370b98fd5268c289e109e9c340bf87939694252ee9158ff5f",
+      "outputs": [
+        {
+          "path": "assets/ingredients-v10-chicken-w320.webp",
+          "dimensions": [
+            320,
+            240
+          ],
+          "bytes": 13092,
+          "quality": 86,
+          "sha256": "d2c016cf0106db6889ab028c5817cf4ec55f04374866183e763a16ffaffc55f2"
+        },
+        {
+          "path": "assets/ingredients-v10-chicken-w640.webp",
+          "dimensions": [
+            640,
+            480
+          ],
+          "bytes": 42004,
+          "quality": 86,
+          "sha256": "1fa87685cd5278a703996559ede0a447313cce1d39be4ac26ae132604362cbb5"
+        }
+      ]
+    },
+    {
+      "id": "seafood",
+      "subject": "完整鲜鱼、鲜虾、花甲",
+      "prompt": "Edit the supplied ingredient photograph to create a more refined fresh-food menu category asset. Preserve ONLY the three ingredient types in the reference: a complete fresh sea bass fish, raw shell-on prawns, and Manila clams (花甲). Recompose into one natural coherent group: the WHOLE fresh silver sea bass rests diagonally in the rear from upper-left head to lower-right tail with its entire silhouette and tail retained; a small fan of fresh raw shell-on prawns is clearly visible across the front-left, and patterned Manila clam shells form a distinct small cluster at front-right. Head, eye, fish scales, fins, tail, prawn body outlines and clam shell patterns should all be identifiable. 4:3 landscape photograph, camera about45degrees, soft natural light from upper left, pale warm-white seamless tabletop and backdrop (approximately#F7F5EF), gentle realistic contact shadows. Photographic natural surfaces, clean ingredients, no cookedfood. Relative to reference, enlarge the food cluster approximately15percent as possible WHILE retaining safe margins and the complete fish tail and head. Reduce visible plate area; use a discreet plain warm-white tray almost completely hidden under the ingredients, no wide rim. Elegant and readable at120px. No extra ingredient types, no lemon, no green garnish, no ice, no utensils, no hands, no text, no numbers, no logo, no badge, no border. Never crop fish head, fins or tail. No blood or excessive gloss. Natural photographic texture.",
+      "reference": "assets/ingredients-v9-seafood-w640.webp",
+      "generationTool": "built-in image_gen.imagegen (host native)",
+      "modelEvidence": "Tool response exposes generated output path; no specific model identifier returned.",
+      "visualReview": {
+        "status": "passed",
+        "editing": "proportional resizing and WebP compression only",
+        "method": "view_image inspection of each final640px WebP",
+        "notes": "640px人工审图通过：完整鲜鱼由左上至右下斜向置后，虾在前左、花甲前右，鱼眼、鳞片、尾部以及虾壳与贝壳轮廓可辨；重试后鱼尾和虾须保留安全边距。全图无文字、无多余配料，浅暖白底、落地阴影自然。"
+      },
+      "revisionPrompt": "Make one precise composition correction to this photograph while preserving its fresh seafood identity, warm-white background, colors, lighting, realistic textures and4:3 aspect ratio. The fish tail and outermost prawn antennae currently nearly touch the frame. Pull the camera back enough to create a clear continuous safe blank margin of at least6percent of image width on BOTH left and right, and at least6percent at top and bottom around ALL seafood. Keep the single whole sea bass behind, shell-on prawns front-left, Manila clams front-right, all in one coherent natural ingredient cluster. Slightly angle the whole fish diagonally down-right, preserving complete head/fins/tail and identifiable outline. Do not add ingredients, plate rim, props, text, logo or border. Preserve soft upper-left natural light and pale warm-white seamless background. No compositing seams, no crop of any fish or seafood.",
+      "revisionReason": "首稿鱼尾太贴近右边，已用内置生图精修留出安全边距，未采用首稿为最终资产。",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "originalSha256": "9d12d71c5e37092c36428d2875ca89d8241ed30b8f85e5e9879b7cfc0e20d4df",
+      "outputs": [
+        {
+          "path": "assets/ingredients-v10-seafood-w320.webp",
+          "dimensions": [
+            320,
+            240
+          ],
+          "bytes": 13658,
+          "quality": 86,
+          "sha256": "4597b0b28b6e56fd1298d755a205e5f8aff67fe120e1f7a7cb75a0f2cf5dd22e"
+        },
+        {
+          "path": "assets/ingredients-v10-seafood-w640.webp",
+          "dimensions": [
+            640,
+            480
+          ],
+          "bytes": 47998,
+          "quality": 86,
+          "sha256": "1a98f1361f7028dd6ac1af24999748910510ab59a983640d8674e059280f651f"
+        }
+      ]
+    }
+  ]
+}
