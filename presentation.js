@@ -17,7 +17,7 @@ window.MENU_PRESENTATION = {
     'dish-hakka-pork-soup': '清鲜甘甜，喝着舒服'
   },
   categories: {
-    signature: { art: menuArt('signature', 10), subtitle: '来家吃饭，先尝这几道', eyebrow: '家里的拿手味', navigation: 'signature' },
+    signature: { art: menuArt('signature', 11), subtitle: '来家吃饭，先尝这几道', eyebrow: '家里的拿手味', navigation: 'signature' },
     'signature-set': { art: menuArt('signature-set'), subtitle: '一桌海鲜好菜，一次配齐', eyebrow: '海鲜当主角', navigation: 'banquet' },
     hakka: { art: menuArt('hakka'), subtitle: '一口家乡味，几道拿手菜', eyebrow: '熟悉的家乡味' },
     pork: { art: menuArt('pork'), subtitle: '新鲜买菜，又好吃又下饭', eyebrow: '添一碗饭吧' },

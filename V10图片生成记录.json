@@ -131,5 +131,35 @@
         }
       ]
     }
-  ]
+  ],
+  "signatureArtworkRefinement": {
+    "note": "门头绿金合并版复用既有 V11 家里招牌食材图，仅调整该栏素材；其他栏目和正式菜图不变。",
+    "sourceCommit": "b16764858c79da5df31f13d1cb271573bb3a62d0",
+    "asset": {
+      "id": "signature",
+      "prompt": "{\"type\":\"photorealistic ingredient product still life\",\"goal\":\"One complete 4:3 landscape asset for the ingredient illustration within a Chinese home-menu category banner. Generate only the still-life image, no banner interface.\",\"subject\":{\"ingredients\":\"鸡蛋、豆腐、排骨 ONLY: three intact warm beige chicken eggs, a small firm white tofu block with two neat thick pieces, and three neatly cut raw pork rib pieces with clean ivory bones and fresh pale pink meat.\",\"angle\":\"45-degree elevated three-quarter camera angle\",\"scale\":\"A compact centered triangular grouping occupies about 80 percent of the image width and 78 percent of image height. All ingredients clearly identifiable, no cut-off edges. Do not leave a large blank left area.\"},\"background\":{\"type\":\"warm offwhite seamless background matching #faf8ef, with a very subtle low pale natural wooden platform underneath the group\",\"shadow\":\"small soft natural contact shadows grounding every ingredient\",\"reflection\":\"none\"},\"lighting\":{\"key_light\":\"large soft natural daylight from upper left\",\"fill_light\":\"gentle neutral daylight fill\"},\"style\":{\"rendering\":\"high resolution real professional food ingredient photography, restrained and warm, authentic material detail; appetizing hygienic raw ingredients, delicate color and volume\",\"composition\":\"tofu forms a modest raised back-center, eggs overlap low at left-front, rib pieces low at right-front, one coherent gently layered group\"},\"constraints\":{\"text_overlay\":false,\"must_keep\":[\"single cohesive photographic scene\",\"4:3 aspect ratio\",\"warm offwhite ground\",\"intact complete ingredient silhouettes\",\"slightly moist realistic tofu, eggshell fine pores, clean raw pale pink rib meat\",\"calm natural photographic lighting\"],\"avoid\":[\"any words, letters, numbers, labels, logos, watermarks\",\"utensils, knives, plates, bowls, baskets, packaging\",\"vegetables, leaves, herbs, garnish, sauces or any ingredient beyond eggs tofu ribs\",\"blood, liquid puddles, butcher-shop atmosphere\",\"collage, cutout outlines, illustration, 3D render\",\"giant empty left region\",\"dramatic dark shadows\",\"cropped ingredient edges\"]}}",
+      "mode": "内置 ImageGen",
+      "outputs": [
+        {
+          "file": "assets/ingredients-v11-signature-w320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 12656,
+          "sha256": "0217844751e837c25f8a8473f90d749a88a70094c17da3050bd3ada6803ba001"
+        },
+        {
+          "file": "assets/ingredients-v11-signature-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 46292,
+          "sha256": "03c109e74d3e9528ebf6b7dd940dc7bf5e653c960d2ad7e0c52c08729057b9a5"
+        }
+      ],
+      "ingredients": [
+        "鸡蛋",
+        "豆腐",
+        "排骨"
+      ]
+    }
+  }
 }

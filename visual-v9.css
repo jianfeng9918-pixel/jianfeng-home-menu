@@ -9,17 +9,21 @@
 }
 .dish-name-word { display: inline-block; }
 
-/* The real banquet stays recognizable, quietly behind the shop name. */
-.masthead { background: #65705b; }
+/* Clear banquet photography on the right; green belongs to the reading area only. */
+.masthead { background: #31563d; }
 .masthead-art .decor-image {
-  opacity: .38;
-  filter: blur(1.5px) saturate(.45);
-  transform: scale(1.025);
+  inset: 0 0 0 auto;
+  width: 68%;
+  opacity: 1;
+  filter: none;
+  transform: none;
+  object-position: center 52%;
 }
 .masthead-art::after {
-  background: linear-gradient(90deg, #213f31ad, #304a3540 56%, #5060440a);
+  background: linear-gradient(90deg, #31563d 0%, #31563d 30%, #31563deb 40%, #31563d80 51%, #31563d12 64%, #31563d00 72%);
 }
-.masthead h1 { text-shadow: 0 1px 2px #1c30231a; }
+.masthead h1 { text-shadow: 0 1px 3px #17392350; }
+.masthead .host-note { text-shadow: 0 1px 3px #17392380; }
 
 /* Native text remains readable even when the decorative artwork fails. */
 .category-banner {
@@ -409,7 +413,10 @@
 #cart-dialog .sheet-note { color: #7d8671; }
 
 @media (max-width: 700px) {
-  .masthead-art .decor-image { filter: blur(1px) saturate(.45); }
+  .masthead-art .decor-image { width: 74%; object-position: center; }
+  .masthead-art::after {
+    background: linear-gradient(90deg, #31563d 0%, #31563d 35%, #31563deb 48%, #31563db8 60%, #31563d40 74%, #31563d00 88%);
+  }
   .category-banner { min-height: 96px; padding: 13px 12px; }
   .category-banner h2,
   .category-banner[data-banner="signature-set"] h2 { font-size: 22px; }
