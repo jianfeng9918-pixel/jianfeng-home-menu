@@ -199,9 +199,51 @@
     for(const i of missing){const d=byId.get(i.id);assignQuantity(i.id,1,i.variantId||defaultVariant(d));}
     persist();updateCards();notify(hadSelection?`已补上 ${missing.length} 道，原来选的做法和份数保留。`:'招牌套餐已加入，选好的菜还可以自由增减。');
   }
+  function cartFallbackCopy(d,line){
+    const copy=variantFor(d,line.variantId)?.description||highlightFor(d)?.copy||d.recommendation||lineName(line,true);
+    return Array.from(copy.split(/[，,。；;]/)[0].trim()).slice(0,6).join('');
+  }
+  function cartThumbMarkup(d,line){
+    const photo=d.display!=='text'?photoFor(d):null,copy=cartFallbackCopy(d,line);
+    const parts=photo?(photo.parts||[photo]):[];
+    if(!parts.length)return `<div class="cart-thumb cart-thumb-text" aria-hidden="true"><span class="cart-thumb-fallback">${esc(copy)}</span></div>`;
+    return `<div class="cart-thumb ${parts.length>1?'cart-thumb-pair':''}" aria-hidden="true">${parts.map(part=>{
+      const size=part.srcset?part:(imageSizes[part.src]||{});
+      const small=size.variants?.find(v=>v.width===320)?.src||(size.srcset||'').split(',').map(s=>s.trim()).find(s=>/\s320w$/.test(s))?.replace(/\s320w$/,'');
+      return `<div class="cart-thumb-part"><span class="cart-thumb-fallback">${esc(Array.from(part.label||copy).slice(0,6).join(''))}</span>${part.src?`<img class="cart-thumb-image" src="${esc(part.src)}" ${small?`srcset="${esc(small)} 320w" sizes="80px"`:''} alt="" width="104" height="78" loading="lazy" decoding="async" style="object-position:${esc(part.position||'center')}">`:''}</div>`;
+    }).join('')}</div>`;
+  }
+  function cartGroups(){
+    const groups=categories.map(c=>({id:c.id,label:c.label,lines:[]})),previous={id:'previous',label:'之前选过',lines:[]};
+    for(const line of state.lines){
+      const d=byId.get(line.id);
+      const category=activeIds.has(d.id)?categories.find(c=>d.scope==='seafood-set'?c.id==='signature-set':c.id!=='signature-set'&&d.categories?.includes(c.id)):null;
+      (groups.find(g=>g.id===category?.id)||previous).lines.push(line);
+    }
+    return [...groups,previous].filter(group=>group.lines.length);
+  }
+  function cartPreviewItem(line){
+    const d=byId.get(line.id),name=lineName(line,true);
+    return `<article class="cart-item cart-preview-item" data-cart-line="${esc(lineKey(line.id,line.variantId))}">${cartThumbMarkup(d,line)}<div class="cart-item-name"><h4>${esc(name)}</h4>${!activeIds.has(d.id)?'<small>之前选过的菜，已为你保留</small>':d.fulfillment==='takeaway'?'<small>点外卖</small>':''}</div><div class="cart-preview-controls">${stepper(d,line.variantId,true)}</div><button type="button" class="remove-item" data-action="remove" data-id="${esc(d.id)}" data-variant="${esc(line.variantId)}" aria-label="移除${esc(name)}">×</button></article>`;
+  }
+  function cartGroupCount(group){return `${group.lines.length} 道 · ${group.lines.reduce((sum,line)=>sum+line.quantity,0)} 份`;}
   function renderCart(){
-    $('cart-items').innerHTML=state.lines.length?state.lines.map(l=>{const d=byId.get(l.id);return `<div class="cart-item"><div class="cart-item-main"><div class="cart-item-name"><h3>${esc(lineName(l))}</h3>${!activeIds.has(d.id)?'<small>之前选过的菜，已为你保留</small>':d.fulfillment==='takeaway'?'<small>点外卖</small>':''}</div>${stepper(d,l.variantId,true)}<button type="button" class="remove-item" data-action="remove" data-id="${esc(d.id)}" data-variant="${esc(l.variantId)}" aria-label="移除${esc(lineName(l))}">移除</button></div></div>`;}).join(''):'<p class="cart-empty">先去挑几道喜欢的吧。</p>';
-    updateSummary();
+    const scrollBody=$('cart-dialog').querySelector('.sheet-body'),scrollTop=scrollBody?.scrollTop||0;
+    const groups=cartGroups(),groupNodes=[...$('cart-items').querySelectorAll('.cart-menu-group')];
+    // Keep thumbnails and their loading/fallback state when only quantities change.
+    const quantitiesOnly=groups.length>0&&groups.length===groupNodes.length&&groups.every((group,index)=>{
+      const node=groupNodes[index],items=[...node.querySelectorAll('[data-cart-line]')];
+      return node.dataset.cartCategory===group.id&&node.querySelector('.cart-group-heading > span')&&items.length===group.lines.length&&items.every((item,i)=>item.dataset.cartLine===lineKey(group.lines[i].id,group.lines[i].variantId)&&item.querySelector('.cart-preview-controls'));
+    });
+    if(quantitiesOnly){
+      groups.forEach((group,index)=>{
+        const node=groupNodes[index];node.querySelector('.cart-group-heading > span').textContent=cartGroupCount(group);
+        node.querySelectorAll('[data-cart-line]').forEach((item,i)=>{const line=group.lines[i];item.querySelector('.cart-preview-controls').innerHTML=stepper(byId.get(line.id),line.variantId,true);});
+      });
+    }else{
+      $('cart-items').innerHTML=groups.length?groups.map(group=>`<section class="cart-menu-group" data-cart-category="${esc(group.id)}" aria-labelledby="cart-group-${esc(group.id)}"><div class="cart-group-heading"><h3 class="cart-group-title" id="cart-group-${esc(group.id)}">${esc(group.label)}</h3><span>${cartGroupCount(group)}</span></div><div class="cart-menu-grid">${group.lines.map(cartPreviewItem).join('')}</div></section>`).join(''):'<p class="cart-empty">先去挑几道喜欢的吧。</p>';
+    }
+    updateSummary();if(scrollBody)scrollBody.scrollTop=scrollTop;
   }
   function openDialog(id){const dialog=$(id);if(dialog.open)return;if(typeof dialog.showModal==='function')dialog.showModal();else dialog.setAttribute('open','');document.body.style.overflow='hidden';}
   function openCart(custom=false){renderCart();$('guest-notes').value=state.notes;$('custom-dish').value=state.custom;$('extra-details').open=custom||!!state.custom;openDialog('cart-dialog');if(custom)$('custom-dish').focus();}
